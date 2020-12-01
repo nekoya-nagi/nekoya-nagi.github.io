@@ -1,0 +1,202 @@
+/*
+	全ページ対象
+*/
+body {
+	background-color: #f0f8ff;
+	margin-left:50px;
+	scrollbar-arrow-color:#ffffff;
+	scrollbar-face-color:#00008b;
+	scrollbar-3dlight-color:#ffffff;
+	scrollbar-darkshadow-color:#ffffff;
+	scrollbar-highlight-color:#00008b;
+	scrollbar-shadow-color:#00008b;
+	scrollbar-track-color:#ffffff;
+    font-family:'Lucida Grande', 'Hiragino Kaku Gothic ProN',
+				 'ヒラギノ角ゴ ProN W3',Meiryo, メイリオ, sans-serif;
+} 
+
+body.pict {
+	/* background-image:url('..pict/img/puyo00.jpg'); */
+	background-repeat:no-repeat;
+}
+
+body.game {
+	background-image:url('../img/bg/blue_star.jpg');
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position: right bottom; 
+}
+
+div.title {
+	font-size:18px;
+	width:500px;
+    margin:10px 10px 10px 0px; 
+    padding:0px 3px 0px 0px; 
+    color: #00008b;
+    border-bottom:3px double #0000cd;
+}
+
+div.subtitle {
+	font-size:14px;
+	width:600px;
+    margin:10px 10px 10px 0px; 
+    padding:0px 3px 0px 0px; 
+    color: #00008b;
+    border-bottom:1px solid #0000cd;
+}
+
+div.midashi {
+	width:500px;
+    margin:10px 10px 10px 10px; 
+    padding:0px 3px 0px 25px; 
+    color: #0000cd;
+    font-family: Impact;
+    font-size:14pt;
+    border-bottom:3px double #0000cd;
+    background:url(../img/icon/tile.png) no-repeat 5px center;
+}
+
+/* div.midashi2 {
+	width:400px;
+    margin:10px 10px 10px 15px; 
+    padding:0px 3px 0px 10px; 
+    color: #00008b;
+    background:#cde4f3;
+    border-left:5px solid #7999cf;
+} */
+
+div.komoku {
+	width:120px;
+    margin:20px 10px 10px 10px; 
+    padding:0px 3px 0px 25px; 
+    color: #2d58bd;
+    font-size:10pt;
+    border-bottom:1px solid #b2cbe4;
+    background:url(../img/icon/tile.png) no-repeat 5px center;
+}
+
+div.chara {
+    margin:20px 10px 10px 10px; 
+    padding:0px 3px 0px 25px; 
+    color: #2d58bd;
+    font-size:10pt;
+}
+
+div.people {
+	width:270px;
+    border-bottom:1px dotted #b2cbe4;
+    background:url(../img/icon/man.png) no-repeat 5px center;
+}
+
+div.memo {
+	width:200px;
+    border-bottom:1px dashed #b2cbe4;
+    background:url(../img/icon/memo.png) no-repeat 5px center;
+}
+
+div.img {
+	width:200px;
+    border-bottom:1px dashed #b2cbe4;
+    background:url(../img/icon/pen.png) no-repeat 5px center;
+}
+
+div.like {
+	width:200px;
+    border-bottom:1px dashed #b2cbe4;
+    background:url(../img/icon/love.png) no-repeat 5px center;
+}
+
+div.log {
+	width:800px;
+    background-color:#fcfdfe;
+    margin-top:20px;
+    padding:20px;
+}
+
+h1 {
+	color: #778899;
+}
+
+h2 {
+	text-indent: 1em;
+	color: #191970;
+	margin-top: 40px;
+}
+
+h4 {
+	color: #0000cd;
+	margin: 0;
+}
+
+h5 {
+	color: #1F2841;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+
+p {
+ text-indent: 1em;
+ color: #432f2f;
+ width: 700px;
+ margin-left: 10px;
+ font-size: 11px;
+}
+
+hr {
+	color: #00008b;
+	border-style: double;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 4px;
+	width: 700px;
+	text-align: left;
+	margin-left: 0px;
+}
+
+ul {
+	margin:5px 0 0 0;
+}
+
+li {
+	color: #191970;
+	font-size:12px;
+	margin:5px 0 0 0;
+}
+
+img {
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+textarea {
+	width: 300px;
+	height: 7em;
+	font-size: 11px;
+}
+
+/*-----------------------------------
+	リンク設定
+------------------------------------*/
+a{/*リンクされた文字*/
+    color:#2d2deb;
+    font-style:normal;
+    text-decoration:none;
+}
+a:link {/*未訪問のリンク*/
+    color:0000ff;
+    font-style:normal;
+    text-decoration:none;
+}
+a:visited {/*訪問後のリンク*/
+    color:#934C7B;
+    text-decoration:none;
+}
+a:hover {/*マウスをのせたとき*/
+    color:#7d4db1;
+    font-style:normal;
+    text-decoration:underline;
+}
+a:active {/*クリック中*/
+    text-decoration:none;
+}

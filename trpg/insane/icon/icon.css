@@ -1,0 +1,151 @@
+/* インセイン用 */
+/* アイコン ======================================================================================== */
+
+/* 共通 */
+div.text{ 
+    margin:5px 5px 5px 10px; 
+	padding:0 0 0 60px; 
+	min-height:50px; 
+    font-size:12px;
+    width:700px;
+}
+
+/* GM */
+div.gm{ background:url(gm.png) no-repeat 3px center;  border-left:#000 4px solid;}
+
+/* PC（にゃご） ============================================================================== */
+/* フレデリク・テイラー */
+div.frederic{ background:url(frederic.png) no-repeat 3px center; border-left:#b6b6e2 4px solid;}
+
+/* PC（陸亜） ============================================================================== */
+/* 秦 晃広 */
+div.akihiro{ background:url(akihiro.png) no-repeat 3px center; border-left:#71cbef 4px solid;}
+/* 竹森　周平 */
+div.takemori{ background:url(takemori.png) no-repeat 3px center; border-left:#94ed94 4px solid;}
+/* 園崎　豊 */
+div.sonozaki{ background:url(sonozaki.png) no-repeat 3px center; border-left:#d8ece2 4px solid;}
+/* 和田 穂香 */
+div.honoka{ background:url(honoka.png) no-repeat 3px center; border-left:#ffe695 4px solid;}
+/* ギルバート・エース */
+div.gilbert{ background:url(gilbert.png) no-repeat 3px center; border-left:#aabdd0 4px solid;}
+
+/* PC（ゆうと） ================================================================================ */
+/* 神流 夢 */
+div.yume{ background:url(yume.png) no-repeat 3px center; border-left:#8a83cf 4px solid;}
+/* 猫羽 雅 */
+div.nekoha{ background:url(nekoha.png) no-repeat 3px center; border-left:#800080 4px solid;}
+
+/* PC（モノ） ================================================================================ */
+/* 百瀬 星 */
+div.momose{ background:url(momose.png) no-repeat 3px center; border-left:#f08080 4px solid;}
+
+/* PC（とりきち） ================================================================================ */
+/* 佐口 千草 */
+div.chigusa{ background:url(chigusa.png) no-repeat 3px center; border-left:#4682b4 4px solid;}
+
+/* PC（あめこ） ================================================================================ */
+/* 樫原 椿 */
+div.tsubaki{ background:url(tsubaki.png) no-repeat 3px center; border-left:#ff6347 4px solid;}
+/* 伊吹　葵 */
+div.aoi{ background:url(aoi.png) no-repeat 3px center; border-left:#6e8bde 4px solid;}
+
+/* PC（コトナ） ================================================================================ */
+/* 影木　晃 */
+div.kageki{ background:url(kageki.png) no-repeat 3px center; border-left:#bc3232 4px solid;}
+/* ロッド＝ロックウェル */
+div.lod{ background:url(lod.png) no-repeat 3px center; border-left:#afa3d5 4px solid;}
+
+/* PC（蟹） ================================================================================ */
+/* 鹿沼　正也 */
+div.kanuma{ background:url(kanuma.png) no-repeat 3px center; border-left:#7a884e 4px solid;}
+/* ジミー・ウォレスン */
+div.jimmy{ background:url(jimmy.png) no-repeat 3px center; border-left:#9d8163 4px solid;}
+
+/* PC（しこん） ================================================================================ */
+/* 茅場　湊太 */
+div.kayaba{ background:url(kayaba.png) no-repeat 3px center; border-left:#ff9db7 4px solid;}
+
+/* PC（ユツキ） ================================================================================ */
+/* 花島　譲 */
+div.yuzuru{ background:url(yuzuru.png) no-repeat 3px center; border-left:#6b5086 4px solid;}
+
+/* PC（朱理） ================================================================================ */
+/* 妻木　想 */
+div.tsumaki{ background:url(tsumaki.png) no-repeat 3px center; border-left:#aff8ff 4px solid;}
+/* アルベルト＝シェルマン */
+div.albert{ background:url(albert.png) no-repeat 3px center; border-left:#edc589 4px solid;}
+
+/* PC（沙織） ================================================================================ */
+/* ロベルト・キャンベル */
+div.robert{ background:url(robert.png) no-repeat 3px center; border-left:#b0b0dc 4px solid;}
+
+/* PC（ナイ） ================================================================================ */
+/* フランチェスカ・キャンベル */
+div.francesca{ background:url(francesca.png) no-repeat 3px center; border-left:#bd7979 4px solid;}
+
+/* PC（オレット） ================================================================================ */
+/* レオナード・グレイ */
+div.leonard{ background:url(leonard.png) no-repeat 3px center; border-left:#bd7979 4px solid;}
+
+/* PC（さみどり） ================================================================================ */
+/* チャールズ・ハンプソン */
+div.charles_m{ background:url(charles_m.png) no-repeat 3px center; border-left:#c9e6f9 4px solid;}
+/* クラリッサ・ハンプソン */
+div.charles_f{ background:url(charles_f.png) no-repeat 3px center; border-left:#c9e6f9 4px solid;}
+
+/* NPC:（楽園）============================================================== */
+/* 石動 優人 */
+div.npc_yuto{ background:url(npc_yuto.png) no-repeat 3px center; border-left:#629462 4px solid;}
+
+/* NPC:（帰り路をなくして）============================================================== */
+/* 葛葉 アヤメ */
+div.npc_ayame{ background:url(npc_ayame.png) no-repeat 3px center; border-left:#9370db 4px solid;}
+/* 高畠 宗介 */
+div.npc_takahata{ background:url(npc_takahata.png) no-repeat 3px center; border-left:#c0c0c0 4px solid;}
+
+/* NPC:（サルユメ）============================================================== */
+/* 向坂　茉理 */
+div.npc_matsuri{ background:url(npc_matsuri.png) no-repeat 3px center; border-left:#9370db 4px solid;}
+/* 向坂　恵美里 */
+div.npc_emiri{ background:url(npc_emiri.png) no-repeat 3px center; border-left:#c0c0c0 4px solid;}
+
+/* NPC:（黒後家蜘蛛の怪）============================================================== */
+/* 美咲 */
+div.npc_misaki{ background:url(npc_misaki.png) no-repeat 3px center; border-left:#ffab9d 4px solid;}
+/* 真樹子 */
+div.npc_makiko{ background:url(npc_makiko.png) no-repeat 3px center; border-left:#8989d5 4px solid;}
+/* 住職 */
+div.npc_jusyoku{ background:url(npc_jusyoku.png) no-repeat 3px center; border-left:#ccdcd4 4px solid;}
+
+/* NPC:（スケープゴート）============================================================== */
+/* シャーロット・ハモンド */
+div.charlotte{ background:url(charlotte.png) no-repeat 3px center; border-left:#92bca9 4px solid;}
+
+/* NPC:（Misty Night Nightmare）============================================================== */
+/* M */
+div.npc_m{ background:url(npc_m.png) no-repeat 3px center; border-left:#9b9b9b 4px solid;}
+/* バーナビー・スミス */
+div.npc_smith{ background:url(npc_smith.png) no-repeat 3px center; border-left:#9b9b9b 4px solid;}
+/* ジョン・ */
+div.npc_john{ background:url(npc_john.png) no-repeat 3px center; border-left:#9b9b9b 4px solidbca9 4px solid;}
+/* フィリア */
+div.npc_firia{ background:url(npc_firia.png) no-repeat 3px center; border-left:#9b9b9b 4px solid;}
+/* 編集長 */
+div.npc_editor{ background:url(npc_editor.png) no-repeat 3px center; border-left:#9b9b9b 4px solid;}
+/* リジー */
+div.npc_liggy{ background:url(npc_liggy.png) no-repeat 3px center; border-left:#9b9b9b 4px solid;}
+/* フローレンス */
+div.npc_flow{ background:url(npc_flow.png) no-repeat 3px center; border-left:#9b9b9b 4px solid;}
+
+/* 烏有館事件============================================================== */
+/* 小鳥遊 嘉音 */
+div.canon{ background:url(canon.png) no-repeat 3px center; border-left:#396bc7 4px solid;}
+/* 睦月 鷹之 */
+div.takayuki{ background:url(takayuki.png) no-repeat 3px center; border-left:#8b6c84 4px solid;}
+/* 黒家 梓 */
+div.azusa{ background:url(azusa.png) no-repeat 3px center; border-left:#858585 4px solid;}
+
+
+/* 下部空白用 */
+div.BottomSpace{ margin-bottom:50px; }
+p.BottomSpace{ margin-bottom:50px; }

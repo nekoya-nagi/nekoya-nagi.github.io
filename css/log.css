@@ -1,0 +1,56 @@
+/* 全体設定 ======================================================================================== */
+* { margin:0; padding:0; }
+html,body  { height:100%; }
+body       { background-image:url() }
+
+/* フォント */
+p { color:#000; font:13px /15pt "メイリオ"; padding:10px; }
+div { color:#000; font:13px /15pt "メイリオ"; }
+a                 { color:#d12b2b; text-decoration:none; }
+a:visited         { color:#d12b2b; text-decoration:none; }
+a:hover, a:active { color:#000;    text-decoration:none; }
+
+ul {
+    padding-left:40px;
+}
+
+/* メイン画面 ====================================================================================== */
+
+/* 画面枠 */
+div#MainArea  { box-sizing:border-box; width:80%; padding:30px 0px; margin:0px auto;
+                border-style:solid; border-width:0px 2px 2px 2px; background-color:#fff; outline:none; }
+
+/* ヘッダー・フッター部分 */
+div.HFBar { background-color:#000; width:100%; margin-top:10px; }
+p.HFBarTxt{ color:#fff; font-weight:bold; font-size:15px; }
+a.HFBar { color:#d12b2b; text-decoration:none; }
+a:visited.HFBar               { color:#d12b2b; text-decoration:none; }
+a:hover.HFBar, a:active.HFBar { color:#fff;    text-decoration:none; }
+
+/* 段落区切り部分 */
+div.SecBar { background-color:#bbb; width:100%; margin-top:20px; margin-bottom:20px; }
+p.SecBarTxt{ font-weight:bold; font-size:15px; }
+
+
+/* 折り畳み部分 */
+table { margin:20px 10px; padding:0px; border:none; }
+td.FoldButton{ vertical-align:top; text-align:center; }
+td.FoldContent{ display:none; vertical-align:top; text-align:left; }
+span.FoldButton{ cursor:pointer; display:block; width:20px; height:20px; border:1px solid;
+                 text-align:center; vertical-align:top;}
+
+/* テキスト装飾など */
+p.SubTitle{ padding-bottom:0px; font-size:14px; font-weight:bold; color:#d12b2b; }
+p.Indent{ padding-top:0px; margin-left:20px; }
+
+img{ margin:10px 20px; }
+
+
+/* アイコン ======================================================================================== */
+/* ダイスロール・イベントテキスト */
+div.dice{ background:#ececec; border-radius: 0.5em; padding:5px; margin:10px 10px 10px 15px; width:500px; }
+div.event{ margin:20px 10px 20px 20px; padding:5px; background:#ecfddb; border-left:4px double #24b671; }
+
+/* 下部空白用 */
+div.BottomSpace{ margin-bottom:50px; }
+p.BottomSpace{ margin-bottom:50px; }

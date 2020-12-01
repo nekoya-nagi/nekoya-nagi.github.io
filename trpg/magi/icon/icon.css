@@ -1,0 +1,90 @@
+/* アイコン ======================================================================================== */
+
+/* 共通 */
+div.text{ 
+    margin:5px 5px 5px 10px; 
+	padding:0 0 0 60px; 
+	min-height:50px; 
+    font-size:12px;
+    width:700px;
+}
+
+/* GM */
+div.gm{ background:url(gm.png) no-repeat 3px center;  border-left:#000 4px solid;}
+
+/* PC（陸亜） ============================================================================== */
+/* ベルガラス・パラケルスス */
+div.bell{ background:url(bell.png) no-repeat 3px center; border-left:#fcff75 4px solid;}
+
+/* ノエル */
+div.noel{ background:url(noel.png) no-repeat 3px center; border-left:#636385 4px solid;}
+
+/* PC（モノ） ================================================================================ */
+/* 土宮　劔 */
+div.turugi{ background:url(turugi.png) no-repeat 3px center; border-left:#5d8fc9 4px solid;}
+
+/* 海鳴 夢 */
+div.ayumu{ background:url(ayumu.png) no-repeat 3px center; border-left:#7fbfff 4px solid;}
+div.ayumu_true{ background:url(ayumu_true.png) no-repeat 3px center; border-left:#7fbfff 4px solid;}
+
+/* PC（ミナカミ） ============================================================================== */
+/* コーディ・コルトハード（Cody Coulthard） */
+div.cody{ background:url(cody.png) no-repeat 3px center; border-left:#ff9775 4px solid;}
+
+/* PC（朱理） ============================================================================== */
+/* 焔木 イツキ */
+div.ituki{ background:url(ituki.png) no-repeat 3px center; border-left:#e7c6f4 4px solid;}
+
+/* NPC:（ソロモン・グランディ）============================================================== */
+/* 水城アユミ */
+div.npc_ayumi{ background:url(npc_ayumi.png) no-repeat 3px center; border-left:#629462 4px solid;}
+
+/* 双宮ヒトシ */
+div.npc_hitoshi{ background:url(npc_hitoshi.png) no-repeat 3px center; border-left:#66f7fc 4px solid;}
+
+/* 越智マモリ */
+div.npc_mamori{ background:url(npc_mamori.png) no-repeat 3px center; border-left:#fa9e9e 4px solid;}
+
+/* 双宮ニキ */
+div.npc_niki{ background:url(npc_niki.png) no-repeat 3px center; border-left:#66569e 4px solid;}
+div.npc_niki2{ background:url(npc_niki2.png) no-repeat 3px center; border-left:#838383 4px solid;}
+
+/* 琴浦 誠 */
+div.npc_makoto{ background:url(npc_makoto.png) no-repeat 3px center; border-left:#9d6b6b 4px solid;}
+
+/* NPC:（共鳴する裏切りの炎）============================================================== */
+/* 久住 慧子 */
+div.npc_keiko{ background:url(npc_keiko.png) no-repeat 3px center; border-left:#ffe1e1 4px solid;}
+
+/* 広瀬 香 */
+div.npc_kaoru{ background:url(npc_kaoru.png) no-repeat 3px center; border-left:#b6bbd2 4px solid;}
+
+/* 植野 隆 */
+div.npc_takasi{ background:url(npc_takasi.png) no-repeat 3px center; border-left:#ffdc7f 4px solid;}
+
+/* 沢渡 和人 */
+div.npc_kazuto{ background:url(npc_kazuto.png) no-repeat 3px center; border-left:#c9e7c9 4px solid;}
+
+/* 犬神博士 */
+div.npc_inukami{ background:url(npc_inukami.png) no-repeat 3px center; border-left:#d8b8b8 4px solid;}
+
+/* 大法典の叛逆者 ============================================================== */
+div.kataru{ background:url(kataru.png) no-repeat 3px center; border-left:#fdc5e1 4px solid;}
+div.gengo{ background:url(gengo.png) no-repeat 3px center; border-left:#91c791 4px solid;}
+div.takayuki{ background:url(takayuki.png) no-repeat 3px center; border-left:#b28484 4px solid;}
+div.badoria{ background:url(badoria.png) no-repeat 3px center; border-left:#b8b8b8 4px solid;}
+div.queen{ background:url(queen.png) no-repeat 3px center; border-left:#b8b8b8 4px solid;}
+div.haduki{ background:url(haduki.png) no-repeat 3px center; border-left:#b8b8b8 4px solid;}
+div.rui{ background:url(rui.png) no-repeat 3px center; border-left:#b8b8b8 4px solid;}
+div.rai{ background:url(rai.png) no-repeat 3px center; border-left:#b8b8b8 4px solid;}
+div.james{ background:url(james.png) no-repeat 3px center; border-left:#b8b8b8 4px solid;}
+div.youkoku{ background:url(youkoku.png) no-repeat 3px center; border-left:#b8b8b8 4px solid;}
+div.kaoru{ background:url(kaoru.png) no-repeat 3px center; border-left:#b8b8b8 4px solid;}
+div.will{ background:url(will.png) no-repeat 3px center; border-left:#b8b8b8 4px solid;}
+div.hurry{ background:url(hurry.png) no-repeat 3px center; border-left:#b8b8b8 4px solid;}
+div.canon{ background:url(canon.png) no-repeat 3px center; border-left:#b8b8b8 4px solid;}
+
+/* 共通 ============================================================== */
+/* 下部空白用 */
+div.BottomSpace{ margin-bottom:50px; }
+p.BottomSpace{ margin-bottom:50px; }

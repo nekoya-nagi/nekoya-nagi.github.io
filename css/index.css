@@ -1,0 +1,22 @@
+/* インデックスページ用 */
+
+body {
+ background-color: #f0f8ff;
+ text-align:center;
+} 
+
+p {
+	text-indent: 1em;
+	color: #432f2f;
+	font-size: 11px;
+}
+
+div {
+ background-color: #ffffff;
+ text-align:center;
+ width:500px;
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:100px;
+}
+

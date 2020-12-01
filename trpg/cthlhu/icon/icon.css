@@ -1,0 +1,67 @@
+/* ƒAƒCƒRƒ“ ======================================================================================== */
+
+/* ‹¤’Ê */
+div.text{ 
+    margin:5px 5px 5px 10px; 
+	padding:0 0 0 60px; 
+	min-height:50px; 
+    font-size:12px;
+    width:700px;
+}
+
+/* KP */
+div.kp{ background:url(kp.png) no-repeat 3px center;  border-left:#000 4px solid;}
+div.system{ background:url(system.png) no-repeat 3px center;  border-left:#000 4px solid;}
+
+/* PCi‚É‚á‚²j ================================================================================ */
+/* İŠy ³@ */
+div.shitara{ background:url(shitara.png) no-repeat 3px center; border-left:#eeb174 4px solid;}
+div.shitara2{ background:url(shitara2.png) no-repeat 3px center; border-left:#dddddd 4px solid;}
+
+/* PCi—¤ˆŸj ============================================================================== */
+/* ‘šŒ —R‹I */
+div.yuki{ background:url(yuki.png) no-repeat 3px center; border-left:#b9dcff 4px solid;}
+div.yuki2{ background:url(yuki2.png) no-repeat 3px center; border-left:#dddddd 4px solid;}
+
+div.yoshichika{ background:url(yoshichika.png) no-repeat 3px center; border-left:#7dfdfd 4px solid;}
+
+/* ©E‰ñ˜H ============================================================== */
+/* Š£ ‘×b */
+div.inui{ background:url(inui.png) no-repeat 3px center; border-left:#669966 4px solid;}
+/* ¶‹î@Œ¹‘¢ */
+div.genzo{ background:url(genzo.png) no-repeat 3px center; border-left:#778899 4px solid;}
+
+/* Œt•P ============================================================== */
+/* ‹´ ”ä˜Cq */
+div.hashi{ background:url(hashi.png) no-repeat 3px center; border-left:#e91e63 4px solid;}
+/* ”¯ —´¡ */
+div.ryuji{ background:url(ryuji.png) no-repeat 3px center; border-left:#3333CC 4px solid;}
+/* ƒQƒ“ƒ}ƒbƒVƒƒ[ */
+div.gen{ background:url(gen.png) no-repeat 3px center; border-left:#795548 4px solid;}
+/* ‹Ë¶ Œ˜‘¾˜Y */
+div.kiryu{ background:url(kiryu.png) no-repeat 3px center; border-left:#888888 4px solid;}
+
+/* NPC:i‚¨’n‘ ‚³‚ñj============================================================== */
+/* Œx@Š¯ */
+div.takemori{ background:url(takemori.png) no-repeat 3px center; border-left:#94ed94 4px solid;}
+/* ˜Vl */
+div.sonozaki{ background:url(sonozaki.png) no-repeat 3px center; border-left:#d8ece2 4px solid;}
+/* ŠÅŒìt */
+div.aiko{ background:url(aiko.png) no-repeat 3px center; border-left:#fcb0ca 4px solid;}
+/* ›Ş— */
+div.kushina{ background:url(kushina.png) no-repeat 3px center; border-left:#ffde91 4px solid;}
+/* —¿—l */
+div.chie{ background:url(chie.png) no-repeat 3px center; border-left:#fffbb9 4px solid;}
+/* i‘ */
+div.haduki{ background:url(haduki.png) no-repeat 3px center; border-left:#aeb8ee 4px solid;}
+/* å•w */
+div.ran{ background:url(ran.png) no-repeat 3px center; border-left:#e0caf6 4px solid;}
+/* ’n‘  */
+div.jizo{ background:url(jizo.png) no-repeat 3px center; border-left:#c5c7c5 4px solid;}
+/* ”Æl */
+div.komatsu{ background:url(komatsu.png) no-repeat 3px center; border-left:#c7b1b1 4px solid;}
+
+/* ‹¤’Ê ============================================================== */
+/* ‰º•”‹ó”’—p */
+div.BottomSpace{ margin-bottom:50px; }
+p.BottomSpace{ margin-bottom:50px; }

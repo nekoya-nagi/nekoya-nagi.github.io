@@ -1,0 +1,19 @@
+/*
+	雑記ページ対象
+*/
+body {
+	background-color: #ffffff;
+	margin-left:50px;
+} 
+
+body.pict {
+	margin-left:10px;
+}
+
+body.game {
+	margin-left:10px;
+}
+
+p {
+	text-indent:1em;
+}

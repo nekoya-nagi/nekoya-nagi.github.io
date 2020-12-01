@@ -1,0 +1,37 @@
+/*
+	サイドメニューページ対象
+*/
+body {
+	margin-left:20px;
+} 
+
+div.subtitle {
+	width:150px;
+    margin:20px 10px 10px 10px; 
+    padding:0px 3px 0px 15px; 
+    color: #f0f6fc;
+    font-family: Impact;
+    background:#00008b;
+    border-left:4px double #fdfffe;
+}
+/* 
+div.subtitle2 {
+	width:150px;
+    margin:20px 10px 10px 10px; 
+    padding:0px 3px 0px 25px; 
+    color: #0000cd;
+    font-family: Impact;
+    font-size:14pt;
+    border-bottom:3px double #0000cd;
+    background:url(../img/icon/tile.png) no-repeat 5px center;
+} */
+
+div.komoku {
+	width:120px;
+    margin:10px 10px 10px 10px; 
+    padding:0px 3px 0px 25px; 
+    color: #2d58bd;
+    font-size:10pt;
+    border-bottom:1px solid #b2cbe4;
+    background:url(../img/icon/tile.png) no-repeat 5px center;
+}

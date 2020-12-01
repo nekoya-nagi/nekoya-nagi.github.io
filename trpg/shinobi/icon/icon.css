@@ -1,0 +1,36 @@
+/* アイコン ======================================================================================== */
+
+/* 共通 */
+div.text{ 
+    margin:5px 5px 5px 10px; 
+	padding:0 0 0 60px; 
+	min-height:50px; 
+    font-size:12px;
+    width:700px;
+}
+
+/* GM */
+div.gm{ background:url(gm.png) no-repeat 3px center;  border-left:#000 4px solid;}
+
+/* PC ================================================================================ */
+/* 乾 泰臣 */
+div.inui{ background:url(inui.png) no-repeat 3px center; border-left:#7bc39f 4px solid;}
+/* 生駒 ゲンゾウ */
+div.genzo{ background:url(genzo.png) no-repeat 3px center; border-left:#9292d2 4px solid;}
+
+/* 白龍 */
+div.pairon{ background:url(piron.png) no-repeat 3px center; border-left:#b28fd1 4px solid;}
+/* 名霞 炬涼 */
+div.kosuzu{ background:url(kosuzu.png) no-repeat 3px center; border-left:#c9def3 4px solid;}
+
+/* NPC ================================================================================ */
+/* バイコーン */
+div.bicone{ background:url(bicone.png) no-repeat 3px center; border-left:#9b9b9b 4px solid;}
+/* ハグレモノの偉い人 */
+div.father{ background:url(father.png) no-repeat 3px center; border-left:#9b9b9b 4px solid;}
+
+
+/* 共通 ============================================================== */
+/* 下部空白用 */
+div.BottomSpace{ margin-bottom:50px; }
+p.BottomSpace{ margin-bottom:50px; }
