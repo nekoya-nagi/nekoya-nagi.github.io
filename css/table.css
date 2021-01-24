@@ -1,0 +1,25 @@
+
+table {
+	margin-left: auto;
+    margin-right: auto;
+	font-size:12px;
+}
+th{
+	border-top: 1px solid rgb(155, 155, 155);
+	border-bottom: 1px solid  rgb(155, 155, 155);
+}
+
+td{
+	border-bottom: 1px solid  rgb(155, 155, 155);
+	padding:5px;
+}
+
+th.title{
+	width:150px;
+}
+th.date{
+	width:100px;
+}
+th.member{
+	width:500px;
+}

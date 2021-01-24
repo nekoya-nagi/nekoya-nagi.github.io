@@ -1,0 +1,28 @@
+/*
+　サイドメニュー２カラム 
+*/
+
+div#main {
+	width: 100%;
+	height: 100%;
+	float: right;
+	margin-left: -300px;
+	padding-left: 300px;
+	box-sizing: border-box;
+}
+	
+nav.left {
+	color: #ffffff;
+	background-color: #5c5c80;
+	width: 150px;
+	height: 100%;
+	float: left;
+}
+
+nav.left2 {
+	color: #ffffff;
+	background-color: #9c9cb6;
+	width: 150px;
+	height: 100%;
+	margin-left: 150px;
+}

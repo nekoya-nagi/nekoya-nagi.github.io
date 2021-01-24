@@ -1,0 +1,173 @@
+/* キャラ紹介ページ用 */
+/* 共通 */
+
+.pagetitle { 
+	font-family: "M PLUS 1p"; 
+	color:navy;
+	padding-top: 10px;
+}
+
+.chara_list{
+	column-count: 4;
+	width: 750px;
+}
+
+td {
+	vertical-align: top;
+}
+
+img {
+	margin-left:20px;
+}
+
+a.exlink{
+    font-size:12px;
+}
+
+a.top{
+	font-size:8px;
+	color: lightslategrey;
+	padding-left: 100px;
+}
+
+hr {
+	width: 750px;
+	color: lightslategrey;
+}
+
+section {
+	margin: 10px;
+	padding: 10px;
+	width:800px;
+	background-color: rgb(255, 255, 255);
+}
+
+div.people {
+	width:500px;
+}
+
+div.text{ 
+    margin:5px 5px 5px 10px; 
+	padding:0 0 0 160px; 
+	min-height:200px; 
+    font-size:12px;
+    width:700px;
+}
+
+div.profile{ 
+	padding: 0 0 0 15px; 
+	width : 400px;
+    font-size:11px;
+}
+
+div.profile_i{ 
+	padding: 0 0 0 15px; 
+	width : 600px;
+    font-size:11px;
+}
+
+dl{  
+ font-size:10px;
+}
+
+dt{
+	padding: 0 0 0 10px; 
+	width : 220px;
+	float : left;
+	clear : both;
+}
+
+dd{    
+	padding: 0 0 0 10px; 
+	width : 300px;
+	margin-left : 160px;
+}
+
+ul.prof{
+	list-style-type:disc;
+}
+
+/* インセイン用 ======================================================================================== */
+/* ガイ=ケッチャム */
+div.guy{ background:url("insane/sd/guy.png") no-repeat 3px top;}
+/* 鬼形 蒼真 */
+div.soma{ background:url("insane/sd/soma.png") no-repeat 3px top;}
+/* 谷山 鈴音 */
+div.rinne{ background:url("insane/sd/rinne.png") no-repeat 3px top;}
+/* 黒井 拓巳 */
+div.takumi{ background:url("insane/sd/takumi.png") no-repeat 3px top;}
+/* フレデリク・テイラー */
+div.fled{ background:url("insane/sd/fled.png") no-repeat 3px top;}
+/* 高橋 亮司 */
+div.ryoji{ background:url("insane/sd/ryoji.png") no-repeat 3px top;}
+/* 斎藤 圭一 */
+div.keiichi{ background:url("insane/sd/keiichi.png") no-repeat 3px top;}
+/* 田宮 円華 */
+div.madoka{ background:url("insane/sd/noImage.png") no-repeat 3px top;}
+/* 瀬尾 ちはる */
+div.chiharu{ background:url("insane/sd/chiharu.png") no-repeat 3px top;}
+/* 木村 清四郎 */
+div.kimura{ background:url("insane/sd/noImage.png") no-repeat 3px top;}
+/* 時枝 真理 */
+div.mari{ background:url("insane/sd/mari.png") no-repeat 3px top;}
+/* 二階堂 真守 */
+div.mamori{ background:url("insane/sd/mamori.png") no-repeat 3px top;}
+/* 渡辺 夕月 */
+div.yuduki{ background:url("insane/sd/noImage.png") no-repeat 3px top;}
+/* 児玉 巽 */
+div.tatumi{ background:url("insane/sd/tatumi.png") no-repeat 3px top;}
+/* 廣丘 利彦 */
+div.toshihiko{ background:url("insane/sd/noImage.png") no-repeat 3px top;}
+/* 蓮見　雅弘 */
+div.hasumi{ background:url("insane/sd/noImage.png") no-repeat 3px top;}
+/* ジャンヌ=アボット */
+div.janne{ background:url("insane/sd/noImage.png") no-repeat 3px top;}
+/* 御影 隼人 */
+div.hayato{ background:url("insane/sd/noImage.png") no-repeat 3px top;}
+/* 春日 茂 */
+div.kasuga{ background:url("insane/sd/noImage.png") no-repeat 3px top;}
+/* ジャック＝ゴールドブラム */
+div.jack{ background:url("insane/sd/noImage.png") no-repeat 3px top;}
+/* 天地 栞 */
+div.shiori{ background:url("insane/sd/noImage.png") no-repeat 3px top;}
+
+
+/* ソード・ワールド用 =================================================================================== */
+div.sw{ 
+    margin:5px 5px 5px 10px; 
+	padding:0 0 0 210px; 
+	min-height:200px; 
+    font-size:12px;
+    width:700px;
+}
+
+/* コンラート */
+div.conrad{ background:url("sw/sd/conrad.png") no-repeat 3px top;}
+/* リオル */
+div.riol{ background:url("sw/sd/riol.png") no-repeat 3px top;}
+/* クリームヒルデ */
+div.cream{ background:url("sw/sd/cream.png") no-repeat 3px top;}
+/* マクシミリアン */
+div.max{ background:url("sw/sd/max.png") no-repeat 3px top;}
+
+/* シノビガミ用 =================================================================================== */
+div.shinobi{ 
+    margin:5px 5px 5px 10px; 
+	padding:0 0 0 210px; 
+	min-height:200px; 
+    font-size:12px;
+    width:700px;
+}
+
+/* 斜歯 藍 */
+div.aoi{ background:url("shinobi/sd/noimage.png") no-repeat 3px top;}
+/* 四之宮 エリカ */
+div.erika{ background:url("shinobi/sd/erika.png") no-repeat 3px top;}
+/* 乾 泰臣 */
+div.inui{ background:url("shinobi/sd/inui.png") no-repeat 3px top;}
+/* 白龍 */
+div.pairon{ background:url("shinobi/sd/pairon.png") no-repeat 3px top;}
+
+
+
+

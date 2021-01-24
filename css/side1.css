@@ -1,0 +1,46 @@
+/*
+　サイドメニュー１カラム 
+*/
+
+div#main {
+	width: 90%;
+	height: 95%;
+	float: right;
+	margin-left: -160px;
+	padding-left: 70px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+	
+nav.left {
+	color: #ffffff;
+	background-color: #5858a0;
+	width: 150px;
+	min-height:500px;
+	height: 100vh;
+	float: left;
+}
+
+div.system {
+	width:110px;
+	margin:20px 0px 10px 10px;
+    padding:0px 0px 0px 10px; 
+    color: #fff9c6;
+    font-family: 'Caveat', cursive;
+	border-left:5px solid #fdfffe;
+	border-bottom: 1px solid #fdfffe;
+	text-align: left;
+}
+
+ul.subcontents li {
+	text-align: left;
+}
+
+ul.subcontents a {
+	color: #f0f6fc;
+}
+
+.multi_list{
+	column-count: 3;
+	width: 600px;
+}

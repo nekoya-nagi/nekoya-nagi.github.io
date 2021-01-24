@@ -1,9 +1,31 @@
 /*
-	‘Sƒy[ƒW‘ÎÛ
+	å…¨ãƒšãƒ¼ã‚¸å¯¾è±¡
 */
+html {
+    height:auto;
+}
+
+.wrapper{
+    min-height: auto;
+	position: relative;
+}
+
+div#content {
+	overflow: hidden;
+    background-image: url(../img/bg/star.png);
+	background-position: right 0% top 0%;
+	background-repeat: no-repeat;
+	background-size:300px 300px;
+	padding-top: 30px;
+	box-sizing: border-box;
+	overflow: hidden;
+	height:100vh;
+}
+
+/* ãƒ™ãƒ¼ã‚¹ */
 body {
+	margin:0 auto;
 	background-color: #f0f8ff;
-	margin-left:50px;
 	scrollbar-arrow-color:#ffffff;
 	scrollbar-face-color:#00008b;
 	scrollbar-3dlight-color:#ffffff;
@@ -12,20 +34,8 @@ body {
 	scrollbar-shadow-color:#00008b;
 	scrollbar-track-color:#ffffff;
     font-family:'Lucida Grande', 'Hiragino Kaku Gothic ProN',
-				 'ƒqƒ‰ƒMƒmŠpƒS ProN W3',Meiryo, ƒƒCƒŠƒI, sans-serif;
+				 'ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ ProN W3',Meiryo, ãƒ¡ã‚¤ãƒªã‚ª, sans-serif;
 } 
-
-body.pict {
-	/* background-image:url('..pict/img/puyo00.jpg'); */
-	background-repeat:no-repeat;
-}
-
-body.game {
-	background-image:url('../img/bg/blue_star.jpg');
-	background-attachment:fixed;
-	background-repeat:no-repeat;
-	background-position: right bottom; 
-}
 
 div.title {
 	font-size:18px;
@@ -45,25 +55,20 @@ div.subtitle {
     border-bottom:1px solid #0000cd;
 }
 
+section {
+	margin:20px;
+}
+
 div.midashi {
 	width:500px;
     margin:10px 10px 10px 10px; 
     padding:0px 3px 0px 25px; 
     color: #0000cd;
-    font-family: Impact;
-    font-size:14pt;
+    font-family: 'Kaushan Script', cursive;
+	font-size:14pt;
     border-bottom:3px double #0000cd;
     background:url(../img/icon/tile.png) no-repeat 5px center;
 }
-
-/* div.midashi2 {
-	width:400px;
-    margin:10px 10px 10px 15px; 
-    padding:0px 3px 0px 10px; 
-    color: #00008b;
-    background:#cde4f3;
-    border-left:5px solid #7999cf;
-} */
 
 div.komoku {
 	width:120px;
@@ -115,12 +120,14 @@ div.log {
 
 h1 {
 	color: #778899;
+	font-family: 'Kaushan Script', cursive;
 }
 
 h2 {
 	text-indent: 1em;
 	color: #191970;
 	margin-top: 40px;
+	font-family: 'Kaushan Script', cursive;
 }
 
 h4 {
@@ -144,8 +151,9 @@ p {
 }
 
 hr {
-	color: #00008b;
-	border-style: double;
+	padding: 5px 0 5px 0;
+	color: #8e8eaa;
+	border-style: dotted;
 	border-top-width: 0px;
 	border-left-width: 0px;
 	border-bottom-width: 4px;
@@ -155,13 +163,14 @@ hr {
 }
 
 ul {
-	margin:5px 0 0 0;
+	margin:0;
+	list-style-type: none;
 }
 
 li {
 	color: #191970;
 	font-size:12px;
-	margin:5px 0 0 0;
+	margin:0;
 }
 
 img {
@@ -176,27 +185,27 @@ textarea {
 }
 
 /*-----------------------------------
-	ƒŠƒ“ƒNİ’è
+	ãƒªãƒ³ã‚¯è¨­å®š
 ------------------------------------*/
-a{/*ƒŠƒ“ƒN‚³‚ê‚½•¶š*/
+a{/*ãƒªãƒ³ã‚¯ã•ã‚ŒãŸæ–‡å­—*/
     color:#2d2deb;
     font-style:normal;
     text-decoration:none;
 }
-a:link {/*–¢–K–â‚ÌƒŠƒ“ƒN*/
+a:link {/*æœªè¨ªå•ã®ãƒªãƒ³ã‚¯*/
     color:0000ff;
     font-style:normal;
     text-decoration:none;
 }
-a:visited {/*–K–âŒã‚ÌƒŠƒ“ƒN*/
+a:visited {/*è¨ªå•å¾Œã®ãƒªãƒ³ã‚¯*/
     color:#934C7B;
     text-decoration:none;
 }
-a:hover {/*ƒ}ƒEƒX‚ğ‚Ì‚¹‚½‚Æ‚«*/
+a:hover {/*ãƒã‚¦ã‚¹ã‚’ã®ã›ãŸã¨ã*/
     color:#7d4db1;
     font-style:normal;
     text-decoration:underline;
 }
-a:active {/*ƒNƒŠƒbƒN’†*/
+a:active {/*ã‚¯ãƒªãƒƒã‚¯ä¸­*/
     text-decoration:none;
 }

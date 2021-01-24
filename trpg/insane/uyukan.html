@@ -1,14 +1,22 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
-<link rel="stylesheet" type="text/css" href="../../css/base.css" />
-<link rel="stylesheet" type="text/css" href="../../css/log.css" />
-<link rel="stylesheet" type="text/css" href="icon/icon.css" />
-<link rel="stylesheet" type="text/css" href="../../resource/lightbox.css" media="screen,tv" />
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>Star Anise</title>
+ <meta name="description" content="TRPG、CardWirth等、趣味についてまとめた個人サイト">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="../../css/header.css">
+ <link rel="stylesheet" type="text/css" href="../../css/side1.css">
+ <link rel="stylesheet" type="text/css" href="../../css/base.css">
+ <link rel="stylesheet" type="text/css" href="../../css/chara.css">
+ <link rel="stylesheet" type="text/css" href="../../css/log.css">
+ <link rel="stylesheet" type="text/css" href="icon/icon.css" />
+ <link rel="stylesheet" type="text/css" href="../../resource/lightbox.css" media="screen,tv" />
 <script type="text/javascript" charset="UTF-8" src="../../resource/lightbox_plus.js"></script>
-<script>
+ <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+ <script>
 	function Fold(id){
 		if(document.getElementById('rgn_summary_'+id).style.display!='none'){
 			document.getElementById('rgn_summary_'+id).style.display='none';
@@ -21,989 +29,992 @@
 		}
 	}
 </script>
-	
-<title>Star Anise - �G�L�َ���</title>
-</head>
+ </head>
+ <body>
 
-<body>
-<div class="log">
-<div class="title">�G�L�َ���</div>
-<div class="komoku">PLAYER</div>
-<ul>
-<li>GM�^����</li>
-<li>PC1�^�����V �É��i�ɂႲ�j�@<a href="img/img_canon.png" rel="lightbox">���摜</a></li>
-<li>NPC�^�r�� ��V�i�����j�@<a href="img/img_takayuki.png" rel="lightbox">���摜</a></li>
-</ul>
-<div class="komoku" id="index">INDEX</div>
-<ul>
-<li>�y�����t�F�C�Y�z<a href="#prologue">�g���[���[</a>�@<a href="#prologue1">����</a>�@</li>
-<li>�y���C���t�F�C�Y�z�F<a href="#main1">�P�T�C�N��</a>�@<a href="#main2">�Q�T�C�N��</a>�@<a href="#main3">�R�T�C�N���@<a href="#main1_4">�S�T�C�N��</a></li>
-<li>�y�N���C�}�b�N�X�t�F�C�Y�z�F<a href="#climax">��b�p�[�g</a>�@<a href="#battle1">�퓬�p�[�g</a></li>
-<li>�y�G���f�B���O�t�F�C�Y�z�F<a href="#epilogue">�G�s���[�O</a>�@<a href="#after">�A�t�^�[�v���C</a></li>
-</ul>
-<br/>
-<div class="subtitle" id="prologue">���g���[���[</div>
-<div class="event">
-<br/>
-���Ȃ��͊قŖڂ��o�܂����B<br/>
-�������N�Ȃ̂��A�������ǂ��Ȃ̂��v���o���Ȃ��B<br/>
-�ǂ����A���Ȃ��͖��T��炵���B���̊قŋN�����E�l�����𒲂ׂĂ����̂��Ƃ����B<br/>
-<br/>
-�@���̗m�فB<br/>
-�@�A���E�l�B<br/>
-�@�����߂�ꂽ�e�^�҂����B<br/>
-<br/>
-�c�c�ł��A���������������B<br/>
-<br/>
-<br/>
-�}���`�W�������E�z���[RPG�C���Z�C��<br/>
-�@�@�@�@�@�u�G�L�َ����v<br/>
-<br/>
-<br/>
-�@�@�@�@�@�[�[��߂�ꂽ�^���ɁA�H�蒅���B<br/><br/>
+ <!----- main ----->
+ <div id="main">
+    <div class="log">
+        <div class="title">烏有館事件</div>
+        <div class="komoku">PLAYER</div>
+        <ul>
+        <li>GM／陸亜</li>
+        <li>PC1／小鳥遊 嘉音（にゃご）　<a href="img/img_canon.png" rel="lightbox">→画像</a></li>
+        <li>NPC／睦月 鷹之（陸亜）　<a href="img/img_takayuki.png" rel="lightbox">→画像</a></li>
+        </ul>
+        <div class="komoku" id="index">INDEX</div>
+        <ul>
+        <li>【導入フェイズ】<a href="#prologue">トレーラー</a>　<a href="#prologue1">導入</a>　</li>
+        <li>【メインフェイズ】：<a href="#main1">１サイクル</a>　<a href="#main2">２サイクル</a>　<a href="#main3">３サイクル　<a href="#main1_4">４サイクル</a></li>
+        <li>【クライマックスフェイズ】：<a href="#climax">会話パート</a>　<a href="#battle1">戦闘パート</a></li>
+        <li>【エンディングフェイズ】：<a href="#epilogue">エピローグ</a>　<a href="#after">アフタープレイ</a></li>
+        </ul>
+        <br/>
+        <div class="subtitle" id="prologue">◆トレーラー</div>
+        <div class="event">
+        <br/>
+        あなたは館で目を覚ました。<br/>
+        自分が誰なのか、ここがどこなのか思い出せない。<br/>
+        どうやら、あなたは名探偵らしい。この館で起きた殺人事件を調べていたのだという。<br/>
+        <br/>
+        　嵐の洋館。<br/>
+        　連続殺人。<br/>
+        　閉じ込められた容疑者たち。<br/>
+        <br/>
+        ……でも、何かがおかしい。<br/>
+        <br/>
+        <br/>
+        マルチジャンル・ホラーRPGインセイン<br/>
+        　　　　　「烏有館事件」<br/>
+        <br/>
+        <br/>
+        　　　　　ーー秘められた真実に、辿り着け。<br/><br/>
+        </div>
+        <br/>
+        <div class="subtitle" id="prologue1">◆導入フェイズ<a href="#index">▲</a>
+        </div><div class="text gm">【GM】<br />あなたはふと、目が覚めました。
+        </div><div class="text gm">【GM】<br />どうやら、うつ伏せに横たわっていたようです。押し付けられた頬に、ひんやりとした廊下の固い感触が響きます。
+        </div><div class="text gm">【GM】<br />思考を巡らせようとした途端、ずきり、と頭に痛みが走ります。何かを遮ろうとするかのように。
+        </div><div class="text gm">【GM】<br />そのまま何かを考えるか、あるいは行動するか。お好きにどうぞ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />流石にその体勢では思考をするにも適さない気がしますね。何はともあれ体を起こしましょうか。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…ベッドにしては、随分と固いけれど、此処は…？」とぼやきつつ、周囲を見てみましょうか
+        </div><div class="text gm">【GM】<br />はい。痛みに耐えながら身体を起こすとーーふいにぐらり、と眩暈はしましたが、起き上がることはできますーーぱっと見たところ、そこは洋館の類である様子です。
+        </div><div class="text gm">【GM】<br />あなたはそこが何処なのか、直ぐにはわかりません。どうしてそこにいるのかも。
+        </div><div class="text gm">【GM】<br />そればかりか、あなた自身が誰であるのかさえ、記憶を手繰ることが困難であると分かってしまうでしょう。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />高そうな調度品とか絨毯とか敷かれてたりするのかな。「……ええと？」昨晩のことを思い返そうとしてみるけど、それどころじゃなく何もわからない。首をかしげています。
+        </div><div class="text gm">【GM】<br />そんなあなたの背後から、突然声をかけられます。
+        </div><div class="text gm">【GM】<br />「ーー先生？」　若い、男性の声です。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />振り返ってみましょうか。　どんな人かな。
+        </div><div class="text gm">【GM】<br />声の印象とそぐわない、若い男性です。黒髪で、どこか幼さもある…学生かもしれないくらい。
+        </div><div class="text gm">【GM】<br />彼もまた、あなたの記憶には合致しません。
+        </div><div class="text gm">【GM】<br />彼は眼を瞬かせた後、目をすがめてあなたに尋ねます。不安と心配と、ともすれば不審とをにじませた声で。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「どうしましたか、先生。こんなところで…」　名前出しちゃうけどまだわからんね本来は。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…ええと、ごめんね。君は俺のことを知っているってことで良いのかな？」　まあ何もわからないですもんね
+        </div><div class="text takayuki">【睦月 鷹之】<br />「……、」　沈黙の後。「先生…その、記憶が？」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「そうだねえ。…俺が何者なのかも、君が誰なのかも、はたまた君との関係も、思い出せないみたいなんだ」　困ったね、って首をすくめるジェスチャー
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…もしかすると、犯人に襲われたのかもしれません」　視線を落として。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />頭が外傷的に痛むとかそういうのはありますか？
+        </div><div class="text gm">【GM】<br />痛みはしますが、外傷的にかっていうと微妙です。少なくとも後頭部に手をやっても、血が出てるとかたんこぶ出来てるとか、そういう様子はないですね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…犯人？　何か事件でも起きているのかな？」　了解です。ふむ
+        </div><div class="text takayuki">【睦月 鷹之】<br />あなたの様子に、ちいさく笑って。「…なるほど、"名探偵"は健在のようですね」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……あー、「探偵」だから「先生」なのか」　そして事件は起きてるんだね、って
+        </div><div class="text takayuki">【睦月 鷹之】<br />「まあ、一時的な記憶障害でしょうが…貴方の思考をスムーズにできるなら」　と言って、説明を始めます。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「貴方は小鳥遊嘉音。それなりに名の知れた探偵で、俺はその助手です。睦月鷹之」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「助手が付いているなら心強いね。事件だけでなく、プライベートのことも、君に聞けば解決しそうだ」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「必要になれば。それより先に、現状についてですが」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ここは「御園生 洋一郎」という、隠居した元実業家のお屋敷です。烏有館、と呼ばれているようですね」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「貴方は彼とコネクションを持っていて、彼の誕生祝いに招待されたんです」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「烏有館、ね。…何か命名の由来でもあるのかな」とかぼやきつつ続きを聞きます
+        </div><div class="text takayuki">【睦月 鷹之】<br />「さあ？　…ともあれそんな席で、主役であり館の主人である洋一郎氏が、何者かに殺害されました」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「それを皮切りに、連続して殺人事件が起こり…貴方はその調査をしていたところです」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「遺産相続で揉めたりでもしていたのかな…」　ふむ
+        </div><div class="text takayuki">【睦月 鷹之】<br />「分かりません。…ですから、先生を襲ったのもその犯人でしょう、おそらくは」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「どうせ先生のことですから、事件を調査していけば自分のことも思い出しますよ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「随分と信頼されているみたいだね」ってちょっと笑ってしまうのでは
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ええ、まあ。それなりに」　肩をすくめてこっちも笑ってる。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「事件の詳細についても、聞かせてもらえるかな？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「それは俺の台詞です」　ためいき。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…貴方はいつも一人で先走る。頭の回転は早いですし、身体能力だって人並以上でしょうが、自分で決めてすぐ行動する」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「見つけたと思えば、記憶喪失だなんて言うし」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「つまり、君は助手ではあるけれど、ここまでの推理については聞かされていない、と」　ふむ
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…力が及ばないもので」　諦観を滲ませて吐き捨ててる。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「とはいえ、この屋敷にいる人たちの名前や、これまでに誰がどういう殺され方をしていたのかくらいは、把握してるんじゃないのかな？」　とりあえず前提条件から聞かないと推理も何もないよな
+        </div><div class="text takayuki">【睦月 鷹之】<br />「屋敷の人々について、簡単な概要までは」　と言ってお名前リストはくれるよ（共有メモに貼ります）
+        </div><div class="text gm">【GM】<br />あとハンドアウトとして「殺人事件」と「館の人々」を提示します。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…へえ。親族だけではなく、画家も殺されているのか。たしかに、これなら俺が四人目の被害者になってもおかしくなかったかもしれないね」　ふむふむ
+        </div><div class="event">殺人事件
+        <br>【概要】
+        <br>烏有館は、ある富豪が住まう館である。富豪の誕生日を祝う集いで殺人は起きた。
+        <br>館の主は寝室で斬首死体となり、その甥は書庫で圧死し、客の画家は厨房で撲殺された。
+        <br>現場はそのままにされている。調べれば何かわかるだろうか？
+        
+        </div><div class="event">館の人々
+        <br>【概要】
+        <br>烏有館に集った人々。連続殺人の被害者候補にして容疑者たち。
+        <br>緊張と疲労のせいか、皆一様に生気がなく、硬い表情をしている。
+        <br>
+        </div><div class="text gm">【GM】<br />というわけで、殺された人と数と死因までははっきりしてます。助手が手帳のメモ見ながら教えてくれたよ。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「犯人に脅威だと思われたなら、狙われてもおかしくありませんからね」　とさっきの発言については。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />それぞれ凶器とか出ているのかな…書庫は本棚が濃厚か。とはいえHO案件っぽいのでおとなしく調査しますかね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「とはいえ、そう思ったのなら俺がまだ生きている事実が不思議ではあるね。3人も殺していれば、今更躊躇はないと思うけれど」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「人気を感じたか、あるいは大きな音でも出したのかもしれませんね。…調査に戻りますか？」　と、どこかほっとした様子で。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「そうだね。改めて、これまでの現場を見返してみようか。道中は、君のことでも聞かせてもらえるかな？　どれくらいの付き合いなのか、とかね」　ってウインクしたり
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…俺を同行させるなんて、先生らしくないですよ」　って苦笑しつつ。まあ拒否はしませんけどね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「部屋の場所もわからないし、まだ生き残っている他の人たちに会ったときにも、君がいればフォローくらいはしてくれるかもしれないだろ？」　そんなに独断専行だったの笑
+        </div><div class="text takayuki">【睦月 鷹之】<br />「まあ、次の襲撃が無いよう目を配っておきますよ」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…記憶なんて、直ぐに思い出しますよ。貴方にできない筈がない」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……、「小鳥遊嘉音」は、随分とすごい探偵だったようだね」　若干狂信を感じる言い方なんだが
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ご自分ではそう思ってなかったようですが」　元々ってニュアンスですね
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…まあ、それだけの実績があった、ということなのかな」　髪の毛耳にかけたりしている（何となく落ち着かない
+        </div><div class="text takayuki">【睦月 鷹之】<br />「まあ、ひとまず必要なことから思い出してください」　って言いつつ、歩き出すのかなこれ（先導しろって感じだったし）
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「そうだね。一つ一つ教えてくれるかな」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「一応、自分で思い出す努力もしてくださいよ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「いろいろ考えてはいるんだよ。一応」　付いていきつつ、観察しておきますね。　いろいろこう益体もない質問でもしつつ最初の被害者の部屋にでも向かうんじゃないかな
+        </div><div class="text gm">【GM】<br />はーい。ではシーンとしては閉じまして、メインフェイズに移行します。
+        </div><table><tr>
+            <td class="FoldButton">
+            <span id=rgn_button_0 class="FoldButton"
+             onclick="Fold(0)">+</span></td>
+            <td id=rgn_summary_0>&nbsp;一方雑談窓では</td>
+            <td id=rgn_content_0 class="FoldContent">
+        </div><div class="text canon">【小鳥遊 嘉音】<br />助手の不穏さがすごいんだが
+        </div><div class="text gm">【GM】<br />はは
+        </div><div class="text canon">【小鳥遊 嘉音】<br />HO的にループ物が想定できるので、傍観愉悦枠として一番適当なの、助手のところなんだよなー　って思うと、黒幕説が私の中で熱い
+        </div><div class="text canon">【小鳥遊 嘉音】<br />死んだらこの時点にリセットかな、とかいろいろ考えてしまうよね笑
+        </div><div class="text gm">【GM】<br />まだ導入なのにこれですよ（GMはニコニコしている）
+        </div><div class="text canon">【小鳥遊 嘉音】<br />いやだって不穏……
+            </td>
+        </tr></table>
+        <br /><br />
+        <div class="subtitle" id="main">◆メインフェイズ　<a href="#index">▲</a>
+        </div>
+        <div class="subtitle">
+            ◇メインフェイズについて（流れ、特殊ルール）
+        </div><div class="text gm">【GM】<br />今回はリミット4サイクル＝PC手番4シーンです。それまでにクライマックスフェイズへの移行条件を満たせば、その限りではありませんが。
+        </div><div class="text gm">【GM】<br />導入でやるの忘れてたけど、改めてあなたのPCハンドアウトを読み上げといてください。どうせ一人なんで【秘密】もね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />【使命】
+        <br>目が覚めると、あなたは館にいた。自分が誰なのか、ここがどこなのか全く思い出せない。
+        <br>友人を名乗る人物によれば、あなたは名探偵らしい。そして今、この館では連続殺人が起きているというのだが……。
+        <br>あなたの【使命】は、殺人事件を解決することだ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br /> 秘密
+        <br>ショック：なし
+        <br>目覚めてからずっと、あなたは強烈な既視感を抱いている。
+        <br>目の前の光景、人物、成り行き、何もかもに見覚えがある。これは記憶が戻る兆しなのだろうか。それとも……？
+        <br>あなたの【本当の使命】は、記憶を取り戻すことだ。
+        </div><div class="text gm">【GM】<br />友人を名乗るってありますけど、まあ実質助手ってことですね。別で友人を名乗る人物がとかそういうんじゃないですあらかじめ。
+        </div><div class="text gm">【GM】<br />で、記憶を取り戻さなければならない嘉音さんはこれから調査をしていただくんですが。
+        </div><div class="text gm">【GM】<br />今回のシナリオでは、通常のハンドアウトとは別に「シーンハンドアウト」というものがございます。
+        </div><div class="text gm">【GM】<br />シーンの頭ではシーン表を使わず、このシーンハンドアウトからどれか一つを選択し、その場所に向かうことになります。
+        </div><div class="text gm">【GM】<br />そして、向かうとそのシーンハンドアウトの【秘密】が自動で公開されます。判定などは必要ありません。
+        </div><div class="text gm">【GM】<br />その処理が終わった後、改めて基本的な行動（調査や感情判定など）を行う、という流れになります。
+        </div><div class="text gm">【GM】<br />シーンハンドアウトを調査対象にすることはできません。調べたい場合は、自分の足で直接向かう。調査の基本ですからね。
+        </div><div class="text gm">【GM】<br />というわけで、シーンハンドアウトとして「★玄関」、「★応接間」、「★食堂」、「★客室」の四つを提示します。★はシーンの意味だと思いねえ。
+        </div><div class="event">★玄関
+        <br>【概要】
+        <br>シーン。薄暗い玄関ホール。扉は固く閉ざされ、嵐を防ぐように補強されている。
+        <br>このハンドアウトは調査判定の対象にできない。
+        
+        </div><div class="event">★応接間
+        <br>【概要】
+        <br>シーン。来客用のソファーとテーブルが並ぶ応接間。どことなく陰気な雰囲気が漂っている。
+        <br>このハンドアウトは調査判定の対象にできない。
+        
+        </div><div class="event">★食堂
+        <br>【概要】
+        <br>シーン。大きなテーブルが据えられた食堂。卓上には火の灯っていない燭台がある。
+        <br>このハンドアウトは調査判定の対象にできない。
+        
+        </div><div class="event">★客室
+        <br>【概要】
+        <br>シーン。二階の客室。あなたが利用していたらしい。ベッドや調度品が揃っていて、居心地はよさそうだ。
+        <br>このハンドアウトは調査判定の対象にできない。
+        <br>
+        </div><div class="text gm">【GM】<br />以上です。これを踏まえて調査していきましょう。
+        </div><br />　<br />　<br />　
+        <div class="subtitle" id="main1">◇1サイクル目　<a href="#index">▲</a>
+        </div><div class="text gm">【GM】<br />では行きたいシーンのシーンハンドアウトを教えてください。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />応接室に行ってみたいなと。誰かしら人がいるかもしれないし、新たに被害者出る前に顔くらいは見ておきたいよね
+        </div><div class="text gm">【GM】<br />はい。ではまず、「★応接間」のシーンハンドアウトの【秘密】からお渡しします。
+        </div><div class="event">★応接間
+        <br>秘密
+        <br>ショック：なし
+        <br>応接間にいると、ふと奇妙な感覚を覚える。この風景は、妙に馴染み深いような……。
+        <br>もうずっと長い間、ここにいるような……。自分がこの館へ来たのは、本当に少し前のことなのだろうか……？
+        <br>《時間》で判定を行い、失敗した場合【正気度】が1点減少する（これは恐怖判定ではない）。
+        <br>
+        </div><div class="text gm">【GM】<br />判定どうぞ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />《死》でも《数学》でも変わらないな目標値8
+        </div><div class="dice">小鳥遊 嘉音：2d6>=8 判定《時間》（死で代用）：
+        <br>Insane : (2D6>=8) → 5[2,3] → 5 → 失敗
+        <br />⇒小鳥遊 嘉音の正気度を1減少（正気度：6->5）
+        </div><div class="text gm">【GM】<br />ドンマイ。というわけで、これでシーンハンドアウトの処理が終わります。続いて好きな行動してもいいですよ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />応接室には特に人はいない感じですかね？
+        </div><div class="text gm">【GM】<br />ハンドアウト「館の人々」を調べるタイミングによるかと。（＝一か所にまとまっていると想定していて、であればそれを調査するシーンのシーンハンドアウトが該当するかと）
+        </div><div class="text canon">【小鳥遊 嘉音】<br />なるほど、事件を調べようと思ったけどこの部屋にそういう目的で来てしまったから、今回はじゃあ人々を調べようかな
+        </div><div class="text gm">【GM】<br />まあ、どのみちどちらも結びついてる可能性はありますからね。リアリティ追及するならここか、あるいは食堂でしょうか笑
+        </div><div class="text canon">【小鳥遊 嘉音】<br />ですね。食堂だと時間帯が限られそうなので、こちらの方がいいかなって（新たな事件が起こりそうな場所だし＞食堂
+        </div><div class="text gm">【GM】<br />了解しました。では、生き残った人たちが肩を寄せ合うように、あるいは一人で離れたところに、はたまた皆さんを警戒するように…各々過ごしている様子です。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />順当な事件に巻き込まれた人々の行動って感じですね、特に目に付く奇抜な行動を取っている人は特にいないかな
+        </div><div class="text gm">【GM】<br />皆疲れていますからね。緊張の糸が切れれば暴走しかねませんが（こんなところに俺はいられるか！）現状はそうでもなさそうです。
+        </div><div class="text gm">【GM】<br />どう調べます？　会話は必須ではないので、お好きなように。もしかすると何か思い出すかもしれないし？
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「一所に集まっている分には犯人も手出しはできないだろうし、皆そこまで気を張らなくても良いんじゃないかな。ずっと緊張していたら先に気が参ってしまうし、消耗してしまえば、それこそ犯人の思う壺というやつだよ」　みたいにちょっと声をかけてみたりね（全体に対して
+        </div><div class="text gm">【GM】<br />反応は芳しくないですね。まあ、殺人があった館で今も犯人がいるだろう状況で下手すりゃ同じ空間に犯人がいるのに無理だろって話です。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「緊張を解すのにティータイムでもどうだろう、と言ったところで今は無駄に警戒を促すだけだろうしねえ…」って鷹之君にぼやくくらいか　なかなか難しそうだ
+        </div><div class="text azusa">【黒家 梓】<br />「あ、は、はい！　ただいま、その、準備いたしますね…」　と、縮こまり気味だった使用人がわちゃわちゃ動いてますねじゃあ
+        </div><div class="text takayuki">【睦月 鷹之】<br />「貴方と違って、皆さん事件なんて慣れていませんからね」　はは、まあ扉の向こうを警戒してますよこちらはね
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「ああ、一人で動かない方がいい」　他の人動かないだろうし、これは自分が一緒に行くか　一応毒入れないことの確認も含めて
+        </div><div class="text gm">【GM】<br />ああ、応接室にティーセットを乗せたワゴンはありますよ。ちゃんと目に付く範囲で淹れるでしょうね（さんざん言われてそうだし）
+        </div><div class="text canon">【小鳥遊 嘉音】<br />他の人が心配するなら、最初の一口は自分が毒見してみますよ。　周囲の視線とか反応とか伺いつつ。　というところで《味》で調査判定をしてみたい。
+        </div><div class="text gm">【GM】<br />なるほどね。判定どうぞ。
+        </div><div class="dice">小鳥遊 嘉音：2d6>=5 調査判定（味）：
+        <br>Insane : (2D6>=5) → 7[2,5] → 7 → 成功
+        </div><div class="text gm">【GM】<br />では。
+        </div><div class="event">館の人々
+        <br>秘密
+        <br>ショック：全員
+        <br>彼らは人間ではない。人形だ！ 館の人々も、死体も等身大の人形だ。なぜ今まで人間と思い込んでいたんだ！？
+        <br>《暗黒》で恐怖判定を行う。
+        <br>助手と使用人だけは本物の人間のようだが……。
+        <br>
+        </div><div class="text gm">【GM】<br />正気度処理と恐怖判定どうぞ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />小鳥遊 嘉音の正気度を1減少（正気度：5->4）
+        </div><div class="text canon">【小鳥遊 嘉音】<br />《死》で代用して目標値8
+        </div><div class="dice">小鳥遊 嘉音：2d6>=8 恐怖判定（暗黒）：
+        <br>Insane : (2D6>=8) → 6[2,4] → 6 → 失敗
+        </div><div class="text gm">【GM】<br />仕方ないね。では狂気を一枚、ここに直接貼ります。
+        </div><div class="text gm">【GM】<br />山札は残り三枚。
+        </div><div class="dice">GM：1d4
+        <br>Insane : (1D4) → 2
+        </div><div class="event">【依存】
+        <br>トリガー：自分が「鎮痛剤」を使用する。
+        <br>内容：あなたは痛みに耐えられない。
+        <br>セッションが終了するまで、自分がシーンプレイヤーのシーンで自分の【生命力】か【正気度】が1点以上減少している場合、
+        <br>持っていたら必ず「鎮痛剤」を使用すること。
+        <br>
+        </div><div class="text gm">【GM】<br />トリガーがトリガーだからこれ以上入手でもしなければほぼ問題無いですねこれ。
+        </div><div class="text gm">【GM】<br />というわけで、ええ。こんな感じでした。
+        </div><div class="text gm">【GM】<br />それまで動き、語り、怯えてさえいたように見える人々は、すべて物言わぬ人形に過ぎません。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……さて、これはどういうことかな？」って助手に声をかけましょうか
+        </div><div class="text gm">【GM】<br />気づいてしまった今となっては、人々は完璧に沈黙しており、微動だにしないでしょう。当たり前といえばそうですが。
+        </div><div class="text gm">【GM】<br />何故動いていたように感じたのか…それはもはや、あなたの脳がそう捉えてしまっていた、としか言いようがありません。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…先生？　何か思い出されましたか」　入口から外の様子うかがってたけど、様子変わったなって思ったら歩み寄ってくるか
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「君には、この部屋にいる住人がどう見える？」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「どう、とは？」　首を傾げてますよ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「今、この部屋に、「生きている人間」は、俺たちを含めて何人いると思う？」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ええと…俺たちを含めれば、八人ですか？」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…つまり、君にはあの人形が、生きている人間に見えるというわけだね」　さっきまでの俺と同じように　ふむ
+        </div><div class="text takayuki">【睦月 鷹之】<br />「先生…？」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「この事件はどうやら、普通の事件とは違う、もっと厄介な「何か」らしい。…意識を失うまでの俺が、どこまで気付いていたのかは、わからないけれど」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ですが、殺人事件は現に起こっていますよね？」　眉を潜めて。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「人形に対して「殺人」という定義が当てはまるとは俺は思わないな。とはいえ、損壊した何者かはいるはずだね」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「人形…？」　声音に不審が混ざってきますね。何言ってんだこの人、って視線が言ってる。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「どう、したんですか。先生…彼らは生きた人間で、殺人も起こっている。貴方は…それを、解決するんでしょう」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「おかしいのは、俺か、世界か、どちらだろうね？　睦月君」ってちょっと楽しそうに微笑むのか　好奇心は疼くよなこれ
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…おかしいのは、先生ですよ」　声に、深い落胆が見えます。ふっと背を向けて、そのまま部屋を出て行きます。
+        </div><div class="text takayuki">【睦月 鷹之】<br />空っぽになる寸前の空間に、か細い言葉だけを落として。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ーーまた、駄目なのか…」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />出て行ってしまうのか。重要参考人なんだけどな…　とはいえ、別行動で調べたいこともあったので、一旦止めないで見送りましょう。
+        </div><div class="text gm">【GM】<br />うん。ではね、そうやって鷹之を見送った嘉音さんの背中に、また別の声がかけられます。
+        </div><div class="text azusa">【黒家 梓】<br />「…あのー、もしもし？」　すすす、と歩み寄って。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「ああ、…うん？」　人形だと認識した後でも動くのか
+        </div><div class="text gm">【GM】<br />「助手と使用人だけは本物の人間」って言うてるで
+        </div><div class="text azusa">【黒家 梓】<br />「そのご様子、もしや…」　扉の向こうに歩み寄ってから、ぱたりと閉じて。「真実に、お気付きになられたのですね？」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…君は、何か知っているのかな？　今の状況について」
+        </div><div class="text azusa">【黒家 梓】<br />「ああよかった…！　これでやっと、うまくいくかもしれません！」　声を潜め気味にしつつも。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……やっと、ね」　ふむ。睦月君と言ってることが正反対か
+        </div><div class="text azusa">【黒家 梓】<br />「流石は名探偵。いえ、本当にそうかは存じませんけど。私は黒家梓、この家の使用人…という、まあ、設定です」
+        </div><div class="text azusa">【黒家 梓】<br />「お気付きかとは思いますが、この館では殺人事件なんて起こってません。あの男の真っ赤なウソですよ」　人差し指立てまして
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「設定、ね。なら、本当の君は一体何者なのかな？」　助手がそう言ってることも知ってると
+        </div><div class="text azusa">【黒家 梓】<br />「私はですね、ここで行われてる実験とやらに協力させられてるんです。こんなヤバい話だったらお断りしておくべきでした…」
+        </div><div class="text azusa">【黒家 梓】<br />「いえワリは良かったんですけど。あ、名前は伏せさせてください。万が一呼ばれてるのをあの男に聞かれでもしたら殺されちゃいます、マジで」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…俺の「助手」は随分と危険な人物らしい」　ふむ
+        </div><div class="text azusa">【黒家 梓】<br />「危険ですよそりゃもう。あの人、なんでああも「名探偵」に執着してるんですかね？」　理解まったくできないってかおで
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…偏執的なまでの狂信は感じたけれど、…俺個人、というよりは「探偵」に対して、ということなのかな」　ふむ
+        </div><div class="text azusa">【黒家 梓】<br />「見たとこ、「探偵役」に殺人劇を解決させたいみたいなんですよあの人。これまでにも、何人が来たんですが…」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「上手くできなかった「探偵役」は、お役御免かい？」
+        </div><div class="text azusa">【黒家 梓】<br />「催眠とか、洗脳とか、そんな感じですかね？　記憶もない、名探偵だと言われたとか。貴方も同じで、そもそも名探偵でもなんでもないですよ、どうせ」
+        </div><div class="text azusa">【黒家 梓】<br />「事件を解決できなかった人には帰ってもらった、ってあの人は言ってましたけどねえ。果たしてどこまで信用できたものかって話です」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……無事に生きて帰してもらえるなら、いいけどね」　そのわりには、「既視感」があるのはおかしいな
+        </div><div class="text azusa">【黒家 梓】<br />「事件を解決すれば、ですかね？　無理に決まってるじゃないですか、こんな作り物の舞台で、中身もない事件を解決なんて。それこそ名探偵だって無理ですよ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…解決せずに、出ていくことは、難しそうか」　この様子だと玄関は開かないって線かな
+        </div><div class="text azusa">【黒家 梓】<br />「なんでも、外は嵐っていう「設定」で、窓という窓は全部打ち付けられてるんです」　はあ。
+        </div><div class="text azusa">【黒家 梓】<br />「出入口も封鎖されてます。鍵を持ってるのはあの男です…というわけで」　きらり、と目を輝かせて。
+        </div><div class="text azusa">【黒家 梓】<br />「協力、しませんか。二人なら、あの男相手でも何とかなりますよ！」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「随分と念入りなことだね。…そうだね。一人よりは余程心強い」
+        </div><div class="text azusa">【黒家 梓】<br />「本当にそれです。私もこうして虎視眈々とチャンスを図っていたわけで、とはいえか弱い乙女ですから大人しくしていたものですから、あの人に疑われてる様子はなさそうです」
+        </div><div class="text azusa">【黒家 梓】<br />「私が注意を引き付けて、その隙に鍵を奪い取る。どうでしょう？　悪くないかと」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「これまでの「探偵役」は、彼らの正体を見破れすらしなかったのか…」　ふむ
+        </div><div class="text azusa">【黒家 梓】<br />「そうなんですよ。よっぽどヤバい洗脳だったのかもしれません。本当、貴方が正気に戻ってくれてどんなに良かったか…頼もしい限りです、ほんと」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「悪くはない、かな。…だた、実力行使は最後の手段にしたい。こんなに用意周到な相手だ。失敗したら次は君の命すら危ないかもしれないよ？」
+        </div><div class="text gm">【GM】<br />システム的に言うと、彼女は鷹之の【居所】をあなたに差し上げられます（引き受けるなら）。
+        </div><div class="text gm">【GM】<br />で、鷹之への戦闘宣言はそのまま、クライマックスフェイズへの移行となります。よろしくね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />なるほど。なら、折を見て実施するという形でいったん【居所】だけ受け取っておきたい、かな
+        </div><div class="text azusa">【黒家 梓】<br />「うう…それは勘弁願いたいですけど。でも、これが最初で最後のチャンスだと思うんです、マジで」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「実際それはそうだろうね。バイトの子なら、探偵役よりも用意は簡単そうだ」
+        </div><div class="text azusa">【黒家 梓】<br />「役割を変わる訳にはいかないですし、それならタイミングは貴方にお任せしますけど…」
+        </div><div class="text azusa">【黒家 梓】<br />「とはいえ、あんまり悠長にしてると、あの男に悟られて何されるか分かったもんじゃないですからね」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「まだあまりにも情報が少ないからね。…一度きりの賭けなら、少しでも手が多い方がいい」
+        </div><div class="text azusa">【黒家 梓】<br />「そう、ですね…ええ、確実に。お願いしますよ、名探偵の先生？」
+        </div><div class="text gm">【GM】<br />【居所】取得は良いですよ。
+        </div><div class="text gm">【GM】<br />彼女からはそんなところかな。あとはあなたが良ければいったんシーンを閉じますが。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「君とは運命共同体ということになるのかな。こちらこそ、よろしくね…今は梓さんと呼んでおこうか」　みたいな
+        </div><div class="text canon">【小鳥遊 嘉音】<br />はーい、居所取得してシーン終了で。　
+        </div><div class="text gm">【GM】<br />はい。そいじゃ一つハンドアウト出しておきますね。シーンじゃないです。
+        </div><div class="event">【概要】館
+        <br>『助手』が烏有館と呼ぶ館。そこかしこに配置された人形が異様な空気を醸し出している。
+        <br>
+        </div><div class="text gm">【GM】<br />これで1サイクル目終了、残り3手ですね。
+        </div><br />　<br />　
+        <div class="subtitle" id="main2">◇2サイクル目　<a href="#index">▲</a>
+        </div><div class="text gm">【GM】<br />どちらに向かいます？　応接室でも構いませんよ、秘密はもう出ないってだけで。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />客室で。過去の自分が何か残していないか気になるので。
+        </div><div class="text gm">【GM】<br />はは。じゃあ、ここの秘密出しますね。
+        </div><div class="event">★客室
+        <br>秘密
+        <br>ショック：なし
+        <br>あなたは白い光の中にいる。遠くから声が聞こえる。
+        <br>「……あんたは探偵だ……烏有館の事件を解決する……いいか、あんたは名探偵なんだ……」
+        <br>そこで我に返る。一瞬、意識が遠のいていたようだ。今のは助手の声だったが……なぜだろう、妙に懐かしい。
+        <br>助手を対象に、《情景》で感情判定を行う。この判定は、手番を消費しない。
+        <br>
+        </div><div class="text gm">【GM】<br />判定どうぞ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />完全に催眠じゃねえか……
+        </div><div class="dice">小鳥遊 嘉音：2D6>=7 感情判定《情景：味で代用》：
+        <br>Insane : (2D6>=7) → 8[2,6] → 8 → 成功
+        </div><div class="text gm">【GM】<br />そこ成功するんだ…じゃあ感情表FTどうぞ。この表記ですし助手からも振ります。
+        </div><div class="dice">【小鳥遊 嘉音】<br />FT
+        <br>Insane : 感情表(5) → 憧憬（プラス）／劣等感（マイナス）
+        </div><div class="dice">【睦月 鷹之】<br />FT
+        <br>Insane : 感情表(5) → 憧憬（プラス）／劣等感（マイナス）
+        </div><div class="text gm">【GM】<br />仲良いなお前ら。ああ、今助手その場にいなくていいですからね。いて欲しけりゃ出す。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />仲よしかよ……　正直マイナスで取る選択肢も考えたけど、劣等感は特にないので憧憬にしますね
+        </div><div class="text takayuki">【睦月 鷹之】<br />感情は「憧憬」で。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />部屋家探ししたいんですが、（助手の目がないところで）秘密以外のこの部屋に関する情報がないならいいです（
+        </div><div class="text gm">【GM】<br />ゾーキングって意味での家探しは特に成果無さそうかな。ごく普通の客室です。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…仮にも捜査をしていた、っていうのなら、メモや手帳の一つや二つ、ないかと思ったけれど。…まあ、それは暗示で、実際には何もしてなかった、ってことなら仕方のないことかな」　ふむ
+        </div><div class="text gm">【GM】<br />ベッドはふわふわ。調度品も決してちゃちなものではなさそうです。どうしたんでしょうねこれね。ゆっくり休めもしそうですけど、回復判定とかする？（
+        </div><div class="text canon">【小鳥遊 嘉音】<br />しませんよ。　別行動している間に館の調査をしましょう
+        </div><div class="text gm">【GM】<br />はは。まあ、館全体になるから部屋を出て廊下うろつくみたいになるかなこれ。お好みの特技で。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />見つかった時に不審じゃないように、まあ探偵っぽいしぐさをしておきたいですね（まあでも動き方かわらないか
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……、何か、少しでもわかることがあると良いんだけど」　んー、建物の構造だったり、不審なところがあるだろうか。うろうろして探偵の《第六感》に何かひっかからないかな
+        </div><div class="text gm">【GM】<br />らしいといえばらしいよね　判定どうぞ
+        </div><div class="dice">小鳥遊 嘉音：2D6>=5 調査判定《第六感》：
+        <br>Insane : (2D6>=5) → 6[3,3] → 6 → 成功
+        </div><div class="text gm">【GM】<br />はいな。じゃあ、うろうろして一階に下りた辺りですかね。
+        </div><div class="event">館
+        <br>秘密
+        <br>ショック：なし
+        <br>裏口を見つける。
+        <br>館内に他にめぼしいものはないようだ。疲れを覚え、ふと寄りかかった壁が微かに動く。これは……？
+        <br>「裏口」「隠し扉」のハンドアウトを公開する。
+        <br>
+        </div><div class="text gm">【GM】<br />あ、両方シーンHOです。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「事件のトリックが隠されているかもしれないね」と口に出しつつ、内心ここから逃げる当てが見つからないか、とか助手の情報が見つからないかなって思ってます
+        </div><div class="event">★裏口
+        <br>【概要】
+        <br>シーン。物置部屋の先にある勝手口。
+        <br>鍵がかかっている……と思ったら、壊れている。
+        <br>あなたは裏口から外へ出ることを宣言してもよい。
+        <br>（このハンドアウトの【秘密】が明らかになっていなくても可能）そうした場合、クライマックスフェイズへ移行する。
+        <br>このハンドアウトは調査判定の対象にできない。
+        
+        </div><div class="event">★隠し扉
+        <br>【概要】
+        <br>シーン。
+        <br>廊下の壁が隠し扉になっている。触ってみると、開きそうだ。
+        <br>このハンドアウトは調査判定の対象にできない。
+        <br>
+        </div><div class="text gm">【GM】<br />こんなとこですかね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />一緒にうろうろするのも楽しそうだったけど、一緒にいる方が危険な空気がビンビンするからなー
+        </div><div class="text gm">【GM】<br />はは。あとはシーン閉じちゃっていい感じかな？
+        </div><div class="text canon">【小鳥遊 嘉音】<br />はい。これは次以降に期待
+        </div>   <br />　<br />　
+        <div class="title" id="main3">◇3サイクル目　<a href="#index">▲</a>
+        </div><div class="text gm">【GM】<br />残り半分です。で、どこ行きましょうか。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「隠し扉」に向かってみたいですね、こっちの方が何があるか想定できてなくて気になる
+        </div><div class="text gm">【GM】<br />はいな。ではそっちの秘密から。
+        </div><div class="event">★隠し扉
+        <br>秘密
+        <br>ショック：なし
+        <br>扉の先は書斎だ。書棚に収まりきらない本が所狭しと積み上げられている。
+        <br>散らかった机の上に分厚い帳面がある。
+        <br>プライズ「切り抜き帳」を獲得する。
+        <br>
+        </div><div class="event">切り抜き帳
+        <br>【概要】プライズ。
+        <br>隠し部屋にあった分厚い切り抜き帳。大量の記事が貼りつけられている。
+        <br>記事は少し古びているように見える。持ち主は自由にこのプライズの【秘密】を見られる。
+        <br>
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…スクラップ帳か…」　この秘密を見るのは手番関係なくできる感じなら見たいです
+        </div><div class="text gm">【GM】<br />自由に見られるので問題ないですね。見たいか、見たくないか、それだけです。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />（PLは嫌な予感しかしないけど）PC的には少しでも情報が欲しいので、見ない手はないですね
+        </div><div class="text gm">【GM】<br />はは。それじゃあ、
+        </div><div class="event">切り抜き帳
+        <br>秘密
+        <br>ショック：全員
+        <br>記事は全て、「烏有館事件」と呼ばれる出来事を扱ったものだ。
+        <br>富豪の住む「烏有館」で連続殺人が発生。嵐の館に滞在していた探偵が謎に挑んだが、解決を待たず館は炎上し、事件は迷宮入りした。
+        <br>探偵は火事に巻き込まれて記憶を失い、廃人同然となった。その後、友人に引き取られて療養生活を送っている……と記されている。
+        <br>在りし日の探偵を撮った写真も載っている。写っているのは、あなただ。その後ろで『助手』がはにかんでいる。
+        <br>「助手」のハンドアウトを公開する。
+        <br>
+        </div><div class="text gm">【GM】<br />ショック処理だけ先にお願いしましょか。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />小鳥遊 嘉音の正気度を1減少（正気度：4->3）
+        </div><div class="event">助手
+        <br>【使命】
+        <br>あなたは、この館を舞台に殺人劇を作り上げて、演じている。
+        <br>あなたの【使命】は、殺人劇を続けることだ。
+        <br>
+        </div><div class="text gm">【GM】<br />シーンハンドアウトからの処理は以上かな。あとはお好きな行動を。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……、わざわざ写真を毎回、入れ替えている…というわけではないだろうし」　なら、やっぱり何度も彼の手によって繰り返してるんだろうか
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…彼の目的は、…探偵の記憶を取り戻すことか、…「名探偵」が事件を解けなかった事実を許せずに、今度こそ解かせようとしているのか……、でもまあ、あの様子なら後者かな」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />ともあれ、助手の秘密を調査したいですね。　しかし真っ向から聞くのだいぶ危ないんじゃない？
+        </div><div class="text gm">【GM】<br />聞きたいの？　別に直接聞くだけが調査の術じゃあないですよ、名探偵
+        </div><div class="text gm">【GM】<br />まあ、聞かれるならそれなりの返答すると思いますけど笑　特技選択はご随意に。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />助手の使っている部屋とかあれば、調べたいですけど…上手く留守中に探せるかな
+        </div><div class="text gm">【GM】<br />あるいはまあ、今隠し扉ですから、ここを調べてみるのも一つですけどね。写真もありますし。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />ああ、そうですね。つながっているのが書斎だというのなら、置かれている本の傾向から真意を探れるかもしれませんし、ここでいいかな
+        </div><div class="text gm">【GM】<br />はいな。本の傾向ってんなら、心理学や精神医学、催眠についての本が並んでますかね一応。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />……執念は感じますね。　うん、今のスクラップ帳をパラパラめくったりもしつつ、引っかかるところがないか《第六感》で調査します。
+        </div><div class="text gm">【GM】<br />便利だからなシックスセンス。判定どうぞ。
+        </div><div class="dice">小鳥遊 嘉音：2D6>=5 調査判定《第六感》：
+        <br>Insane : (2D6>=5) → 7[3,4] → 7 → 成功
+        </div><div class="text gm">【GM】<br />うん。
+        </div><div class="event">助手
+        <br>秘密
+        <br>ショック：なし
+        <br>あなたはPC1の親友だ。名探偵だったPC1は、三年前の「烏有館事件」で全ての記憶を失ってしまった。
+        <br>あなたは、当時と同じ状況を作り出せばPC1が何か思い出すのではないかと考えた。殺人劇は烏有館事件を再現するためだ。
+        <br>あなたの【本当の使命】は、PC1の記憶を取り戻すことである。
+        <br>
+        </div><div class="text canon">【小鳥遊 嘉音】<br />……いい子やん
+        </div><div class="text gm">【GM】<br />スクラップや一部の手記、まあ催眠や精神医学の内容でしょうけどね。その辺を突き詰めれば、彼の狙いはそう読み解けたのでしょう。
+        </div><table><tr>
+            <td class="FoldButton">
+            <span id=rgn_button_1 class="FoldButton"
+             onclick="Fold(1)">+</span></td>
+            <td id=rgn_summary_1>&nbsp;一方雑談窓では</td>
+            <td id=rgn_content_1 class="FoldContent">
+        <div class="text gm">【GM】<br />実は正解をちゃんと言ってるんだよな、嘉音さんが（その後選択肢からやや外したけど）
+        </div><div class="text canon">【小鳥遊 嘉音】<br />怪しすぎて、SAN値を疑ったせいですね
+        </div><div class="text gm">【GM】<br />実際SAN豊かっつーと怪しいですからね
+        </div><div class="text canon">【小鳥遊 嘉音】<br />確信してるように思い出す、って言ってたのは当人の願いもこめられてたんだな…
+        </div><div class="text gm">【GM】<br />です。事件の解決もそう。
+            </td>
+        </tr></table>
+        <div class="text canon">【小鳥遊 嘉音】<br />「……やり方が過激というか……、しかし、それなら…彼女の言葉に矛盾があるかな？」　これまでの探偵役、って言い方するなら流石に別人だろうし、明らかに助手に敵意を向けさせようとしていたしね
+        </div><div class="text gm">【GM】<br />あなたの第六感が知らしめたことが真実だとするならば、確実に彼女の言葉と食い違う箇所がありますね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />ちなみに今、助手に会おうとすれば会えます？
+        </div><div class="text gm">【GM】<br />何なら部屋に来てくれますよ。外でもいいですけど。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />まあなら来てもらいましょうか
+        </div><div class="text gm">【GM】<br />それなら、書斎机に向き合っていた嘉音さんの背後で、扉がきしむかすかな音が聞こえます。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「……――せん、せい…？」　まあ驚いてはいますね。呆けてるとも。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「ああ、君も来たのか」　気配に気付いたらまあ、何でもないように声をかけます
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「ごめんね、事件じゃなくて、君の企みの真実に気付いてしまったみたいだ。　ほら俺、名探偵だから」　って微笑むみたいな
+        </div><div class="text takayuki">【睦月 鷹之】<br />「……ああ、そうですか」　ふっと、肩の力を抜いて。失敗した微笑、ともすれば泣きそうなそれで。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「でも、記憶は戻っていない。そうでしょう？」　本棚に近づいて、小さな棚から何かを取り出します。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…思い出せた方が、良いのだろうけどね。…記憶のない俺は、君にとって無価値かな？」　ふむ？
+        </div><div class="text takayuki">【睦月 鷹之】<br />「いいえ、貴方は貴方だ。…だから、」　注射器です。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「もう一度、やり直せばいい。…まだ、薬はありますから」　ね、って小首をかしげて。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……、そうやって、繰り返して、これは何度目なのかな？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「考えないように、してる。…でないと、続けられそうもない」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「貴方の身体に影響はない。精神的にも…今以上のことは、何も」　一歩歩み寄って。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「他の方法だって、いつか記憶は戻るかもしれないよ？」　それは一歩退くな
+        </div><div class="text takayuki">【睦月 鷹之】<br />「あるかもわからない不確かなことを言うのは、貴方らしくないな」　まあ貴方の後ろ机ですけどね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…、繰り返すのなら、あの使用人は別の人にキャストを依頼した方がいいだろうね」　机に当たってしまったら、小さくため息をついて
+        </div><div class="text takayuki">【睦月 鷹之】<br />「そうですか？　あまり、他人を巻き込みたくは無いんですが」　変わらない、あきらめの表情で、そのまま歩み寄りますね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「俺に、君を疑うように仕向けていたからね。少なくとも、君の目的とは一致しないだろう」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「……、俺を？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「そんなことを言ったつもりはなかったな…まあ、それが記憶の賦活化に繋がると思ったのかもしれないが」　ひとりごちて。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「うん。彼女の言い分だと、「探偵役」は、これまで何人も居たそうだ。まるで、上手く推理ができなかったら、殺される…みたいに思わせたかったみたいだね。…俺としては、そのあたり、調べてみたいんだけど。……どうせリセットするのなら、もう少し俺に時間をもらえない？」　だめ？って苦笑するからこう
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…探偵役、だって？　事件の犯人が俺だとか、そういうことじゃなく…この治療、そのものに対して？」　その面で顔顰めると人殺せそうだなお前
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「そういうこと。あんな話を聞かされたら、俺は何度だって、事件よりも君の真意の方を調べざるを得ない」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「それは…それでは、契約と違うだろう。俺は、あんたに事件を解かせて、それで…」　前髪わしわししてる。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「そのために、俺はーー」　動揺してるのか、手が震えて注射器を取り落とす。かしゃんと、脆く軽い音。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…まあ、彼女としては、俺に調査でなく、君と争わせたかったみたいだから、…今のこの状況は想定外かもしれないけれど」　それはうん、微笑んで注射器踏み割りますね
+        </div><div class="text takayuki">【睦月 鷹之】<br />まあ予備くらいはあるでしょうけどね流石に。とはいえ踏み割られたらびくりとしそうな
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…俺は、あんたに」　震える瞳で、怯えたように見上げて。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ただ、…思い出して欲しかった、だけなんだ…」　思い出されてないことが分かるから、また絶望して、泣きそうになる。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「契約、というからには、君が雇ったというのは事実らしいね」　真実を一つずつすくい上げて、微笑もうとしてそんな顔されたらなあ
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…そこまで、想ってもらえること自体は、嬉しくはあるよ。…彼女の話を聞いて、君の執着が俺に対してでないことが残念だと思ったけれど、少なくともその感情は、俺に向いてくれているみたいだしね」　って頭ぽすんとしそう
+        </div><div class="text takayuki">【睦月 鷹之】<br />「……っ、」　混乱してそれは振り払う（一歩引く）（手負いの獣か）
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「ただの助手、でなく、友人だったんだろう？　…なら、少しくらい今の俺の言葉も聞いてくれないかな」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…俺、は」　まあだいぶ参ってるのは見ての通りなのでそこまでちゃんと聞けるかはわからんけど注射器また出すとかはしません（
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「探偵としては、謎があるなら解かないわけにはいかないし、助手の君には手伝ってもらわないと」　とかこう　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「謎…？　なら、事件が…」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「そっちも付き合っても構わないけど、まずは使用人の目的について、かな」　って微笑みますね
+        </div><div class="text takayuki">【睦月 鷹之】<br />目をぱちくりさせて、思案してみるけども。「…けど、彼女はもう…役割として、は」　烏有館事件の登場人物として動けてないぞって言いたい（事件についてしか思考が向けられない）
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「役割に背いているのなら、それなりの理由がある筈だ。そこを解決しないことには、結局また同じことになるかもしれないよ」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「それは…けど、そんなことより俺は、あんたを…」　また注射器出すなよお前は
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「君が作った事件は「本物」の匂いがしない。…何度やっても、作り物で俺の心は動かされないと思う」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「……っ、」　それは手厳しい。叱られたわんこみたいになる。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「けど…だからって、どうしたら良い？　本物の人間をあれだけの数集めておくのは難しいし…」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「努力は認めるけどね。…それよりも、本物の謎の方が気になってしまう。…探偵の性というやつかな？」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「本物…、…なら、本当に」　ぽつ、と
+        </div><div class="text takayuki">【睦月 鷹之】<br />「俺がやれば、良いのか」　それだけこぼして、ふらっと部屋を出そうな
+        </div><div class="text canon">【小鳥遊 嘉音】<br />それはダメな奴では？？？？？？　それは追って腕ひっつかみたいですよ
+        </div><div class="text gm">【GM】<br />まあ全力ダッシュってことでもないから捕まりはするけど、ただ力づくっぽくなると戦闘扱いにしてクライマックス移行にするから気を付けてね
+        </div><div class="text canon">【小鳥遊 嘉音】<br />頬でも張ってやりたいところだけど、それは困る…くっ
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「第一、そもそも君の行動が不審過ぎる」　ってため息吐くくらいにとどめよう
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ーーっ、放せ、よ…！」　こっちもそこまで強くはないというか、力を込められないというか
+        </div><div class="text takayuki">【睦月 鷹之】<br />「俺のことはどうだって良いだろうが！」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…俺の友人を、犯罪者にはしないでくれないか」　って苦笑するじゃんそんなの
+        </div><div class="text takayuki">【睦月 鷹之】<br />ぎり、と歯ぎしりして、「…思い出せも、しない癖に」
+        </div><div class="text takayuki">【睦月 鷹之】<br />言って、自分でこれ傷付いた顔するんだよな
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「君の知る、「小鳥遊嘉音」は、君のことをどうとも思わないような冷血漢だったかな…？」思い出せないのは事実なので、聞くことしかできないよな
+        </div><div class="text takayuki">【睦月 鷹之】<br />「初対面みたいなもの、だろう。だったら、赤の他人だ」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…あるいは、あんたをここに拉致監禁してる、立派な犯罪者だ。とっくにな」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…そこは、俺のことを想ってだとわかっているから、許容できる範囲だ」　って言う
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ストーカーに刺されるタイプのお人好しだな」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「実際、一度や二度くらい、犯人に刺されたことでもあったんじゃないかな？」　ってわらってる
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…だから、俺は」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「あんたに、事件を解いて貰いたかったんだ。…あんたが二度と、こんな風にならない、ように」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「そのためなら、…何だってするって、思って。だったら、…今度はちゃんと、作ればいいんだろ」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「本物の、事件を」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…君が、俺のために人を殺すというのなら、…流石に許せないだろうね」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「許さなくていい」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「それであんたが、思い出せるなら」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「思い出さなかったら、それは無駄な犠牲だよ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「どんな理由があろうと、人を殺して良い理由にはならない。…俺はそう言っていなかった？」　って苦笑するか
+        </div><div class="text takayuki">【睦月 鷹之】<br />ちょっと目は泳ぐ。「……、やらなくちゃ分からないだろ。あんたが言ったんだ、本物じゃないと、って」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />肩を竦めるか　「そんなことをさせるくらいなら、俺自身が死んだ方が早い」　とか言うし
+        </div><div class="text takayuki">【睦月 鷹之】<br />「心配しなくても、どうせまた、すぐに忘れる」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…もう、慣れたんだ。忘れられること、そのものは」　ああでも、それは耐えられなさそうだ。ぼろっとして、無理やり振り払ってそれは逃げる。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……大根役者だったからなあ」　ってそれは苦笑するじゃん
+        </div><div class="text gm">【GM】<br />ガチで追うなら居所持ちなので見つけられるけど、それってつまり戦闘扱いになるのでとりあえずそろそろシーン切るかなくらいですGM的には
+        </div><div class="text canon">【小鳥遊 嘉音】<br />まあうん、一旦シーン切りましょうか　しかしこれ方針困ったなー
+        </div>
+        <table><tr>
+            <td class="FoldButton">
+            <span id=rgn_button_2 class="FoldButton"
+             onclick="Fold(2)">+</span></td>
+            <td id=rgn_summary_2>&nbsp;一方雑談窓では</td>
+            <td id=rgn_content_2 class="FoldContent">
+        </div><div class="text gm">【GM】<br />お前のがよっぽど病院案件だ
+        </div><div class="text canon">【小鳥遊 嘉音】<br />お前SAN残ってる？？？？？？
+        </div><div class="text gm">【GM】<br />いちおう
+        </div><div class="text canon">【小鳥遊 嘉音】<br />本物の死体はやめてくれよ頼むから……
+        </div><div class="text gm">【GM】<br />だってそういうことかなって…
+        </div><div class="text canon">【小鳥遊 嘉音】<br />お前、結構なハマり役だったな…って顔をしている
+        </div><div class="text gm">【GM】<br />てへー
+            </td>
+        </tr></table>
+        <br />　<br />　<div class="subtitle" id="main4">◇4サイクル目　<a href="#index">▲</a>
+        </div><div class="text gm">【GM】<br />では最終シーンですね。どこ行きます？
+        </div><div class="text canon">【小鳥遊 嘉音】<br />まあ、俺がいなくなれば、彼もこの茶番は続けられないので、出ていく、って方針はそれはそれでアリですね。…記憶を取り戻す、が目的とは言え、事件を調べて思い出す保証もないわけですが
+        </div><div class="text canon">【小鳥遊 嘉音】<br />とりあえず退路の確保はしておきましょう。というわけで「裏口」へ
+        </div><div class="text gm">【GM】<br />はいな。
+        </div><div class="event">★裏口
+        <br>秘密
+        <br>ショック：なし
+        <br>鍵は壊れたのではなく、誰かに壊されたようだ。物置部屋に積み上がった箱の陰に、小さな鞄が隠されている。
+        <br>プライズ「小さな鞄」を獲得する。
+        <br>
+        </div><div class="event">小さな鞄
+        <br>【概要】
+        <br>プライズ。物置部屋に隠されていた鞄。
+        <br>持ち主は自由にこのプライズの【秘密】を見られる。
+        <br>
+        </div><div class="text canon">【小鳥遊 嘉音】<br />まあ、見ますよね　探偵としては
+        </div><div class="text gm">【GM】<br />知ってた。探偵だもんね
+        </div><div class="event">小さな鞄
+        <br>秘密
+        <br>ショック：なし
+        <br>細々した物に紛れて封筒が入っている。宛先は『使用人』、差出人は『助手』の名前だ。
+        <br>「どうかお願いします。この試みにあなたが誰より反対しているのは承知しています。でも、烏有館事件の解決のために必要なことなんです。
+        <br>手応えはあります。三年前の事件を再現すれば、PC1は必ず記憶を取り戻す。そして真実が明らかになるはずです。
+        <br>館でお待ちしています」
+        <br>「使用人」のハンドアウトを公開する。
+        <br>
+        </div><div class="event">使用人
+        <br>【使命】
+        <br>あなたは『助手』に雇われ、この館の殺人劇に参加していた。しかし、あなたは本当の殺人が行われていることを知ってしまった。
+        <br>あなたの【使命】は、この館から脱出することだ。
+        <br>
+        </div><div class="text gm">【GM】<br />こんなところかな。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />まあ、彼女に話を聞きに行こうと思っていたところでしたからね。ちょうどいい。
+        </div><div class="text gm">【GM】<br />直接会って話します？
+        </div><div class="text canon">【小鳥遊 嘉音】<br />それでいいかなって　
+        </div><div class="text gm">【GM】<br />裏口にいるパターンかなそしたら。
+        </div><div class="text azusa">【黒家 梓】<br />「やや、これは名探偵！　その後の調査、いかがですか。私としてはそろそろ仕掛けておかないと、あの男危ない気がしますよ」　間違ってはねえよ実際
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「そうだね、ある程度で蹴りを付けないと、彼に襲われてしまいそうだ」　ほんとな
+        </div><div class="text azusa">【黒家 梓】<br />「なんでしたら、厨房からボヤが出たとか言ってみましょうか。上手いこと誘いに乗ってくれそうなら、背後からでもこう、どーんと」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「そうだね。あるいは、君に色仕掛けでもしてもらおうかな？」ってこう、壁に追い詰めるよう近づいてみたりとか
+        </div><div class="text azusa">【黒家 梓】<br />「ええ…あの男に色仕掛けって、結構だいぶ無理じゃないです？　だってあの人、「名探偵」にしか意識向いてませんよ、ほんと」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「そうだね。…「俺」に随分とご執心らしい」　
+        </div><div class="text azusa">【黒家 梓】<br />「むしろそれなら貴方が仕掛けた方が…いやでも、鍵を奪うのが私にできるかっていう…？」　もにょもにょ？
+        </div><div class="text azusa">【黒家 梓】<br />「いやいや、実際見てるのは貴方じゃないですって。あの男が思い浮かべてる、理想の名探偵でしょ。どこにいるかもしれない…っていうか、空想じゃないです？　いっそ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「まだ、こんなところでも見られた方が、釣れるかな？」　とか言いつつ、壁際で顎クイとかしたりして、　「…それで、君がそんな嘘を吐いてまで、俺と彼を敵対させたい理由は何かな？」　とか微笑んだりする
+        </div><div class="text azusa">【黒家 梓】<br />「…それはまた、何のお話です？」　ちょっと不敵な目で。そろそろ判定ですかね先生
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「過去のこの事件に関する記事を見かけてね。…写真はちゃんと俺と彼が映っていたんだ。　君の話とは筋が合わないんじゃないかな？」って言い方をするので、論理的な説明でうまくできるか《数学》で調査判定とかどうだろう
+        </div><div class="text gm">【GM】<br />ふふ。判定どうぞ。
+        </div><div class="dice">小鳥遊 嘉音：2D6>=5 調査判定《数学》：
+        <br>Insane : (2D6>=5) → 4[1,3] → 4 → 失敗
+        </div><div class="text azusa">【黒家 梓】<br />「あは、そんなことです？　どうせ、あの男が準備しておいたんでしょうよ。今時、写真をいじるのなんてワケないじゃないですか」
+        </div><div class="text azusa">【黒家 梓】<br />「それこそ貴方を惑わすために、ご丁寧に仕掛けておいたって考えた方が、しっくりきますし」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />って言うよな、まあな…　「俺もそれは想定したけどね。…彼はそこまで演技が上手いようには見えなかったから。君の方が余程役者らしい。元々君は、この話に反対していたらしいけれど、それはどうしてかな？」
+        </div><div class="text azusa">【黒家 梓】<br />「だって、どう考えてもヤバい話じゃないですか。こんな実験、警察にバレたら一瞬でお縄ですよ？」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「なら、君だけ逃げればいい。わざわざ俺まで巻き込む必要はないよね…何人もいる「探偵役」なら、君とも何の関りもないはずだ」
+        </div><div class="text azusa">【黒家 梓】<br />「…いや、だからそのために、鍵が必要なんですって」　おわかり？
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「裏口の鍵が壊れていた。あそこから逃げるといい」　って言いますねそれは
+        </div><div class="text azusa">【黒家 梓】<br />「え？」　ぱちくり。「あら、まあ。…それなら、ええ、お言葉に甘えて」
+        </div><div class="text azusa">【黒家 梓】<br />「で、貴方は？　その口振りだと、一緒に逃げるつもりじゃないんです？」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……おかしくなった友人を放って、逃げ出すわけにはいかないでしょ。…男としてはさ」
+        </div><div class="text azusa">【黒家 梓】<br />「いや、それ別の人じゃ…ま、いいですけど。私はここから出られればそれで良い訳ですし」　使命にもそう書いてあるしな。
+        </div><div class="text azusa">【黒家 梓】<br />「せいぜい頑張ってくださいね、名探偵さん」　ころっと笑って、裏口から出ていきますかね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…彼女の方が一枚上手だったな」見送ってから、肩を竦めますよ
+        </div><div class="text gm">【GM】<br />はいな。じゃあシーン閉じちゃっていい？
+        </div><div class="text canon">【小鳥遊 嘉音】<br />一応事件現場とかも一通り目を通したくはあるけど、死体を見てるってことは一応確認はしている。たぶん。　出目が死んだ時点でもうできることがないとみているので、OKです
+        </div><div class="text gm">【GM】<br />はい。
+        </div><div class="text gm">【GM】<br />メインフェイズが終わり、クライマックスフェイズになりますね。
+        </div><br />　<br />　
+        <div class="title" id="climax">◆クライマックスフェイズ　<a href="#index">▲</a></div>
+        <div class="text gm">【GM】<br />さて、ではクライマックスフェイズです。何かしら行動があれば宣言してもらって、それに応じて進める形になります。
+        </div><div class="text gm">【GM】<br />現状想定されるのは「裏口から外に出る」「鷹之に戦闘を仕掛ける」「戦闘を仕掛けるかはともかく合流する」「何もしない」とかそんなところかな。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />一応、最後に睦月君と会話を挑みたいかな。決裂するようなら、裏口から出ていくつもりです（まあ逃がしてくれないと思うので戦闘になるかなって思ってます
+        </div><div class="text gm">【GM】<br />それなら裏口にいるあなたのところに鷹之がやってくるパターンかな。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…ああ、先生」　ちゃんと注射器持ってるよ。虚ろな微笑で。「此方に居たんですね」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…君はまた、そんなもの持ち出して」　会話する気ねえだろお前
+        </div><div class="text takayuki">【睦月 鷹之】<br />「言ったじゃないですか、…言いましたよね？　別に、貴方の身体に悪い影響は無いって」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />GM、クライマックスなら秘密に絡む話もしても良いです？
+        </div><div class="text gm">【GM】<br />あー…戦闘入ってないしダメです。自分の秘密なら戦闘以降で。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />く、そうか。了解です
+        </div><div class="text takayuki">【睦月 鷹之】<br />「もう一度、やり直せば良いんです。…彼女のせいで、おかしなことになっただけで」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「やり直せばいい。…これまでと、同じように」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「俺がこうして、君の目論見を見抜いたのは、今回が初めてかな？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「そうですね。そういう意味では、名探偵らしくなってきましたよ、先生」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…その薬、本当にすべてなかったことにできていると思う？」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「まあ、そう上手くはいかないって、分かってますよ。だから、試行回数でカバーしてるんです」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「その、試行回数こそ、問題だとしたら？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…これを繰り返していることが、そもそも思い出すことを阻害している、ということです？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「無いとは言えないでしょうね。それでも、俺は続けます…そうするべきだと、信じている」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「消された記憶も積み重なれば、思い出すのは一体いつの記憶だろうね？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「別に、この最中のことは、いくらでも忘れて構いませんよ」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「あの時までのあんたに戻ってくれさえすれば良い。それだけだ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「俺が元に戻ったら、君はどうして欲しいの？」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「それだけでいい」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…他にはもう、何も要らないんだ」　昏く、どこかいびつな笑みを浮かべて。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…戻るかもわからない過去のために、何度も君は、俺を殺すの？」　苦笑するよなあ
+        </div><div class="text takayuki">【睦月 鷹之】<br />「今のあんたを殺すことになると言えば、そうなのかもしれないな」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「あんたがそう主張するなら、つまり俺が求めてるのはあんたじゃないってことになる。違うか？」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「だって、君は今の俺ではダメだと言うんだろう？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「今のままのあんたならな」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「記憶がなくとも、友としても、探偵としても生きていくことはできるだろう。…俺としては、この意味があるかわからない繰り返しより、余程有意義だと思うんだけど？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「分かった。続きは、また後で聞かせてもらう。…あんたが思い出せたらな」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />小さく嘆息して　「最後に1つ。使用人の彼女は事件の関係者だったのかな？　どうして君の実験に反対していたんだい？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「彼女か？　…それは、彼女がーー」
+        </div><div class="text gm">【GM】<br />口を開いた鷹之が、ふと、違和感に後ろを振り返ります。
+        </div><div class="text gm">【GM】<br />あなたもその視線を追うように、廊下の方を見やればそのうちわかるんですが、
+        </div><div class="text gm">【GM】<br />煙です。
+        </div><div class="text gm">【GM】<br />まもなく分かりますが、火の手が上がっているようですね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……煙？　君、ガスでも使っていたのか？」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「いや、俺はそんな……何だ、一体」
+        </div><div class="text gm">【GM】<br />火の回りは予想以上に早く、二人のいる廊下もすぐ煙で満たされていきます。言っただろ密閉されてんだよ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…此処には、俺たち以外の人間は居ない、なら、放火なんてことは……」　わあ
+        </div><div class="text takayuki">【睦月 鷹之】<br />「これは…くそっ、」　舌打ちをして、鍵を取り出します。裏口の鍵穴に入れるんですが
+        </div><div class="text gm">【GM】<br />開かないみたいで。正しくは、鍵は開いたけど扉が開かない。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…考えていて死ぬのも馬鹿馬鹿しいか。　……逃げ、…え？」　おい
+        </div><div class="text takayuki">【睦月 鷹之】<br />「なーー何なんだ、おい！」　ドンと叩いてみるけれども。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…先程、彼女をそこから逃がしたんだけど、…外から何かされたかな？　君、恨みでも買ったかい？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ああもう…くそ、おい！　喋ってる暇があったら鼻と口覆って、身体低くしてろ！」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「玄関の方の鍵、君が持っていると聞いたけれど…そっちまで回れる？」　まあ一応言われた通りしゃがんで口押さえつつ
+        </div><div class="text takayuki">【睦月 鷹之】<br />「黙ってろ！」　従うの見たら自分は構える。蹴破るだけですよこんなの。
+        </div><div class="text gm">【GM】<br />玄関に戻るの、今既に煙が充満してる時点でほぼ死にに行くだけですよ。
+        </div><div class="text gm">【GM】<br />まあ木製の古い戸ですんで、蹴破れはします。ヤケクソ気味に蹴り倒せば、外側のノブが縛られてたことが分かります。まあそれはそれとして。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「早く行け！　……ッ、ぐ」　まあどうしてももろに息を吸うので気管に入って咽る
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……もう一度、同じような目に遭ったら、思い出すかもしれないよ？」　って苦笑したりするのよねこれね　火事に巻き込まれて記憶を失ってるんですよね？
+        </div><div class="text gm">【GM】<br />いい読みじゃないですか。鷹之に無理やり蹴り出されながら、館が燃えていく様子が見て取れます。
+        </div><div class="text gm">【GM】<br />《焼却》で恐怖判定。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />《悦び》で代用して目標値8　……戦闘じゃないので回想も武器も不可？
+        </div><div class="text gm">【GM】<br />だめです。
+        </div><div class="dice">小鳥遊 嘉音：2D6>=8 恐怖判定《焼却（悦び：で代用）》：
+        <br>Insane : (2D6>=8) → 9[4,5] → 9 → 成功
+        </div><div class="text gm">【GM】<br />そこ勝つのかあ先生…
+        </div><div class="text gm">【GM】<br />では、そんなあなたの背後に、声がかけられます。
+        </div><div class="text azusa">【黒家 梓】<br />「ーーほんと、生き汚いですねえ。あんたって人は」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……ああ、もしかして、3年前の事件も、君が犯人だったのかな？」　けほ、ってなりながら
+        </div><div class="text azusa">【黒家 梓】<br />「それって推理です？　それともーー本当に思い出した、とか？」
+        </div><div class="text azusa">【黒家 梓】<br />「やだ、笑っちゃう。あの人の妄言、正しかったことになっちゃうじゃないですか」
+        </div><div class="text gm">【GM】<br />燃え上がる館に背を向けて、彼女と対峙するーーその瞬間、貴方の脳裏にひらめく光景があります。
+        </div><div class="text gm">【GM】<br />三年前、烏有館で殺人事件に遭遇したこと。
+        </div><div class="text gm">【GM】<br />目の前に立つ、使用人「黒家 梓」がその犯人だったこと。
+        </div><div class="text gm">【GM】<br />けれど彼女の逆襲に遭い、館に火を放たれーー犯人を取り逃がしたこと。
+        </div><div class="text gm">【GM】<br />炎が壁を、屋根を、すべてを舐めて燃え上がらせていくように、貴方の脳細胞が一瞬にして賦活します。
+        </div><div class="text gm">【GM】<br />貴方は間違いなく、名探偵「小鳥遊 嘉音」でありーーこの事件の後、命を取り留めながらも、一切の記憶を失っていたのだと。
+        </div><div class="text gm">【GM】<br />事件の前から、長く、貴方を支えていたはずの助手「睦月 鷹之」が、退院した貴方を引き取りその世話をしていたのだと。
+        </div><div class="text gm">【GM】<br />全てを思い出し、そして今、貴方の目の前で彼女が嗤っています。
+        </div><div class="text gm">【GM】<br />三年前と同じように。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……なるほど、それならすべて、辻褄が合うわけだ。…茶番に付き合えば、見逃すとでも彼に言われたかな。…犯人だけは本物を用意するとは、彼も随分と無茶をする」
+        </div><div class="text azusa">【黒家 梓】<br />「あっは、貴方ちょっと彼の評価高くないです？　バカな助手ほど可愛い？」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「彼とは長い付き合いだからね。…実際、ちょっと素直過ぎるきらいがあるとは思うよ」
+        </div><div class="text azusa">【黒家 梓】<br />「あのバカは、私のことなんて、ただの一つも疑ってませんでしたよ。ちょっとおめでたすぎじゃないです？」
+        </div><div class="text azusa">【黒家 梓】<br />「私はね、事件の生き残りとして、あんたのための笑えもしない実験に協力してくれって、そう頼まれたのよ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……、あ、まさか…」　犯人わかってないでそれを犯人に依頼したとか言うのか？？？？？？
+        </div><div class="text azusa">【黒家 梓】<br />「バッカだと思わない？　私があんたの記憶を、結果的に奪ったことも知らずに！」
+        </div><div class="text gm">【GM】<br />ちなみに当のバカは追って館を出てるかと思えばまだ出てきてませんね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…何やってるんだ、」　舌打ちするじゃん　ええー……
+        </div><div class="text azusa">【黒家 梓】<br />「ま、これでヒヤヒヤさせられることもなくなるってわけ。あんたが今度こそ、ちゃんと、死んでくれさえすればね！」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「流石に、二度も同じ犯人を取り逃がすわけにはいかないかな…　探偵としてはさ！」　あの馬鹿、何してるんだ
+        </div><div class="text gm">【GM】<br />とかなんとか言ってる辺りで、館から轟音が響きます。火の手は今や館全体に渡り、脆いところから崩れ始めています。
+        </div><div class="text gm">【GM】<br />ああうん、参考までにお伝えしとくと、多分下の名前呼び捨てだったと思いますよ。彼のことは。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…鷹之！！　君、何してるんだ！　人を蹴り出したんだから追ってとっとと出て来いっ！」　そんな振りされたら呼ぶでしょ
+        </div><div class="text gm">【GM】<br />裏口（そろそろその原型はありませんけども）が大きく崩れて、向こうに廊下が見えてきます。ちょうど二人で口論してたあたり。そういや彼女とも話しましたねここで。
+        </div><div class="text gm">【GM】<br />そこからよろめきながらも見覚えのあるーーええ、確かに記憶にある姿が見えます。多少負傷してるみたいですが、自分の足で立ってますね。
+        </div><div class="text gm">【GM】<br />片腕に何か、本のようなものを抱えてるくらいで。
+        </div><div class="text gm">【GM】<br />というわけであのバカは戦闘に参加できません。タイマンで決着つけてね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />いないと思ったら、あの中取りに戻ったのか？？？　馬鹿なのか？？？
+        </div><div class="text gm">【GM】<br />まあ彼女がそれどころじゃなく殺す気なので戦闘しましょうね。
+        </div><div class="text gm">【GM】<br />ちなみに戦闘に参加はできませんが、鷹之からの感情修正は入れられます。コスト度外視、1ラウンドに一回。PCの判断で使って構いません。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「ああもうっ、とりあえず生きているなら良いっ！」　ってするしかないか　くそ、戦闘組するか悩んだけど控えめにしてしまった…
+        </div>   <table><tr>
+                <td class="FoldButton">
+                <span id=rgn_button_3 class="FoldButton"
+                 onclick="Fold(3)">+</span></td>
+                <td id=rgn_summary_3>&nbsp;一方雑談窓では</td>
+                <td id=rgn_content_3 class="FoldContent">
+            </div><div class="text canon">【小鳥遊 嘉音】<br />いやでも、自分で回答たどり着いたの偉かったでしょ……
+            </div><div class="text gm">【GM】<br />うん笑
+            </div><div class="text canon">【小鳥遊 嘉音】<br />犯人にしてやられるのすごいぽくって個人的にはよかったですよ笑
+            </div><div class="text gm">【GM】<br />それは私も思った（　助手の秘密が抜ければほぼ真相に近づけますからねこれ（使用人の発言に明らかな矛盾があるので）
+            </div><div class="text canon">【小鳥遊 嘉音】<br />逃がしておいての焼き討ちかあ……　いやでも、思い出す流れとしても自然でよかったです
+                </td>
+            </tr></table>
+        <div class="text gm">【GM】<br />あはは。では処理していきましょう、プロットから。
+        </div><div class="text gm">【GM】<br />プロットオープン。
+        </div><div class="event">【どどんとふ】<br />「小鳥遊 嘉音」がダイスをオープンしました。出目は1(6面ダイス)です。
+        </div><div class="event">【どどんとふ】<br />「GM」がダイスをオープンしました。出目は4(6面ダイス)です。
+        </div><div class="text gm">【GM】<br />では戦闘開始で。
+        </div><br />
+        <div class="subtitle" id="battle1">★1ラウンド目　<a href="#index">▲</a>
+        </div><div class="text gm">【GM】<br />速度4:梓
+        </div><div class="text gm">【GM】<br />基本攻撃、対象嘉音。指定特技は《恨み》。
+        </div><div class="dice">GM：2d6>=5 基本攻撃（恨み）
+        <br>Insane : (2D6>=5) → 5[1,4] → 5 → 成功
+        </div><div class="text gm">【GM】<br />回避どうぞ。
+        </div><div class="dice">小鳥遊 嘉音：2D6>=5 回避判定
+        <br>Insane : (2D6>=5) → 8[2,6] → 8 → 成功
+        </div><div class="text gm">【GM】<br />余裕で腹立つ…
+        </div><div class="text gm">【GM】<br />速度1：嘉音
+        </div><div class="text canon">【小鳥遊 嘉音】<br />こちらも基本攻撃で。指定特技は《殴打》　探偵は足癖が悪いんだよ、というわけで、蹴る！
+        </div><div class="dice">小鳥遊 嘉音：2D6>=5 【基本攻撃《殴打》】
+        <br>Insane : (2D6>=5) → 5[2,3] → 5 → 成功
+        </div><div class="dice">GM：2d6>=8 回避判定
+        <br>Insane : (2D6>=8) → 8[2,6] → 8 → 成功
+        </div>
+        <br /><div class="subtitle" id="battle2">★2ラウンド目
+        </div><div class="text gm">【GM】<br />じゃあ同じで。
+        </div><div class="dice">GM：2d6>=5 基本攻撃（恨み）
+        <br>Insane : (2D6>=5) → 11[5,6] → 11 → 成功
+        </div><div class="dice">小鳥遊 嘉音：2D6>=5 回避判定
+        <br>Insane : (2D6>=5) → 7[2,5] → 7 → 成功
+        </div><div class="text gm">【GM】<br />嘉音さんどうぞ。
+        </div><div class="dice">小鳥遊 嘉音：2D6>=5 【基本攻撃《殴打》】
+        <br>Insane : (2D6>=5) → 10[5,5] → 10 → 成功
+        </div><div class="dice">GM：2d6>=8 回避判定
+        <br>Insane : (2D6>=8) → 6[2,4] → 6 → 失敗
+        </div><div class="text gm">【GM】<br />ダメージください。発狂してないから固定値はないな。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />回想でダメージって増やせましたっけ？
+        </div><div class="text gm">【GM】<br />確認します。
+        </div><div class="text gm">【GM】<br />できるね、1d増える。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />よし、使いましょう
+        </div><div class="text gm">【GM】<br />では貼り付けつつダメージ2dで振ってね。
+        </div><div class="event">【小鳥遊 嘉音】<br /> 秘密
+        <br>ショック：なし
+        <br>目覚めてからずっと、あなたは強烈な既視感を抱いている。
+        <br>目の前の光景、人物、成り行き、何もかもに見覚えがある。これは記憶が戻る兆しなのだろうか。それとも……？
+        <br>あなたの【本当の使命】は、記憶を取り戻すことだ。
+        </div><div class="text gm">【GM】<br />使命達成は出来てますね。ではダメージ増やして、どうぞ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「ここで目が覚めてから、ずっと既視感があってね。…それもまあ、こんなことなら当然だ。…君との因縁をここで終わらせよう。黒家梓！」　ダメージ出します！
+        </div><div class="dice">小鳥遊 嘉音：2d6 ダメージ：
+        <br>Insane : (2D6) → 10[4,6] → 10
+        </div><div class="text gm">【GM】<br />人間が出すダメージじゃねえよ。ちゃんと倒れます。梓も人の子なので。
+        </div><div class="text gm">【GM】<br />あ、ただ待って。これだけやらないと。【報復】。
+        </div><div class="dice">GM：2d6>=5 報復（人類学）
+        <br>Insane : (2D6>=5) → 8[3,5] → 8 → 成功
+        </div><div class="text gm">【GM】<br />人類学で判定どうぞ。成功で回避します。
+        </div><div class="text gm">【GM】<br />ちなみに修正いる？
+        </div><div class="text canon">【小鳥遊 嘉音】<br />じゃあください（せっかくなので
+        </div><div class="text gm">【GM】<br />どうせ武器もあるしねあんた　もう振らないしとりあえず修正で+1どうぞ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />探偵だしせっかくだから数学で代用して目標値10　に達成値＋1
+        </div><div class="dice">小鳥遊 嘉音：2D6+1>=10 判定《人類学》：
+        <br>Insane : (2D6+1>=10) → 7[1,6]+1 → 8 → 失敗
+        </div><div class="text gm">【GM】<br />残念。武器使う？笑
+        </div><div class="text canon">【小鳥遊 嘉音】<br />流石にそこまでしなくていい（1点なら笑
+        </div><div class="text gm">【GM】<br />あらそう？笑　じゃあ、ぶん殴った時にカウンターでナイフで切りつけられました。1点ダメージで。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />一矢報いられておきましょう。　「…転んでもただじゃ起きないタイプだね」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />小鳥遊 嘉音に1のダメージ！（生命力：6->5）
+        </div><div class="text azusa">【黒家 梓】<br />「…っこの、クソ野郎ーー！」　言いつつも崩れ落ちました。
+        </div><div class="text gm">【GM】<br />というわけで、無事嘉音さんの勝利で戦闘終了です。ちなみに戦果いる？
+        </div><div class="text canon">【小鳥遊 嘉音】<br />せっかくなので秘密ください
+        </div><div class="text gm">【GM】<br />あは。じゃあどうぞ。
+        </div><div class="event">使用人
+        <br>秘密
+        <br>ショック：全員
+        <br>あなたは三年前の「烏有館事件」の真犯人だ。
+        <br>三年前、真実に迫ったPC1はあなたの逆襲によって記憶を失い、あなたは逃げおおせた。
+        <br>だが今、PC1の記憶を戻す試みが行われている。危機感を抱いたあなたは、協力者を装って参加した。
+        <br>あなたの【本当の使命】は、PC1を抹殺することだ。
+        <br>《恨み》で恐怖判定を行う。
+        <br>この【秘密】が明らかになった時、クライマックスフェイズに移行する。
+        <br>
+        </div><div class="text gm">【GM】<br />じゃあショックと判定どうぞ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />小鳥遊 嘉音の正気度を1減少（正気度：3->2）
+        </div><div class="text canon">【小鳥遊 嘉音】<br />第六感から目標値7
+        </div><div class="dice">小鳥遊 嘉音：2D6>=7 恐怖判定《第六感：で代用》：
+        <br>Insane : (2D6>=7) → 5[1,4] → 5 → 失敗
+        </div><div class="dice">GM：1d3
+        <br>Insane : (1D3) → 2
+        </div><div class="event">盲目
+        <br>トリガー：自分が恐怖判定を行う。
+        <br>内容：あなたの心は、これ以上怖いものを見るのを拒絶している。自分が新たに【狂気】を公開するまで、調査判定と命中判定にマイナス2の修正がつく。
+        </div><div class="text gm">【GM】<br />これ先だったら危うかったですね。
+        </div><div class="text gm">【GM】<br />ともあれ。
+        </div><br />　<br />　<br />　
+        <div class="title" id="epilogue">◆エピローグ　<a href="#index">▲</a>
+        </div><div class="text gm">【GM】<br />クライマックス戦闘直後からです。
+        </div><div class="text gm">【GM】<br />嘉音さんに殺す意思が無ければ（無いと思いますけど）犯人である梓は警察にしょっぴかれるんじゃないですかね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />警察に連行ですよそれはまあ。　昔の馴染みの警察とかいるなら連絡したいですね
+        </div><div class="text gm">【GM】<br />鷹之は右腕あたり骨折とか他多数の擦り傷打撲火傷にギリ一酸化炭素中毒手前くらいありそうですけど生きてはいます。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />お前無茶し過ぎだろ……（馬鹿
+        </div><div class="text gm">【GM】<br />いるんじゃないかな。とはいえ持ち物持ってなさそうなので、近場の公衆電話かあるいは鷹之の携帯でも借りて。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />携帯貸してくれ。というか、救急車も呼ぶからな
+        </div><div class="text takayuki">【睦月 鷹之】<br />貴方が生きてれば、こいつは多分それだけでほっとするので、普通に気ぐらい失ってそう。あと消防車も呼んでね。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />そうですね。公的機関大集合じゃないか…　ご迷惑かけます。　鷹之はお前起きたらちょっと蹴っていいかな
+        </div><div class="text gm">【GM】<br />割と重傷なんですけども。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />少し回復してからね
+        </div><div class="text gm">【GM】<br />うん。ともあれその後のことですが、
+        </div><div class="text gm">【GM】<br />二人ともそれなりのあり様なので病院行きです。
+        </div><div class="text gm">【GM】<br />嘉音さんはもともと三年前のこともありましたし（身体見てみれば火傷の痕がありますよ）もう一度検査もするんじゃないかしら。記憶の面も含めて。
+        </div><div class="text gm">【GM】<br />三年前、迷宮入りしたといわれる「烏有館事件」は、取り戻された名探偵の記憶によって解決することとなりました。
+        </div><div class="text gm">【GM】<br />新聞やらテレビやらが盛大に報道して、少しの間騒がしかったかもしれませんがーー幸か不幸か、関係者二人して入院中ってことで、あとは知り合いの警察たちが何とかしてくれました。
+        </div><div class="text gm">【GM】<br />その後退院した後は（これについては退院前に多分話すことになるでしょうが）嘉音さんの身柄は鷹之が預かっている形になっているので、その辺どうするのかって話はするのかもしれません。
+        </div><div class="text gm">【GM】<br />その辺はあれでしたら別途シーン取ってもいいですし、すっ飛ばしてもっとその先のエピローグだけ描いて〆、でもおこのみで。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />そうですね、その後についても話したさがありますけど、とりあえず鷹之君の方が重症だろうことが明らかなので、起きたところにむっつりした顔で見守ってて、何があったかの話とかしたさはあるやつ（意識取り戻してからの会話がしたいです
+        </div><div class="text gm">【GM】<br />はーい。じゃあいったん区切って。
+        </div><br />　<div class="subtitle">◇病室にて　<a href="#index">▲</a>
+        </div><div class="text gm">【GM】<br />まあ意識は割とすぐ戻りますよ。うん。状況が状況だし個室だと思います。
+        </div><div class="text gm">【GM】<br />しばらく割と寝かされてた（というか薬でねむねむしてた）でしょうから、その合間、ふっと目覚めた時に嘉音さんが居たらいいのでは。
+        </div><div class="text gm">【GM】<br />うすく開かれた窓からは心地よい風が吹き込んでいて、眩しい陽光をレースカーテンが和らげて降り注いでいます。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />一酸化炭素中毒心配なのがあったので、ちょっとイライラ気味に足とか腕とか組んで顔でも見てたんじゃないですかね
+        </div><div class="text takayuki">【睦月 鷹之】<br />「……、ん…」　ああまた病室だな、っておもう（まだねむい）
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…おはよう。　色々痛むと思うけど、ある程度自業自得だから我慢して」
+        </div><div class="text takayuki">【睦月 鷹之】<br />しばらく沈黙して、「…ああ、あんたか…」　うすく笑ってる。顔も火傷の跡がありそうで、包帯とかしてそうね
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「俺の顔はわかるようで結構。　どこまで覚えてるかな？」　自分が一度やらかしてるから念のためね
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…あんたが誰か、聞いてみろって？」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「そうしたら、少しは君の気分が味わえるんじゃないかな」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「冗談」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…あんたを忘れるくらいなら、それこそ、死んだ方が良い」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「俺は君のことを忘れていたわけだけど、死んでいた方がよかった？」　くす、って意地悪言う
+        </div><div class="text takayuki">【睦月 鷹之】<br />「それは俺じゃなくて、あんたが決めることだろ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「俺が自殺する前に、止められそうだったけど」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…生きててくれたなら、良い。今回もーーあの時、だって」
+        </div><div class="text takayuki">【睦月 鷹之】<br />寝返り打とうとするけど痛みに顔顰めそう。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「まあ、結果的に君の思惑通りになったわけだけど…　頑張ってはいたみたいだけど、色々粗があったね、鷹之？」って声かけるのでは
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…知ってる。あんたならまず、やらないだろ」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「生きてるだけで良かった…そう、思ってた、はずなんだ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「まあ、よりによって犯人に協力要請したのは、随分間が抜けているというか…」　言い方
+        </div><div class="text takayuki">【睦月 鷹之】<br />「……、…思いもしなかったんだよ」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「彼女以外に…事件の関係者は、居なかったから」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「おかげで、同じ状況を作ってもらえたからこそ、思い出せたのはあると思うから…怪我の功名と言えるかな」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…あんたを、危険な目に遭わせたかった訳じゃ、無かったんだ」　素直にしょぼくれた声ではある
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「あそこまで突き抜けたことをするわりには、詰めが甘いというか…手ぬるいというか」　うんまあ
+        </div><div class="text takayuki">【睦月 鷹之】<br />「だって、あんたは」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…俺が、殺しをしたら、嫌だろう？」　泣きそうな笑い方。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「うん。そりゃあね」
+        </div><div class="text gm">【GM】<br />多分この子、過去に殺しかけたことあるんじゃないかな。それこそ妹に乱暴されたとかで、犯人を。そういうところを助けられでもしたんじゃないかなとか
+        </div><div class="text takayuki">【睦月 鷹之】<br />「だから、…あんな、飯事みたいなことしか、出来なかったんだよ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />なるほど、それは全力で助けたうえで叱ってそうだわ……
+        </div><div class="text takayuki">【睦月 鷹之】<br />「それでも、…何か少しでも、思い出せるなら、って。…そもそも、直ぐに思い出すと思ったんだ。事件当時のことはまだしも、…」
+        </div><div class="text gm">【GM】<br />スクラップブックは多分、傍らの机の上にでも置かれてるんでしょう。はみ出てる記事とか写真のはしっこが見える。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……待たせたのは悪かったよ」　まあ3年以上は結構きっついか
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…勝手に待ったのは、俺だ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />スクラップブックは他のものも色々載ってたりするんですかね
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「諦めて、新しい思い出を作っていっても良かっただろうに」
+        </div><div class="text gm">【GM】<br />たまたま見たところが烏有館事件のとこだったけど、実際は嘉音さんが解決した多くの事件だったりも入ってたんじゃないかな。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />お前助手って言いつつファン気質もあるだろ？？
+        </div><div class="text takayuki">【睦月 鷹之】<br />「あんたが言った通りなんだ。記憶が無くたってあんたは確かに名探偵だし、生きていくことには困らない」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「俺が、俺だけが。…諦められなかった」　割とね
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「まあ、俺も君に忘れられたらショックだとは思うけど。…お前に価値はないって消されるのもあまり気持ちいいものではなかったから、お相子ってことで」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「あんた自身を否定した心算は無い」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…俺が、欲を出しただけだ」　分かってるんだよ。三年もやってるとね
+        </div><div class="text canon">【小鳥遊 嘉音】<br />もしかして、使用人なしでも何度もやってたのか…　頼んだ時点で3年前って話だったもんな
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「君と共にいた時間がごっそりなくなっていたわけだしね」　関係性にもよるけど心酔してたのは間違いないもんな。。
+        </div><div class="text gm">【GM】<br />んー、使用人はいる前提じゃないかな。いろいろ準備してそもそも踏み切るのにも時間かかったでしょ
+        </div><div class="text gm">【GM】<br />それまでに記憶が戻るなら、って希望もあっただろうし。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />なるほどな。でもまあだめだったと…
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…心配しなくたって、もう、しない。そりゃ、何度も記憶喪失になんて、ならないだろうけど」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「そうだね。俺も何度も同じ失敗は繰り返したくないところかな」　ってくすくすする
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ーーあんたをまた失うかと思った、あの瞬間の方がずっと、嫌だ」　視線だけで見上げて。ひどく追い詰められたような色で。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…俺は、どうせ死ぬのなら変わらないから、君だけでも逃がせたらと思ったよ」　って苦笑するからね　リセットされるのも死ぬのと同義くらいのきもちだったから
+        </div><div class="text takayuki">【睦月 鷹之】<br />「死ぬ訳じゃない、記憶が無くなったって。…もう、分かったから」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「だから、しない」　いろいろな意味を含めつつ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「…一つ成長したね」　って頭でも撫でそう　ぐっぼーい
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…ガキじゃない、もう」　声は拗ねてるけど、身体は動かないし振りほどきはできませんね（ザ・無抵抗
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「君の成長過程を一部見逃してしまったのは残念かなあ」　ってわらってそう　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「あれを、成長過程って言えるなら、な」　多分相当憔悴してた。知人に聞けば一発でわかるだろうけど
+        </div><div class="text takayuki">【睦月 鷹之】<br />それこそ鷹之の方が対外精神的に追い詰められてたろうし、下手すりゃ向精神薬くらい手を出したよこれ
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「色々俺も詳しくない専門分野には詳しくなったんじゃない」　まあSAN心配になるくらいでしたからね
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…知らずに済むならそれで良かったけどな」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「まあ、被害者のセラピーなんかにも使えるだろうし。折角だから有効活用していこうか」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「……、」　なんか言いたげに視線を向けて、言葉を探す。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…俺をまた、雇うのか。あんた」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「え、いつの間に解雇してたの？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「まだ、されてない。…そうだな、解雇しないのか、の方が正しいか」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「まあ、しないけど」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…まあ、そうだよな。あんたは」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「解雇してほしかった？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「どう、だろうな」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「そんなこと、もう、どうでも良くなってた」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「しばらく療養でもする？」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「どのみち、暫く使い物にはならないだろ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「そうだね。んー、じゃあ、ちょっと二人で旅行でも行こうか」　とか言う
+        </div><div class="text takayuki">【睦月 鷹之】<br />「……は？」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「もちろん、体は治してからね。　君、骨とか折れてるから」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「それは…まあ、治すけど」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「なら、行きたいところでも考えておいて。　イギリスとか良いかなあ」とか雑に言ってる
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…何でまた、いきなり」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「え、探偵としては行っておきたいものじゃない？」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…それだけ？」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「君が好きそうかなって」　うん。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「何で、」　なんだこのひとってちょっと笑ってる。少年ぽい、あの写真にあったようなはにかみ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />そんな顔見せられるとちょっとこっちもホッとしそうですね　懐かしい顔というか
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…別に、いいけど。あんたがしたいように、したら良い」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「俺は勝手に、付いていくだけだ」
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「うんうん、君はそうでないと」ってわしゃわしゃ撫でそう
+        </div><div class="text takayuki">【睦月 鷹之】<br />「っ痛…」　それは割と素直に痛がる
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「ああ、ごめんごめん。　スキンシップは元気になってからね」　
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…別に、」　いいけど、って言おうとするんだけど、きっとそのうちまたとろとろ眠くなる
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「ゆっくりお休み。　心も体も、君には休息が必要だろうからね」
+        </div><div class="text takayuki">【睦月 鷹之】<br />「…ぁ、」　意識を、視線を伸ばそうとする。手はできなくて、痛みに顔をしかめながら。
+        </div><div class="text takayuki">【睦月 鷹之】<br />瞳を揺らして、どこか迷子みたいに。喪失の不安がまだ残ってる。色濃く。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「大丈夫、もう、忘れたりしないから」　それは手を握ってやるんじゃないかな　大丈夫なほう（
+        </div><div class="text gm">【GM】<br />左かな。火傷くらいはあるけど、折れてないだけマシ。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「……、」　ほっと、ため息をつくように力を抜いて。
+        </div><div class="text takayuki">【睦月 鷹之】<br />「ーー嘉音、」　遠く、どこかから響く音に、憧れるように。
+        </div><div class="text takayuki">【睦月 鷹之】<br />ほとりと言葉を落として、あとはひそやかな寝息が引き取ります。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />「……、まあ、馬鹿な子ほど可愛いって、言うし」　不意打ちされるとちょっと赤くなっちゃうんだよな　いいんだ、見られていない
+        </div><div class="text gm">【GM】<br />だいぶバカでしたけどね。ともあれ、そんな感じでシーン閉じてもよさげ？　ちなみにもう少し先の話もしたい？
+        </div><div class="text canon">【小鳥遊 嘉音】<br />閉じて大丈夫です。　なんかまあ、あとは旅行行ってリフレッシュして、落ち着いたら一緒に探偵業戻りなよ
+        </div><div class="text gm">【GM】<br />詳細描写まではよろしいってことなら、ここでエピローグとしても区切ろうか。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />はい、ありがとうございました。
+        </div><div class="text gm">【GM】<br />はいな。では新生名探偵、小鳥遊嘉音の活躍はこれからもまだまだ続く、ということで。
+        </div><div class="text gm">【GM】<br />エピローグはこれにて。あとはさくっと終了処理を。
+        </div><br />　<br />　
+        <div class="title" id="after">◆アフタープレイ　<a href="#index">▲</a>
+        </div>
+        <div class="subtitle">◇後遺症判定
+        </div><div class="text gm">【GM】<br />いらねえな（顕在化してない）
+        </div>
+        <div class="subtitle">◇功績点
+        </div><div class="text gm">【GM】<br />・新たな世界の発見…怪異出ないからなこのシナリオ。ドンマイ。
+        </div><div class="text gm">【GM】<br />・最後まで参加…しました。1点。
+        </div><div class="text gm">【GM】<br />・ロールプレイ…達成。1点。
+        </div><div class="text gm">【GM】<br />・プライズ…獲得。1点。
+        </div><div class="text gm">【GM】<br />・琴線…一人なのでなし。
+        </div><div class="text gm">【GM】<br />・使命…はい申告。
+        </div><div class="event">【小鳥遊 嘉音】<br /> 秘密
+        <br>ショック：なし
+        <br>目覚めてからずっと、あなたは強烈な既視感を抱いている。
+        <br>目の前の光景、人物、成り行き、何もかもに見覚えがある。これは記憶が戻る兆しなのだろうか。それとも……？
+        <br>あなたの【本当の使命】は、記憶を取り戻すことだ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />取り戻した！　やったね。
+        </div><div class="text gm">【GM】<br />やったね。では3点。
+        </div><div class="text gm">【GM】<br />これで全部ですね。合計どうぞ。
+        </div><div class="text canon">【小鳥遊 嘉音】<br />合計6点ですね、ありがとうございました。
+        </div><div class="text gm">【GM】<br />はーい。これにてインセイン「烏有館事件」（作：ともけーさん）終了ですよ。
+        </div><div class="text gm">【GM】<br />最後までお疲れ様でした。
+        </div><br><br>
+        <div class="subtitle">◇謝意　<a href="#index">▲</a></div>
+        <ui>
+            <li>シナリオ … <a href="https://www.pixiv.net/novel/show.php?id=8492737">「烏有館事件」</a> ともけー様</li>
+            <li>嘉音画像 … <a href="https://picrew.me/image_maker/34800">「生きてる|Picrew」</a> sobe様</li>
+            <li>鷹之画像 … <a href="https://picrew.me/image_maker/80385">「私好みの男めーかー|Picrew」</a> みゅ様</li>
+        </ui>
+        <br/>
+        
+        </div>
 </div>
-<br/>
-<div class="subtitle" id="prologue1">�������t�F�C�Y<a href="#index">��</a>
-</div><div class="text gm">�yGM�z<br />���Ȃ��͂ӂƁA�ڂ��o�߂܂����B
-</div><div class="text gm">�yGM�z<br />�ǂ����A�������ɉ�������Ă����悤�ł��B�����t����ꂽ�j�ɁA�Ђ���Ƃ����L���̌ł����G�������܂��B
-</div><div class="text gm">�yGM�z<br />�v�l�����点�悤�Ƃ����r�[�A������A�Ɠ��ɒɂ݂�����܂��B�������Ղ낤�Ƃ��邩�̂悤�ɁB
-</div><div class="text gm">�yGM�z<br />���̂܂܉������l���邩�A���邢�͍s�����邩�B���D���ɂǂ����B
-</div><div class="text canon">�y�����V �É��z<br />���΂ɂ��̑̐��ł͎v�l������ɂ��K���Ȃ��C�����܂��ˁB���͂Ƃ�����̂��N�����܂��傤���B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�x�b�h�ɂ��ẮA�����ƌł�����ǁA�����́c�H�v�Ƃڂ₫�A���͂����Ă݂܂��傤��
-</div><div class="text gm">�yGM�z<br />�͂��B�ɂ݂ɑς��Ȃ���g�̂��N�����Ɓ[�[�ӂ��ɂ����A��῝�͂��܂������A�N���オ�邱�Ƃ͂ł��܂��[�[�ς��ƌ����Ƃ���A�����͗m�ق̗ނł���l�q�ł��B
-</div><div class="text gm">�yGM�z<br />���Ȃ��͂����������Ȃ̂��A�����ɂ͂킩��܂���B�ǂ����Ă����ɂ���̂����B
-</div><div class="text gm">�yGM�z<br />����΂��肩�A���Ȃ����g���N�ł���̂������A�L������J�邱�Ƃ�����ł���ƕ������Ă��܂��ł��傤�B
-</div><div class="text canon">�y�����V �É��z<br />�������Ȓ��x�i�Ƃ��O�~�Ƃ��~����Ă��肷��̂��ȁB�u�c�c�����ƁH�v��ӂ̂��Ƃ��v���Ԃ����Ƃ��Ă݂邯�ǁA����ǂ��낶��Ȃ������킩��Ȃ��B����������Ă��܂��B
-</div><div class="text gm">�yGM�z<br />����Ȃ��Ȃ��̔w�ォ��A�ˑR�����������܂��B
-</div><div class="text gm">�yGM�z<br />�u�[�[�搶�H�v�@�Ⴂ�A�j���̐��ł��B
-</div><div class="text canon">�y�����V �É��z<br />�U��Ԃ��Ă݂܂��傤���B�@�ǂ�Ȑl���ȁB
-</div><div class="text gm">�yGM�z<br />���̈�ۂƂ�����Ȃ��A�Ⴂ�j���ł��B�����ŁA�ǂ����c��������c�w����������Ȃ����炢�B
-</div><div class="text gm">�yGM�z<br />�ނ��܂��A���Ȃ��̋L���ɂ͍��v���܂���B
-</div><div class="text gm">�yGM�z<br />�ނ͊���u��������A�ڂ������߂Ă��Ȃ��ɐq�˂܂��B�s���ƐS�z�ƁA�Ƃ�����Εs�R�Ƃ��ɂ��܂������ŁB
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ǂ����܂������A�搶�B����ȂƂ���Łc�v�@���O�o�����Ⴄ���ǂ܂��킩���˖{���́B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�����ƁA���߂�ˁB�N�͉��̂��Ƃ�m���Ă�����Ă��Ƃŗǂ��̂��ȁH�v�@�܂������킩��Ȃ��ł������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�c�A�v�@���ق̌�B�u�搶�c���́A�L�����H�v
-</div><div class="text canon">�y�����V �É��z<br />�u�������˂��B�c�������҂Ȃ̂����A�N���N�Ȃ̂����A�͂��܂��N�Ƃ̊֌W���A�v���o���Ȃ��݂����Ȃ񂾁v�@�������ˁA���Ď�������߂�W�F�X�`���[
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c����������ƁA�Ɛl�ɏP��ꂽ�̂�������܂���v�@�����𗎂Ƃ��āB
-</div><div class="text canon">�y�����V �É��z<br />�����O���I�ɒɂނƂ����������̂͂���܂����H
-</div><div class="text gm">�yGM�z<br />�ɂ݂͂��܂����A�O���I�ɂ����Ă����Ɣ����ł��B���Ȃ��Ƃ��㓪���Ɏ������Ă��A�����o�Ă�Ƃ����񂱂ԏo���Ă�Ƃ��A���������l�q�͂Ȃ��ł��ˁB
-</div><div class="text canon">�y�����V �É��z<br />�u�c�Ɛl�H�@���������ł��N���Ă���̂��ȁH�v�@�����ł��B�ӂ�
-</div><div class="text takayuki">�y�r�� ��V�z<br />���Ȃ��̗l�q�ɁA���������΂��āB�u�c�Ȃ�قǁA"���T��"�͌��݂̂悤�ł��ˁv
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c���[�A�u�T��v������u�搶�v�Ȃ̂��v�@�����Ď����͋N���Ă�񂾂ˁA����
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�܂��A�ꎞ�I�ȋL����Q�ł��傤���c�M���̎v�l���X���[�Y�ɂł���Ȃ�v�@�ƌ����āA�������n�߂܂��B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�M���͏����V�É��B����Ȃ�ɖ��̒m�ꂽ�T��ŁA���͂��̏���ł��B�r����V�v
-</div><div class="text canon">�y�����V �É��z<br />�u���肪�t���Ă���Ȃ�S�����ˁB���������łȂ��A�v���C�x�[�g�̂��Ƃ��A�N�ɕ����Ή������������v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�K�v�ɂȂ�΁B�������ɁA����ɂ��Ăł����v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����́u�䉀�� �m��Y�v�Ƃ����A�B�����������ƉƂ̂����~�ł��B�G�L�فA�ƌĂ΂�Ă���悤�ł��ˁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�M���͔ނƃR�l�N�V�����������Ă��āA�ނ̒a���j���ɏ��҂��ꂽ��ł��v
-</div><div class="text canon">�y�����V �É��z<br />�u�G�L�فA�ˁB�c���������̗R���ł�����̂��ȁv�Ƃ��ڂ₫�����𕷂��܂�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����H�@�c�Ƃ����ꂻ��ȐȂŁA����ł���ق̎�l�ł���m��Y�����A���҂��ɎE�Q����܂����v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u������؂�ɁA�A�����ĎE�l�������N����c�M���͂��̒��������Ă����Ƃ���ł��v
-</div><div class="text canon">�y�����V �É��z<br />�u��Y�����ŝ��߂���ł����Ă����̂��ȁc�v�@�ӂ�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u������܂���B�c�ł�����A�搶���P�����̂����̔Ɛl�ł��傤�A�����炭�́v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ǂ����搶�̂��Ƃł�����A�����𒲍����Ă����Ύ����̂��Ƃ��v���o���܂���v
-</div><div class="text canon">�y�����V �É��z<br />�u�����ƐM������Ă���݂������ˁv���Ă�����Ə΂��Ă��܂��̂ł�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����A�܂��B����Ȃ�Ɂv�@���������߂Ă��������΂��Ă�B
-</div><div class="text canon">�y�����V �É��z<br />�u�����̏ڍׂɂ��Ă��A�������Ă��炦�邩�ȁH�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����͉��̑䎌�ł��v�@���߂����B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�M���͂�����l�Ő摖��B���̉�]�͑����ł����A�g�̔\�͂����Đl���ȏ�ł��傤���A�����Ō��߂Ă����s������v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�������Ǝv���΁A�L���r�����Ȃ�Č������v
-</div><div class="text canon">�y�����V �É��z<br />�u�܂�A�N�͏���ł͂��邯��ǁA�����܂ł̐����ɂ��Ă͕�������Ă��Ȃ��A�Ɓv�@�ӂ�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�͂��y�΂Ȃ����̂Łv�@���ς���܂��ēf���̂ĂĂ�B
-</div><div class="text canon">�y�����V �É��z<br />�u�Ƃ͂����A���̉��~�ɂ���l�����̖��O��A����܂łɒN���ǂ������E����������Ă����̂����炢�́A�c�����Ă�񂶂�Ȃ��̂��ȁH�v�@�Ƃ肠�����O��������畷���Ȃ��Ɛ����������Ȃ����
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���~�̐l�X�ɂ��āA�ȒP�ȊT�v�܂ł́v�@�ƌ����Ă����O���X�g�͂�����i���L�����ɓ\��܂��j
-</div><div class="text gm">�yGM�z<br />���ƃn���h�A�E�g�Ƃ��āu�E�l�����v�Ɓu�ق̐l�X�v��񎦂��܂��B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�ւ��B�e�������ł͂Ȃ��A��Ƃ��E����Ă���̂��B�������ɁA����Ȃ牴���l�l�ڂ̔�Q�҂ɂȂ��Ă����������Ȃ�������������Ȃ��ˁv�@�ӂނӂ�
-</div><div class="event">�E�l����
-<br>�y�T�v�z
-<br>�G�L�ق́A����x�����Z�܂��قł���B�x���̒a�������j���W���ŎE�l�͋N�����B
-<br>�ق̎�͐Q���Ŏa�񎀑̂ƂȂ�A���̉��͏��ɂň������A�q�̉�Ƃ͐~�[�Ŗo�E���ꂽ�B
-<br>����͂��̂܂܂ɂ���Ă���B���ׂ�Ή����킩�邾�낤���H
+ <!----- /main ----->
 
-</div><div class="event">�ق̐l�X
-<br>�y�T�v�z
-<br>�G�L�قɏW�����l�X�B�A���E�l�̔�Q�Ҍ��ɂ��ėe�^�҂����B
-<br>�ْ��Ɣ�J�̂������A�F��l�ɐ��C���Ȃ��A�d���\������Ă���B
-<br>
-</div><div class="text gm">�yGM�z<br />�Ƃ����킯�ŁA�E���ꂽ�l�Ɛ��Ǝ����܂ł͂͂����肵�Ă܂��B���肪�蒠�̃������Ȃ��狳���Ă��ꂽ��B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�Ɛl�ɋ��Ђ��Ǝv��ꂽ�Ȃ�A�_���Ă�������������܂��񂩂�ˁv�@�Ƃ������̔����ɂ��ẮB
-</div><div class="text canon">�y�����V �É��z<br />���ꂼ�ꋥ��Ƃ��o�Ă���̂��ȁc���ɂ͖{�I���Z�����B�Ƃ͂���HO�Č����ۂ��̂ł��ƂȂ����������܂����ˁB
-</div><div class="text canon">�y�����V �É��z<br />�u�Ƃ͂����A�����v�����̂Ȃ牴���܂������Ă��鎖�����s�v�c�ł͂���ˁB3�l���E���Ă���΁A���X�S�O�͂Ȃ��Ǝv������ǁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�l�C�����������A���邢�͑傫�ȉ��ł��o�����̂�������܂���ˁB�c�����ɖ߂�܂����H�v�@�ƁA�ǂ����ق��Ƃ����l�q�ŁB
-</div><div class="text canon">�y�����V �É��z<br />�u�������ˁB���߂āA����܂ł̌�������Ԃ��Ă݂悤���B�����́A�N�̂��Ƃł��������Ă��炦�邩�ȁH�@�ǂꂭ�炢�̕t�������Ȃ̂��A�Ƃ��ˁv�@���ăE�C���N������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���𓯍s������Ȃ�āA�搶�炵���Ȃ��ł���v�@���ċ�΂��B�܂����ۂ͂��܂��񂯂ǂˁB
-</div><div class="text canon">�y�����V �É��z<br />�u�����̏ꏊ���킩��Ȃ����A�܂������c���Ă��鑼�̐l�����ɉ�����Ƃ��ɂ��A�N������΃t�H���[���炢�͂��Ă���邩������Ȃ�����H�v�@����Ȃɓƒf��s�������̏�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�܂��A���̏P���������悤�ڂ�z���Ă����܂���v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�L���Ȃ�āA�����Ɏv���o���܂���B�M���ɂł��Ȃ������Ȃ��v
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c�A�u�����V�É��v�́A�����Ƃ������T�ゾ�����悤���ˁv�@�኱���M�������錾�����Ȃ񂾂�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�������ł͂����v���ĂȂ������悤�ł����v�@���X���ăj���A���X�ł���
-</div><div class="text canon">�y�����V �É��z<br />�u�c�܂��A���ꂾ���̎��т��������A�Ƃ������ƂȂ̂��ȁv�@���̖ю��ɂ������肵�Ă���i���ƂȂ����������Ȃ�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�܂��A�ЂƂ܂��K�v�Ȃ��Ƃ���v���o���Ă��������v�@���Č����A�����o���̂��Ȃ���i�擱������Ċ������������j
-</div><div class="text canon">�y�����V �É��z<br />�u�������ˁB�������Ă���邩�ȁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ꉞ�A�����Ŏv���o���w�͂����Ă���������v
-</div><div class="text canon">�y�����V �É��z<br />�u���낢��l���Ă͂���񂾂�B�ꉞ�v�@�t���Ă����A�ώ@���Ă����܂��ˁB�@���낢�낱���v�̂��Ȃ�����ł����ŏ��̔�Q�҂̕����ɂł��������񂶂�Ȃ�����
-</div><div class="text gm">�yGM�z<br />�́[���B�ł̓V�[���Ƃ��Ă͕��܂��āA���C���t�F�C�Y�Ɉڍs���܂��B
-</div><table><tr>
-    <td class="FoldButton">
-    <span id=rgn_button_0 class="FoldButton"
-     onclick="Fold(0)">+</span></td>
-    <td id=rgn_summary_0>&nbsp;����G�k���ł�</td>
-    <td id=rgn_content_0 class="FoldContent">
-</div><div class="text canon">�y�����V �É��z<br />����̕s�������������񂾂�
-</div><div class="text gm">�yGM�z<br />�͂�
-</div><div class="text canon">�y�����V �É��z<br />HO�I�Ƀ��[�v�����z��ł���̂ŁA�T�ϖ��x�g�Ƃ��Ĉ�ԓK���Ȃ́A����̂Ƃ���Ȃ񂾂�ȁ[�@���Ďv���ƁA�����������̒��ŔM��
-</div><div class="text canon">�y�����V �É��z<br />���񂾂炱�̎��_�Ƀ��Z�b�g���ȁA�Ƃ����낢��l���Ă��܂���ˏ�
-</div><div class="text gm">�yGM�z<br />�܂������Ȃ̂ɂ���ł���iGM�̓j�R�j�R���Ă���j
-</div><div class="text canon">�y�����V �É��z<br />���₾���ĕs���c�c
-    </td>
-</tr></table>
-<br /><br />
-<div class="subtitle" id="main">�����C���t�F�C�Y�@<a href="#index">��</a>
-</div>
-<div class="subtitle">
-    �����C���t�F�C�Y�ɂ��āi����A���ꃋ�[���j
-</div><div class="text gm">�yGM�z<br />����̓��~�b�g4�T�C�N����PC���4�V�[���ł��B����܂łɃN���C�}�b�N�X�t�F�C�Y�ւ̈ڍs�����𖞂����΁A���̌���ł͂���܂��񂪁B
-</div><div class="text gm">�yGM�z<br />�����ł��̖Y��Ă����ǁA���߂Ă��Ȃ���PC�n���h�A�E�g��ǂݏグ�Ƃ��Ă��������B�ǂ�����l�Ȃ�Ły�閧�z���ˁB
-</div><div class="text canon">�y�����V �É��z<br />�y�g���z
-<br>�ڂ��o�߂�ƁA���Ȃ��͊قɂ����B�������N�Ȃ̂��A�������ǂ��Ȃ̂��S���v���o���Ȃ��B
-<br>�F�l�𖼏��l���ɂ��΁A���Ȃ��͖��T��炵���B�����č��A���̊قł͘A���E�l���N���Ă���Ƃ����̂����c�c�B
-<br>���Ȃ��́y�g���z�́A�E�l�������������邱�Ƃ��B
-</div><div class="text canon">�y�����V �É��z<br /> �閧
-<br>�V���b�N�F�Ȃ�
-<br>�ڊo�߂Ă��炸���ƁA���Ȃ��͋���Ȋ�����������Ă���B
-<br>�ڂ̑O�̌��i�A�l���A����s���A���������Ɍ��o��������B����͋L�����߂钛���Ȃ̂��낤���B����Ƃ��c�c�H
-<br>���Ȃ��́y�{���̎g���z�́A�L�������߂����Ƃ��B
-</div><div class="text gm">�yGM�z<br />�F�l�𖼏����Ă���܂����ǁA�܂�����������Ă��Ƃł��ˁB�ʂŗF�l�𖼏��l�����Ƃ����������񂶂�Ȃ��ł����炩���߁B
-</div><div class="text gm">�yGM�z<br />�ŁA�L�������߂��Ȃ���΂Ȃ�Ȃ��É�����͂��ꂩ�璲�������Ă���������ł����B
-</div><div class="text gm">�yGM�z<br />����̃V�i���I�ł́A�ʏ�̃n���h�A�E�g�Ƃ͕ʂɁu�V�[���n���h�A�E�g�v�Ƃ������̂��������܂��B
-</div><div class="text gm">�yGM�z<br />�V�[���̓��ł̓V�[���\���g�킸�A���̃V�[���n���h�A�E�g����ǂꂩ���I�����A���̏ꏊ�Ɍ��������ƂɂȂ�܂��B
-</div><div class="text gm">�yGM�z<br />�����āA�������Ƃ��̃V�[���n���h�A�E�g�́y�閧�z�������Ō��J����܂��B����Ȃǂ͕K�v����܂���B
-</div><div class="text gm">�yGM�z<br />���̏������I�������A���߂Ċ�{�I�ȍs���i�����⊴���Ȃǁj���s���A�Ƃ�������ɂȂ�܂��B
-</div><div class="text gm">�yGM�z<br />�V�[���n���h�A�E�g�𒲍��Ώۂɂ��邱�Ƃ͂ł��܂���B���ׂ����ꍇ�́A�����̑��Œ��ڌ������B�����̊�{�ł�����ˁB
-</div><div class="text gm">�yGM�z<br />�Ƃ����킯�ŁA�V�[���n���h�A�E�g�Ƃ��āu�����ցv�A�u�����ڊԁv�A�u���H���v�A�u���q���v�̎l��񎦂��܂��B���̓V�[���̈Ӗ����Ǝv���˂��B
-</div><div class="event">������
-<br>�y�T�v�z
-<br>�V�[���B���Â����փz�[���B���͌ł�������A����h���悤�ɕ⋭����Ă���B
-<br>���̃n���h�A�E�g�͒�������̑Ώۂɂł��Ȃ��B
-
-</div><div class="event">�����ڊ�
-<br>�y�T�v�z
-<br>�V�[���B���q�p�̃\�t�@�[�ƃe�[�u�������ԉ��ڊԁB�ǂ��ƂȂ��A�C�ȕ��͋C���Y���Ă���B
-<br>���̃n���h�A�E�g�͒�������̑Ώۂɂł��Ȃ��B
-
-</div><div class="event">���H��
-<br>�y�T�v�z
-<br>�V�[���B�傫�ȃe�[�u����������ꂽ�H���B���ɂ͉΂̓����Ă��Ȃ��C�䂪����B
-<br>���̃n���h�A�E�g�͒�������̑Ώۂɂł��Ȃ��B
-
-</div><div class="event">���q��
-<br>�y�T�v�z
-<br>�V�[���B��K�̋q���B���Ȃ������p���Ă����炵���B�x�b�h�⒲�x�i�������Ă��āA���S�n�͂悳�������B
-<br>���̃n���h�A�E�g�͒�������̑Ώۂɂł��Ȃ��B
-<br>
-</div><div class="text gm">�yGM�z<br />�ȏ�ł��B����𓥂܂��Ē������Ă����܂��傤�B
-</div><br />�@<br />�@<br />�@
-<div class="subtitle" id="main1">��1�T�C�N���ځ@<a href="#index">��</a>
-</div><div class="text gm">�yGM�z<br />�ł͍s�������V�[���̃V�[���n���h�A�E�g�������Ă��������B
-</div><div class="text canon">�y�����V �É��z<br />���ڎ��ɍs���Ă݂����ȂƁB�N������l�����邩������Ȃ����A�V���ɔ�Q�ҏo��O�Ɋ炭�炢�͌��Ă����������
-</div><div class="text gm">�yGM�z<br />�͂��B�ł͂܂��A�u�����ڊԁv�̃V�[���n���h�A�E�g�́y�閧�z���炨�n�����܂��B
-</div><div class="event">�����ڊ�
-<br>�閧
-<br>�V���b�N�F�Ȃ�
-<br>���ڊԂɂ���ƁA�ӂƊ�Ȋ��o���o����B���̕��i�́A���ɓ���ݐ[���悤�ȁc�c�B
-<br>���������ƒ����ԁA�����ɂ���悤�ȁc�c�B���������̊ق֗����̂́A�{���ɏ����O�̂��ƂȂ̂��낤���c�c�H
-<br>�s���ԁt�Ŕ�����s���A���s�����ꍇ�y���C�x�z��1�_��������i����͋��|����ł͂Ȃ��j�B
-<br>
-</div><div class="text gm">�yGM�z<br />����ǂ����B
-</div><div class="text canon">�y�����V �É��z<br />�s���t�ł��s���w�t�ł��ς��Ȃ��ȖڕW�l8
-</div><div class="dice">�����V �É��F2d6>=8 ����s���ԁt�i���ő�p�j�F
-<br>Insane : (2D6>=8) �� 5[2,3] �� 5 �� ���s
-<br />�ˏ����V �É��̐��C�x��1�����i���C�x�F6->5�j
-</div><div class="text gm">�yGM�z<br />�h���}�C�B�Ƃ����킯�ŁA����ŃV�[���n���h�A�E�g�̏������I���܂��B�����čD���ȍs�����Ă������ł���B
-</div><div class="text canon">�y�����V �É��z<br />���ڎ��ɂ͓��ɐl�͂��Ȃ������ł����ˁH
-</div><div class="text gm">�yGM�z<br />�n���h�A�E�g�u�ق̐l�X�v�𒲂ׂ�^�C�~���O�ɂ�邩�ƁB�i���ꂩ���ɂ܂Ƃ܂��Ă���Ƒz�肵�Ă��āA�ł���΂���𒲍�����V�[���̃V�[���n���h�A�E�g���Y�����邩�Ɓj
-</div><div class="text canon">�y�����V �É��z<br />�Ȃ�قǁA�����𒲂ׂ悤�Ǝv�������ǂ��̕����ɂ��������ړI�ŗ��Ă��܂�������A����͂��Ⴀ�l�X�𒲂ׂ悤����
-</div><div class="text gm">�yGM�z<br />�܂��A�ǂ݂̂��ǂ�������т��Ă�\���͂���܂�����ˁB���A���e�B�ǋy����Ȃ炱�����A���邢�͐H���ł��傤����
-</div><div class="text canon">�y�����V �É��z<br />�ł��ˁB�H�����Ǝ��ԑт�����ꂻ���Ȃ̂ŁA������̕����������Ȃ��āi�V���Ȏ������N���肻���ȏꏊ�������H��
-</div><div class="text gm">�yGM�z<br />�������܂����B�ł́A�����c�����l�����������񂹍����悤�ɁA���邢�͈�l�ŗ��ꂽ�Ƃ���ɁA�͂��܂��F������x������悤�Ɂc�e�X�߂����Ă���l�q�ł��B
-</div><div class="text canon">�y�����V �É��z<br />�����Ȏ����Ɋ������܂ꂽ�l�X�̍s�����Ċ����ł��ˁA���ɖڂɕt����ȍs��������Ă���l�͓��ɂ��Ȃ�����
-</div><div class="text gm">�yGM�z<br />�F���Ă��܂�����ˁB�ْ��̎����؂��Ζ\�������˂܂��񂪁i����ȂƂ���ɉ��͂����邩�I�j����͂����ł��Ȃ������ł��B
-</div><div class="text gm">�yGM�z<br />�ǂ����ׂ܂��H�@��b�͕K�{�ł͂Ȃ��̂ŁA���D���Ȃ悤�ɁB����������Ɖ����v���o����������Ȃ����H
-</div><div class="text canon">�y�����V �É��z<br />�u�ꏊ�ɏW�܂��Ă��镪�ɂ͔Ɛl����o���͂ł��Ȃ����낤���A�F�����܂ŋC�𒣂�Ȃ��Ă��ǂ��񂶂�Ȃ����ȁB�����Ƌْ����Ă������ɋC���Q���Ă��܂����A���Ղ��Ă��܂��΁A���ꂱ���Ɛl�̎v����Ƃ��������v�@�݂����ɂ�����Ɛ��������Ă݂���ˁi�S�̂ɑ΂���
-</div><div class="text gm">�yGM�z<br />�����͖F�����Ȃ��ł��ˁB�܂��A�E�l���������قō����Ɛl�����邾�낤�󋵂ŉ��肷��ᓯ����ԂɔƐl������̂ɖ���������Ęb�ł��B
-</div><div class="text canon">�y�����V �É��z<br />�u�ْ��������̂Ƀe�B�[�^�C���ł��ǂ����낤�A�ƌ������Ƃ���ō��͖��ʂɌx���𑣂��������낤���˂��c�v���đ�V�N�ɂڂ₭���炢���@�Ȃ��Ȃ��������
-</div><div class="text azusa">�y���� ���z<br />�u���A�́A�͂��I�@�������܁A���́A�����������܂��ˁc�v�@�ƁA�k���܂�C���������g�p�l���킿��킿�ᓮ���Ă܂��˂��Ⴀ
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�M���ƈ���āA�F���񎖌��Ȃ�Ċ���Ă��܂��񂩂�ˁv�@�͂́A�܂����̌��������x�����Ă܂��悱����͂�
-</div><div class="text canon">�y�����V �É��z<br />�u�����A��l�œ����Ȃ����������v�@���̐l�����Ȃ����낤���A����͎������ꏏ�ɍs�����@�ꉞ�œ���Ȃ����Ƃ̊m�F���܂߂�
-</div><div class="text gm">�yGM�z<br />�����A���ڎ��Ƀe�B�[�Z�b�g���悹�����S���͂���܂���B�����Ɩڂɕt���͈͂ş����ł��傤�ˁi���񂴂񌾂��Ă��������j
-</div><div class="text canon">�y�����V �É��z<br />���̐l���S�z����Ȃ�A�ŏ��̈���͎������Ō����Ă݂܂���B�@���͂̎����Ƃ������Ƃ��f���B�@�Ƃ����Ƃ���Łs���t�Œ�����������Ă݂����B
-</div><div class="text gm">�yGM�z<br />�Ȃ�قǂˁB����ǂ����B
-</div><div class="dice">�����V �É��F2d6>=5 ��������i���j�F
-<br>Insane : (2D6>=5) �� 7[2,5] �� 7 �� ����
-</div><div class="text gm">�yGM�z<br />�ł́B
-</div><div class="event">�ق̐l�X
-<br>�閧
-<br>�V���b�N�F�S��
-<br>�ނ�͐l�Ԃł͂Ȃ��B�l�`���I �ق̐l�X���A���̂����g��̐l�`���B�Ȃ����܂Ől�ԂƎv������ł����񂾁I�H
-<br>�s�Í��t�ŋ��|������s���B
-<br>����Ǝg�p�l�����͖{���̐l�Ԃ̂悤�����c�c�B
-<br>
-</div><div class="text gm">�yGM�z<br />���C�x�����Ƌ��|����ǂ����B
-</div><div class="text canon">�y�����V �É��z<br />�����V �É��̐��C�x��1�����i���C�x�F5->4�j
-</div><div class="text canon">�y�����V �É��z<br />�s���t�ő�p���ĖڕW�l8
-</div><div class="dice">�����V �É��F2d6>=8 ���|����i�Í��j�F
-<br>Insane : (2D6>=8) �� 6[2,4] �� 6 �� ���s
-</div><div class="text gm">�yGM�z<br />�d���Ȃ��ˁB�ł͋��C���ꖇ�A�����ɒ��ړ\��܂��B
-</div><div class="text gm">�yGM�z<br />�R�D�͎c��O���B
-</div><div class="dice">GM�F1d4
-<br>Insane : (1D4) �� 2
-</div><div class="event">�y�ˑ��z
-<br>�g���K�[�F�������u���ɍ܁v���g�p����B
-<br>���e�F���Ȃ��͒ɂ݂ɑς����Ȃ��B
-<br>�Z�b�V�������I������܂ŁA�������V�[���v���C���[�̃V�[���Ŏ����́y�����́z���y���C�x�z��1�_�ȏ㌸�����Ă���ꍇ�A
-<br>�����Ă�����K���u���ɍ܁v���g�p���邱�ƁB
-<br>
-</div><div class="text gm">�yGM�z<br />�g���K�[���g���K�[�����炱��ȏ����ł����Ȃ���΂قږ�薳���ł��˂���B
-</div><div class="text gm">�yGM�z<br />�Ƃ����킯�ŁA�����B����Ȋ����ł����B
-</div><div class="text gm">�yGM�z<br />����܂œ����A���A�����Ă��������悤�Ɍ�����l�X�́A���ׂĕ�����ʐl�`�ɉ߂��܂���B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c���āA����͂ǂ��������Ƃ��ȁH�v���ď���ɐ��������܂��傤��
-</div><div class="text gm">�yGM�z<br />�C�Â��Ă��܂������ƂȂ��ẮA�l�X�͊����ɒ��ق��Ă���A�������ɂ��Ȃ��ł��傤�B������O�Ƃ����΂����ł����B
-</div><div class="text gm">�yGM�z<br />���̓����Ă����悤�Ɋ������̂��c����͂��͂�A���Ȃ��̔]�����������Ă��܂��Ă����A�Ƃ��������悤������܂���B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�搶�H�@�����v���o����܂������v�@��������O�̗l�q���������Ă����ǁA�l�q�ς�����Ȃ��Ďv��������݊���Ă��邩
-</div><div class="text canon">�y�����V �É��z<br />�u�N�ɂ́A���̕����ɂ���Z�l���ǂ�������H�v�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ǂ��A�Ƃ́H�v�@����X���Ă܂���B
-</div><div class="text canon">�y�����V �É��z<br />�u���A���̕����ɁA�u�����Ă���l�ԁv�́A���������܂߂ĉ��l����Ǝv���H�v�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����Ɓc���������܂߂�΁A���l�ł����H�v
-</div><div class="text canon">�y�����V �É��z<br />�u�c�܂�A�N�ɂ͂��̐l�`���A�����Ă���l�ԂɌ�����Ƃ����킯���ˁv�@�������܂ł̉��Ɠ����悤�Ɂ@�ӂ�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�搶�c�H�v
-</div><div class="text canon">�y�����V �É��z<br />�u���̎����͂ǂ����A���ʂ̎����Ƃ͈Ⴄ�A�����Ɩ��ȁu�����v�炵���B�c�ӎ��������܂ł̉����A�ǂ��܂ŋC�t���Ă����̂��́A�킩��Ȃ�����ǁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ł����A�E�l�����͌��ɋN�����Ă��܂���ˁH�v�@������߂āB
-</div><div class="text canon">�y�����V �É��z<br />�u�l�`�ɑ΂��āu�E�l�v�Ƃ�����`�����Ă͂܂�Ƃ͉��͎v��Ȃ��ȁB�Ƃ͂����A���󂵂����҂��͂���͂����ˁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�l�`�c�H�v�@�����ɕs�R���������Ă��܂��ˁB�������Ă񂾂��̐l�A���Ď����������Ă�B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ǂ��A������ł����B�搶�c�ނ�͐������l�ԂŁA�E�l���N�����Ă���B�M���́c������A���������ł��傤�v
-</div><div class="text canon">�y�����V �É��z<br />�u���������̂́A�����A���E���A�ǂ��炾�낤�ˁH�@�r���N�v���Ă�����Ɗy�������ɔ��΂ނ̂��@�D��S���u����Ȃ���
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���������̂́A�搶�ł���v�@���ɁA�[�����_�������܂��B�ӂ��Ɣw�������āA���̂܂ܕ������o�čs���܂��B
-</div><div class="text takayuki">�y�r�� ��V�z<br />����ۂɂȂ鐡�O�̋�ԂɁA���ׂ����t�����𗎂Ƃ��āB
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�[�[�܂��A�ʖڂȂ̂��c�v
-</div><div class="text canon">�y�����V �É��z<br />�o�čs���Ă��܂��̂��B�d�v�Q�l�l�Ȃ񂾂��ǂȁc�@�Ƃ͂����A�ʍs���Œ��ׂ������Ƃ��������̂ŁA��U�~�߂Ȃ��Ō�����܂��傤�B
-</div><div class="text gm">�yGM�z<br />����B�ł͂ˁA��������đ�V�����������É�����̔w���ɁA�܂��ʂ̐����������܂��B
-</div><div class="text azusa">�y���� ���z<br />�u�c���́[�A���������H�v�@�������A�ƕ��݊���āB
-</div><div class="text canon">�y�����V �É��z<br />�u�����A�c����H�v�@�l�`���ƔF��������ł������̂�
-</div><div class="text gm">�yGM�z<br />�u����Ǝg�p�l�����͖{���̐l�ԁv���Č����Ă��
-</div><div class="text azusa">�y���� ���z<br />�u���̂��l�q�A������c�v�@���̌������ɕ��݊���Ă���A�ς���ƕ��āB�u�^���ɁA���C�t���ɂȂ�ꂽ�̂ł��ˁH�v
-</div><div class="text canon">�y�����V �É��z<br />�u�c�N�́A�����m���Ă���̂��ȁH�@���̏󋵂ɂ��āv
-</div><div class="text azusa">�y���� ���z<br />�u�����悩�����c�I�@����ł���ƁA���܂�������������܂���I�v�@������ߋC���ɂ����B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c����ƁA�ˁv�@�ӂށB�r���N�ƌ����Ă邱�Ƃ������΂�
-</div><div class="text azusa">�y���� ���z<br />�u���΂͖��T��B�����A�{���ɂ������͑����܂��񂯂ǁB���͍��ƈ��A���̉Ƃ̎g�p�l�c�Ƃ����A�܂��A�ݒ�ł��v
-</div><div class="text azusa">�y���� ���z<br />�u���C�t�����Ƃ͎v���܂����A���̊قł͎E�l�����Ȃ�ċN�����Ă܂���B���̒j�̐^���ԂȃE�\�ł���v�@�l�����w���Ă܂���
-</div><div class="text canon">�y�����V �É��z<br />�u�ݒ�A�ˁB�Ȃ�A�{���̌N�͈�̉��҂Ȃ̂��ȁH�v�@���肪���������Ă邱�Ƃ��m���Ă��
-</div><div class="text azusa">�y���� ���z<br />�u���͂ł��ˁA�����ōs���Ă�����Ƃ��ɋ��͂������Ă��ł��B����ȃ��o���b�������炨�f�肵�Ă����ׂ��ł����c�v
-</div><div class="text azusa">�y���� ���z<br />�u���������͗ǂ�������ł����ǁB���A���O�͕��������Ă��������B������Ă΂�Ă�̂����̒j�ɕ�����ł�������E���ꂿ�Ⴂ�܂��A�}�W�Łv
-</div><div class="text canon">�y�����V �É��z<br />�u�c���́u����v�͐����Ɗ댯�Ȑl���炵���v�@�ӂ�
-</div><div class="text azusa">�y���� ���z<br />�u�댯�ł��悻�������B���̐l�A�Ȃ�ł������u���T��v�Ɏ������Ă��ł����ˁH�v�@�����܂������ł��Ȃ����Ă�����
-</div><div class="text canon">�y�����V �É��z<br />�u�c�Ύ��I�Ȃ܂ł̋��M�͊���������ǁA�c���l�A�Ƃ������́u�T��v�ɑ΂��āA�Ƃ������ƂȂ̂��ȁv�@�ӂ�
-</div><div class="text azusa">�y���� ���z<br />�u�����Ƃ��A�u�T����v�ɎE�l�����������������݂����Ȃ�ł��悠�̐l�B����܂łɂ��A���l��������ł����c�v
-</div><div class="text canon">�y�����V �É��z<br />�u��肭�ł��Ȃ������u�T����v�́A������Ƃ����H�v
-</div><div class="text azusa">�y���� ���z<br />�u�Ö��Ƃ��A���]�Ƃ��A����Ȋ����ł����ˁH�@�L�����Ȃ��A���T�ゾ�ƌ���ꂽ�Ƃ��B�M���������ŁA�����������T��ł��Ȃ�ł��Ȃ��ł���A�ǂ����v
-</div><div class="text azusa">�y���� ���z<br />�u�����������ł��Ȃ������l�ɂ͋A���Ă�������A���Ă��̐l�͌����Ă܂������ǂ˂��B�ʂ����Ăǂ��܂ŐM�p�ł������̂����Ęb�ł��v
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c�����ɐ����ċA���Ă��炦��Ȃ�A�������ǂˁv�@���̂��ɂ́A�u�������v������̂͂���������
-</div><div class="text azusa">�y���� ���z<br />�u��������������΁A�ł����ˁH�@�����Ɍ��܂��Ă邶��Ȃ��ł����A����ȍ�蕨�̕���ŁA���g���Ȃ������������Ȃ�āB���ꂱ�����T�ゾ���Ė����ł���v
-</div><div class="text canon">�y�����V �É��z<br />�u�c���������ɁA�o�Ă������Ƃ́A��������v�@���̗l�q���ƌ��ւ͊J���Ȃ����Đ�����
-</div><div class="text azusa">�y���� ���z<br />�u�Ȃ�ł��A�O�͗����Ă����u�ݒ�v�ŁA���Ƃ������͑S���ł��t�����Ă��ł��v�@�͂��B
-</div><div class="text azusa">�y���� ���z<br />�u�o��������������Ă܂��B���������Ă�̂͂��̒j�ł��c�Ƃ����킯�Łv�@�����A�Ɩڂ��P�����āB
-</div><div class="text azusa">�y���� ���z<br />�u���́A���܂��񂩁B��l�Ȃ�A���̒j����ł����Ƃ��Ȃ�܂���I�v
-</div><div class="text canon">�y�����V �É��z<br />�u�����ƔO����Ȃ��Ƃ��ˁB�c�������ˁB��l���͗]���S�����v
-</div><div class="text azusa">�y���� ���z<br />�u�{���ɂ���ł��B�����������ČՎ�ἁX�ƃ`�����X��}���Ă����킯�ŁA�Ƃ͂������ア�����ł������l�������Ă������̂ł�����A���̐l�ɋ^���Ă�l�q�͂Ȃ������ł��v
-</div><div class="text azusa">�y���� ���z<br />�u�������ӂ������t���āA���̌��Ɍ���D�����B�ǂ��ł��傤�H�@�����Ȃ����Ɓv
-</div><div class="text canon">�y�����V �É��z<br />�u����܂ł́u�T����v�́A�ނ�̐��̂����j�ꂷ�炵�Ȃ������̂��c�v�@�ӂ�
-</div><div class="text azusa">�y���� ���z<br />�u�����Ȃ�ł���B����ۂǃ��o�����]�������̂�������܂���B�{���A�M�������C�ɖ߂��Ă���Ăǂ�Ȃɗǂ��������c������������ł��A�ق�Ɓv
-</div><div class="text canon">�y�����V �É��z<br />�u�����͂Ȃ��A���ȁB�c�����A���͍s�g�͍Ō�̎�i�ɂ������B����Ȃɗp�ӎ����ȑ��肾�B���s�����玟�͌N�̖������Ȃ���������Ȃ���H�v
-</div><div class="text gm">�yGM�z<br />�V�X�e���I�Ɍ����ƁA�ޏ��͑�V�́y�����z�����Ȃ��ɍ����グ���܂��i�����󂯂�Ȃ�j�B
-</div><div class="text gm">�yGM�z<br />�ŁA��V�ւ̐퓬�錾�͂��̂܂܁A�N���C�}�b�N�X�t�F�C�Y�ւ̈ڍs�ƂȂ�܂��B��낵���ˁB
-</div><div class="text canon">�y�����V �É��z<br />�Ȃ�قǁB�Ȃ�A�܂����Ď��{����Ƃ����`�ł�������y�����z�����󂯎���Ă��������A����
-</div><div class="text azusa">�y���� ���z<br />�u�����c����͊��ي肢�����ł����ǁB�ł��A���ꂪ�ŏ��ōŌ�̃`�����X���Ǝv����ł��A�}�W�Łv
-</div><div class="text canon">�y�����V �É��z<br />�u���ۂ���͂������낤�ˁB�o�C�g�̎q�Ȃ�A�T��������p�ӂ͊ȒP�������v
-</div><div class="text azusa">�y���� ���z<br />�u������ς���ɂ͂����Ȃ��ł����A����Ȃ�^�C�~���O�͋M���ɂ��C�����܂����ǁc�v
-</div><div class="text azusa">�y���� ���z<br />�u�Ƃ͂����A����܂�I���ɂ��Ă�ƁA���̒j�Ɍ���ĉ�����邩�����������񂶂�Ȃ��ł�����ˁv
-</div><div class="text canon">�y�����V �É��z<br />�u�܂����܂�ɂ���񂪏��Ȃ�����ˁB�c��x����̓q���Ȃ�A�����ł��肪�������������v
-</div><div class="text azusa">�y���� ���z<br />�u�����A�ł��ˁc�����A�m���ɁB���肢���܂���A���T��̐搶�H�v
-</div><div class="text gm">�yGM�z<br />�y�����z�擾�͗ǂ��ł���B
-</div><div class="text gm">�yGM�z<br />�ޏ�����͂���ȂƂ��납�ȁB���Ƃ͂��Ȃ����ǂ���΂�������V�[������܂����B
-</div><div class="text canon">�y�����V �É��z<br />�u�N�Ƃ͉^�������̂Ƃ������ƂɂȂ�̂��ȁB�����炱���A��낵���ˁc���͈�����ƌĂ�ł��������v�@�݂�����
-</div><div class="text canon">�y�����V �É��z<br />�́[���A�����擾���ăV�[���I���ŁB�@
-</div><div class="text gm">�yGM�z<br />�͂��B���������n���h�A�E�g�o���Ă����܂��ˁB�V�[������Ȃ��ł��B
-</div><div class="event">�y�T�v�z��
-<br>�w����x���G�L�قƌĂԊفB�����������ɔz�u���ꂽ�l�`���ٗl�ȋ�C�������o���Ă���B
-<br>
-</div><div class="text gm">�yGM�z<br />�����1�T�C�N���ڏI���A�c��3��ł��ˁB
-</div><br />�@<br />�@
-<div class="subtitle" id="main2">��2�T�C�N���ځ@<a href="#index">��</a>
-</div><div class="text gm">�yGM�z<br />�ǂ���Ɍ������܂��H�@���ڎ��ł��\���܂����A�閧�͂����o�Ȃ����Ă����ŁB
-</div><div class="text canon">�y�����V �É��z<br />�q���ŁB�ߋ��̎����������c���Ă��Ȃ����C�ɂȂ�̂ŁB
-</div><div class="text gm">�yGM�z<br />�͂́B���Ⴀ�A�����̔閧�o���܂��ˁB
-</div><div class="event">���q��
-<br>�閧
-<br>�V���b�N�F�Ȃ�
-<br>���Ȃ��͔������̒��ɂ���B�������琺����������B
-<br>�u�c�c���񂽂͒T�ゾ�c�c�G�L�ق̎�������������c�c�������A���񂽂͖��T��Ȃ񂾁c�c�v
-<br>�����ŉ�ɕԂ�B��u�A�ӎ������̂��Ă����悤���B���̂͏���̐����������c�c�Ȃ����낤�A���ɉ��������B
-<br>�����ΏۂɁA�s��i�t�Ŋ������s���B���̔���́A��Ԃ�����Ȃ��B
-<br>
-</div><div class="text gm">�yGM�z<br />����ǂ����B
-</div><div class="text canon">�y�����V �É��z<br />���S�ɍÖ�����˂����c�c
-</div><div class="dice">�����V �É��F2D6>=7 �����s��i�F���ő�p�t�F
-<br>Insane : (2D6>=7) �� 8[2,6] �� 8 �� ����
-</div><div class="text gm">�yGM�z<br />������������񂾁c���Ⴀ����\FT�ǂ����B���̕\�L�ł������肩����U��܂��B
-</div><div class="dice">�y�����V �É��z<br />FT
-<br>Insane : ����\(5) �� ���ہi�v���X�j�^�򓙊��i�}�C�i�X�j
-</div><div class="dice">�y�r�� ��V�z<br />FT
-<br>Insane : ����\(5) �� ���ہi�v���X�j�^�򓙊��i�}�C�i�X�j
-</div><div class="text gm">�yGM�z<br />���ǂ��Ȃ��O��B�����A�����肻�̏�ɂ��Ȃ��Ă����ł�����ˁB���ė~�������o���B
-</div><div class="text canon">�y�����V �É��z<br />���悵����c�c�@�����}�C�i�X�Ŏ��I�������l�������ǁA�򓙊��͓��ɂȂ��̂œ��ۂɂ��܂���
-</div><div class="text takayuki">�y�r�� ��V�z<br />����́u���ہv�ŁB
-</div><div class="text canon">�y�����V �É��z<br />�����ƒT����������ł����A�i����̖ڂ��Ȃ��Ƃ���Łj�閧�ȊO�̂��̕����Ɋւ����񂪂Ȃ��Ȃ炢���ł��i
-</div><div class="text gm">�yGM�z<br />�]�[�L���O���ĈӖ��ł̉ƒT���͓��ɐ��ʖ����������ȁB�������ʂ̋q���ł��B
-</div><div class="text canon">�y�����V �É��z<br />�u�c���ɂ��{�������Ă����A���Ă����̂Ȃ�A������蒠�̈���A�Ȃ����Ǝv��������ǁB�c�܂��A����͈Î��ŁA���ۂɂ͉������ĂȂ������A���Ă��ƂȂ�d���̂Ȃ����Ƃ��ȁv�@�ӂ�
-</div><div class="text gm">�yGM�z<br />�x�b�h�͂ӂ�ӂ�B���x�i�������Ă��Ⴟ�Ȃ��̂ł͂Ȃ������ł��B�ǂ�������ł��傤�˂���ˁB�������x�߂��������ł����ǁA�񕜔���Ƃ�����H�i
-</div><div class="text canon">�y�����V �É��z<br />���܂����B�@�ʍs�����Ă���ԂɊق̒��������܂��傤
-</div><div class="text gm">�yGM�z<br />�͂́B�܂��A�ّS�̂ɂȂ邩�畔�����o�ĘL��������݂����ɂȂ邩�Ȃ���B���D�݂̓��Z�ŁB
-</div><div class="text canon">�y�����V �É��z<br />�����������ɕs�R����Ȃ��悤�ɁA�܂��T����ۂ������������Ă��������ł��ˁi�܂��ł������������Ȃ���
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c�A�����A�����ł��킩�邱�Ƃ�����Ɨǂ��񂾂��ǁv�@��[�A�����̍\����������A�s�R�ȂƂ��낪���邾�낤���B���낤�낵�ĒT��́s��Z���t�ɉ����Ђ�������Ȃ�����
-</div><div class="text gm">�yGM�z<br />�炵���Ƃ����΂炵����ˁ@����ǂ���
-</div><div class="dice">�����V �É��F2D6>=5 ��������s��Z���t�F
-<br>Insane : (2D6>=5) �� 6[3,3] �� 6 �� ����
-</div><div class="text gm">�yGM�z<br />�͂��ȁB���Ⴀ�A���낤�낵�Ĉ�K�ɉ��肽�ӂ�ł����ˁB
-</div><div class="event">��
-<br>�閧
-<br>�V���b�N�F�Ȃ�
-<br>������������B
-<br>�ٓ��ɑ��ɂ߂ڂ������̂͂Ȃ��悤���B�����o���A�ӂƊ�肩�������ǂ������ɓ����B����́c�c�H
-<br>�u�����v�u�B�����v�̃n���h�A�E�g�����J����B
-<br>
-</div><div class="text gm">�yGM�z<br />���A�����V�[��HO�ł��B
-</div><div class="text canon">�y�����V �É��z<br />�u�����̃g���b�N���B����Ă��邩������Ȃ��ˁv�ƌ��ɏo���A���S�������瓦���铖�Ă�������Ȃ����A�Ƃ�����̏�񂪌�����Ȃ����Ȃ��Ďv���Ă܂�
-</div><div class="event">������
-<br>�y�T�v�z
-<br>�V�[���B���u�����̐�ɂ��鏟����B
-<br>�����������Ă���c�c�Ǝv������A���Ă���B
-<br>���Ȃ��͗�������O�֏o�邱�Ƃ�錾���Ă��悢�B
-<br>�i���̃n���h�A�E�g�́y�閧�z�����炩�ɂȂ��Ă��Ȃ��Ă��\�j���������ꍇ�A�N���C�}�b�N�X�t�F�C�Y�ֈڍs����B
-<br>���̃n���h�A�E�g�͒�������̑Ώۂɂł��Ȃ��B
-
-</div><div class="event">���B����
-<br>�y�T�v�z
-<br>�V�[���B
-<br>�L���̕ǂ��B�����ɂȂ��Ă���B�G���Ă݂�ƁA�J���������B
-<br>���̃n���h�A�E�g�͒�������̑Ώۂɂł��Ȃ��B
-<br>
-</div><div class="text gm">�yGM�z<br />����ȂƂ��ł����ˁB
-</div><div class="text canon">�y�����V �É��z<br />�ꏏ�ɂ��낤�낷��̂��y���������������ǁA�ꏏ�ɂ�������댯�ȋ�C���r���r�����邩��ȁ[
-</div><div class="text gm">�yGM�z<br />�͂́B���Ƃ̓V�[����������Ă����������ȁH
-</div><div class="text canon">�y�����V �É��z<br />�͂��B����͎��ȍ~�Ɋ���
-</div>   <br />�@<br />�@
-<div class="title" id="main3">��3�T�C�N���ځ@<a href="#index">��</a>
-</div><div class="text gm">�yGM�z<br />�c�蔼���ł��B�ŁA�ǂ��s���܂��傤���B
-</div><div class="text canon">�y�����V �É��z<br />�u�B�����v�Ɍ������Ă݂����ł��ˁA�������̕����������邩�z��ł��ĂȂ��ċC�ɂȂ�
-</div><div class="text gm">�yGM�z<br />�͂��ȁB�ł͂������̔閧����B
-</div><div class="event">���B����
-<br>�閧
-<br>�V���b�N�F�Ȃ�
-<br>���̐�͏��ւ��B���I�Ɏ��܂肫��Ȃ��{���������Ɛςݏグ���Ă���B
-<br>�U�炩�������̏�ɕ��������ʂ�����B
-<br>�v���C�Y�u�؂蔲�����v���l������B
-<br>
-</div><div class="event">�؂蔲����
-<br>�y�T�v�z�v���C�Y�B
-<br>�B�������ɂ������������؂蔲�����B��ʂ̋L�����\������Ă���B
-<br>�L���͏����ÂтĂ���悤�Ɍ�����B������͎��R�ɂ��̃v���C�Y�́y�閧�z��������B
-<br>
-</div><div class="text canon">�y�����V �É��z<br />�u�c�X�N���b�v�����c�v�@���̔閧������͎̂�Ԋ֌W�Ȃ��ł��銴���Ȃ猩�����ł�
-</div><div class="text gm">�yGM�z<br />���R�Ɍ�����̂Ŗ��Ȃ��ł��ˁB���������A�������Ȃ����A���ꂾ���ł��B
-</div><div class="text canon">�y�����V �É��z<br />�iPL�͌��ȗ\���������Ȃ����ǁjPC�I�ɂ͏����ł���񂪗~�����̂ŁA���Ȃ���͂Ȃ��ł���
-</div><div class="text gm">�yGM�z<br />�͂́B���ꂶ�Ⴀ�A
-</div><div class="event">�؂蔲����
-<br>�閧
-<br>�V���b�N�F�S��
-<br>�L���͑S�āA�u�G�L�َ����v�ƌĂ΂��o���������������̂��B
-<br>�x���̏Z�ށu�G�L�فv�ŘA���E�l�������B���̊قɑ؍݂��Ă����T�オ��ɒ��񂾂��A������҂����ق͉��サ�A�����͖��{���肵���B
-<br>�T��͉Ύ��Ɋ������܂�ċL���������A�p�l���R�ƂȂ����B���̌�A�F�l�Ɉ�������ė×{�����𑗂��Ă���c�c�ƋL����Ă���B
-<br>�݂肵���̒T����B�����ʐ^���ڂ��Ă���B�ʂ��Ă���̂́A���Ȃ����B���̌��Łw����x���͂ɂ���ł���B
-<br>�u����v�̃n���h�A�E�g�����J����B
-<br>
-</div><div class="text gm">�yGM�z<br />�V���b�N����������ɂ��肢���܂��傩�B
-</div><div class="text canon">�y�����V �É��z<br />�����V �É��̐��C�x��1�����i���C�x�F4->3�j
-</div><div class="event">����
-<br>�y�g���z
-<br>���Ȃ��́A���̊ق𕑑�ɎE�l�������グ�āA�����Ă���B
-<br>���Ȃ��́y�g���z�́A�E�l���𑱂��邱�Ƃ��B
-<br>
-</div><div class="text gm">�yGM�z<br />�V�[���n���h�A�E�g����̏����͈ȏォ�ȁB���Ƃ͂��D���ȍs�����B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c�A�킴�킴�ʐ^�𖈉�A����ւ��Ă���c�Ƃ����킯�ł͂Ȃ����낤���v�@�Ȃ�A����ς艽�x���ނ̎�ɂ���ČJ��Ԃ��Ă�񂾂낤��
-</div><div class="text canon">�y�����V �É��z<br />�u�c�ނ̖ړI�́A�c�T��̋L�������߂����Ƃ��A�c�u���T��v�������������Ȃ������������������ɁA���x�����������悤�Ƃ��Ă���̂��c�c�A�ł��܂��A���̗l�q�Ȃ��҂��ȁv
-</div><div class="text canon">�y�����V �É��z<br />�Ƃ�����A����̔閧�𒲍��������ł��ˁB�@�������^�������畷���̂����Ԋ�Ȃ��񂶂�Ȃ��H
-</div><div class="text gm">�yGM�z<br />���������́H�@�ʂɒ��ڕ��������������̏p���Ⴀ�Ȃ��ł���A���T��
-</div><div class="text gm">�yGM�z<br />�܂��A�������Ȃ炻��Ȃ�̕ԓ�����Ǝv���܂����Ǐ΁@���Z�I���͂����ӂɁB
-</div><div class="text canon">�y�����V �É��z<br />����̎g���Ă��镔���Ƃ�����΁A���ׂ����ł����ǁc��肭���璆�ɒT���邩��
-</div><div class="text gm">�yGM�z<br />���邢�͂܂��A���B�����ł�����A�����𒲂ׂĂ݂�̂���ł����ǂˁB�ʐ^������܂����B
-</div><div class="text canon">�y�����V �É��z<br />�����A�����ł��ˁB�Ȃ����Ă���̂����ւ��Ƃ����̂Ȃ�A�u����Ă���{�̌X������^�ӂ�T��邩������܂��񂵁A�����ł�������
-</div><div class="text gm">�yGM�z<br />�͂��ȁB�{�̌X�����Ă�Ȃ�A�S���w�␸�_��w�A�Ö��ɂ��Ă̖{������ł܂����ˈꉞ�B
-</div><div class="text canon">�y�����V �É��z<br />�c�c���O�͊����܂��ˁB�@����A���̃X�N���b�v�����p���p���߂�����������A����������Ƃ��낪�Ȃ����s��Z���t�Œ������܂��B
-</div><div class="text gm">�yGM�z<br />�֗�������ȃV�b�N�X�Z���X�B����ǂ����B
-</div><div class="dice">�����V �É��F2D6>=5 ��������s��Z���t�F
-<br>Insane : (2D6>=5) �� 7[3,4] �� 7 �� ����
-</div><div class="text gm">�yGM�z<br />����B
-</div><div class="event">����
-<br>�閧
-<br>�V���b�N�F�Ȃ�
-<br>���Ȃ���PC1�̐e�F���B���T�ゾ����PC1�́A�O�N�O�́u�G�L�َ����v�őS�Ă̋L���������Ă��܂����B
-<br>���Ȃ��́A�����Ɠ����󋵂����o����PC1�������v���o���̂ł͂Ȃ����ƍl�����B�E�l���͉G�L�َ������Č����邽�߂��B
-<br>���Ȃ��́y�{���̎g���z�́APC1�̋L�������߂����Ƃł���B
-<br>
-</div><div class="text canon">�y�����V �É��z<br />�c�c�����q���
-</div><div class="text gm">�yGM�z<br />�X�N���b�v��ꕔ�̎�L�A�܂��Ö��␸�_��w�̓��e�ł��傤���ǂˁB���̕ӂ�˂��l�߂�΁A�ނ̑_���͂����ǂ݉������̂ł��傤�B
-</div><table><tr>
-    <td class="FoldButton">
-    <span id=rgn_button_1 class="FoldButton"
-     onclick="Fold(1)">+</span></td>
-    <td id=rgn_summary_1>&nbsp;����G�k���ł�</td>
-    <td id=rgn_content_1 class="FoldContent">
-<div class="text gm">�yGM�z<br />���͐����������ƌ����Ă�񂾂�ȁA�É����񂪁i���̌�I����������O�������ǁj
-</div><div class="text canon">�y�����V �É��z<br />���������āASAN�l���^���������ł���
-</div><div class="text gm">�yGM�z<br />����SAN�L�����[�Ɖ������ł������
-</div><div class="text canon">�y�����V �É��z<br />�m�M���Ă�悤�Ɏv���o���A���Č����Ă��͓̂��l�̊肢�����߂��Ă��񂾂ȁc
-</div><div class="text gm">�yGM�z<br />�ł��B�����̉����������B
-    </td>
-</tr></table>
-<div class="text canon">�y�����V �É��z<br />�u�c�c�������ߌ��Ƃ������c�c�A�������A����Ȃ�c�ޏ��̌��t�ɖ��������邩�ȁH�v�@����܂ł̒T����A���Č���������Ȃ痬�΂ɕʐl���낤���A���炩�ɏ���ɓG�ӂ����������悤�Ƃ��Ă�������
-</div><div class="text gm">�yGM�z<br />���Ȃ��̑�Z�����m�炵�߂����Ƃ��^�����Ƃ���Ȃ�΁A�m���ɔޏ��̌��t�ƐH���Ⴄ�ӏ�������܂��ˁB
-</div><div class="text canon">�y�����V �É��z<br />���Ȃ݂ɍ��A����ɉ���Ƃ���Ή�܂��H
-</div><div class="text gm">�yGM�z<br />���Ȃ畔���ɗ��Ă���܂���B�O�ł������ł����ǁB
-</div><div class="text canon">�y�����V �É��z<br />�܂��Ȃ痈�Ă��炢�܂��傤��
-</div><div class="text gm">�yGM�z<br />����Ȃ�A���֊��Ɍ��������Ă����É�����̔w��ŁA���������ނ������ȉ����������܂��B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�c�\�\����A�����c�H�v�@�܂������Ă͂��܂��ˁB�����Ă�Ƃ��B
-</div><div class="text canon">�y�����V �É��z<br />�u�����A�N�������̂��v�@�C�z�ɋC�t������܂��A���ł��Ȃ��悤�ɐ��������܂�
-</div><div class="text canon">�y�����V �É��z<br />�u���߂�ˁA��������Ȃ��āA�N�̊�݂̐^���ɋC�t���Ă��܂����݂������B�@�ق牴�A���T�ゾ����v�@���Ĕ��΂ނ݂�����
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�c�����A�����ł����v�@�ӂ��ƁA���̗͂𔲂��āB���s�������΁A�Ƃ�����΋��������Ȃ���ŁB
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ł��A�L���͖߂��Ă��Ȃ��B�����ł��傤�H�v�@�{�I�ɋ߂Â��āA�����ȒI���牽�������o���܂��B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�v���o���������A�ǂ��̂��낤���ǂˁB�c�L���̂Ȃ����́A�N�ɂƂ��Ė����l���ȁH�v�@�ӂށH
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�������A�M���͋M�����B�c������A�v�@���ˊ�ł��B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u������x�A��蒼���΂����B�c�܂��A��͂���܂�����v�@�ˁA���ď�����������āB
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c�A��������āA�J��Ԃ��āA����͉��x�ڂȂ̂��ȁH�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�l���Ȃ��悤�ɁA���Ă�B�c�łȂ��ƁA������ꂻ�����Ȃ��v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�M���̐g�̂ɉe���͂Ȃ��B���_�I�ɂ��c���ȏ�̂��Ƃ́A�����v�@������݊���āB
-</div><div class="text canon">�y�����V �É��z<br />�u���̕��@�����āA�����L���͖߂邩������Ȃ���H�v�@����͈���ނ���
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���邩���킩��Ȃ��s�m���Ȃ��Ƃ������̂́A�M���炵���Ȃ��ȁv�@�܂��M���̌����ł����ǂˁB
-</div><div class="text canon">�y�����V �É��z<br />�u�c�A�J��Ԃ��̂Ȃ�A���̎g�p�l�͕ʂ̐l�ɃL���X�g���˗����������������낤�ˁv�@���ɓ������Ă��܂�����A���������ߑ�������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����ł����H�@���܂�A���l���������݂����͖�����ł����v�@�ς��Ȃ��A������߂̕\��ŁA���̂܂ܕ��݊��܂��ˁB
-</div><div class="text canon">�y�����V �É��z<br />�u���ɁA�N���^���悤�Ɏd�����Ă�������ˁB���Ȃ��Ƃ��A�N�̖ړI�Ƃ͈�v���Ȃ����낤�v�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�c�A�����H�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����Ȃ��Ƃ�����������͂Ȃ������ȁc�܂��A���ꂪ�L���̕������Ɍq����Ǝv�����̂�������Ȃ����v�@�ЂƂ育���āB
-</div><div class="text canon">�y�����V �É��z<br />�u����B�ޏ��̌��������ƁA�u�T����v�́A����܂ŉ��l�������������B�܂�ŁA��肭�������ł��Ȃ�������A�E�����c�݂����Ɏv�킹���������݂������ˁB�c���Ƃ��ẮA���̂�����A���ׂĂ݂����񂾂��ǁB�c�c�ǂ������Z�b�g����̂Ȃ�A�����������Ɏ��Ԃ����炦�Ȃ��H�v�@���߁H���ċ�΂��邩�炱��
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�T����A�����āH�@�����̔Ɛl�������Ƃ��A�����������Ƃ���Ȃ��c���̎��ÁA���̂��̂ɑ΂��āH�v�@���̖ʂŊ����߂�Ɛl�E���������Ȃ��O
-</div><div class="text canon">�y�����V �É��z<br />�u�����������ƁB����Șb�𕷂����ꂽ��A���͉��x�����āA���������N�̐^�ӂ̕��𒲂ׂ���𓾂Ȃ��v�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����́c����ł́A�_��ƈႤ���낤�B���́A���񂽂Ɏ������������āA����Łc�v�@�O���킵�킵���Ă�B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���̂��߂ɁA���́[�[�v�@���h���Ă�̂��A�肪�k���Ē��ˊ����藎�Ƃ��B�������ƁA�Ƃ��y�����B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�܂��A�ޏ��Ƃ��ẮA���ɒ����łȂ��A�N�Ƒ��킹���������݂���������A�c���̂��̏󋵂͑z��O��������Ȃ�����ǁv�@����͂���A���΂�Œ��ˊ퓥�݊���܂���
-</div><div class="text takayuki">�y�r�� ��V�z<br />�܂��\�����炢�͂���ł��傤���ǂ˗��΂ɁB�Ƃ͂������݊���ꂽ��т���Ƃ�������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���́A���񂽂Ɂv�@�k���铵�ŁA�������悤�Ɍ��グ�āB
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����A�c�v���o���ė~���������A�����Ȃ񂾁c�v�@�v���o����ĂȂ����Ƃ������邩��A�܂���]���āA���������ɂȂ�B
-</div><div class="text canon">�y�����V �É��z<br />�u�_��A�Ƃ�������ɂ́A�N���ق����Ƃ����͎̂����炵���ˁv�@�^��������������グ�āA���΂����Ƃ��Ă���Ȋ炳�ꂽ��Ȃ�
-</div><div class="text canon">�y�����V �É��z<br />�u�c�����܂ŁA�z���Ă��炦�邱�Ǝ��̂́A�������͂����B�c�ޏ��̘b�𕷂��āA�N�̎��������ɑ΂��ĂłȂ����Ƃ��c�O���Ǝv��������ǁA���Ȃ��Ƃ����̊���́A���Ɍ����Ă���Ă���݂��������ˁv�@���ē��ۂ���Ƃ�����
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�c���A�v�@�������Ă���͐U�蕥���i��������j�i�蕉���̏b���j
-</div><div class="text canon">�y�����V �É��z<br />�u�����̏���A�łȂ��A�F�l�������񂾂낤�H�@�c�Ȃ�A�������炢���̉��̌��t�������Ă���Ȃ����ȁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���A�́v�@�܂������ԎQ���Ă�̂͌��Ă̒ʂ�Ȃ̂ł����܂ł����ƕ����邩�͂킩��񂯂ǒ��ˊ�܂��o���Ƃ��͂��܂���i
-</div><div class="text canon">�y�����V �É��z<br />�u�T��Ƃ��ẮA�䂪����Ȃ�����Ȃ��킯�ɂ͂����Ȃ����A����̌N�ɂ͎�`���Ă����Ȃ��Ɓv�@�Ƃ������@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u��c�H�@�Ȃ�A�������c�v
-</div><div class="text canon">�y�����V �É��z<br />�u���������t�������Ă��\��Ȃ����ǁA�܂��͎g�p�l�̖ړI�ɂ��āA���ȁv�@���Ĕ��΂݂܂���
-</div><div class="text takayuki">�y�r�� ��V�z<br />�ڂ��ς����肳���āA�v�Ă��Ă݂邯�ǂ��B�u�c���ǁA�ޏ��͂����c�����Ƃ��āA�́v�@�G�L�َ����̓o��l���Ƃ��ē����ĂȂ������Č��������i�����ɂ��Ă����v�l���������Ȃ��j
-</div><div class="text canon">�y�����V �É��z<br />�u�����ɔw���Ă���̂Ȃ�A����Ȃ�̗��R�����锤���B�������������Ȃ����Ƃɂ́A���ǂ܂��������ƂɂȂ邩������Ȃ���v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����́c���ǁA����Ȃ��Ƃ�艴�́A���񂽂��c�v�@�܂����ˊ�o���Ȃ您�O��
-</div><div class="text canon">�y�����V �É��z<br />�u�N������������́u�{���v�̓��������Ȃ��B�c���x����Ă��A��蕨�ŉ��̐S�͓�������Ȃ��Ǝv���v�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�c���A�v�@����͎茵�����B����ꂽ��񂱂݂����ɂȂ�B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���ǁc��������āA�ǂ�������ǂ��H�@�{���̐l�Ԃ����ꂾ���̐��W�߂Ă����͓̂�����c�v
-</div><div class="text canon">�y�����V �É��z<br />�u�w�͔͂F�߂邯�ǂˁB�c��������A�{���̓�̕����C�ɂȂ��Ă��܂��B�c�T��̐��Ƃ�������ȁH�v�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�{���c�A�c�Ȃ�A�{���Ɂv�@�ۂA��
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�������΁A�ǂ��̂��v�@���ꂾ�����ڂ��āA�ӂ���ƕ������o������
-</div><div class="text canon">�y�����V �É��z<br />����̓_���ȓz�ł́H�H�H�H�H�H�@����͒ǂ��Ęr�Ђ����݂����ł���
-</div><div class="text gm">�yGM�z<br />�܂��S�̓_�b�V�����Ă��Ƃł��Ȃ�����߂܂�͂��邯�ǁA�����͂Â����ۂ��Ȃ�Ɛ퓬�����ɂ��ăN���C�}�b�N�X�ڍs�ɂ��邩��C��t���Ă�
-</div><div class="text canon">�y�����V �É��z<br />�j�ł������Ă�肽���Ƃ��낾���ǁA����͍���c����
-</div><div class="text canon">�y�����V �É��z<br />�u���A���������N�̍s�����s�R�߂���v�@���Ă��ߑ��f�����炢�ɂƂǂ߂悤
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�[�[���A�����A��c�I�v�@�������������܂ŋ����͂Ȃ��Ƃ������A�͂����߂��Ȃ��Ƃ�����
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���̂��Ƃ͂ǂ������ėǂ����낤���I�v
-</div><div class="text canon">�y�����V �É��z<br />�u�c���̗F�l���A�ƍߎ҂ɂ͂��Ȃ��ł���Ȃ����v�@���ċ�΂��邶��񂻂�Ȃ�
-</div><div class="text takayuki">�y�r�� ��V�z<br />����A�Ǝ������肵�āA�u�c�v���o�����A���Ȃ��ȂɁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�����āA�����ł��ꏝ�t�����炷��񂾂��
-</div><div class="text canon">�y�����V �É��z<br />�u�N�̒m��A�u�����V�É��v�́A�N�̂��Ƃ��ǂ��Ƃ��v��Ȃ��悤�ȗ⌌�����������ȁc�H�v�v���o���Ȃ��͎̂����Ȃ̂ŁA�������Ƃ����ł��Ȃ����
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���Ζʂ݂����Ȃ��́A���낤�B��������A�Ԃ̑��l���v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���邢�́A���񂽂������ɝf�v�ċւ��Ă�A���h�Ȕƍߎ҂��B�Ƃ����ɂȁv
-</div><div class="text canon">�y�����V �É��z<br />�u�c�����́A���̂��Ƃ�z���Ă��Ƃ킩���Ă��邩��A���e�ł���͈͂��v�@���Č���
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�X�g�[�J�[�Ɏh�����^�C�v�̂��l�D�����ȁv
-</div><div class="text canon">�y�����V �É��z<br />�u���ہA��x���x���炢�A�Ɛl�Ɏh���ꂽ���Ƃł��������񂶂�Ȃ����ȁH�v�@���Ă����Ă�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c������A���́v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���񂽂ɁA�����������ĖႢ���������񂾁B�c���񂽂���x�ƁA����ȕ��ɂȂ�Ȃ��A�悤�Ɂv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���̂��߂Ȃ�A�c�������Ă�����āA�v���āB��������A�c���x�͂����ƁA���΂����񂾂�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�{���́A�������v
-</div><div class="text canon">�y�����V �É��z<br />�u�c�N���A���̂��߂ɐl���E���Ƃ����̂Ȃ�A�c���΂ɋ����Ȃ����낤�ˁv�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����Ȃ��Ă����v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����ł��񂽂��A�v���o����Ȃ�v
-</div><div class="text canon">�y�����V �É��z<br />�u�v���o���Ȃ�������A����͖��ʂȋ]������v
-</div><div class="text canon">�y�����V �É��z<br />�u�ǂ�ȗ��R�����낤�ƁA�l���E���ėǂ����R�ɂ͂Ȃ�Ȃ��B�c���͂��������Ă��Ȃ������H�v�@���ċ�΂��邩
-</div><div class="text takayuki">�y�r�� ��V�z<br />������Ɩڂ͉j���B�u�c�c�A���Ȃ����ᕪ����Ȃ�����B���񂽂��������񂾁A�{������Ȃ��ƁA���āv
-</div><div class="text canon">�y�����V �É��z<br />����␂߂邩�@�u����Ȃ��Ƃ������邭�炢�Ȃ�A�����g�����񂾕��������v�@�Ƃ�������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�S�z���Ȃ��Ă��A�ǂ����܂��A�����ɖY���v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�����A���ꂽ�񂾁B�Y����邱�ƁA���̂��̂́v�@�����ł��A����͑ς����Ȃ��������B�ڂ���Ƃ��āA�������U�蕥���Ă���͓�����B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c�卪���҂���������Ȃ��v�@���Ă���͋�΂��邶���
-</div><div class="text gm">�yGM�z<br />�K�`�Œǂ��Ȃ狏�������Ȃ̂Ō������邯�ǁA������Ă܂�퓬�����ɂȂ�̂łƂ肠�������낻��V�[���؂邩�Ȃ��炢�ł�GM�I�ɂ�
-</div><div class="text canon">�y�����V �É��z<br />�܂�����A��U�V�[���؂�܂��傤���@������������j�������ȁ[
-</div>
-<table><tr>
-    <td class="FoldButton">
-    <span id=rgn_button_2 class="FoldButton"
-     onclick="Fold(2)">+</span></td>
-    <td id=rgn_summary_2>&nbsp;����G�k���ł�</td>
-    <td id=rgn_content_2 class="FoldContent">
-</div><div class="text gm">�yGM�z<br />���O�̂�����ۂǕa�@�Č���
-</div><div class="text canon">�y�����V �É��z<br />���OSAN�c���Ă�H�H�H�H�H�H
-</div><div class="text gm">�yGM�z<br />��������
-</div><div class="text canon">�y�����V �É��z<br />�{���̎��̂͂�߂Ă���旊�ނ���c�c
-</div><div class="text gm">�yGM�z<br />�����Ă����������Ƃ��Ȃ��āc
-</div><div class="text canon">�y�����V �É��z<br />���O�A���\�ȃn�}����������ȁc���Ċ�����Ă���
-</div><div class="text gm">�yGM�z<br />�Ăց[
-    </td>
-</tr></table>
-<br />�@<br />�@<div class="subtitle" id="main4">��4�T�C�N���ځ@<a href="#index">��</a>
-</div><div class="text gm">�yGM�z<br />�ł͍ŏI�V�[���ł��ˁB�ǂ��s���܂��H
-</div><div class="text canon">�y�����V �É��z<br />�܂��A�������Ȃ��Ȃ�΁A�ނ����̒��Ԃ͑������Ȃ��̂ŁA�o�Ă����A���ĕ��j�͂���͂���ŃA���ł��ˁB�c�L�������߂��A���ړI�Ƃ͌����A�����𒲂ׂĎv���o���ۏ؂��Ȃ��킯�ł���
-</div><div class="text canon">�y�����V �É��z<br />�Ƃ肠�����ޘH�̊m�ۂ͂��Ă����܂��傤�B�Ƃ����킯�Łu�����v��
-</div><div class="text gm">�yGM�z<br />�͂��ȁB
-</div><div class="event">������
-<br>�閧
-<br>�V���b�N�F�Ȃ�
-<br>���͉�ꂽ�̂ł͂Ȃ��A�N���ɉ󂳂ꂽ�悤���B���u�����ɐςݏオ�������̉A�ɁA�����Ȋ����B����Ă���B
-<br>�v���C�Y�u�����Ȋ��v���l������B
-<br>
-</div><div class="event">�����Ȋ�
-<br>�y�T�v�z
-<br>�v���C�Y�B���u�����ɉB����Ă������B
-<br>������͎��R�ɂ��̃v���C�Y�́y�閧�z��������B
-<br>
-</div><div class="text canon">�y�����V �É��z<br />�܂��A���܂���ˁ@�T��Ƃ��Ă�
-</div><div class="text gm">�yGM�z<br />�m���Ă��B�T�ゾ�����
-</div><div class="event">�����Ȋ�
-<br>�閧
-<br>�V���b�N�F�Ȃ�
-<br>�ׁX�������ɕ���ĕ����������Ă���B����́w�g�p�l�x�A���o�l�́w����x�̖��O���B
-<br>�u�ǂ������肢���܂��B���̎��݂ɂ��Ȃ����N��蔽�΂��Ă���̂͏��m���Ă��܂��B�ł��A�G�L�َ����̉����̂��߂ɕK�v�Ȃ��ƂȂ�ł��B
-<br>�艞���͂���܂��B�O�N�O�̎������Č�����΁APC1�͕K���L�������߂��B�����Đ^�������炩�ɂȂ�͂��ł��B
-<br>�قł��҂����Ă��܂��v
-<br>�u�g�p�l�v�̃n���h�A�E�g�����J����B
-<br>
-</div><div class="event">�g�p�l
-<br>�y�g���z
-<br>���Ȃ��́w����x�Ɍق��A���̊ق̎E�l���ɎQ�����Ă����B�������A���Ȃ��͖{���̎E�l���s���Ă��邱�Ƃ�m���Ă��܂����B
-<br>���Ȃ��́y�g���z�́A���̊ق���E�o���邱�Ƃ��B
-<br>
-</div><div class="text gm">�yGM�z<br />����ȂƂ��납�ȁB
-</div><div class="text canon">�y�����V �É��z<br />�܂��A�ޏ��ɘb�𕷂��ɍs�����Ǝv���Ă����Ƃ���ł�������ˁB���傤�ǂ����B
-</div><div class="text gm">�yGM�z<br />���ډ���Ęb���܂��H
-</div><div class="text canon">�y�����V �É��z<br />����ł������Ȃ��ā@
-</div><div class="text gm">�yGM�z<br />�����ɂ���p�^�[�����Ȃ�������B
-</div><div class="text azusa">�y���� ���z<br />�u���A����͖��T��I�@���̌�̒����A�������ł����B���Ƃ��Ă͂��낻��d�|���Ă����Ȃ��ƁA���̒j��Ȃ��C�����܂���v�@�Ԉ���Ă͂˂������
-</div><div class="text canon">�y�����V �É��z<br />�u�������ˁA������x�ŏR���t���Ȃ��ƁA�ނɏP���Ă��܂��������v�@�ق�Ƃ�
-</div><div class="text azusa">�y���� ���z<br />�u�Ȃ�ł�����A�~�[����{�����o���Ƃ������Ă݂܂��傤���B��肢���ƗU���ɏ���Ă��ꂻ���Ȃ�A�w�ォ��ł������A�ǁ[��Ɓv
-</div><div class="text canon">�y�����V �É��z<br />�u�������ˁB���邢�́A�N�ɐF�d�|���ł����Ă��炨�����ȁH�v���Ă����A�ǂɒǂ��l�߂�悤�߂Â��Ă݂���Ƃ�
-</div><div class="text azusa">�y���� ���z<br />�u�����c���̒j�ɐF�d�|�����āA���\�����Ԗ�������Ȃ��ł��H�@�����Ă��̐l�A�u���T��v�ɂ����ӎ������Ă܂����A�ق�Ɓv
-</div><div class="text canon">�y�����V �É��z<br />�u�������ˁB�c�u���v�ɐ����Ƃ����S�炵���v�@
-</div><div class="text azusa">�y���� ���z<br />�u�ނ��낻��Ȃ�M�����d�|���������c����ł��A����D���̂����ɂł��邩���Ă����c�H�v�@���ɂ���ɂ�H
-</div><div class="text azusa">�y���� ���z<br />�u���₢��A���ی��Ă�̂͋M������Ȃ��ł����āB���̒j���v�������ׂĂ�A���z�̖��T��ł���B�ǂ��ɂ��邩������Ȃ��c���Ă������A��z����Ȃ��ł��H�@�������v
-</div><div class="text canon">�y�����V �É��z<br />�u�܂��A����ȂƂ���ł�����ꂽ�����A�ނ�邩�ȁH�v�@�Ƃ������A�ǍۂŊ{�N�C�Ƃ������肵�āA�@�u�c����ŁA�N������ȉR��f���Ă܂ŁA���Ɣނ�G�΂����������R�͉����ȁH�v�@�Ƃ����΂񂾂肷��
-</div><div class="text azusa">�y���� ���z<br />�u�c����͂܂��A���̂��b�ł��H�v�@������ƕs�G�ȖڂŁB���낻�딻��ł����ː搶
-</div><div class="text canon">�y�����V �É��z<br />�u�ߋ��̂��̎����Ɋւ���L�����������ĂˁB�c�ʐ^�͂����Ɖ��Ɣނ��f���Ă����񂾁B�@�N�̘b�Ƃ͋؂�����Ȃ��񂶂�Ȃ����ȁH�v���Č�����������̂ŁA�_���I�Ȑ����ł��܂��ł��邩�s���w�t�Œ�������Ƃ��ǂ����낤
-</div><div class="text gm">�yGM�z<br />�ӂӁB����ǂ����B
-</div><div class="dice">�����V �É��F2D6>=5 ��������s���w�t�F
-<br>Insane : (2D6>=5) �� 4[1,3] �� 4 �� ���s
-</div><div class="text azusa">�y���� ���z<br />�u���́A����Ȃ��Ƃł��H�@�ǂ����A���̒j���������Ă�������ł��傤��B�����A�ʐ^��������̂Ȃ�ă��P�Ȃ�����Ȃ��ł����v
-</div><div class="text azusa">�y���� ���z<br />�u���ꂱ���M����f�킷���߂ɁA�����J�Ɏd�|���Ă��������čl���������A�������肫�܂����v
-</div><div class="text canon">�y�����V �É��z<br />���Č�����ȁA�܂��ȁc�@�u��������͑z�肵�����ǂˁB�c�ނ͂����܂ŉ��Z����肢�悤�ɂ͌����Ȃ���������B�N�̕����]�����҂炵���B���X�N�́A���̘b�ɔ��΂��Ă����炵������ǁA����͂ǂ����Ă��ȁH�v
-</div><div class="text azusa">�y���� ���z<br />�u�����āA�ǂ��l���Ă����o���b����Ȃ��ł����B����Ȏ����A�x�@�Ƀo�������u�ł���ł���H�v
-</div><div class="text canon">�y�����V �É��z<br />�u�Ȃ�A�N����������΂����B�킴�킴���܂Ŋ������ޕK�v�͂Ȃ���ˁc���l������u�T����v�Ȃ�A�N�Ƃ����̊ւ���Ȃ��͂����v
-</div><div class="text azusa">�y���� ���z<br />�u�c����A�����炻�̂��߂ɁA�����K�v�Ȃ�ł����āv�@���킩��H
-</div><div class="text canon">�y�����V �É��z<br />�u�����̌������Ă����B���������瓦����Ƃ����v�@���Č����܂��˂����
-</div><div class="text azusa">�y���� ���z<br />�u���H�v�@�ς�����B�u����A�܂��B�c����Ȃ�A�����A�����t�ɊÂ��āv
-</div><div class="text azusa">�y���� ���z<br />�u�ŁA�M���́H�@���̌��U�肾�ƁA�ꏏ�ɓ�������肶��Ȃ���ł��H�v
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c���������Ȃ����F�l������āA�����o���킯�ɂ͂����Ȃ��ł���B�c�j�Ƃ��Ă͂��v
-</div><div class="text azusa">�y���� ���z<br />�u����A����ʂ̐l����c�܁A�����ł����ǁB���͂�������o����΂���ŗǂ���ł����v�@�g���ɂ����������Ă��邵�ȁB
-</div><div class="text azusa">�y���� ���z<br />�u���������撣���Ă��������ˁA���T�コ��v�@������Ə΂��āA��������o�Ă����܂����ˁB
-</div><div class="text canon">�y�����V �É��z<br />�u�c�ޏ��̕����ꖇ��肾�����ȁv�������Ă���A����␂߂܂���
-</div><div class="text gm">�yGM�z<br />�͂��ȁB���Ⴀ�V�[����������Ă����H
-</div><div class="text canon">�y�����V �É��z<br />�ꉞ��������Ƃ�����ʂ�ڂ�ʂ������͂��邯�ǁA���̂����Ă���Ă��Ƃ͈ꉞ�m�F�͂��Ă���B���Ԃ�B�@�o�ڂ����񂾎��_�ł����ł��邱�Ƃ��Ȃ��Ƃ݂Ă���̂ŁAOK�ł�
-</div><div class="text gm">�yGM�z<br />�͂��B
-</div><div class="text gm">�yGM�z<br />���C���t�F�C�Y���I���A�N���C�}�b�N�X�t�F�C�Y�ɂȂ�܂��ˁB
-</div><br />�@<br />�@
-<div class="title" id="climax">���N���C�}�b�N�X�t�F�C�Y�@<a href="#index">��</a></div>
-<div class="text gm">�yGM�z<br />���āA�ł̓N���C�}�b�N�X�t�F�C�Y�ł��B��������s��������ΐ錾���Ă�����āA����ɉ����Đi�߂�`�ɂȂ�܂��B
-</div><div class="text gm">�yGM�z<br />����z�肳���̂́u��������O�ɏo��v�u��V�ɐ퓬���d�|����v�u�퓬���d�|���邩�͂Ƃ�������������v�u�������Ȃ��v�Ƃ�����ȂƂ��납�ȁB
-</div><div class="text canon">�y�����V �É��z<br />�ꉞ�A�Ō�ɖr���N�Ɖ�b�𒧂݂������ȁB���􂷂�悤�Ȃ�A��������o�Ă�������ł��i�܂��������Ă���Ȃ��Ǝv���̂Ő퓬�ɂȂ邩�Ȃ��Ďv���Ă܂�
-</div><div class="text gm">�yGM�z<br />����Ȃ痠���ɂ��邠�Ȃ��̂Ƃ���ɑ�V������Ă���p�^�[�����ȁB
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�����A�搶�v�@�����ƒ��ˊ펝���Ă��B����Ȕ��΂ŁB�u�����ɋ�����ł��ˁv
-</div><div class="text canon">�y�����V �É��z<br />�u�c�N�͂܂��A����Ȃ��̎����o���āv�@��b����C�˂����남�O
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����������Ȃ��ł����A�c�����܂�����ˁH�@�ʂɁA�M���̐g�̂Ɉ����e���͖������āv
-</div><div class="text canon">�y�����V �É��z<br />GM�A�N���C�}�b�N�X�Ȃ�閧�ɗ��ޘb�����Ă��ǂ��ł��H
-</div><div class="text gm">�yGM�z<br />���[�c�퓬�����ĂȂ����_���ł��B�����̔閧�Ȃ�퓬�ȍ~�ŁB
-</div><div class="text canon">�y�����V �É��z<br />���A�������B�����ł�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u������x�A��蒼���Ηǂ���ł��B�c�ޏ��̂����ŁA�������Ȃ��ƂɂȂ��������Łv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u��蒼���΂����B�c����܂łƁA�����悤�Ɂv
-</div><div class="text canon">�y�����V �É��z<br />�u�����������āA�N�̖ژ_�������������̂́A���񂪏��߂Ă��ȁH�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����ł��ˁB���������Ӗ��ł́A���T��炵���Ȃ��Ă��܂�����A�搶�v
-</div><div class="text canon">�y�����V �É��z<br />�u�c���̖�A�{���ɂ��ׂĂȂ��������Ƃɂł��Ă���Ǝv���H�v�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�܂��A������肭�͂����Ȃ����āA�������Ă܂���B������A���s�񐔂ŃJ�o�[���Ă��ł��v
-</div><div class="text canon">�y�����V �É��z<br />�u���́A���s�񐔂����A��肾�Ƃ�����H�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c������J��Ԃ��Ă��邱�Ƃ��A���������v���o�����Ƃ�j�Q���Ă���A�Ƃ������Ƃł��H�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����Ƃ͌����Ȃ��ł��傤�ˁB����ł��A���͑����܂��c��������ׂ����ƁA�M���Ă���v
-</div><div class="text canon">�y�����V �É��z<br />�u�����ꂽ�L�����ςݏd�Ȃ�΁A�v���o���͈̂�̂��̋L�����낤�ˁH�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ʂɁA���̍Œ��̂��Ƃ́A������ł��Y��č\���܂����v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���̎��܂ł̂��񂽂ɖ߂��Ă��ꂳ������Ηǂ��B���ꂾ�����v
-</div><div class="text canon">�y�����V �É��z<br />�u�������ɖ߂�����A�N�͂ǂ����ė~�����́H�v�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���ꂾ���ł����v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���ɂ͂����A�����v��Ȃ��񂾁v�@�����A�ǂ������тȏ΂݂𕂂��ׂāB
-</div><div class="text canon">�y�����V �É��z<br />�u�c�߂邩���킩��Ȃ��ߋ��̂��߂ɁA���x���N�́A�����E���́H�v�@��΂����Ȃ�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���̂��񂽂��E�����ƂɂȂ�ƌ����΁A�����Ȃ̂�������Ȃ��ȁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���񂽂������咣����Ȃ�A�܂艴�����߂Ă�̂͂��񂽂���Ȃ����Ă��ƂɂȂ�B�Ⴄ���H�v
-</div><div class="text canon">�y�����V �É��z<br />�u�����āA�N�͍��̉��ł̓_�����ƌ����񂾂낤�H�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���̂܂܂̂��񂽂Ȃ�ȁv
-</div><div class="text canon">�y�����V �É��z<br />�u�L�����Ȃ��Ƃ��A�F�Ƃ��Ă��A�T��Ƃ��Ă������Ă������Ƃ͂ł��邾�낤�B�c���Ƃ��ẮA���̈Ӗ������邩�킩��Ȃ��J��Ԃ����A�]���L�Ӌ`���Ǝv���񂾂��ǁH�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���������B�����́A�܂���ŕ������Ă��炤�B�c���񂽂��v���o������ȁv
-</div><div class="text canon">�y�����V �É��z<br />�������Q�����ā@�u�Ō��1�B�g�p�l�̔ޏ��͎����̊֌W�҂������̂��ȁH�@�ǂ����ČN�̎����ɔ��΂��Ă����񂾂��H�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ޏ����H�@�c����́A�ޏ����[�[�v
-</div><div class="text gm">�yGM�z<br />�����J������V���A�ӂƁA��a���Ɍ���U��Ԃ�܂��B
-</div><div class="text gm">�yGM�z<br />���Ȃ������̎�����ǂ��悤�ɁA�L���̕��������΂��̂����킩���ł����A
-</div><div class="text gm">�yGM�z<br />���ł��B
-</div><div class="text gm">�yGM�z<br />�܂��Ȃ�������܂����A�΂̎肪�オ���Ă���悤�ł��ˁB
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c���H�@�N�A�K�X�ł��g���Ă����̂��H�v�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����A���͂���ȁc�c�����A��́v
-</div><div class="text gm">�yGM�z<br />�΂̉��͗\�z�ȏ�ɑ����A��l�̂���L�����������Ŗ�������Ă����܂��B���������떧����Ă񂾂�B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�����ɂ́A�������ȊO�̐l�Ԃ͋��Ȃ��A�Ȃ�A���΂Ȃ�Ă��Ƃ́c�c�v�@�킠
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����́c�������A�v�@��ł������āA�������o���܂��B�����̌����ɓ�����ł���
-</div><div class="text gm">�yGM�z<br />�J���Ȃ��݂����ŁB�������́A���͊J�������ǔ����J���Ȃ��B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�l���Ă��Ď��ʂ̂��n���n���������B�@�c�c�����A�c���H�v�@����
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ȁ[�[���Ȃ񂾁A�����I�v�@�h���ƒ@���Ă݂邯��ǂ��B
-</div><div class="text canon">�y�����V �É��z<br />�u�c����A�ޏ����������瓦�������񂾂��ǁA�c�O���牽�����ꂽ���ȁH�@�N�A���݂ł������������H�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���������c�����A�����I�@�����Ă�ɂ���������@�ƌ������āA�g�̒Ⴍ���Ă�I�v
-</div><div class="text canon">�y�����V �É��z<br />�u���ւ̕��̌��A�N�������Ă���ƕ���������ǁc�������܂ŉ���H�v�@�܂��ꉞ����ꂽ�ʂ肵�Ⴊ��Ō���������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ق��Ă�I�v�@�]���̌����玩���͍\����B�R�j�邾���ł��悱��Ȃ́B
-</div><div class="text gm">�yGM�z<br />���ւɖ߂�́A�����ɉ����[�����Ă鎞�_�łقڎ��ɂɍs�������ł���B
-</div><div class="text gm">�yGM�z<br />�܂��ؐ��̌Â��˂ł���ŁA�R�j��͂��܂��B���P�N�\�C���ɏR��|���΁A�O���̃m�u�������Ă����Ƃ�������܂��B�܂�����͂���Ƃ��āB
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����s���I�@�c�c�b�A���v�@�܂��ǂ����Ă�����ɑ����z���̂ŋC�ǂɓ����Ĉ��
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c������x�A�����悤�Ȗڂɑ�������A�v���o����������Ȃ���H�v�@���ċ�΂����肷��̂�˂���ˁ@�Ύ��Ɋ������܂�ċL���������Ă��ł���ˁH
-</div><div class="text gm">�yGM�z<br />�����ǂ݂���Ȃ��ł����B��V�ɖ������R��o����Ȃ���A�ق��R���Ă����l�q�����Ď��܂��B
-</div><div class="text gm">�yGM�z<br />�s�ċp�t�ŋ��|����B
-</div><div class="text canon">�y�����V �É��z<br />�s�x�сt�ő�p���ĖڕW�l8�@�c�c�퓬����Ȃ��̂ŉ�z��������s�H
-</div><div class="text gm">�yGM�z<br />���߂ł��B
-</div><div class="dice">�����V �É��F2D6>=8 ���|����s�ċp�i�x�сF�ő�p�j�t�F
-<br>Insane : (2D6>=8) �� 9[4,5] �� 9 �� ����
-</div><div class="text gm">�yGM�z<br />�������̂����搶�c
-</div><div class="text gm">�yGM�z<br />�ł́A����Ȃ��Ȃ��̔w��ɁA�����������܂��B
-</div><div class="text azusa">�y���� ���z<br />�u�[�[�ق�ƁA���������ł��˂��B���񂽂��Đl�́v
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c�����A���������āA3�N�O�̎������A�N���Ɛl�������̂��ȁH�v�@���فA���ĂȂ�Ȃ���
-</div><div class="text azusa">�y���� ���z<br />�u������Đ����ł��H�@����Ƃ��[�[�{���Ɏv���o�����A�Ƃ��H�v
-</div><div class="text azusa">�y���� ���z<br />�u�₾�A�΂����Ⴄ�B���̐l�̖ό��A�������������ƂɂȂ����Ⴄ����Ȃ��ł����v
-</div><div class="text gm">�yGM�z<br />�R���オ��قɔw�������āA�ޏ��ƑΛ�����[�[���̏u�ԁA�M���̔]���ɂЂ�߂����i������܂��B
-</div><div class="text gm">�yGM�z<br />�O�N�O�A�G�L�قŎE�l�����ɑ����������ƁB
-</div><div class="text gm">�yGM�z<br />�ڂ̑O�ɗ��A�g�p�l�u���� ���v�����̔Ɛl���������ƁB
-</div><div class="text gm">�yGM�z<br />����ǔޏ��̋t�P�ɑ����A�قɉ΂������[�[�Ɛl����蓦���������ƁB
-</div><div class="text gm">�yGM�z<br />�����ǂ��A�������A���ׂĂ��r�߂ĔR���オ�点�Ă����悤�ɁA�M���̔]�זE����u�ɂ��ĕ������܂��B
-</div><div class="text gm">�yGM�z<br />�M���͊ԈႢ�Ȃ��A���T��u�����V �É��v�ł���[�[���̎����̌�A������藯�߂Ȃ�����A��؂̋L���������Ă����̂��ƁB
-</div><div class="text gm">�yGM�z<br />�����̑O����A�����A�M�����x���Ă����͂��̏���u�r�� ��V�v���A�މ@�����M����������肻�̐��b�����Ă����̂��ƁB
-</div><div class="text gm">�yGM�z<br />�S�Ă��v���o���A�����č��A�M���̖ڂ̑O�Ŕޏ����o���Ă��܂��B
-</div><div class="text gm">�yGM�z<br />�O�N�O�Ɠ����悤�ɁB
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c�Ȃ�قǁA����Ȃ炷�ׂāA���낪�����킯���B�c���Ԃɕt�������΁A�������Ƃł��ނɌ���ꂽ���ȁB�c�Ɛl�����͖{����p�ӂ���Ƃ́A�ނ������Ɩ���������v
-</div><div class="text azusa">�y���� ���z<br />�u�����́A�M��������Ɣނ̕]�������Ȃ��ł��H�@�o�J�ȏ���قǉ����H�v
-</div><div class="text canon">�y�����V �É��z<br />�u�ނƂ͒����t������������ˁB�c���ہA������Ƒf���߂��邫�炢������Ƃ͎v����v
-</div><div class="text azusa">�y���� ���z<br />�u���̃o�J�́A���̂��ƂȂ�āA�����̈���^���Ă܂���ł�����B������Ƃ��߂ł���������Ȃ��ł��H�v
-</div><div class="text azusa">�y���� ���z<br />�u���͂ˁA�����̐����c��Ƃ��āA���񂽂̂��߂̏΂������Ȃ������ɋ��͂��Ă�����āA�������܂ꂽ�̂�v
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c�A���A�܂����c�v�@�Ɛl�킩���ĂȂ��ł����Ɛl�Ɉ˗������Ƃ������̂��H�H�H�H�H�H
-</div><div class="text azusa">�y���� ���z<br />�u�o�b�J���Ǝv��Ȃ��H�@�������񂽂̋L�����A���ʓI�ɒD�������Ƃ��m�炸�ɁI�v
-</div><div class="text gm">�yGM�z<br />���Ȃ݂ɓ��̃o�J�͒ǂ��Ċق��o�Ă邩�Ǝv���΂܂��o�Ă��Ă܂���ˁB
-</div><div class="text canon">�y�����V �É��z<br />�u�c������Ă�񂾁A�v�@��ł����邶���@�����[�c�c
-</div><div class="text azusa">�y���� ���z<br />�u�܁A����Ńq���q���������邱�Ƃ��Ȃ��Ȃ���Ă킯�B���񂽂����x�����A�����ƁA����ł��ꂳ������΂ˁI�v
-</div><div class="text canon">�y�����V �É��z<br />�u���΂ɁA��x�������Ɛl����蓦�����킯�ɂ͂����Ȃ����ȁc�@�T��Ƃ��Ă͂��I�v�@���̔n���A�����Ă��
-</div><div class="text gm">�yGM�z<br />�Ƃ��Ȃ�Ƃ������Ă�ӂ�ŁA�ق��獌���������܂��B�΂̎�͍���ّS�̂ɓn��A�Ƃ��Ƃ��납�����n�߂Ă��܂��B
-</div><div class="text gm">�yGM�z<br />��������A�Q�l�܂łɂ��`�����Ƃ��ƁA�������̖��O�Ăю̂Ă������Ǝv���܂���B�ނ̂��Ƃ́B
-</div><div class="text canon">�y�����V �É��z<br />�u�c��V�I�I�@�N�A�����Ă�񂾁I�@�l���R��o�����񂾂���ǂ��ĂƂ��ƂƏo�ė������I�v�@����ȐU�肳�ꂽ��ĂԂł���
-</div><div class="text gm">�yGM�z<br />�����i���낻�낻�̌��^�͂���܂��񂯂ǂ��j���傫������āA�������ɘL���������Ă��܂��B���傤�Ǔ�l�Ō��_���Ă�������B��������ޏ��Ƃ��b���܂����˂����ŁB
-</div><div class="text gm">�yGM�z<br />����������߂��Ȃ�������o���̂���[�[�����A�m���ɋL���ɂ���p�������܂��B�����������Ă�݂����ł����A�����̑��ŗ����Ă܂��ˁB
-</div><div class="text gm">�yGM�z<br />�Иr�ɉ����A�{�̂悤�Ȃ��̂�����Ă邭�炢�ŁB
-</div><div class="text gm">�yGM�z<br />�Ƃ����킯�ł��̃o�J�͐퓬�ɎQ���ł��܂���B�^�C�}���Ō������ĂˁB
-</div><div class="text canon">�y�����V �É��z<br />���Ȃ��Ǝv������A���̒����ɖ߂����̂��H�H�H�@�n���Ȃ̂��H�H�H
-</div><div class="text gm">�yGM�z<br />�܂��ޏ�������ǂ��낶��Ȃ��E���C�Ȃ̂Ő퓬���܂��傤�ˁB
-</div><div class="text gm">�yGM�z<br />���Ȃ݂ɐ퓬�ɎQ���͂ł��܂��񂪁A��V����̊���C���͓�����܂��B�R�X�g�x�O���A1���E���h�Ɉ��BPC�̔��f�Ŏg���č\���܂���B
-</div><div class="text canon">�y�����V �É��z<br />�u�����������A�Ƃ肠���������Ă���Ȃ�ǂ����I�v�@���Ă��邵���Ȃ����@�����A�퓬�g���邩�Y�񂾂��ǍT���߂ɂ��Ă��܂����c
-</div>   <table><tr>
-        <td class="FoldButton">
-        <span id=rgn_button_3 class="FoldButton"
-         onclick="Fold(3)">+</span></td>
-        <td id=rgn_summary_3>&nbsp;����G�k���ł�</td>
-        <td id=rgn_content_3 class="FoldContent">
-    </div><div class="text canon">�y�����V �É��z<br />����ł��A�����ŉ񓚂��ǂ蒅�����̈̂������ł���c�c
-    </div><div class="text gm">�yGM�z<br />�����
-    </div><div class="text canon">�y�����V �É��z<br />�Ɛl�ɂ��Ă����̂������ۂ����Čl�I�ɂ͂悩�����ł����
-    </div><div class="text gm">�yGM�z<br />����͎����v�����i�@����̔閧��������΂قڐ^���ɋ߂Â��܂�����˂���i�g�p�l�̔����ɖ��炩�Ȗ���������̂Łj
-    </div><div class="text canon">�y�����V �É��z<br />�������Ă����Ă̏Ă����������c�c�@����ł��A�v���o������Ƃ��Ă����R�ł悩�����ł�
-        </td>
-    </tr></table>
-<div class="text gm">�yGM�z<br />���͂́B�ł͏������Ă����܂��傤�A�v���b�g����B
-</div><div class="text gm">�yGM�z<br />�v���b�g�I�[�v���B
-</div><div class="event">�y�ǂǂ�ƂӁz<br />�u�����V �É��v���_�C�X���I�[�v�����܂����B�o�ڂ�1(6�ʃ_�C�X)�ł��B
-</div><div class="event">�y�ǂǂ�ƂӁz<br />�uGM�v���_�C�X���I�[�v�����܂����B�o�ڂ�4(6�ʃ_�C�X)�ł��B
-</div><div class="text gm">�yGM�z<br />�ł͐퓬�J�n�ŁB
-</div><br />
-<div class="subtitle" id="battle1">��1���E���h�ځ@<a href="#index">��</a>
-</div><div class="text gm">�yGM�z<br />���x4:��
-</div><div class="text gm">�yGM�z<br />��{�U���A�ΏۉÉ��B�w����Z�́s���݁t�B
-</div><div class="dice">GM�F2d6>=5 ��{�U���i���݁j
-<br>Insane : (2D6>=5) �� 5[1,4] �� 5 �� ����
-</div><div class="text gm">�yGM�z<br />����ǂ����B
-</div><div class="dice">�����V �É��F2D6>=5 ��𔻒�
-<br>Insane : (2D6>=5) �� 8[2,6] �� 8 �� ����
-</div><div class="text gm">�yGM�z<br />�]�T�ŕ����c
-</div><div class="text gm">�yGM�z<br />���x1�F�É�
-</div><div class="text canon">�y�����V �É��z<br />���������{�U���ŁB�w����Z�́s���Łt�@�T��͑��Ȃ������񂾂�A�Ƃ����킯�ŁA�R��I
-</div><div class="dice">�����V �É��F2D6>=5 �y��{�U���s���Łt�z
-<br>Insane : (2D6>=5) �� 5[2,3] �� 5 �� ����
-</div><div class="dice">GM�F2d6>=8 ��𔻒�
-<br>Insane : (2D6>=8) �� 8[2,6] �� 8 �� ����
-</div>
-<br /><div class="subtitle" id="battle2">��2���E���h��
-</div><div class="text gm">�yGM�z<br />���Ⴀ�����ŁB
-</div><div class="dice">GM�F2d6>=5 ��{�U���i���݁j
-<br>Insane : (2D6>=5) �� 11[5,6] �� 11 �� ����
-</div><div class="dice">�����V �É��F2D6>=5 ��𔻒�
-<br>Insane : (2D6>=5) �� 7[2,5] �� 7 �� ����
-</div><div class="text gm">�yGM�z<br />�É�����ǂ����B
-</div><div class="dice">�����V �É��F2D6>=5 �y��{�U���s���Łt�z
-<br>Insane : (2D6>=5) �� 10[5,5] �� 10 �� ����
-</div><div class="dice">GM�F2d6>=8 ��𔻒�
-<br>Insane : (2D6>=8) �� 6[2,4] �� 6 �� ���s
-</div><div class="text gm">�yGM�z<br />�_���[�W���������B�������ĂȂ�����Œ�l�͂Ȃ��ȁB
-</div><div class="text canon">�y�����V �É��z<br />��z�Ń_���[�W���đ��₹�܂��������H
-</div><div class="text gm">�yGM�z<br />�m�F���܂��B
-</div><div class="text gm">�yGM�z<br />�ł���ˁA1d������B
-</div><div class="text canon">�y�����V �É��z<br />�悵�A�g���܂��傤
-</div><div class="text gm">�yGM�z<br />�ł͓\��t���_���[�W2d�ŐU���ĂˁB
-</div><div class="event">�y�����V �É��z<br /> �閧
-<br>�V���b�N�F�Ȃ�
-<br>�ڊo�߂Ă��炸���ƁA���Ȃ��͋���Ȋ�����������Ă���B
-<br>�ڂ̑O�̌��i�A�l���A����s���A���������Ɍ��o��������B����͋L�����߂钛���Ȃ̂��낤���B����Ƃ��c�c�H
-<br>���Ȃ��́y�{���̎g���z�́A�L�������߂����Ƃ��B
-</div><div class="text gm">�yGM�z<br />�g���B���͏o���Ă܂��ˁB�ł̓_���[�W���₵�āA�ǂ����B
-</div><div class="text canon">�y�����V �É��z<br />�u�����Ŗڂ��o�߂Ă���A�����Ɗ������������ĂˁB�c������܂��A����Ȃ��ƂȂ瓖�R���B�c�N�Ƃ̈����������ŏI��点�悤�B���ƈ��I�v�@�_���[�W�o���܂��I
-</div><div class="dice">�����V �É��F2d6 �_���[�W�F
-<br>Insane : (2D6) �� 10[4,6] �� 10
-</div><div class="text gm">�yGM�z<br />�l�Ԃ��o���_���[�W����˂���B�����Ɠ|��܂��B�����l�̎q�Ȃ̂ŁB
-</div><div class="text gm">�yGM�z<br />���A�����҂��āB���ꂾ�����Ȃ��ƁB�y�񕜁z�B
-</div><div class="dice">GM�F2d6>=5 �񕜁i�l�ފw�j
-<br>Insane : (2D6>=5) �� 8[3,5] �� 8 �� ����
-</div><div class="text gm">�yGM�z<br />�l�ފw�Ŕ���ǂ����B�����ŉ�����܂��B
-</div><div class="text gm">�yGM�z<br />���Ȃ݂ɏC������H
-</div><div class="text canon">�y�����V �É��z<br />���Ⴀ���������i���������Ȃ̂�
-</div><div class="text gm">�yGM�z<br />�ǂ�����������邵�˂��񂽁@�����U��Ȃ����Ƃ肠�����C����+1�ǂ����B
-</div><div class="text canon">�y�����V �É��z<br />�T�ゾ���������������琔�w�ő�p���ĖڕW�l10�@�ɒB���l�{1
-</div><div class="dice">�����V �É��F2D6+1>=10 ����s�l�ފw�t�F
-<br>Insane : (2D6+1>=10) �� 7[1,6]+1 �� 8 �� ���s
-</div><div class="text gm">�yGM�z<br />�c�O�B����g���H��
-</div><div class="text canon">�y�����V �É��z<br />���΂ɂ����܂ł��Ȃ��Ă����i1�_�Ȃ��
-</div><div class="text gm">�yGM�z<br />���炻���H�΁@���Ⴀ�A�Ԃ񉣂������ɃJ�E���^�[�Ńi�C�t�Ő؂�����܂����B1�_�_���[�W�ŁB
-</div><div class="text canon">�y�����V �É��z<br />���񂢂��Ă����܂��傤�B�@�u�c�]��ł���������N���Ȃ��^�C�v���ˁv
-</div><div class="text canon">�y�����V �É��z<br />�����V �É���1�̃_���[�W�I�i�����́F6->5�j
-</div><div class="text azusa">�y���� ���z<br />�u�c�����́A�N�\��Y�[�[�I�v�@���������ꗎ���܂����B
-</div><div class="text gm">�yGM�z<br />�Ƃ����킯�ŁA�����É�����̏����Ő퓬�I���ł��B���Ȃ݂ɐ�ʂ���H
-</div><div class="text canon">�y�����V �É��z<br />���������Ȃ̂Ŕ閧��������
-</div><div class="text gm">�yGM�z<br />���́B���Ⴀ�ǂ����B
-</div><div class="event">�g�p�l
-<br>�閧
-<br>�V���b�N�F�S��
-<br>���Ȃ��͎O�N�O�́u�G�L�َ����v�̐^�Ɛl���B
-<br>�O�N�O�A�^���ɔ�����PC1�͂��Ȃ��̋t�P�ɂ���ċL���������A���Ȃ��͓������������B
-<br>�������APC1�̋L����߂����݂��s���Ă���B��@������������Ȃ��́A���͎҂𑕂��ĎQ�������B
-<br>���Ȃ��́y�{���̎g���z�́APC1�𖕎E���邱�Ƃ��B
-<br>�s���݁t�ŋ��|������s���B
-<br>���́y�閧�z�����炩�ɂȂ������A�N���C�}�b�N�X�t�F�C�Y�Ɉڍs����B
-<br>
-</div><div class="text gm">�yGM�z<br />���Ⴀ�V���b�N�Ɣ���ǂ����B
-</div><div class="text canon">�y�����V �É��z<br />�����V �É��̐��C�x��1�����i���C�x�F3->2�j
-</div><div class="text canon">�y�����V �É��z<br />��Z������ڕW�l7
-</div><div class="dice">�����V �É��F2D6>=7 ���|����s��Z���F�ő�p�t�F
-<br>Insane : (2D6>=7) �� 5[1,4] �� 5 �� ���s
-</div><div class="dice">GM�F1d3
-<br>Insane : (1D3) �� 2
-</div><div class="event">�Ӗ�
-<br>�g���K�[�F���������|������s���B
-<br>���e�F���Ȃ��̐S�́A����ȏ�|�����̂�����̂����₵�Ă���B�������V���Ɂy���C�z�����J����܂ŁA��������Ɩ�������Ƀ}�C�i�X2�̏C�������B
-</div><div class="text gm">�yGM�z<br />����悾������낤�������ł��ˁB
-</div><div class="text gm">�yGM�z<br />�Ƃ�����B
-</div><br />�@<br />�@<br />�@
-<div class="title" id="epilogue">���G�s���[�O�@<a href="#index">��</a>
-</div><div class="text gm">�yGM�z<br />�N���C�}�b�N�X�퓬���ォ��ł��B
-</div><div class="text gm">�yGM�z<br />�É�����ɎE���ӎv��������΁i�����Ǝv���܂����ǁj�Ɛl�ł��鈲�͌x�@�ɂ�����҂����񂶂�Ȃ��ł����ˁB
-</div><div class="text canon">�y�����V �É��z<br />�x�@�ɘA�s�ł��悻��͂܂��B�@�̂̓���݂̌x�@�Ƃ�����Ȃ�A���������ł���
-</div><div class="text gm">�yGM�z<br />��V�͉E�r�����荜�܂Ƃ��������̎C�菝�Ŗo�Ώ��ɃM����_���Y�f���Ŏ�O���炢���肻���ł����ǐ����Ă͂��܂��B
-</div><div class="text canon">�y�����V �É��z<br />���O�������߂�����c�c�i�n��
-</div><div class="text gm">�yGM�z<br />����񂶂�Ȃ����ȁB�Ƃ͂��������������ĂȂ������Ȃ̂ŁA�ߏ�̌��O�d�b�����邢�͑�V�̌g�тł��؂�āB
-</div><div class="text canon">�y�����V �É��z<br />�g�ё݂��Ă���B�Ƃ������A�~�}�Ԃ��ĂԂ����
-</div><div class="text takayuki">�y�r�� ��V�z<br />�M���������Ă�΁A�����͑������ꂾ���łق��Ƃ���̂ŁA���ʂɋC���炢�����Ă����B���Ə��h�Ԃ��Ă�łˁB
-</div><div class="text canon">�y�����V �É��z<br />�����ł��ˁB���I�@�֑�W������Ȃ����c�@�����f�����܂��B�@��V�͂��O�N�����炿����ƏR���Ă�������
-</div><div class="text gm">�yGM�z<br />���Əd���Ȃ�ł����ǂ��B
-</div><div class="text canon">�y�����V �É��z<br />�����񕜂��Ă����
-</div><div class="text gm">�yGM�z<br />����B�Ƃ����ꂻ�̌�̂��Ƃł����A
-</div><div class="text gm">�yGM�z<br />��l�Ƃ�����Ȃ�̂���l�Ȃ̂ŕa�@�s���ł��B
-</div><div class="text gm">�yGM�z<br />�É�����͂��Ƃ��ƎO�N�O�̂��Ƃ�����܂������i�g�̌��Ă݂�ΉΏ��̍�������܂���j������x����������񂶂�Ȃ�������B�L���̖ʂ��܂߂āB
-</div><div class="text gm">�yGM�z<br />�O�N�O�A���{���肵���Ƃ�����u�G�L�َ����v�́A���߂��ꂽ���T��̋L���ɂ���ĉ������邱�ƂƂȂ�܂����B
-</div><div class="text gm">�yGM�z<br />�V�����e���r��炪����ɕ񓹂��āA�����̊ԑ�������������������܂��񂪁[�[�K���s�K���A�֌W�ғ�l���ē��@�����Ă��ƂŁA���Ƃ͒m�荇���̌x�@���������Ƃ����Ă���܂����B
-</div><div class="text gm">�yGM�z<br />���̌�މ@������́i����ɂ��Ă͑މ@�O�ɑ����b�����ƂɂȂ�ł��傤���j�É�����̐g���͑�V���a�����Ă���`�ɂȂ��Ă���̂ŁA���̕ӂǂ�����̂����Ęb�͂���̂�������܂���B
-</div><div class="text gm">�yGM�z<br />���̕ӂ͂���ł�����ʓr�V�[������Ă������ł����A������΂��Ă����Ƃ��̐�̃G�s���[�O�����`���āY�A�ł������݂̂ŁB
-</div><div class="text canon">�y�����V �É��z<br />�����ł��ˁA���̌�ɂ��Ă��b������������܂����ǁA�Ƃ肠������V�N�̕����d�ǂ��낤���Ƃ����炩�Ȃ̂ŁA�N�����Ƃ���ɂނ��肵����Ō�����ĂāA�������������̘b�Ƃ��������͂����i�ӎ����߂��Ă���̉�b���������ł�
-</div><div class="text gm">�yGM�z<br />�́[���B���Ⴀ���������؂��āB
-</div><br />�@<div class="subtitle">���a���ɂā@<a href="#index">��</a>
-</div><div class="text gm">�yGM�z<br />�܂��ӎ��͊��Ƃ����߂�܂���B����B�󋵂��󋵂��������Ǝv���܂��B
-</div><div class="text gm">�yGM�z<br />���΂炭���ƐQ������Ă��i�Ƃ�������ł˂ނ˂ނ��Ă��j�ł��傤����A���̍��ԁA�ӂ��Ɩڊo�߂����ɉÉ����񂪋����炢���̂ł́B
-</div><div class="text gm">�yGM�z<br />�������J���ꂽ������͐S�n�悢������������ł��āAῂ����z�������[�X�J�[�e�����a�炰�č~�蒍���ł��܂��B
-</div><div class="text canon">�y�����V �É��z<br />��_���Y�f���ŐS�z�Ȃ̂��������̂ŁA������ƃC���C���C���ɑ��Ƃ��r�Ƃ��g��Ŋ�ł����Ă��񂶂�Ȃ��ł�����
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�c�A��c�v�@�����܂��a�����ȁA���Ă������i�܂��˂ނ��j
-</div><div class="text canon">�y�����V �É��z<br />�u�c���͂悤�B�@�F�X�ɂނƎv�����ǁA������x���Ǝ���������䖝���āv
-</div><div class="text takayuki">�y�r�� ��V�z<br />���΂炭���ق��āA�u�c�����A���񂽂��c�v�@�������΂��Ă�B����Ώ��̐Ղ����肻���ŁA��тƂ����Ă�����
-</div><div class="text canon">�y�����V �É��z<br />�u���̊�͂킩��悤�Ō��\�B�@�ǂ��܂Ŋo���Ă邩�ȁH�v�@��������x��炩���Ă邩��O�̂��߂�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���񂽂��N���A�����Ă݂���āH�v
-</div><div class="text canon">�y�����V �É��z<br />�u����������A�����͌N�̋C�������킦��񂶂�Ȃ����ȁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u��k�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���񂽂�Y��邭�炢�Ȃ�A���ꂱ���A���񂾕����ǂ��v
-</div><div class="text canon">�y�����V �É��z<br />�u���͌N�̂��Ƃ�Y��Ă����킯�����ǁA����ł��������悩�����H�v�@�����A���ĈӒn������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����͉�����Ȃ��āA���񂽂����߂邱�Ƃ���v
-</div><div class="text canon">�y�����V �É��z<br />�u�������E����O�ɁA�~�߂�ꂻ�����������ǁv�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�����ĂĂ��ꂽ�Ȃ�A�ǂ��B������[�[���̎��A�����āv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�Q�Ԃ�łƂ��Ƃ��邯�ǒɂ݂Ɋ����߂����B
-</div><div class="text canon">�y�����V �É��z<br />�u�܂��A���ʓI�ɌN�̎v�f�ʂ�ɂȂ����킯�����ǁc�@�撣���Ă͂����݂��������ǁA�F�X�e���������ˁA��V�H�v���Đ�������̂ł�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�m���Ă�B���񂽂Ȃ�܂��A���Ȃ�����v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����Ă邾���ŗǂ������c�����A�v���Ă��A�͂��Ȃ񂾁v
-</div><div class="text canon">�y�����V �É��z<br />�u�܂��A���ɂ���ĔƐl�ɋ��͗v�������̂́A�����Ԃ������Ă���Ƃ������c�v�@������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�c�A�c�v�������Ȃ������񂾂�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ޏ��ȊO�Ɂc�����̊֌W�҂́A���Ȃ���������v
-</div><div class="text canon">�y�����V �É��z<br />�u�������ŁA�����󋵂�����Ă��炦�����炱���A�v���o�����̂͂���Ǝv������c����̌����ƌ����邩�ȁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���񂽂��A�댯�Ȗڂɑ��킹���������󂶂�A���������񂾁v�@�f���ɂ���ڂ��ꂽ���ł͂���
-</div><div class="text canon">�y�����V �É��z<br />�u�������܂œ˂����������Ƃ�������ɂ́A�l�߂��Â��Ƃ������c��ʂ邢�Ƃ������v�@����܂�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����āA���񂽂́v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�����A�E����������A�����낤�H�v�@���������ȏ΂����B
-</div><div class="text canon">�y�����V �É��z<br />�u����B����Ⴀ�ˁv
-</div><div class="text gm">�yGM�z<br />�������̎q�A�ߋ��ɎE�����������Ƃ���񂶂�Ȃ����ȁB���ꂱ�����ɗ��\���ꂽ�Ƃ��ŁA�Ɛl���B���������Ƃ�����������ł������񂶂�Ȃ����ȂƂ�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u������A�c����ȁA�ю��݂����Ȃ��Ƃ����A�o���Ȃ������񂾂�v
-</div><div class="text canon">�y�����V �É��z<br />�Ȃ�قǁA����͑S�͂ŏ����������Ŏ����Ă�������c�c
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����ł��A�c���������ł��A�v���o����Ȃ�A���āB�c���������A�����Ɏv���o���Ǝv�����񂾁B���������̂��Ƃ͂܂������A�c�v
-</div><div class="text gm">�yGM�z<br />�X�N���b�v�u�b�N�͑����A�T��̊��̏�ɂł��u����Ă��ł��傤�B�͂ݏo�Ă�L���Ƃ��ʐ^�̂͂�������������B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c�҂������͈̂���������v�@�܂�3�N�ȏ�͌��\��������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c����ɑ҂����̂́A�����v
-</div><div class="text canon">�y�����V �É��z<br />�X�N���b�v�u�b�N�͑��̂��̂��F�X�ڂ��Ă��肷���ł�����
-</div><div class="text canon">�y�����V �É��z<br />�u���߂āA�V�����v���o������Ă����Ă��ǂ��������낤�Ɂv
-</div><div class="text gm">�yGM�z<br />���܂��܌����Ƃ��낪�G�L�َ����̂Ƃ����������ǁA���ۂ͉É����񂪉������������̎�����������������Ă��񂶂�Ȃ����ȁB
-</div><div class="text canon">�y�����V �É��z<br />���O������Č����t�@���C�������邾��H�H
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���񂽂��������ʂ�Ȃ񂾁B�L�������������Ă��񂽂͊m���ɖ��T�ゾ���A�����Ă������Ƃɂ͍���Ȃ��v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�����A���������B�c���߂��Ȃ������v�@���Ƃ�
-</div><div class="text canon">�y�����V �É��z<br />�u�܂��A�����N�ɖY���ꂽ��V���b�N���Ƃ͎v�����ǁB�c���O�ɉ��l�͂Ȃ����ď������̂����܂�C�����������̂ł͂Ȃ���������A�����q���Ă��ƂŁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���񂽎��g��ے肵���S�Z�͖����v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�����A�~���o�����������v�@�������Ă�񂾂�B�O�N������Ă�Ƃ�
-</div><div class="text canon">�y�����V �É��z<br />���������āA�g�p�l�Ȃ��ł����x������Ă��̂��c�@���񂾎��_��3�N�O���Ęb�����������
-</div><div class="text canon">�y�����V �É��z<br />�u�N�Ƌ��ɂ������Ԃ���������Ȃ��Ȃ��Ă����킯�����ˁv�@�֌W���ɂ���邯�ǐS�����Ă��̂͊ԈႢ�Ȃ�����ȁB�B
-</div><div class="text gm">�yGM�z<br />��[�A�g�p�l�͂���O�񂶂�Ȃ����ȁB���낢�돀�����Ă����������ݐ؂�̂ɂ����Ԃ��������ł���
-</div><div class="text gm">�yGM�z<br />����܂łɋL�����߂�Ȃ�A���Ċ�]�����������낤���B
-</div><div class="text canon">�y�����V �É��z<br />�Ȃ�قǂȁB�ł��܂����߂������Ɓc
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�S�z���Ȃ������āA�����A���Ȃ��B�����A���x���L���r���ɂȂ�āA�Ȃ�Ȃ����낤���ǁv
-</div><div class="text canon">�y�����V �É��z<br />�u�������ˁB�������x���������s�͌J��Ԃ������Ȃ��Ƃ��납�ȁv�@���Ă�����������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�[�[���񂽂��܂��������Ǝv�����A���̏u�Ԃ̕��������ƁA�����v�@���������Ō��グ�āB�Ђǂ��ǂ��l�߂�ꂽ�悤�ȐF�ŁB
-</div><div class="text canon">�y�����V �É��z<br />�u�c���́A�ǂ������ʂ̂Ȃ�ς��Ȃ�����A�N�����ł�����������Ǝv������v�@���ċ�΂��邩��ˁ@���Z�b�g�����̂����ʂ̂Ɠ��`���炢�̂���������������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���ʖ󂶂�Ȃ��A�L���������Ȃ������āB�c�����A������������v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u������A���Ȃ��v�@���낢��ȈӖ����܂߂B
-</div><div class="text canon">�y�����V �É��z<br />�u�c����������ˁv�@���ē��ł����ł����@�����ځ[��
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�K�L����Ȃ��A�����v�@���͝X�˂Ă邯�ǁA�g�͓̂����Ȃ����U��قǂ��͂ł��܂���ˁi�U�E����R
-</div><div class="text canon">�y�����V �É��z<br />�u�N�̐����ߒ����ꕔ�������Ă��܂����͎̂c�O���Ȃ��v�@���Ă����Ă����@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u������A�����ߒ����Č�����Ȃ�A�ȁv�@���������ܜ����Ă��B�m�l�ɕ����Έꔭ�ł킩�邾�낤����
-</div><div class="text takayuki">�y�r�� ��V�z<br />���ꂱ����V�̕����ΊO���_�I�ɒǂ��l�߂��Ă��낤���A���肷�������_�򂭂炢����o�����悱��
-</div><div class="text canon">�y�����V �É��z<br />�u�F�X�����ڂ����Ȃ���啪��ɂ͏ڂ����Ȃ����񂶂�Ȃ��v�@�܂�SAN�S�z�ɂȂ邭�炢�ł��������
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�m�炸�ɍςނȂ炻��ŗǂ��������ǂȁv
-</div><div class="text canon">�y�����V �É��z<br />�u�܂��A��Q�҂̃Z���s�[�Ȃ񂩂ɂ��g���邾�낤���B�܊p������L�����p���Ă��������v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�c�A�v�@�Ȃ񂩌��������Ɏ����������āA���t��T���B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�����܂��A�ق��̂��B���񂽁v
-</div><div class="text canon">�y�����V �É��z<br />�u���A���̊Ԃɉ��ق��Ă��́H�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�܂��A����ĂȂ��B�c�������ȁA���ق��Ȃ��̂��A�̕������������v
-</div><div class="text canon">�y�����V �É��z<br />�u�܂��A���Ȃ����ǁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�܂��A��������ȁB���񂽂́v
-</div><div class="text canon">�y�����V �É��z<br />�u���ق��Ăق��������H�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ǂ��A���낤�ȁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����Ȃ��ƁA�����A�ǂ��ł��ǂ��Ȃ��Ă��v
-</div><div class="text canon">�y�����V �É��z<br />�u���΂炭�×{�ł�����H�v�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�ǂ݂̂��A�b���g�����ɂ͂Ȃ�Ȃ�����v
-</div><div class="text canon">�y�����V �É��z<br />�u�������ˁB��[�A���Ⴀ�A������Ɠ�l�ŗ��s�ł��s�������v�@�Ƃ�����
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�c�́H�v
-</div><div class="text canon">�y�����V �É��z<br />�u�������A�͎̂����Ă���ˁB�@�N�A���Ƃ��܂�Ă邩��v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u����́c�܂��A�������ǁv
-</div><div class="text canon">�y�����V �É��z<br />�u�Ȃ�A�s�������Ƃ���ł��l���Ă����āB�@�C�M���X�Ƃ��ǂ����Ȃ��v�Ƃ��G�Ɍ����Ă�
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���ł܂��A�����Ȃ�v
-</div><div class="text canon">�y�����V �É��z<br />�u���A�T��Ƃ��Ă͍s���Ă����������̂���Ȃ��H�v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���ꂾ���H�v
-</div><div class="text canon">�y�����V �É��z<br />�u�N���D���������Ȃ��āv�@����B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���ŁA�v�@�Ȃ񂾂��̂ЂƂ��Ă�����Ə΂��Ă�B���N�ۂ��A���̎ʐ^�ɂ������悤�Ȃ͂ɂ��݁B
-</div><div class="text canon">�y�����V �É��z<br />����Ȋ猩������Ƃ�����Ƃ��������z�b�Ƃ������ł��ˁ@����������Ƃ�����
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�ʂɁA�������ǁB���񂽂��������悤�ɁA������ǂ��v
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���͏���ɁA�t���Ă����������v
-</div><div class="text canon">�y�����V �É��z<br />�u���񂤂�A�N�͂����łȂ��Ɓv���Ă킵��킵�ᕏ�ł���
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u���Ɂc�v�@����͊��Ƒf���ɒɂ���
-</div><div class="text canon">�y�����V �É��z<br />�u�����A���߂񂲂߂�B�@�X�L���V�b�v�͌��C�ɂȂ��Ă���ˁv�@
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�ʂɁA�v�@�������ǁA���Č������Ƃ���񂾂��ǁA�����Ƃ��̂����܂��Ƃ�Ƃ떰���Ȃ�
-</div><div class="text canon">�y�����V �É��z<br />�u������肨�x�݁B�@�S���̂��A�N�ɂ͋x�����K�v���낤����ˁv
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c���A�v�@�ӎ����A������L�΂����Ƃ���B��͂ł��Ȃ��āA�ɂ݂Ɋ�������߂Ȃ���B
-</div><div class="text takayuki">�y�r�� ��V�z<br />����h�炵�āA�ǂ������q�݂����ɁB�r���̕s�����܂��c���Ă�B�F�Z���B
-</div><div class="text canon">�y�����V �É��z<br />�u���v�A�����A�Y�ꂽ�肵�Ȃ�����v�@����͎�������Ă��񂶂�Ȃ����ȁ@���v�Ȃق��i
-</div><div class="text gm">�yGM�z<br />�����ȁB�Ώ����炢�͂��邯�ǁA�܂�ĂȂ������}�V�B
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�c�c�A�v�@�ق��ƁA���ߑ������悤�ɗ͂𔲂��āB
-</div><div class="text takayuki">�y�r�� ��V�z<br />�u�[�[�É��A�v�@�����A�ǂ������狿�����ɁA�����悤�ɁB
-</div><div class="text takayuki">�y�r�� ��V�z<br />�قƂ�ƌ��t�𗎂Ƃ��āA���Ƃ͂Ђ��₩�ȐQ�����������܂��B
-</div><div class="text canon">�y�����V �É��z<br />�u�c�c�A�܂��A�n���Ȏq�قǉ������āA�������v�@�s�ӑł������Ƃ�����ƐԂ��Ȃ����Ⴄ�񂾂�ȁ@�����񂾁A�����Ă��Ȃ�
-</div><div class="text gm">�yGM�z<br />�����ԃo�J�ł������ǂˁB�Ƃ�����A����Ȋ����ŃV�[�����Ă��悳���H�@���Ȃ݂ɂ���������̘b���������H
-</div><div class="text canon">�y�����V �É��z<br />���đ��v�ł��B�@�Ȃ񂩂܂��A���Ƃ͗��s�s���ă��t���b�V�����āA������������ꏏ�ɒT��Ɩ߂�Ȃ�
-</div><div class="text gm">�yGM�z<br />�ڍו`�ʂ܂ł͂�낵�����Ă��ƂȂ�A�����ŃG�s���[�O�Ƃ��Ă���؂낤���B
-</div><div class="text canon">�y�����V �É��z<br />�͂��A���肪�Ƃ��������܂����B
-</div><div class="text gm">�yGM�z<br />�͂��ȁB�ł͐V�����T��A�����V�É��̊���͂��ꂩ����܂��܂������A�Ƃ������ƂŁB
-</div><div class="text gm">�yGM�z<br />�G�s���[�O�͂���ɂāB���Ƃ͂������ƏI���������B
-</div><br />�@<br />�@
-<div class="title" id="after">���A�t�^�[�v���C�@<a href="#index">��</a>
-</div>
-<div class="subtitle">�����ǔ���
-</div><div class="text gm">�yGM�z<br />����˂��ȁi���݉����ĂȂ��j
-</div>
-<div class="subtitle">�����ѓ_
-</div><div class="text gm">�yGM�z<br />�E�V���Ȑ��E�̔����c���ُo�Ȃ�����Ȃ��̃V�i���I�B�h���}�C�B
-</div><div class="text gm">�yGM�z<br />�E�Ō�܂ŎQ���c���܂����B1�_�B
-</div><div class="text gm">�yGM�z<br />�E���[���v���C�c�B���B1�_�B
-</div><div class="text gm">�yGM�z<br />�E�v���C�Y�c�l���B1�_�B
-</div><div class="text gm">�yGM�z<br />�E�Ր��c��l�Ȃ̂łȂ��B
-</div><div class="text gm">�yGM�z<br />�E�g���c�͂��\���B
-</div><div class="event">�y�����V �É��z<br /> �閧
-<br>�V���b�N�F�Ȃ�
-<br>�ڊo�߂Ă��炸���ƁA���Ȃ��͋���Ȋ�����������Ă���B
-<br>�ڂ̑O�̌��i�A�l���A����s���A���������Ɍ��o��������B����͋L�����߂钛���Ȃ̂��낤���B����Ƃ��c�c�H
-<br>���Ȃ��́y�{���̎g���z�́A�L�������߂����Ƃ��B
-</div><div class="text canon">�y�����V �É��z<br />���߂����I�@������ˁB
-</div><div class="text gm">�yGM�z<br />������ˁB�ł�3�_�B
-</div><div class="text gm">�yGM�z<br />����őS���ł��ˁB���v�ǂ����B
-</div><div class="text canon">�y�����V �É��z<br />���v6�_�ł��ˁA���肪�Ƃ��������܂����B
-</div><div class="text gm">�yGM�z<br />�́[���B����ɂăC���Z�C���u�G�L�َ����v�i��F�Ƃ����[����j�I���ł���B
-</div><div class="text gm">�yGM�z<br />�Ō�܂ł����l�ł����B
-</div><br><br>
-<div class="subtitle">���ӈӁ@<a href="#index">��</a></div>
-<ui>
-    <li>�V�i���I �c <a href="https://www.pixiv.net/novel/show.php?id=8492737">�u�G�L�َ����v</a> �Ƃ����[�l</li>
-    <li>�É��摜 �c <a href="https://picrew.me/image_maker/34800">�u�����Ă�|Picrew�v</a> sobe�l</li>
-    <li>��V�摜 �c <a href="https://picrew.me/image_maker/80385">�u���D�݂̒j�߁[���[|Picrew�v</a> �݂�l</li>
-</ui>
-<br/>
-
-</div>
-</body>
+ </body>
 </html>

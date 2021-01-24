@@ -1,3286 +1,3310 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
-<link rel="stylesheet" type="text/css" href="../../css/base.css" />
-<link rel="stylesheet" type="text/css" href="../../css/log.css" />
-<link rel="stylesheet" type="text/css" href="icon/icon.css" />
-<link rel="stylesheet" type="text/css" href="../../resource/lightbox.css" media="screen,tv" />
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>Star Anise</title>
+ <meta name="description" content="TRPG、CardWirth等、趣味についてまとめた個人サイト">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="../../css/header.css">
+ <link rel="stylesheet" type="text/css" href="../../css/side1.css">
+ <link rel="stylesheet" type="text/css" href="../../css/base.css">
+ <link rel="stylesheet" type="text/css" href="../../css/chara.css">
+ <link rel="stylesheet" type="text/css" href="../../css/log.css">
+ <link rel="stylesheet" type="text/css" href="icon/icon.css" />
+ <link rel="stylesheet" type="text/css" href="../../resource/lightbox.css" media="screen,tv" />
 <script type="text/javascript" charset="UTF-8" src="../../resource/lightbox_plus.js"></script>
-<title>Star Anise - �����闠�؂�̉�</title>
-</head>
+ <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+ <script>
+	function Fold(id){
+		if(document.getElementById('rgn_summary_'+id).style.display!='none'){
+			document.getElementById('rgn_summary_'+id).style.display='none';
+			document.getElementById('rgn_content_'+id).style.display='block';
+			document.getElementById('rgn_button_'+id).innerHTML='-';
+		}else{
+			document.getElementById('rgn_summary_'+id).style.display='block';
+			document.getElementById('rgn_content_'+id).style.display='none';
+			document.getElementById('rgn_button_'+id).innerHTML='+';
+		}
+	}
+</script>
+ </head>
+ <body>
 
-<body>
+ <!----- main ----->
+ <div id="main">
 <div class="log">
-<div class="title">�����闠�؂�̉�</div>
+<div class="title">共鳴する裏切りの炎</div>
 <div class="komoku">PLAYER</div>
 <ul>
-<li>GM�^�ɂႲ</li>
-<li>PC1�^�R�[�f�B�E�R���g�n�[�h�i�~�i�J�~)</li>
-<li>PC2�^�C�� ���i���m�j</li>
-<li>PC3�^���� �C�c�L�i�闝�j</li>
-<li>PC4�^�m�G���i�����j</li>
+<li>GM／にゃご</li>
+<li>PC1／コーディ・コルトハード（ミナカミ)</li>
+<li>PC2／海鳴 夢（モノ）</li>
+<li>PC3／焔木 イツキ（朱理）</li>
+<li>PC4／ノエル（陸亜）</li>
 </ul>
 <div class="komoku" id="index">INDEX</div>
 <ul>
-<li>�y�����z�F<a href="#prologue">�m�G��</a>�@<a href="#prologue2">�R�[�f�B</a>�@<a href="#prologue3">�C�c�L</a>�@<a href="#prologue4">��</a>�@<a href="#prologue5">����</a></li>
-<li>�y���C���t�F�C�Y�^��P�T�C�N���z�F<a href="#main1_1">��P�V�[��</a>�@<a href="#main1_2">��Q�V�[��</a>�@<a href="#main1_3">��R�V�[��</a>�@<a href="#main1_4">��S�V�[��</a>�@<a href="#main1_5">��T�V�[��</a>�@<a href="#main1_6">��U�V�[��</a></li>
-<li>�y���C���t�F�C�Y�^��Q�T�C�N���z�F<a href="#main2_1">��P�V�[��</a>�@<a href="#main2_2">��Q�V�[��</a>�@<a href="#main2_3">��R�V�[��</a>�@<a href="#main2_4">��S�V�[��</a>�@<a href="#main2_5">��T�V�[��</a>�@<a href="#main2_6">��U�V�[��</a></li>
-<li>�y���C���t�F�C�Y�^��R�T�C�N���z�F<a href="#main3_1">��P�V�[��</a>�@<a href="#main3_2">��Q�V�[��</a>�@<a href="#main3_3">��R�V�[��</a>�@<a href="#main3_4">��S�V�[��</a></li>
-<li>�y�N���C�}�b�N�X�t�F�C�Y�z�F<a href="#last">�퓬����</a>�@<a href="#last_1">��P���E���h</a>�@<a href="#last_2">��Q���E���h</a>�@<a href="#last_3">��R���E���h</a>�@<a href="#last_4">��S���E���h</a></li>
-<li>�y�G�s���[�O�z�F<a href="#epilogue_1">�m�G��</a>�@<a href="#epilogue_2">��</a>�@<a href="#epilogue_3">�C�c�L</a>�@<a href="#epilogue_4">�R�[�f�B</a>�@<a href="#epilogue_5">��V</a></li>
+<li>【導入】：<a href="#prologue">ノエル</a>　<a href="#prologue2">コーディ</a>　<a href="#prologue3">イツキ</a>　<a href="#prologue4">夢</a>　<a href="#prologue5">合流</a></li>
+<li>【メインフェイズ／第１サイクル】：<a href="#main1_1">第１シーン</a>　<a href="#main1_2">第２シーン</a>　<a href="#main1_3">第３シーン</a>　<a href="#main1_4">第４シーン</a>　<a href="#main1_5">第５シーン</a>　<a href="#main1_6">第６シーン</a></li>
+<li>【メインフェイズ／第２サイクル】：<a href="#main2_1">第１シーン</a>　<a href="#main2_2">第２シーン</a>　<a href="#main2_3">第３シーン</a>　<a href="#main2_4">第４シーン</a>　<a href="#main2_5">第５シーン</a>　<a href="#main2_6">第６シーン</a></li>
+<li>【メインフェイズ／第３サイクル】：<a href="#main3_1">第１シーン</a>　<a href="#main3_2">第２シーン</a>　<a href="#main3_3">第３シーン</a>　<a href="#main3_4">第４シーン</a></li>
+<li>【クライマックスフェイズ】：<a href="#last">戦闘準備</a>　<a href="#last_1">第１ラウンド</a>　<a href="#last_2">第２ラウンド</a>　<a href="#last_3">第３ラウンド</a>　<a href="#last_4">第４ラウンド</a></li>
+<li>【エピローグ】：<a href="#epilogue_1">ノエル</a>　<a href="#epilogue_2">夢</a>　<a href="#epilogue_3">イツキ</a>　<a href="#epilogue_4">コーディ</a>　<a href="#epilogue_5">報酬</a></li>
 </ul>
 <br/>
-<div class="subtitle" id="prologue">���Љ
+<div class="subtitle" id="prologue">●紹介等
 </div>
-<div class="text gm">�yGM�z<br/>�{���͊F�l���W�܂肢���������肪�Ƃ��������܂��B����̓}�M�J���M�A���S�Ҍ�����Ƃ������Ƃ�Role&Roll vol.79�Ɍf�ڂ���Ă�������V�i���I�u�����闠�؂�̉��v�����{�����Ă��������܂��B�{���͂�낵�����˂������܂��B
+<div class="text gm">【GM】<br/>本日は皆様お集まりいただきありがとうございます。今回はマギカロギア初心者向け卓ということでRole&Roll vol.79に掲載されている公式シナリオ「共鳴する裏切りの炎」を実施させていただきます。本日はよろしくおねがいします。
 </div>
-<div class="text gm">�yGM�z<br/>����GM�𖱂߂����Ē����܂��A�ɂႲ�ł��B�}�M���MGM�͂R��ڂ��炢���ȁB�@�܂��܂��s����Ȃ��Ƃ�����i�s���ق������育���f�����������邱�Ƃ����邩������܂��񂪂ǂ�����낵�����˂������܂��B
+<div class="text gm">【GM】<br/>今回GMを務めさせて頂きます、にゃごです。マギロギGMは３回目くらいかな。　まだまだ不慣れなこともあり進行が拙かったりご迷惑をおかけすることもあるかもしれませんがどうぞよろしくおねがいします。
 </div>
-<div class="text gm">�yGM�z<br/>PC1���珇�ԂɎ��ȏЉ�̕������˂������܂��B�L�����̌o���A�l�ƂȂ�A�A���J�[�Ƃ̊֌W���ł��ˁB
+<div class="text gm">【GM】<br/>PC1から順番に自己紹介の方をおねがいします。キャラの経歴、人となり、アンカーとの関係等ですね。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>PC1�𖱂߂����Ē����܂��A�~�i�J�~�ł��B<br/>
-�}�M���M�͏��߂ĂȂ̂ŉ����Ǝ�Ԏ�鎖�����邩������܂��񂪁A�y����ł��������Ǝv���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>PC1を務めさせて頂きます、ミナカミです。<br/>
+マギロギは初めてなので何かと手間取る事もあるかもしれませんが、楽しんでいきたいと思います。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�L�����̓R�[�f�B�E�R���g�n�[�h�B���Z���̖K��҂ł��B<br/>
-�l�����������˖Ґi�^�A�����J�l�B���{�ɗ��Ă܂������󂢂̂ŕЌ��ł��ˁB
+<div class="text cody">【コーディ・コルトハード】<br/>キャラはコーディ・コルトハード。高校生の訪問者です。<br/>
+人懐っこい猪突猛進型アメリカ人。日本に来てまだ日が浅いので片言ですね。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�A���J�[�͕��R�I�q�B<br/>
-�N���X�̒S�C�œ��{�̍��Z�ɓ]�Z�����ӂ�ŐF�X�Ƃ����b�ɂȂ������l�ł��B
-<br/>�i���ȏЉ�͂��ꂮ�炢�ł����̂��ȁc�c�H
+<div class="text cody">【コーディ・コルトハード】<br/>アンカーは宝条由紀子。<br/>
+クラスの担任で日本の高校に転校した辺りで色々とお世話になった恩人です。
+<br/>（自己紹介はこれぐらいでいいのかな……？
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�\���ł���B���肪�Ƃ��������܂��B<br/>
-���C�����ς��N���X���C�g�����Ɨ���ł����Ă��������ˁB
+<div class="text gm">【GM】<br/>はい、十分ですよ。ありがとうございます。<br/>
+元気いっぱいクラスメイトたちと絡んでいってくださいね。
 </div>
 <div class="event">
-�yPC1�z�u���ׂ̒T���ҁi�P�C�I�X�V�[�J�[�j�v�R�[�f�B�E�R���g�n�[�h�iCody Coulthard�j�@
-<a href="img/minakami_cody.png" rel="lightbox">���摜</a>
+【PC1】「混沌の探究者（ケイオスシーカー）」コーディ・コルトハード（Cody Coulthard）　
+<a href="img/minakami_cody.png" rel="lightbox">→画像</a>
 <br/><br/>
-���ʁF�j�@�N��F17�΁@�o���F�K��ҁi�Q�X�g�j<br/>
-�\�̊�F���Z��N���@�@�^�̎p�F�P����Z�����C�I���^�y���͉���z<br/>
-�U���́F3�@�h��́F3�@�����́F3<br/>
-���Z�F���^�s��n�t�A�s�{��t�A�s���t�A�s��t�A�s���t�@�@���̓��Z�F�s�����������t<br/>
-���@�F�y�ً}�����i�R�[�����O�j�z�A�y�R�m�����i�T�����i�C�g�j�s���t�z�A�y�Ήԁi�X�p�[�N�j�z<br/>
-�@�@�@�y���e�i�C�����[�W�����j�z�A�y�Փ��i�A�[�W�j�z�A�y�K�^�i���b�N�j�z<br/>
+性別：男　年齢：17歳　経歴：訪問者（ゲスト）<br/>
+表の顔：高校二年生　　真の姿：輝きを纏うライオン／【魔力解放】<br/>
+攻撃力：3　防御力：3　根源力：3<br/>
+特技：夢／《大地》、《怒り》、《風》、《謎》、《幻》　　魂の特技：《無限の煌き》<br/>
+魔法：【緊急召喚（コーリング）】、【騎士召喚（サモンナイト）《風》】、【火花（スパーク）】<br/>
+　　　【幻影（イリュージョン）】、【衝動（アージ）】、【幸運（ラック）】<br/>
 <br/>
-�Z���V�s�̍��Z�ɒʂ��w���B�g��185cm�B<br/>
-���܂���炿���A�����J�ł���A���e�̎d���̓s����1�N�O������{�ɈڏZ���Ă���B<br/>
-���{��͂܂��܂��ւ������B<br/>
+六分儀市の高校に通う学生。身長185cm。<br/>
+生まれも育ちもアメリカであり、両親の仕事の都合で1年前から日本に移住している。<br/>
+日本語はまだまだへたくそ。<br/>
 <br/>
-�����ōD��S�����A�l���m������|�������Ȃ����i�B<br/>
-�D���Ȃ��̂ɂ͐ɂ��݂Ȃ���M�𒍂����˖Ґi�^�B<br/>
-���{�̃A�j���ƃQ�[������D���ȓT�^�I�I�^�N�ł���A�R�X�v�������ɂ�����o���Ă���B<br/>
+活発で好奇心旺盛、人見知りも物怖じもしない性格。<br/>
+好きなものには惜しみなく情熱を注ぐ猪突猛進型。<br/>
+日本のアニメとゲームが大好きな典型的オタクであり、コスプレ活動にも手を出している。<br/>
 <br/>
-�A�j������̃��m�x��ǔj�����������߂ɐ}���ψ��ɓ������B<br/>
-�܂��A���̐g���̍�������o�X�P���ɗU����Ԏ��œ����B�o�X�P����ʔ�������������Ă݂��������B<br/>
+アニメ原作のラノベを読破したいがために図書委員に入った。<br/>
+また、その身長の高さからバスケ部に誘われ二つ返事で入部。バスケ漫画面白かったしやってみたかった。<br/>
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>PC2�ɂȂ������m�ł��B������PL�Ƃ��Ă̎Q���͎��͂Q��ڂł��B<br/>
-�}�M���M�̃��[���c��������ĂȂ��Ƃ���΂����肾���ǂ�낵�����肢���܂��B
+<div class="text ayumu">【海鳴 夢】<br/>PC2になったモノです。純粋なPLとしての参加は実は２回目です。<br/>
+マギロギのルール把握しきれてないところばっかりだけどよろしくお願いします。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�L�����͊C���i���݂Ȃ肠��ށj�B��喂�@�g���̏��x�B<br/>
-�|�P�b�g�Ɏ������Ńs���N�̉��f���o���Ă��邢�V���^�W�W�C�ł��B
+<div class="text ayumu">【海鳴 夢】<br/>キャラは海鳴夢（うみなりあゆむ）。専門魔法使いの書警。<br/>
+ポケットに手つっこんでピンクの煙吐き出してるゆるいショタジジイです。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�A���J�[�͑�\�� �����Ă������R�j�q�B���܂ɂӂ���ƌ���閲�̐��b�₫����B<br/>
-���C���ȁ[�Ǝv�����C���Ղ肪ῂ����Ƃ��i�֌W:���h
+<div class="text ayumu">【海鳴 夢】<br/>アンカーは大十字 透っていう中３男子。たまにふらっと現れる夢の世話やきさん。<br/>
+元気だなーと思いつつ元気っぷりが眩しいとか（関係:尊敬
 </div>
-<div class="text gm">�yGM�z<br/>�V���^�W�W�C���肾�Ǝv���܂��B�@������U���n�Ȃ̂ɂ��Ƃ����Ƃ�n�Ȃ�ł��傤���B<br/>
-�퓬���ʂƂƂ�܂Ƃߕ��ʂł̂���������҂��Ă���܂��B��낵�����˂������܂��B
-</div>
-<div class="event">
-�yPC2�z�u�i�v�Ȃ錶�i�z���E�E�l�o�[�����h�j�v�C�@���i���݂Ȃ�@����ށj�@
-<a href="img/mono_ayumu.png" rel="lightbox">���摜</a>
-<br/><br/>
-���ʁF�j�@�N��F�O��11�΁A�{��111�΁@�o���F���x�i�u�b�N�E�H�b�`�j<br/>
-�\�̊�F���w��N���i��喂�@�g���j�@�@�^�̎p�F���F�̉���f���C�F���с^�y���f���ˁz<br/>
-�U���́F4�@�h��́F3�@�����́F4<br/>
-���Z�F���^�s�C�t�A�s���сt�A�s��t�A�s���t�A�s���t�@�@���̓��Z�F�s����̉_�t<br/>
-���@�F�y�ً}�����i�R�[�����O�j�z�A�y�R�m�����i�T�����i�C�g�j�s���t�z�A�y���Y�q�W���b�W�����g�r�z<br/>
-�@�@�@�y�U���q�A�T���g�}�j���A���r�z�A�y�Ԏ�q�J�E���^�[�r�z�A�y���Łq�f�X�r�z<br/>
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>PC3�̎闝�ł��A�}�M���M���߂Ăł���낵�����肢���܂�!
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�`���I�Ȓm����L���鈫���̖{�ŁA�l�Ԃ▂�@�g���ɒm���Ƌ��C��^���Ă��܂�����<br/>
-��@�T�̍S�����@�ɂ��قƂ�ǂ̒m���ɐ������������z�ꉻ���Ă��܂��B�o���͊O�T�ł��I<br/>
-���݂͂̂�т莍��G�{��ǂ݂Ȃ���Ö{���̓X������Ă��܂��B
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�A���J�[�͍��Z���̉Ð_�@�T����ŁA���X�X���̖{�Ƃ�����������Ă܂��B�i�֌W:�݌�
-<br/>�ȏ�ł�!
-</div>
-<div class="text gm">�yGM�z<br/>�m���~�����Ŗ{�\�����܂܂ɐ����Ă���߂܂�������āq��@�T�r�̌��ɂȂ��Ă��܂����n�O�T����ł��ˁB<br/>
-�ǂ�Ȗ\����Ղ�����Ă�������̂��y���݂ł��B�ǂ�����낵�����˂������܂��B
+<div class="text gm">【GM】<br/>ショタジジイありだと思います。　がっつり攻撃系なのにわりとおっとり系なんでしょうか。<br/>
+戦闘方面ととりまとめ方面でのご活躍を期待しております。よろしくおねがいします。
 </div>
 <div class="event">
-�yPC3�z�u���E���T�i�j�u���w�C���G�f�B�^�j�v���؃C�c�L�@
-<a href="img/syuri_ituki.jpg" rel="lightbox">���摜</a>
+【PC2】「永久なる幻（ホロウ・ネバーランド）」海鳴　夢（うみなり　あゆむ）　
+<a href="img/mono_ayumu.png" rel="lightbox">→画像</a>
 <br/><br/>
-���ʁF�j�@�N��F999�΁i���̎��_�Ő�����̂��~�߂��j�@�o���F�O�T�i�A�|�N���t�@�j<br/>
-�\�̊�F�Ö{���@�@�^�̎p�F�����̖{�^�y�h�䋭���z<br/>
-�U���́F3�@�h��́F3�@�����́F3<br/>
-���Z�F�́^�s���ׁt�A�s���΂݁t�A�s���t�A�s���C�t�A�s�c�݁t�@�@���̓��Z�F�s�D��S�t<br/>
-���@�F�y�ً}�����i�R�[�����O�j�z�A�y�R�m�����i�T�����i�C�g�j�s�c�݁t�z�A�y��R�q���W�X�g�r�z<br/>
-�@�@�@�y�����i�`���[���j�z�A�y�񕜁i�l���V�X�j�z�A�y�ψفi�g���u���j�z<br/>
+性別：男　年齢：外見11歳、本来111歳　経歴：書警（ブックウォッチ）<br/>
+表の顔：中学一年生（専門魔法使い）　　真の姿：桃色の煙を吐く海色の獏／【魔素放射】<br/>
+攻撃力：4　防御力：3　根源力：4<br/>
+特技：夢／《海》、《叫び》、《謎》、《幻》、《死》　　魂の特技：《眠りの雲》<br/>
+魔法：【緊急召喚（コーリング）】、【騎士召喚（サモンナイト）《幻》】、【書刑〈ジャッジメント〉】<br/>
+　　　【攻則〈アサルトマニュアル〉】、【返呪〈カウンター〉】、【入滅〈デス〉】<br/>
 </div>
-<div class="text noel">�y�m�G���z<br/>PC4�̗����ł��B�}�M���MPL��3��ڂƂ����񂭂炢�ł��B<br/>
-����̓j�[�gRP�Ɛi�s�t�H���[���o����΂Ǝv���Ă܂��B�悵�Ȃɂǂ����B
+<div class="text ituki">【焔木 イツキ】<br/>PC3の朱理です、マギロギ初めてですよろしくお願いします!
 </div>
-<div class="text noel">�y�m�G���z<br/>�m�G���i��O�K��y�ْ[�ҁz�j�u�b�v�̖��@�g���B<br/>
-���@���́uChant de No?l�i���a�̉́j�v�A�^�̎p�́u�Ő��̓�������^�̔L�i����:���^�ω��j�v�ł��B<br/>
-���N��1�΁A�O���͍��L��10�΂��炢�̏��N�̎p�����܂��B<br/>
-�����A���J�[�͎�����̎O�J�򗝁A�ޏ��ɂ����f����c���f���Ŏd���Ƃ�����܋����Ȃ��j�[�g�L�B<br/>
-�����́y�����z�y�x���z�y�ϊ��z�y�񕜁z�̃K�`�x���n�ł��B�키�C�͂���܂���B�ȏ�B
+<div class="text ituki">【焔木 イツキ】<br/>冒涜的な知識を有する悪魔の本で、人間や魔法使いに知識と狂気を与えていましたが<br/>
+大法典の拘束魔法によりほとんどの知識に制限がかけられ奴隷化しています。経歴は外典です！<br/>
+現在はのんびり詩や絵本を読みながら古本屋の店主をしています。
 </div>
-<div class="text gm">�yGM�z<br/>�j�[�g�ɂ�񂱂��B�ł������͊��S�x���Ŏg�������ł��ˁB�ǂꂾ������PC�����Ƀf���邩GM�͊y���݂ł��B<br/>
-���l���̋C�Ȃ��Ă������Ƃ����邩��ȁI�@�Ƃ����킯�ł�낵�����˂������܂��i�؂���
+<div class="text ituki">【焔木 イツキ】<br/>アンカーは高校生の嘉神　探くんで、おススメの本とか教えつつ見守ってます。（関係:庇護
+<br/>以上です!
+</div>
+<div class="text gm">【GM】<br/>知識欲旺盛で本能赴くままに生きてたら捕まっちゃって〈大法典〉の犬になってしまった系外典さんですね。<br/>
+どんな暴れっぷりをしてくださるのか楽しみです。どうぞよろしくおねがいします。
 </div>
 <div class="event">
-�yPC4�z�u Chant de Noel�s���a�̉́t�v�m�G���@
-<a href="img/rikua_noel.jpg" rel="lightbox">���摜</a>
+【PC3】「死界教典（ニブルヘイムエディタ）」焔木イツキ　
+<a href="img/syuri_ituki.jpg" rel="lightbox">→画像</a>
 <br/><br/>
-���ʁF�j�@�N��F1�΁i�O��10�΁j�@�o���F�ْ[�ҁi�A�E�g�T�C�_�[�j<br/>
-�\�̊�F���N�^���L�@�@�^�̎p�F�Ő��̓�������^�̔L�^�y���^�ω��z<br/>
-�U���́F3�@�h��́F3�@�����́F4<br/>
-���Z�F�b�^�s���t�A�s���t�A�s��t�A�s�����t�A�s����t�@�@���̓��Z�F�s�^���t<br/>
-���@�F�y�ً}�����i�R�[�����O�j�z�A�y�R�m�����i�T�����i�C�g�j�s��t�z�A�y�����i�f�����u���b�h�j�z<br/>
-�@�@�@�y�x���i�T�|�[�g�j�z�A�y�ϊ��i�R���o�[�g�j�z�A�y�񕜁i�q�[���j�z<br/>
+性別：男　年齢：999歳（この時点で数えるのを止めた）　経歴：外典（アポクリファ）<br/>
+表の顔：古本屋　　真の姿：悪魔の本／【防御強化】<br/>
+攻撃力：3　防御力：3　根源力：3<br/>
+特技：歌／《混沌》、《微笑み》、《時》、《狂気》、《歪み》　　魂の特技：《好奇心》<br/>
+魔法：【緊急召喚（コーリング）】、【騎士召喚（サモンナイト）《歪み》】、【抵抗〈レジスト〉】<br/>
+　　　【魅了（チャーム）】、【報復（ネメシス）】、【変異（トラブル）】<br/>
 </div>
-<div class="text gm">�yGM�z<br/>�ȏ�A����͂�����̂S���ł̃Z�b�V�����ɂȂ�܂��B�͂����Ăǂ̂悤�Șb���Y�܂��̂��B<br/>
-�Z���V�s�̕��a�Ǝ�҂����̖����͎����̂��I�@�킭�킭���܂��ˁI
+<div class="text noel">【ノエル】<br/>PC4の陸亜です。マギロギPLは3回目とかそんくらいです。<br/>
+今回はニートRPと進行フォローが出来ればと思ってます。よしなにどうぞ。
+</div>
+<div class="text noel">【ノエル】<br/>ノエル（第三階梯【異端者】）「獣」の魔法使い。<br/>
+魔法名は「Chant de No?l（生誕の歌）」、真の姿は「翡翠の瞳を持つ大型の猫（効果:元型変化）」です。<br/>
+実年齢1歳、外見は黒猫と10歳くらいの少年の姿が取れます。<br/>
+初期アンカーは飼い主の三谷橙理、彼女にだけデレるツンデレで仕事とかあんま興味ないニート猫。<br/>
+蔵書は【魔族】【支援】【変換】【回復】のガチ支援系です。戦う気はありません。以上。
+</div>
+<div class="text gm">【GM】<br/>ニートにゃんこだ。でも蔵書は完全支援で使えそうですね。どれだけ他のPCたちにデレるかGMは楽しみです。<br/>
+当人その気なくても事件とかあるからな！　というわけでよろしくおねがいします（ぺこり
+</div>
+<div class="event">
+【PC4】「 Chant de Noel《生誕の歌》」ノエル　
+<a href="img/rikua_noel.jpg" rel="lightbox">→画像</a>
+<br/><br/>
+性別：男　年齢：1歳（外見10歳）　経歴：異端者（アウトサイダー）<br/>
+表の顔：少年／黒猫　　真の姿：翡翠の瞳を持つ大型の猫／【元型変化】<br/>
+攻撃力：3　防御力：3　根源力：4<br/>
+特技：獣／《道》、《肉》、《牙》、《旋律》、《眠り》　　魂の特技：《運命》<br/>
+魔法：【緊急召喚（コーリング）】、【騎士召喚（サモンナイト）《牙》】、【魔族（デモンブラッド）】<br/>
+　　　【支援（サポート）】、【変換（コンバート）】、【回復（ヒール）】<br/>
+</div>
+<div class="text gm">【GM】<br/>以上、今回はこちらの４名でのセッションになります。はたしてどのような話が産まれるのか。<br/>
+六分儀市の平和と若者たちの未来は守られるのか！　わくわくしますね！
 </div>
 <br> 
 <br>
-<div class="subtitle" id="prologue">�������t�F�C�Y�@�V�[���P�\�\PC4�^�m�G��
+<div class="subtitle" id="prologue">●導入フェイズ　シーン１――PC4／ノエル
 </div>
-<div class="text gm">�yGM�z<br/>�m�G������́A�����肢�̗͂Ɉ����񂹂��āA����̕���ł���u�Z���V�s�v�ɂ���ė��܂����B
+<div class="text gm">【GM】<br/>ノエルくんは、強い願いの力に引き寄せられて、今回の舞台である「六分儀市」にやって来ました。
 </div>
-<div class="text noel">�y�m�G���z<br/>���A���Ⴀ�Z��ł�X�Ƃ͈Ⴄ�̂��ȁB�����傪���d�����Ƀv���v�����Ă��񂾂Ǝv���܂��B
+<div class="text noel">【ノエル】<br/>あ、じゃあ住んでる街とは違うのかな。飼い主がお仕事中にプラプラしてたんだと思います。
 </div>
-<div class="text gm">�yGM�z<br/>�����肢�̗͂́A�֏����Ăъ񂹂邽�߁A�֏���ǂ����@�g���ł���m�G���N�́A�֏��������Ɍ���邩������Ȃ��A�ƍl�����̂ł��B�܂����@�g���]�X�͂ǂ��ł������m�G������ł��傤���炫���Ǝ�����ł���򗝂��񂪏Z��ł��鏈�ɋ߂��X�ł�����ɔ�Q���o��O�ɂǂ��ɂ����悤�ƍl�����̂ł��傤�B
+<div class="text gm">【GM】<br/>強い願いの力は、禁書を呼び寄せるため、禁書を追う魔法使いであるノエル君は、禁書がそこに現れるかもしれない、と考えたのです。まあ魔法使い云々はどうでもいいノエルくんでしょうからきっと飼い主である橙理さんが住んでいる処に近い街でそちらに被害が出る前にどうにかしようと考えたのでしょう。
 </div>
-<div class="text noel">�y�m�G���z<br/>�������ˁI�@�g�[���ɉ����������炳���O�ɂ��ݎE���ˁI
+<div class="text noel">【ノエル】<br/>そうだね！　トーリに何かいたずらされる前にかみ殺すね！
 </div>
-<div class="text noel">�y�m�G���z<br/>�i���̕ӂ��Ȃ��c�H�j�@���Ă��Ђ��҂��҂������Z���V�s��T�����Ă��ł��傤���B�����ڂ͂����̂��U���L�B
+<div class="text noel">【ノエル】<br/>（この辺かなあ…？）　っておひげぴくぴくさせつつ六分儀市を探索してるんでしょうか。見た目はただのお散歩猫。
 </div>
-<div class="text gm">�yGM�z<br/>���Ԃ͖�B�{���͋�C���Y��Ȃ̂��󂪓����ʂ��Ă���A�����Y��Ɍ����܂��B
+<div class="text gm">【GM】<br/>時間は夜。本日は空気が綺麗なのか空が透き通っており、星が綺麗に見えます。
 </div>
-<div class="text noel">�y�m�G���z<br/>�i���ނ����ނ��B���������Ăǂ��ɂ����Ă������A�낤�j
+<div class="text noel">【ノエル】<br/>（さむいさむい。早く見つけてどうにかしておうち帰ろう）
 </div>
-<div class="text gm">�yGM�z<br/>�肢�̓�����H���Ă݂�΁A�����͈ꌬ�̖��ƁB2�K�̃x�����_�ň�l�̏�����������グ�Ă��܂��B<br>
-�@<a href="img/fire_keiko.png" rel="lightbox">���摜</a>
+<div class="text gm">【GM】<br/>願いの匂いを辿ってみれば、そこは一軒の民家。2階のベランダで一人の少女が空を見上げています。<br>
+　<a href="img/fire_keiko.png" rel="lightbox">→画像</a>
 </div>
-<div class="text noel">�y�m�G���z<br/>�ւ������Ƃ�����݂����̎q���c���Ⴀ���̕ӂ̕����璭�߂Ă�悤�ȁB<br>
-�������Ă�������Ȃ��Ă������ł����ă��@����
+<div class="text noel">【ノエル】<br/>へくちっとくしゃみしつつ女の子を…じゃあその辺の塀から眺めてるような。<br>
+見つかっても見つかんなくてもいいですってワァ可愛い
 </div>
-<div class="text gm">�yGM�z<br/>�肢�̎�́A��l�̏����\�\���_���Z�ɒʂ����Zi�N���A�v�Z�d�q�ł��B
+<div class="text gm">【GM】<br/>願いの主は、一人の少女――東雲高校に通う高校i年生、久住慧子です。
 </div>
-<div class="text noel">�y�m�G���z<br/>�i�g�[���̂������Ɛ�Ƃ͈Ⴄ���悤�ӂ����B�ǂ������̂��ȁj�@�Ǝv�����Ă܂��傤�B
-<br>�K���ς���
+<div class="text noel">【ノエル】<br/>（トーリのおしごと先とは違うおようふくだ。どうしたのかな）　と思いつつ見てましょう。
+<br>尻尾ぱたん
 </div>
-<div class="text gm">�yGM�z<br/>�ޏ��͖��̗����ւƁA�����g�݁A���������ɋF���Ă��܂��B
+<div class="text gm">【GM】<br/>彼女は夜空の流星へと、両手を組み、何を懸命に祈っています。
 </div>
-<div class="text noel">�y�m�G���z<br/>�u���o����ǂ������́v�@���Ĉꌾ�����Ă݂悤�B�����ĒK�Q����B
+<div class="text noel">【ノエル】<br/>「お姉さんどうしたの」　って一言聞いてみよう。そして狸寝入り。
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���H�@�N���A����́H�v�@�ƐU��Ԃ����ޏ���<br>
-�u�c�L�����H�v�ƃm�G������̎p�������A����X���܂��B
+<div class="text npc_keiko">【久住 慧子】<br/>「え？　誰か、いるの？」　と振り返った彼女は<br>
+「…猫ちゃん？」とノエルくんの姿を見つけ、首を傾げます。
 </div>
-<div class="text noel">�y�m�G���z<br/>���₷��B���X�Жڂ��J���ėl�q�����Ă݂�i
+<div class="text noel">【ノエル】<br/>すやすや。時々片目を開けて様子を見てみる（
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u�c����Ȗ�A�Ȃ���ˁB�@�ł��A�L�����Ȃ�A�������Ȃ��H�v�@<br>
-�����Ɣw���Ƃ����łĂ��������ȂƎv���Ď���߂Â��āA�Q�Ă���̂��ȂƎ���Ђ����߂܂��B
+<div class="text npc_keiko">【久住 慧子】<br/>「…そんな訳、ないよね。　でも、猫ちゃんなら、いいかなあ？」　<br>
+そっと背中とか撫でてもいいかなと思って手を近づけて、寝ているのかなと手をひっこめます。
 </div>
-<div class="text noel">�y�m�G���z<br/>������ȊO�ɕ��ł���̂͂���܂�D������Ȃ��ł����A�܂����傤���Ȃ��̂ŉ䖝���ĂĂ����܂��B<br>
-���̂܂܂����Ƃ��Ă܂��B
+<div class="text noel">【ノエル】<br/>飼い主以外に撫でられるのはあんまり好きじゃないですが、まあしょうがないので我慢しててあげます。<br>
+そのままじっとしてます。
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���̂ˁA���u�A���y�ƒ��ǂ��Ȃ�܂��悤�Ɂv���Ă����l�ɂ��肢�����Ă����́B�����i�D�ǂ��񂾂�c�v<br>
-�ޏ��͑z���l���v�������ׂ��̂��A���ւցA�ƍΑ����̔��΂݂𕂂��ׂ܂��B
+<div class="text npc_keiko">【久住 慧子】<br/>「あのね、私「植野先輩と仲良くなれますように」ってお星様にお願いをしていたの。凄い格好良いんだよ…」<br>
+彼女は想い人を思い浮かべたのか、えへへ、と歳相応の微笑みを浮かべます。
 </div>
-<div class="text noel">�y�m�G���z<br/>�i���ǂ��Ȃ肽���Ȃ炨�F�B�ɂȂ��Ă��Č����΂����̂ɂȂ��B�j���Q�����Ăނ�������ˁA�g�[���j<br>
-���Ďv�������ĂĂ����܂��傤�B
+<div class="text noel">【ノエル】<br/>（仲良くなりたいならお友達になってって言えばいいのになあ。ニンゲンってむつかしいよね、トーリ）<br>
+って思いつつ聞いててあげましょう。
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���̍΂ɂȂ��Ă���Ȃ��Ƃ��Ă���Ēm��ꂽ��΂�ꂿ�Ⴄ����A�L�������ق��ĂĂˁH�v�@<br>
-�l�����w�𗧂āA������������̏΂݂𕂂��ׂ܂��B
+<div class="text npc_keiko">【久住 慧子】<br/>「この歳になってこんなことしてるって知られたら笑われちゃうから、猫ちゃんも黙っててね？」　<br>
+人差し指を立て、いたずらっこの笑みを浮かべます。
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ���傤���Ȃ��̂Ł@�u�ɂ�[�v�@���Čy�������Ă����܂��傤�B<br>
-���v�����Ȃ畻����ς��ƍ~��邩�ȁB
+<div class="text noel">【ノエル】<br/>じゃあしょうがないので　「にゃー」　って軽く答えてあげましょう。<br>
+大丈夫そうなら塀からぱっと降りるかな。
 </div>
-<div class="event">���v�Z�d�q�i�l���j<br/>
-�������_���Z�ɒʂ����q���Z���B<br>
-�T���ȉƂɐ��܂�A���i���ق��炩�ŃN���X�̐l�C�ҁB<br>
-�}���ψ���ɏ������Ă���B���͈�҂ɂȂ��Đl�������邱�Ƃł���B<br>
+<div class="event">○久住慧子（人物）<br/>
+私立東雲高校に通う女子高校生。<br>
+裕福な家に生まれ、性格もほがらかでクラスの人気者。<br>
+図書委員会に所属している。夢は医者になって人を助けることである。<br>
 </div>
-<div class="text gm">�yGM�z<br/>�m�G���N�́A�֌W���ɔޏ��̖��O���L�����A�y�^���z��1�_�l�����܂��B<br>
-�y�^���z�̑����́A�u�^�������\�v�Ń����_���Ɍ���ƂȂ�܂��B
+<div class="text gm">【GM】<br/>ノエル君は、関係欄に彼女の名前を記入し、【運命】を1点獲得します。<br>
+【運命】の属性は、「運命属性表」でランダムに決定となります。
 </div>
-<div class="dice"> �^�������\(3) �� �w�h�G�x���炩�̕��@�Ő킢�����A���������s��ՓV�̓G�B
+<div class="dice"> 運命属性表(3) → 『宿敵』何らかの方法で戦いあい、競い合う不倶戴天の敵。
 </div>
-<div class="text gm">�yGM�z<br/>���[��A���Ⴀ�򗝂����ɂ͂Ȃ����̖c��݂Ƃ��ɉ��������v���Ƃ���ł��������񂶂�Ȃ����ȁB
+<div class="text gm">【GM】<br/>うーん、じゃあ橙理ちゃんにはない胸の膨らみとかに何かこう思うところでもあったんじゃないかな。
 </div>
-<div class="text noel">�y�m�G���z<br/>�v��Ȃ�����I�@�g�[���̋��͕���������p�[�J�[�̒��ɓ���₷���񂾂���I�@���Ⴀ���������咣�ł����ł�
+<div class="text noel">【ノエル】<br/>思わないもん！　トーリの胸は平たいからパーカーの中に入りやすいんだもん！　じゃあそういう主張でいいです
 </div>
-<div class="text gm">�yGM�z<br/>���������Č��������̂ɂ�񂱁B�@�ł͂���Ȋ����Ńm�G������̓����V�[�����I���������Ǝv���܂��B�@<br>
-���͂����肵�܂��̂�1D6�ǂ����B
+<div class="text gm">【GM】<br/>平たいって言ったこのにゃんこ。　ではそんな感じでノエルくんの導入シーンを終了したいと思います。　<br>
+魔力を決定しますので1D6どうぞ。
 </div>
-<div class="text noel">�y�m�G���z<br/>1d6
-</div><div class="dice"> (1D6) �� 5
+<div class="text noel">【ノエル】<br/>1d6
+</div><div class="dice"> (1D6) → 5
 </div>
-<div class="text noel">�y�m�G���z<br/>5+�y�����́z4=9 �ł��ˁA�ő喂�́B��������B
+<div class="text noel">【ノエル】<br/>5+【根源力】4=9 ですね、最大魔力。やったぜ。
 </div>
-<div class="text gm">�yGM�z<br/>�����͂����݂S�Ȃ̂ō��v�X�����͍ő�l�ƂȂ�܂��B
-<br/>�������񖂑f���o���Ē��Ԃ����������Ă����܂��傤�B�@�ł̓V�[����ύX���܂��B
-</div>
-<br><br>
-<div class="subtitle" id="prologue2">�������t�F�C�Y�@�V�[���Q�\�\PC1�^�R�[�f�B�E�R���g�n�[�h�iCody Coulthard�j
-</div>
-<div class="text gm">�yGM�z<br/>�R�[�f�B�N�͂P�N�O�ɓ]�Z���Ă������_���Z�ɒʂ����Z���ł����ˁB
-</div>
-<div class="text gm">�yGM�z<br/>����ȃR�[�f�B�N�ɂ͒��ǂ��̗F�l���������܂��B�F�l�̖��O�́A�L�����Ƌv�Z�d�q�ł��B
-<br>�O�l�́A�N���X�͈Ⴄ�̂��̂́A�����}���ψ���ɏ������钇�Ԃł��B
-<br/>�������A���݂��̋����ɂ���̂̓R�[�f�B�N�ƌd�q�̓�l�݂̂ł��B
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�d�q�����ƎG�k�ł����Ă�̂��ȁB�Ȃ��ӌ����A�j���ɂ��Ăł��M�ق��Ă悤�B
-</div>
-<div class="text gm">�yGM�z<br/>�����ł��傤�B�d�q�͈��z�̂������Ȃ̂ł����ƃR�[�f�B�N�̘b�Ɉ���J���Ȃ���łĂ΋���������Ԃ��܂���B
-<br/>�������A��b���r�؂ꂽ���̏u�ԁA�d�q�͈�Ԃ�u���Ă���
-</div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u�ŋ߁A�c���ǂ������̂��ȁH�v�@�ƁA�����C���i�܂Ȃ��l�q�ł���Ȍ��t�����ɂ��܂��B
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�J�I���H�v�@��������X���Ă��܂��B
-</div>
-<div class="text gm">�yGM�z<br/>���x�݂ɂ͂R�l�ňꏏ�ɂ��ٓ������̂��P�Ⴞ�����O�l�ł����A�����ŋ߁A���̎p������܂���B
-<br/>���ɂ��邱�Ƃ͌���܂������A�d�q�͂����ƐS�z���Ă���l�q�ł��B
-</div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u�c���A����ꂿ������̂��ȁv�@�Ƃۂ�Ɨ낵�A<br>
-�ς���Ƃ��ٓ��̂��܂��₫���ЂƂ��Ɋ܂݂܂��B
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c����Ȃ��ƂȂ��f�X�I�@���x�J�I���Ƙb���Ă݂邪�����f�X��I�@�{�N���ꏏ�I�v�@<br>
-�����ڂ肵���l�q�ɂ�����ƍQ�Ă܂��傤��
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�P�[�R�����ɂȂ����Ⴄ���R�Ȃ��f�X�I�v
-</div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���A����B�R�[�f�B���ꏏ�Ȃ�A�����S�����ȁv�@�ƍŏ��͋󌳋C�̂悤�ł����@
-<br>�u����΂�ˁI�v�ƌ������ɂ͂����̏Ί�ɖ߂��Ă邱�Ƃł��傤�B
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�F�ňꏏ�ɃA�j�����邪������I�@�I�X�X�������ς��I�v�@
-<br>�I�^�N�炵����l����オ���Ă܂��傤�B
-</div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���͂́A�������ˁB�@�����x�͉����L����񂪏o�Ă���̂������Ȃ��v�@�Ƒ��Ƃ�ł��܂�
-</div>
-<div class="text gm">�yGM�z<br/>�ł́A�R�[�f�B�N���֌W���Ɍd�q�̖��O���L�����Ă��������B�y�^���z��1�_�l�����܂��B<br>
-�y�^���z�̑����́A�u�^�������\�v�Ń����_���Ɍ��肵�܂��傤�B
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�}�J�Z���[�I�@�O�l�łɂ�񂱃��u�I�v�@�e�w�𗧂Ă܂��傤�B
-</div>
-<div class="dice"> �^�������\(6) �� �w���h�x���̍˔\��v�z�A�p���ɑ΂��،h�⑸�h������l���B
-</div>
-<div class="text gm">�yGM�z<br/>�ł́A�u���h�v�̉^�����l���ƂȂ�܂��B�@�d�q���V�i���I�A���J�[�Ƃ����킯�ł��ˁB
-<br/>�����ď������͂����肵�܂��傤�B1d6�ǂ����B
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>1d6 ��������
-</div><div class="dice"> (1D6) �� 2
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>������ς�
-</div>
-<div class="text gm">�yGM�z<br/>�ł͍����͂R�{�Q�ŏ������͂͂T�ƂȂ�܂��B�@�P���}�V����I
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�͂��I�I�@5�ł��I
-</div>
-<div class="text gm">�yGM�z<br/>�܂��R�[�f�B�N���͉���ł����ˁB�@�����ƂȂ����璲�����Ă��������ǂ��Ƃł��Ȃ�܂��B<br>
-�@�ł͂���ɂăV�[�����I�����܂��傤�B
+<div class="text gm">【GM】<br/>根源力が現在４なので合計９が魔力最大値となります。
+<br/>たくさん魔素を出して仲間たちを助けてあげましょう。　ではシーンを変更します。
 </div>
 <br><br>
-<div class="subtitle" id="prologue3">�������t�F�C�Y�@�V�[���R�\�\PC3�^���؃C�c�L
+<div class="subtitle" id="prologue2">●導入フェイズ　シーン２――PC1／コーディ・コルトハード（Cody Coulthard）
 </div>
-<div class="text gm">�yGM�z<br/>�C�c�L����́A��̊X���U�����Ă���V�[���ɂȂ�܂��B�X�͒��߂���̎��Ԃł��ˁB���R�͔C�ӂł��B
+<div class="text gm">【GM】<br/>コーディ君は１年前に転校してきた東雲高校に通う高校生でしたね。
 </div>
-<div class="text gm">�yGM�z<br/>���͎͂d���A��̃T�����[�}����������A��̊X�Ŏd�������Ă���l�Ȃ񂩂ł��킴�킵�Ă��܂��B
-<br>�l�ʂ�̂���ɉ؊X�݂����Ȋ����ł��ˁB
+<div class="text gm">【GM】<br/>そんなコーディ君には仲良しの友人たちがいます。友人の名前は、広瀬香と久住慧子です。
+<br>三人は、クラスは違うのものの、同じ図書委員会に所属する仲間です。
+<br/>しかし、現在この教室にいるのはコーディ君と慧子の二人のみです。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����ƁA�邩�B���X���Ăĉ^���s�������A�ǂ����v���v�����ɂ����Ă�̂��ȁB
-<br>���̖{������ɂ����ĂĂ��������E�E�E�G�{�T���ɂƂ��c
+<div class="text cody">【コーディ・コルトハード】<br/>慧子ちゃんと雑談でもしてるのかな。なら昨晩見たアニメについてでも熱弁してよう。
 </div>
-<div class="text gm">�yGM�z<br/>�������炵���ړI�ł����B�@
-<br>�ł͕ʂ̖{������ɊG�{��T���ɍs���Ă铹���Ƃ������Ƃ�
+<div class="text gm">【GM】<br/>いいでしょう。慧子は愛想のいい娘なのできっとコーディ君の話に一喜一憂しながら打てば響く反応を返しますよ。
+<br/>しかし、会話が途切れたその瞬間、慧子は一つ間を置いてから
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�G�h���[�h�E�S�[���[����̊G�{�Ȃ��Ȃ���������܂���ˁ`�v�ƂڂƂ�
+<div class="text npc_keiko">【久住 慧子】<br/>「最近、…香どうしたのかな？」　と、少し気が進まない様子でそんな言葉を口にします。
 </div>
-<div class="text gm">�yGM�z<br/>�ړI�̖{�������炸�A���𗎂Ƃ��ĂƂڂƂڂƕ����Ă���C�c�L����ł����A�ӂƑO���ɖ��f�̎�������C�z�������܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>「カオル？」　少し首を傾げています。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���I�ł͌��ɍs���܂��傤!�u�����ʔ������Ƃł�����܂����ˁ[�v�ӂ�ӂ�l���݂悯��
+<div class="text gm">【GM】<br/>昼休みには３人で一緒にお弁当をつつくのが恒例だった三人ですが、ここ最近、香の姿がありません。
+<br/>口にすることは減りましたが、慧子はずっと心配している様子です。
 </div>
-<div class="text gm">�yGM�z<br/>�O���ɖڂ������Ă݂�ƁA�ʂ�̐^�񒆂ň�l�̒j�����˔@���ɕ�܂�܂��B
+<div class="text npc_keiko">【久住 慧子】<br/>「…私、嫌われちゃったのかな」　とぽつりと零し、<br>
+ぱくりとお弁当のたまごやきをひとつ口に含みます。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u���A�����ٔ��ȗ��ł��ˁA�l���R����̂������̂́v�v���Ԃ�̌��i�ɂт�����ł��ˁI
+<div class="text cody">【コーディ・コルトハード】<br/>「……そんなことないデス！　今度カオルと話してみるがいいデスよ！　ボクも一緒！」　<br>
+しょんぼりした様子にちょっと慌てましょうか
 </div>
-<div class="text gm">�yGM�z<br/>�����ڌ����Ă������͂̐l��������A�ߖ�������܂��B�@�ɉ؊X�͓ˑR�̎��̂ɑ呛���ł��B
+<div class="text cody">【コーディ・コルトハード】<br/>「ケーコ嫌いになっちゃう理由ないデス！」
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���̏�ɂƂǂ܂��Č��n���Ă݂�̂��ȁI
+<div class="text npc_keiko">【久住 慧子】<br/>「う、うん。コーディが一緒なら、私も心強いな」　と最初は空元気のようですが　
+<br>「がんばるね！」と言う頃にはいつもの笑顔に戻ってることでしょう。
 </div>
-<div class="text gm">�yGM�z<br/>���@�g���ł���C�c�L����ɂ͕�����܂����A��قǖ��f�̋C�z���������悤�ɁA����͋֏��ɂ�閂�@�Ж�ł��傤�B
+<div class="text cody">【コーディ・コルトハード】<br/>「皆で一緒にアニメ見るがいいよ！　オススメいっぱい！」　
+<br>オタクらしく一人盛り上がってましょう。
 </div>
-<div class="text gm">�yGM�z<br/>���ݘZ���V�s�ł́A������l�����A�˔@�R��������Ƃ�����̔��Ό��ۂ��p�����Ă���̂ł��B�e���r��V���ŏ��𓾂Ă���̂ł���΁A�����炭�A����̂��Ƃ��Ƒz���������Ƃł��傤�B
+<div class="text npc_keiko">【久住 慧子】<br/>「あはは、そうだね。　私今度は可愛い猫ちゃんが出てくるのがいいなあ」　と相槌を打ちます
 </div>
-<div class="text gm">�yGM�z<br/>�ӂƁA���Ύ��̂ł͂Ȃ����͂ɖڂ�z���Ă݂�΁A������ڌ������Q�O�̒��ɁA�����Ɠ����悤�ɂ��̗l�q�𒭂߂Ă����l���𔭌����܂��B
+<div class="text gm">【GM】<br/>では、コーディ君も関係欄に慧子の名前を記入してください。【運命】を1点獲得します。<br>
+【運命】の属性は、「運命属性表」でランダムに決定しましょう。
 </div>
-<div class="text gm">�yGM�z<br/>���̐l���́A�C�c�L����̎����ɋC�Â��ƁA�p���B���悤�ɐl���݂֕���A��̊X�ւƏ����Ă����܂����B
+<div class="text cody">【コーディ・コルトハード】<br/>「マカセロー！　三人でにゃんこラブ！」　親指を立てましょう。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�ӂ�ӂ�A���̐l�̓p�j�b�N�ɂȂ��Ă邵�A�R�����u�Ԍ��Ă邩������Ȃ�����߂Â������Ǝv������������I
+<div class="dice"> 運命属性表(6) → 『尊敬』その才能や思想、姿勢に対し畏敬や尊敬を抱く人物。
 </div>
-<div class="text gm">�yGM�z<br/>�C�ɂȂ����l���ɂ��ăn���h�A�E�g��񎦂��܂��B
+<div class="text gm">【GM】<br/>では、「尊敬」の運命を獲得となります。　慧子がシナリオアンカーというわけですね。
+<br/>続けて初期魔力を決定しましょう。1d6どうぞ。
 </div>
-<div class="event">���L�����i�l���j<br/>�@<a href="img/fire_kaoru.png" rel="lightbox">���摜</a>
-�������_���Z�ɒʂ��j�q���Z���B<br>
-�Ƃ͕n�������A�^���_�o���悭�A�X�|�[�c���Ґ��Ƃ��ē��w�B<br>
-�j�q�o�X�P�b�g���ɏ������Ă���B�܂������Ȑ��i�Ől�C�҂ł���B<br>
-�e�F�ł���v�Z�d�q�̂����߂������āA�}���ψ���ɏ������Ă���B
+<div class="text cody">【コーディ・コルトハード】<br/>1d6 初期魔力
+</div><div class="dice"> (1D6) → 2
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�l�̔��΂̖ڌ��҂����A�C�ɂȂ鑶�݂��ˁI
+<div class="text cody">【コーディ・コルトハード】<br/>しょっぱい
 </div>
-<div class="text gm">�yGM�z<br/>�C�c�L����͊֌W���ɔނ̖��O���L�����Ă��������B�y�^���z��1�_�l�����܂��B
-�y�^���z�̑����́A�u�^�������\�v�Ń����_���Ɍ��肵�܂��傤�B
+<div class="text gm">【GM】<br/>では根源力３＋２で初期魔力は５となります。　１よりマシだよ！
 </div>
-<div class="dice"> �^�������\(6) �� �w���h�x���̍˔\��v�z�A�p���ɑ΂��،h�⑸�h������l���B
+<div class="text cody">【コーディ・コルトハード】<br/>はい！！　5です！
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���A���h�����I
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���[���ƁA�l�X���p�j�b�N�ɂȂ钆�A��ÂɎ�����ڌ����Ă����������̂ŁA�Ȃ��Ȃ��ʔ������Ȏq���ȂƁE�E�E����Ȋ����ł����ˁc
-</div>
-<div class="text gm">�yGM�z<br/>���ނ��ށA�^���P�ł����ˁB����ȂƂ���ł��傤�B
-<br/>�����ď������͂����肵�܂��傤�B1D6�ǂ����B
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>1d6 ��������
-</div><div class="dice"> (1D6) �� 5
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>������I
-</div>
-<div class="text gm">�yGM�z<br/>�C�c�L���񂳂�������o�ڂ����ˁH�H�H�@�ł͍����͂R�{�T�ŏ������͂͂W�ƂȂ�܂��B
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���肪�Ƃ��������܂��I
-</div>
-<div class="text gm">�yGM�z<br/>�ł́A�V�[����؂�ւ��܂��B
+<div class="text gm">【GM】<br/>まあコーディ君魔力解放ですしね。　いざとなったら調律してもいいしどうとでもなります。<br>
+　ではこれにてシーンを終了しましょう。
 </div>
 <br><br>
-<div class="subtitle" id="prologue4">�������t�F�C�Y�@�V�[���S�\�\PC2�^�C�@���i���݂Ȃ�@����ށj
+<div class="subtitle" id="prologue3">●導入フェイズ　シーン３――PC3／焔木イツキ
 </div>
-<div class="text gm">�yGM�z<br/>�q��@�T�r�ɑ����鏑�x�ł��閲�N�͘Z���V�s�ɂ���s���}���قɌĂяo����܂����B<br>
-�����́A�q��@�T�r�̘Z���V�x���ɂȂ�܂��B
+<div class="text gm">【GM】<br/>イツキさんは、夜の街を散歩しているシーンになります。店は締めた後の時間ですね。理由は任意です。
 </div>
-<div class="text gm">�yGM�z<br/>�Ăяo�����̂́A�s���}���قْ̊��㗝�ł���e�����q�i�����͂炠�₱�j�B<br>
-�ޏ��́A��O�K��ɂ���i���ŁA�Z���V�s�̖��@�g�������̓��������Ă��܂��B<br>
-��ȔC���́A�֏�����̃o�b�N�A�b�v�ŁA���@�Ж�̒�����B���Ȃǂ��s���Ă��܂��B
+<div class="text gm">【GM】<br/>周囲は仕事帰りのサラリーマンだったり、夜の街で仕事をしている人なんかでざわざわしています。
+<br>人通りのある繁華街みたいな感じですね。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�₠�e������A���͂悤����ɂ��͂���΂�́v�@�؂���
+<div class="text ituki">【焔木 イツキ】<br/>えっと、夜か。お店してて運動不足だし、どっかプラプラしにいってるのかな。
+<br>他の本屋さんにいっててもいいか・・・絵本探しにとか…
 </div>
-<div class="text gm">�y�e�� ���q�z<br>�u���Ԓʂ�̓����ł��ˁA�q�i�v�Ȃ錶�r�v�@<br>
-������ɋC�Â��ƁA�ޏ��͂ЂƂ̏��ނ���Ɏ��A��˂���Ƃ����̒��q�Řb��i�߂܂��B<br>
+<div class="text gm">【GM】<br/>随分可愛らしい目的でした。　
+<br>では別の本屋さんに絵本を探しに行ってる道中ということで
 </div>
-<div class="text gm">�y�e�� ���q�z<br>
-�u�ߍ��A�Z���V�s�̂��������ŋN�����Ă����̔��Ό��ۂɂ��Ă͂������ł����H�v<br>
+<div class="text ituki">【焔木 イツキ】<br/>「エドワード・ゴーリーさんの絵本なかなか見当たりませんね～」とぼとぼ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���΁H�@���[��\�����񂪌����Ă������B�ނ����ނ������琢�E�I�ɂ��܁[�ɂ������炵�����ǁv�@����
+<div class="text gm">【GM】<br/>目的の本が見つからず、肩を落としてとぼとぼと歩いているイツキさんですが、ふと前方に魔素の収束する気配を感じます。
 </div>
-<div class="text gm">�y�e�� ���q�z<br>
-�u�m���Ă���������̂Ȃ�b�͑����ł��ˁB������̎����͖��@�Ж�ɂ����̂ł��B<br>
-�����āA���̔w��ɂ́A�q��@�T�r����p���������֏��������闠�؂�̉����������ł��邱�Ƃ͖��炩�ł��B�v
+<div class="text ituki">【焔木 イツキ】<br/>お！では見に行きましょう!「何か面白いことでもありますかねー」ふらふら人ごみよけつつ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�������[�B������ꂿ������́H�v
+<div class="text gm">【GM】<br/>前方に目を向けてみると、通りの真ん中で一人の男性が突如炎に包まれます。
 </div>
-<div class="text gm">�y�e�� ���q�z<br>�u�c�c�A���̒����ɂ��ρA�q�f�́r�͂��ꂼ�꓌�_���Z�̐l���ɜ߈˂��Ă���悤�ł��B�v�@
+<div class="text ituki">【焔木 イツキ】<br/>「あ、魔女裁判以来ですね、人が燃えるのを見たのは」久しぶりの光景にびっくりですね！
 </div>
-<div class="text gm">�y�e�� ���q�z<br>�u�����āA���̈�ł���q���r�́A�Z���V�s�ɂ��鍂�Z�ɒʂ����t�A��n�a�l�ɜ߈˂��Ă���悤�ł��B�v<br>
-�@�ƁA�ޏ��͑����܂�
+<div class="text gm">【GM】<br/>それを目撃していた周囲の人たちから、悲鳴があがります。　繁華街は突然の自体に大騒ぎです。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�q���r�Ȃ����Ɍ��C�����ς����˂��B�ЂƂ͕������Ă�񂾁v�@�ӂނ�
+<div class="text ituki">【焔木 イツキ】<br/>その場にとどまって見渡してみるのかな！
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���́q���r�͂��̐l�ւ̜߈˂ŊԈႢ�Ȃ����ȁH�v
+<div class="text gm">【GM】<br/>魔法使いであるイツキさんには分かりますが、先ほど魔素の気配も感じたように、これは禁書による魔法災厄でしょう。
 </div>
-<div class="text gm">�y�e�� ���q�z<br>�u���̒����ɊԈႢ�͂���܂���B�@<br>
-�q�i�v�Ȃ錶�r�A�M���ɂ͘Z���V�s�̂ق��̖��@�g���Ƌ��͂��ĕ��ȉ���������A�q�f�́r�̜߈˂���菜������A<br>
-�֏��q�����闠�؂�̉��r���������C���𖽂��܂��B�v
+<div class="text gm">【GM】<br/>現在六分儀市では、建物や人物が、突如燃えあがるという謎の発火現象が頻発しているのです。テレビや新聞で情報を得ているのであれば、おそらく、これのことだと想像がつくことでしょう。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�́[���A�قǂقǂɂ���΂�ˁB���~�b�g�͂ǂꂭ�炢�H�v
+<div class="text gm">【GM】<br/>ふと、発火自体ではなく周囲に目を配ってみれば、事件を目撃した群衆の中に、自分と同じようにその様子を眺めていた人物を発見します。
 </div>
-<div class="text gm">�y�e�� ���q�z<br>�u�R����̂O�������~�b�g�Ƃ��܂��B<br>
-������߂������_�Łq�f�́r�̉����ԂɊւ�炸�q����V���r���J�n���܂�����ǂ������̂���ŁB<br>
-���v�B�^���ɋt���Ȃ���ρA�K�����Ԃ����ɏo���͂��B�v
+<div class="text gm">【GM】<br/>その人物は、イツキさんの視線に気づくと、姿を隠すように人ごみへ紛れ、夜の街へと消えていきました。
 </div>
-<div class="text gm">�y�e�� ���q�z<br>�u��n�̎�����n���Ă����܂��B�@���҂��Ă��܂���q�i�v�Ȃ錶�r�v�@<br>
-�Ƃ����킯�Ńn���h�A�E�g��񎦂��܂��B
+<div class="text ituki">【焔木 イツキ】<br/>ふんふん、他の人はパニックになってるし、燃えた瞬間見てるかもしれないから近づこうかと思ったら消えた！
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�߂�ǂ���������݂�Ȃ̖��ɂł����ז����悤���Ǝv���Ă��B�e�����񂪂��������Ȃ�{�N�͂̂�т肵�Ă��v
-<br>�@���Ղ��[
+<div class="text gm">【GM】<br/>気になった人物についてハンドアウトを提示します。
 </div>
-<div class="event">����n�a�l�i�l���j�@<a href="img/fire_kazuto.png" rel="lightbox">���摜</a><br>
-�������_���Z�̍��ꋳ�t�B�}���ψ���̌ږ�����Ă���B<br>
-�f�́q���r�ɜ߈˂���Ă���B
+<div class="event">○広瀬香（人物）<br/>　<a href="img/fire_kaoru.png" rel="lightbox">→画像</a>
+私立東雲高校に通う男子高校生。<br>
+家は貧しいが、運動神経がよく、スポーツ特待生として入学。<br>
+男子バスケット部に所属している。まっすぐな性格で人気者である。<br>
+親友である久住慧子のすすめもあって、図書委員会に所属している。
 </div>
-<div class="text gm">�yGM�z<br/>�֌W���ɑ�n�̖��O���L�����Ă��������B�y�^���z��1�_�l�����܂��B<br>
-�y�^���z�̑����́A�u�h�G�v�ɂȂ�܂��B
+<div class="text ituki">【焔木 イツキ】<br/>人体発火の目撃者だし、気になる存在だね！
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�h�G����A���[�����ł�
+<div class="text gm">【GM】<br/>イツキさんは関係欄に彼の名前を記入してください。【運命】を1点獲得します。
+【運命】の属性は、「運命属性表」でランダムに決定しましょう。
 </div>
-<div class="text gm">�yGM�z<br/>�������͂����肵�܂��B1D6��U���Ă��������B
+<div class="dice"> 運命属性表(6) → 『尊敬』その才能や思想、姿勢に対し畏敬や尊敬を抱く人物。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>1d6 �������� :
-</div><div class="dice"> (1D6) �� 6
+<div class="text ituki">【焔木 イツキ】<br/>あ、尊敬した！
 </div>
-<div class="text gm">�yGM�z<br/>���񏉊����͍����q�����ȁI�@�����͂S�{�U�łP�O�A�ő�l�ł��ˁB
+<div class="text ituki">【焔木 イツキ】<br/>えーっと、人々がパニックになる中、冷静に事件を目撃してそうだったので、なかなか面白そうな子だなと・・・そんな感じですかね…
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�͂��[�B�V���^�W�W�C����΂��
+<div class="text gm">【GM】<br/>うむうむ、運命１ですしね。そんなところでしょう。
+<br/>続けて初期魔力を決定しましょう。1D6どうぞ。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�i��[�����l�����B���l�D����͑�\������̕����ォ�ȁ[�H�j�@���Ċ����̏h�G�
+<div class="text ituki">【焔木 イツキ】<br/>1d6 初期魔力
+</div><div class="dice"> (1D6) → 5
 </div>
-<br><br>
-<div class="subtitle" id="prologue5">�������t�F�C�Y�@�V�[���T�\�\�}�X�^�[�V�[��
+<div class="text ituki">【焔木 イツキ】<br/>やった！
 </div>
-<div class="text gm">�yGM�z<br/>�ł̓V�[����؂�ւ��A�����p�}�X�^�[�V�[���Ƃ��܂��傤�B
-<br/>�o��l����PC�S���ƂȂ�܂��B�@������哱�ŕ��ȉ���o�[���W�߂Ă����������B
+<div class="text gm">【GM】<br/>イツキさんさっきから出目いいね？？？　では根源力３＋５で初期魔力は８となります。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�͂��[�@�u�����Ɓ[���Ⴀ�݂�ȏW�߂�����B�������ȁ[�v
+<div class="text ituki">【焔木 イツキ】<br/>ありがとうございます！
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���Ⴀ�C�c�L����̖��ɂ�����āA�u�S�[���[�̊G�{���ق����΁c�c�����ɏW�܂�̂ł��c�c�v�@<br>
-���Ă��������ɂ�������
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>��������<br>
-�u���E�E�E��V�ɂ��炦���ł����c�v�ƁB
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�R�[�f�B�[����ɂ́A<br>
-�u�������DVD�t�����聛��BOX���ق����΁c�c�ȉ���
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�uWhat the hell?!�v�@����Ȃ̂ق��ق��ނ��邵���Ȃ�
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�m�G������́A�������Ƃ��߂ł��閲���������Ă����邩��ȉ�����
-</div>
-<div class="text noel">�y�m�G���z<br/>�u�����񂭂��v�@���ēf���̂ĂāA�ǂ������d���Ȃ̂킩���Ă�̂ōs�������Ȃ���ł��傤�ˏ�
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�i�{�N�̊��U�X�L�����܂��܂��ˁ[�j�@�m�G������̔���
-</div>
-<div class="text noel">�y�m�G���z<br/>�W�߂�ꂽ�ꏊ�łӂ��ƌ��L�����Ă��̕ӂɂ܂邭�Ȃ��Ă܂��B�b�͕����܂���
-</div>
-<div class="text gm">�yGM�z<br/>�����ƁA�Ȃɂ͂Ƃ�����S���m�G������̂Ƃ���ɏW�܂�킯�ł����ˁB�@<br>
-�܂��K���Ɍ����ł��i���X�ł��W�܂��Ă���
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�i�o�C�g�ザ�ᑫ��Ȃ��Ĕ����Ȃ�����DVDBOX�c�c�I�j<br>
-�@�W�܂����ꏊ�ł��킻�킵�Ă��܂��B
-</div>
-<div class="text noel">�y�m�G���z<br/>�m�G�������鏊�Ȃ��������Ȃ�������B�x���`�̓������肢�����ɂ��܂��B
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�u����ɂ��́B�͂��߂܂��āA�C������B��@�T�̂��d���B���̂S�l�ŕ��ȉ�Ȃ񂾂��āv<br>
-�@���[�Ƃ��Ⴀ���ȏЉ�H
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�C�Â��ƁA�߂��ɍ����Ă܂��B���b�҂��Ă܂��B<br>
-�u�p�łɂȂ����G�{�𖳗��Ɏ�ɓ���悤�Ƃ���Ɠ{��ꂿ�Ⴄ��ł���B�ŋ߂͑�@�T���������ł��v
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�I�V�S�g�f�X���I�@���̕��a�̓{�N�B�������Ă�f�X���I�@�K�b�e���V���[�`�I�v
-</div>
-<div class="text noel">�y�m�G���z<br/>�u�c�c�A�m�G���v<br>
-�@�ۂ����Ɩ����z�Ɍ����Ċ炭���������܂��B
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�C�c�L�ł��A��낵�����肢���܂��v�j�R�j�R
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�R�[�f�B�E�R���g�n�[�h�f�X�I�@�c�c�ɂ�񂱂��I�V�S�g�f�X���I�v<br>
-�@���ȏЉ�m�G���N�̊{�𕏂łɍs������
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�ˁ[���̒����m�h���ˁ[��@�T���ł�����ˁB<br>
-�܂ł��A���ʂɌ����Ă����Ŕ����Ε���������Ȃ��ł���B���d���I�������ˁv<br>
-�@���@�g�������������炢�ǂ��ɂ��Ȃ邾��i�K��
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�L����̎���؂��Ȃ�āA�l��s���Ȃ�ł��˂��v
-</div>
-<div class="text noel">�y�m�G���z<br/>�K���ł؂���Ƃ͂����܂����߂�ˏ΁��R�[�f�B�N
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�uoh�c�c�v�@���J���ł�
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���p���̎���т̎���؂�܂��肾�ˁv�@���Ղ��[
-</div>
-<div class="text noel">�y�m�G���z<br/>�u�ŁA�ǂ������炢���́v<br>
-�@�����A�肽����ł����ǂ��Ă������̃j�[�g���ۏo���Ŗ��N�ɕ����܂��i
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�قǂقǂɉe�����񂩂�̂��d���̘b�����������c�c����Ȃ��A�܂��܂��났�����܂�
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�났�났����܂���
-</div>
-<div class="text noel">�y�m�G���z<br/>�u�Ȃ񂾁A�������Ă�Ȃ炷���s���΂��������v<br>
-�@�ӂ��A�ƌ��L�����b�����܂���
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�T���^�����񂹁A�{�N������}���ψ���̌ږ�c�c�v<br>
-�@�났�났����܂���
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�����E�E�E����Ȃ����������ς݂����ł��˂��v
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�X�^���_�[�h�ȋ֏��������[�B�R�[�f�B����̒m�荇���������́B���������̂͑���������������A���������ƍs�������v<br>
-�@���ȁ@�����
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c�n�C�I�@�t�[�����J�U���Ń}�C���}�V���[�I�v
-</div>
-<div class="text noel">�y�m�G���z<br/>�u�����Ă�����Ⴂ�v<br>
-�@�Ƃ����Ċۂ��Ȃ邩��K���ɒN���A�t���Ă��������i
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�����L����A�I�V�S�g�ł��悧�v�Ђ傢
-</div>
-<div class="text noel">�y�m�G���z<br/>�u�ɂ���I�@��A��߂Ă���v<br>
-�@�����������C�c�L����ɉ^�΂�悤�K���i���̐l
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�L�̎�����������������I����[�H�v�@�Ƃł�
-</div>
-<div class="text gm">�yGM�z<br/>����Ȋ����ŏ�񋤗L���ĈӋC�����H�����Ƃ���œ����t�F�C�Y���I�����܂��傤���B�@
+<div class="text gm">【GM】<br/>では、シーンを切り替えます。
 </div>
 <br><br>
-<div class="subtitle" id="main1_1">�����C���t�F�C�Y�@��P�T�C�N����P�V�[���@�}�X�^�[�V�[��
+<div class="subtitle" id="prologue4">●導入フェイズ　シーン４――PC2／海鳴　夢（うみなり　あゆむ）
 </div>
-<div class="text gm">�yGM�z<br/>�}�X�^�[�V�[�����}������܂��B�}���ψ���̃V�[���Ȃ̂ŔC�ӂŃR�[�f�B�N�͏o�Ă������ł���B
+<div class="text gm">【GM】<br/>〈大法典〉に属する書警である夢君は六分儀市にある市立図書館に呼び出されました。<br>
+ここは、〈大法典〉の六分儀支部になります。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�������Ⴀ�o�܂�
+<div class="text gm">【GM】<br/>呼び出したのは、市立図書館の館長代理である影原文子（かげはらあやこ）。<br>
+彼女は、第三階梯にある司書で、六分儀市の魔法使いたちの統括をしています。<br>
+主な任務は、禁書回収のバックアップで、魔法災厄の調査や隠蔽などを行っています。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�ł͏o�Ă��������B�@���̏�ɂ͋v�Z�d�q�A�L���������Ȃ��Ă��܂��B�@<br>
-�O���ł͐}���ψ���̈ψ������z���C�g�{�[�h�Ɂu�����̂������߁v�Ȃ�Č��o���̉��ɂ������̖{�̃^�C�g���𗅗񂵂Ă��銴���ł��B
+<div class="text ayumu">【海鳴 夢】<br/>「やあ影原さん、おはようこんにちはこんばんは」　ぺこん
 </div>
-<div class="text npc_takasi">�y�A�� ���z<br/>�u���Ɉӌ�������l�͂��܂����H�v�@�Ƃ��ψ���炵�����Ƃ�����Ă�킯�ł��ˁB
+<div class="text gm">【影原 文子】<br>「時間通りの到着ですね、〈永久なる幻〉」　<br>
+夢くんに気づくと、彼女はひとつの書類を手に取り、一瞥するといつもの調子で話を進めます。<br>
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�n�C�I�@�������߂܂�����܂��I�v�@�Ǝ������ǂ݂������m�x�^�C�g���������ċp�����ꂽ�肵�Ă��ł��傤�B<br>
-�ψ������[�C
+<div class="text gm">【影原 文子】<br>
+「近頃、六分儀市のあちこちで起こっている謎の発火現象についてはご存じですか？」<br>
 </div>
-<div class="text gm">�yGM�z<br/>�Ƃ����킯�ł���Ȑ}���ψ���ψ����̃n���h�A�E�g�����J�ƂȂ�܂��B
+<div class="text ayumu">【海鳴 夢】<br/>「発火？　あー大十字くんが言ってたっけ。むかしむかしから世界的にたまーにあったらしいけど」　かな
 </div>
-<div class="event">���A�엲�i�l���j�@<a href="img/fire_takasi.png" rel="lightbox">���摜</a><br>
-�������_���Z�̒j�q���Z���B<br>
-�}���ψ���̈ψ����ŁA�v�Z�d�q��L�����̐�y�ɂ�����B<br>
-�j�q�o�X�P�b�g���̃z�[�v�ŁA���_���Z�̏��q���k��������l�C�������B�D�������i�ł���B
+<div class="text gm">【影原 文子】<br>
+「知っていらっしゃるのなら話は早いですね。そちらの事件は魔法災厄によるものです。<br>
+そして、その背後には、〈大法典〉から姿を消した禁書＜共鳴する裏切りの炎＞がからんでいることは明らかです。」
 </div>
-<div class="text npc_takasi">�y�A�� ���z<br/>�u�����m��Ȃ��^�C�g��������܂���ŋ����Ă���邩�H�v<br>
-�f��͂��Ȃ����ǂ��̏�̗p�͕ۗ��A�݂����Ȋ������ȁB
+<div class="text ayumu">【海鳴 夢】<br/>「そっかー。逃げられちゃったの？」
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�n�[�C�v�@��l��������������܂�
+<div class="text gm">【影原 文子】<br>「……、私の調査によれぱ、〈断章〉はそれぞれ東雲高校の人物に憑依しているようです。」　
 </div>
-<div class="text gm">�yGM�z<br/>2D6 �w����Z�q�́r:
-</div><div class="dice"> (2D6) �� 7[1,6] �� 7
+<div class="text gm">【影原 文子】<br>「そして、その一つである〈共鳴〉は、六分儀市にある高校に通う教師、沢渡和人に憑依しているようです。」<br>
+　と、彼女は続けます
 </div>
-<div class="text gm">�yGM�z<br/>�ӂށA�R�[�f�B�N�́s�z���t�Ŕ�����s�����Ƃŉ������킩�邩������܂����B
+<div class="text ayumu">【海鳴 夢】<br/>「〈炎〉なだけに元気いっぱいだねえ。ひとつは分かってるんだ」　ふむん
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�s�z���t���c�c�s���t�ő�p���Ă����ł����H
+<div class="text ayumu">【海鳴 夢】<br/>「その〈共鳴〉はその人への憑依で間違いないかな？」
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�����ł��ˁB�ǂ̂悤�ɂ���GM�������������o�s�����������ł��傤�B�@�ǂ���
+<div class="text gm">【影原 文子】<br>「私の調査に間違いはありません。　<br>
+〈永久なる幻〉、貴方には六分儀市のほかの魔法使いと協力して分科会を結成し、〈断章〉の憑依を取り除いた後、<br>
+禁書〈共鳴する裏切りの炎〉を回収する任務を命じます。」
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>2d6>=(5+2) �s���t
-</div><div class="dice"> (2D6>=7) �� 8[2,6] �� 8 �� ����
+<div class="text ayumu">【海鳴 夢】<br/>「はーい、ほどほどにがんばるね。リミットはどれくらい？」
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB<br>
-�ł́A�R�[�f�B�N�́s�z���t�̍ڂ����u�A�엲�ɑ΂���N���̋������̉́v���������܂��B
+<div class="text gm">【影原 文子】<br>「３日後の０時をリミットとします。<br>
+それを過ぎた時点で〈断章〉の回収状態に関わらず〈封印儀式〉を開始しますからどうかそのつもりで。<br>
+大丈夫。運命に逆らわなけれぱ、必ず仲間たちに出会えるはず。」
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�i�c�c�́c�c�H�j�@���𐟂܂��Ă��܂��B
+<div class="text gm">【影原 文子】<br>「沢渡の資料を渡しておきます。　期待していますよ〈永久なる幻〉」　<br>
+というわけでハンドアウトを提示します。
 </div>
-<div class="text gm">�yGM�z<br/>�́A�Ƃ͂����Ă�����͏�O�̂悤�ȁA���ۂɉ��ɂ͏o�Ă��Ȃ��A���@�g���ł���R�[�f�B�N�����炱���̂Ƃ����`�ŕ�����邱�Ƃ��ł����A�N���̋����z���������̂ł��傤�B
+<div class="text ayumu">【海鳴 夢】<br/>「めんどくさいからみんなの夢にでもお邪魔しようかと思ってた。影原さんがそう言うならボクはのんびりしてるよ」
+<br>　煙ぷかー
 </div>
-<div class="text gm">�yGM�z<br/>�Ƃ����킯�ł���Ȋ����ŃV�[�����I�����܂��B
-<br/>�����đ�Q�V�[���ƂȂ�܂����A�N�����悵�Ă�肽��PL����͂��邩�ȁH
+<div class="event">○沢渡和人（人物）　<a href="img/fire_kazuto.png" rel="lightbox">→画像</a><br>
+私立東雲高校の国語教師。図書委員会の顧問をしている。<br>
+断章〈共鳴〉に憑依されている。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�́[���B��n����́q���r�ɐ퓬�d�|���ɍs���܂��B
+<div class="text gm">【GM】<br/>関係欄に沢渡の名前を記入してください。【運命】を1点獲得します。<br>
+【運命】の属性は、「宿敵」になります。
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>宿敵限定、りょーかいです
+</div>
+<div class="text gm">【GM】<br/>初期魔力を決定します。1D6を振ってください。
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>1d6 初期魔力 :
+</div><div class="dice"> (1D6) → 6
+</div>
+<div class="text gm">【GM】<br/>今回初期魔力高い子多いな！　根源力４＋６で１０、最大値ですね。
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>はいー。ショタジジイがんばるよ
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>（わーいい人そう。お人好し具合は大十字くんの方が上かなー？）　って感じの宿敵具合
 </div>
 <br><br>
-<div class="subtitle" id="main1_2">����P�T�C�N����Q�V�[���@�C�@��
+<div class="subtitle" id="prologue5">●導入フェイズ　シーン５――マスターシーン
 </div>
-<div class="text gm">�yGM�z<br/>�ł͖�����̃V�[���Ƃ��܂��傤�B�@�܂�����͐}���ψ���ږ₾�����̔w�i�ł������B<br>
-���Ȃ݂Ɉꉞ�ނ��܂��閧�͂���܂��̂łˁB
+<div class="text gm">【GM】<br/>ではシーンを切り替え、合流用マスターシーンとしましょう。
+<br/>登場人物はPC全員となります。　夢くん主導で分科会メンバーを集めていください。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u����A�������Ă�Ƃ��납��Ԃ��ɂ��������[�B<br>
-�@�܂����̐l�̂��Ƃ���ܒT���ĂȂ����ǁA�߂��Ă���ĕ������Ă�񂾂��v�@���Ċ����ł����s���܂�
+<div class="text ayumu">【海鳴 夢】<br/>はいー　「えっとーじゃあみんな集めよっか。そうだなー」
 </div>
-<div class="text gm">�yGM�z<br/>�퓬�V�[���Ƃ̂��Ƃł��̂ł܂��K���ɐ}���قɂł��L���ɂł��������ȑ�n�ɂӂ��������炢���ł���
+<div class="text ayumu">【海鳴 夢】<br/>じゃあイツキさんの夢にあらわれて、「ゴーリーの絵本がほしくば……○○に集まるのです……」　<br>
+ってお告げしにいこっと
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�V�[���\�U������͂��Ȃ��̂��ȁH�@�ł���΂��̂܂܂����߂邩
+<div class="text ituki">【焔木 イツキ】<br/>ｗｗｗｗ<br>
+「え・・・報酬にもらえるんですか…」と。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���񂹁[����ɂ��́v�@���Ⴀ�����Ƙb�������悤
+<div class="text ayumu">【海鳴 夢】<br/>コーディーくんには、<br>
+「初回限定DVD付き限定○○BOXがほしくば……以下略
 </div>
-<div class="text npc_kazuto">�y��n �a�l�z<br/>�u����ɂ��́B����A�L�~�͍����̐��k�c�ɂ��Ă͌������Ȃ��炾�ˁB�@�N���̒킭�񂩂ȁH�v�@
+<div class="text cody">【コーディ・コルトハード】<br/>「What the hell?!」　そんなのほいほい釣られるしかない
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u����A�{�N���̊w�Z�悭�킩��Ȃ��āA����������āB�����狳���Ă����H�q���r����v
+<div class="text ayumu">【海鳴 夢】<br/>ノエルくんは、飼い主を独り占めできる夢を見させてあげるから以下略で
 </div>
-<div class="text gm">�yGM�z<br/>�q�f�́r�̖��O���ĂԂƑ�n�̎��͂ɖ��f���W�܂�A���݂�����ւ��悤�ȋC�z�������܂��B
+<div class="text noel">【ノエル】<br/>「うさんくさ」　って吐き捨てて、どうせお仕事なのわかってるので行くしかないんでしょうね笑
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�q�i�v�Ȃ錶�i�z���E�E�l�o�[�����h�j�r�A�L�~����������Ă��炤��[��낵���ׂ���Ăˁv
+<div class="text ayumu">【海鳴 夢】<br/>（ボクの勧誘スキルもまだまだねー）　ノエルくんの反応
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�ˁ[�B�����l����H�v�@����l�͗��ď�
+<div class="text noel">【ノエル】<br/>集められた場所でふわわと欠伸をしてその辺にまるくなってます。話は聞きます笑
 </div>
-<div class="text gm">�y�f�́q���r�z<br/>�u�q��@�T�r�̑l���c�ǂ�������荞�񂾂񂾂��H�@�L�~�v�@<br>
-�l�̗ǂ������ȏ΂݂��c�߂��A�q�􌗁r���W�J����܂��B�@
+<div class="text gm">【GM】<br/>ええと、なにはともあれ全員ノエルくんのところに集まるわけですかね。　<br>
+まあ適当に公園でも喫茶店でも集まってろよと
 </div>
-<div class="text noel">�y�m�G���z<br/>�u���[�A�߂�ǂ������Ȃ��B�����I��点�Ă�v<br>
-�@���Ⴀ�ۂ���Ə��N�̎p�ɂȂ��Č���܂��傤�B������܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>（バイト代じゃ足りなくて買えなかったDVDBOX……！）<br>
+　集まった場所でそわそわしています。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�T���^�����񂹁c�c�I�v<br>
-�@�����������邷���
+<div class="text noel">【ノエル】<br/>ノエルが居る所なら公園じゃないかしら。ベンチの日当たりいい所にいます。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�ǂ����낤�ˁH�@���ӂӁB����������Ȃ��ˁv
+<div class="text ayumu">【海鳴 夢】<br/>「こんにちは。はじめまして、海鳴夢だよ。大法典のお仕事。この４人で分科会なんだって」<br>
+　えーとじゃあ自己紹介？
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�y���������Ⴀ�Ȃ��ł����v
-<br>�@�j�R�j�R������邺�I�{�I�̉A����Ƃ��I
+<div class="text ituki">【焔木 イツキ】<br/>気づくと、近くに座ってます。お話待ってます。<br>
+「廃版になった絵本を無理に手に入れようとすると怒られちゃうんですよ。最近は大法典も厳しいです」
 </div>
-<div class="text gm">�yGM�z<br/>�ł́A��\�����A�m�G���A�R�[�f�B�A�C�c�L�𗧉�l�Ƃ��Đ퓬���J�n���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>「オシゴトデスか！　町の平和はボク達が守るってやつデスか！　ガッテンショーチ！」
+</div>
+<div class="text noel">【ノエル】<br/>「……、ノエル」<br>
+　ぽそっと無愛想に言って顔くしくしします。
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「イツキです、よろしくお願いします」ニコニコ
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「コーディ・コルトハードデス！　……にゃんこもオシゴトデスか！」<br>
+　自己紹介しつつノエル君の顎を撫でに行きたい
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「ねー世の中世知辛いねー大法典お固いもんね。<br>
+までも、普通に見つけてお金で買えば文句も言われないでしょ。お仕事終わったらね」<br>
+　魔法使いだしお金くらいどうにかなるだろ（適当
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「猫さんの手も借りるなんて、人手不足なんですねぇ」
+</div>
+<div class="text noel">【ノエル】<br/>尻尾でぺしんとはたきますごめんね笑＞コーディ君
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「oh……」　ご褒美です
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「魔術書の手も獏の手も借りまくりだね」　煙ぷかー
+</div>
+<div class="text noel">【ノエル】<br/>「で、どうしたらいいの」<br>
+　早く帰りたいんですけどっていうこのニート感丸出しで夢君に聞きます（
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>ほどほどに影原さんからのお仕事の話をいあいあ……じゃない、まぎまぎろぎあします
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>ろぎろぎされました
+</div>
+<div class="text noel">【ノエル】<br/>「なんだ、見つかってるならすぐ行けばいいじゃん」<br>
+　ふわわ、と欠伸しつつお話聞きました
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「サワタリせんせ、ボクがいる図書委員会の顧問……」<br>
+　ろぎろぎされました
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「あぁ・・・それなら回収も早く済みそうですねぇ」
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「スタンダードな禁書回収だよー。コーディくんの知り合いだったの。こういうのは早い方がいいから、ちゃっちゃと行こっか」<br>
+　かな　ゆるゆる
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「……ハイ！　フーリンカザンでマイリマショー！」
+</div>
+<div class="text noel">【ノエル】<br/>「いってらっしゃい」<br>
+　といって丸くなるから適当に誰か連衡してください（
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「さぁ猫さん、オシゴトですよぉ」ひょい
+</div>
+<div class="text noel">【ノエル】<br/>「にゃっ！　や、やめてよっ」<br>
+　じたじたしつつイツキさんに運ばれよう幸せ（中の人
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「猫の手もあった方が早く終わるよー？」　とでも
+</div>
+<div class="text gm">【GM】<br/>そんな感じで情報共有して意気投合？したところで導入フェイズを終了しましょうか。　
+</div>
+<br><br>
+<div class="subtitle" id="main1_1">◆メインフェイズ　第１サイクル第１シーン　マスターシーン
+</div>
+<div class="text gm">【GM】<br/>マスターシーンが挿入されます。図書委員会のシーンなので任意でコーディ君は出てもいいですよ。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>あっじゃあ出ます
+</div>
+<div class="text gm">【GM】<br/>はい、では出てください。　その場には久住慧子、広瀬香も同席しています。　<br>
+前方では図書委員会の委員長がホワイトボードに「今月のおすすめ」なんて見出しの下にいくつかの本のタイトルを羅列している感じです。
+</div>
+<div class="text npc_takasi">【植野 隆】<br/>「他に意見がある人はいますか？」　とか委員会らしいことをやってるわけですね。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「ハイ！　おすすめまだあります！」　と自分が読みたいラノベタイトルを言って却下されたりしてるんでしょう。<br>
+委員長ワーイ
+</div>
+<div class="text gm">【GM】<br/>というわけでそんな図書委員会委員長のハンドアウトが公開となります。
+</div>
+<div class="event">○植野隆（人物）　<a href="img/fire_takasi.png" rel="lightbox">→画像</a><br>
+私立東雲高校の男子高校生。<br>
+図書委員会の委員長で、久住慧子や広瀬香の先輩にあたる。<br>
+男子バスケット部のホープで、東雲高校の女子生徒たちから人気が高い。優しい性格である。
+</div>
+<div class="text npc_takasi">【植野 隆】<br/>「俺も知らないタイトルだからまた後で教えてくれるか？」<br>
+断りはしないけどその場採用は保留、みたいな感じかな。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「ハーイ」　大人しく引き下がります
+</div>
+<div class="text gm">【GM】<br/>2D6 指定特技〈歌〉:
+</div><div class="dice"> (2D6) → 7[1,6] → 7
+</div>
+<div class="text gm">【GM】<br/>ふむ、コーディ君は《想い》で判定を行うことで何かがわかるかもしれませんよ。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>《想い》か……《幻》で代用していいですか？
+</div>
+<div class="text gm">【GM】<br/>うむ、そうですね。どのようにかはGMがそもそも演出不足だしいいでしょう。　どうぞ
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>2d6>=(5+2) 《幻》
+</div><div class="dice"> (2D6>=7) → 8[2,6] → 8 → 成功
+</div>
+<div class="text gm">【GM】<br/>成功ですね。<br>
+では、コーディ君は《想い》の載った「植野隆に対する誰かの強い恋の歌」が聞こえます。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>（……歌……？）　耳を澄ましています。
+</div>
+<div class="text gm">【GM】<br/>歌、とはいってもそれは情念のような、実際に音には出ていない、魔法使いであるコーディ君だからこそ歌という形で聞き取ることができた、誰かの強い想いだったのでしょう。
+</div>
+<div class="text gm">【GM】<br/>というわけでこんな感じでシーンを終了します。
+<br/>続けて第２シーンとなりますが、誰か率先してやりたいPLさんはいるかな？
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>はーい。沢渡さんの〈共鳴〉に戦闘仕掛けに行きます。
+</div>
+<br><br>
+<div class="subtitle" id="main1_2">◆第１サイクル第２シーン　海鳴　夢
+</div>
+<div class="text gm">【GM】<br/>では夢くんのシーンとしましょう。　まあ相手は図書委員会顧問だしこの背景でいいか。<br>
+ちなみに一応彼もまだ秘密はありますのでね。
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「じゃ、見つかってるところからつぶしにいこっかー。<br>
+　まだこの人のことあんま探ってないけど、憑いてるって分かってるんだし」　って感じでゆるゆる行きます
+</div>
+<div class="text gm">【GM】<br/>戦闘シーンとのことですのでまあ適当に図書館にでも廊下にでもいそうな沢渡にふっかけたらいいですよ
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>シーン表振ったりはしないのかな？　であればそのまますすめるか
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「せんせーこんにちは」　じゃあゆるっと話しかけよう
+</div>
+<div class="text npc_kazuto">【沢渡 和人】<br/>「こんにちは。おや、キミは此処の生徒…にしては見かけない顔だね。　誰かの弟くんかな？」　
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「うん、ボクこの学校よくわからなくて、迷っちゃって。だから教えてくれる？〈共鳴〉さん」
+</div>
+<div class="text gm">【GM】<br/>〈断章〉の名前を呼ぶと沢渡の周囲に魔素が集まり、存在が入れ替わるような気配を感じます。
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「〈永久なる幻（ホロウ・ネバーランド）〉、キミを回収させてもらうよーよろしく潰されてね」
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「ねー。立会する人いる？」　する人は来て笑
+</div>
+<div class="text gm">【断章〈共鳴〉】<br/>「〈大法典〉の鼠か…どこから入り込んだんだい？　キミ」　<br>
+人の良さそうな笑みが歪められ、〈呪圏〉が展開されます。　
+</div>
+<div class="text noel">【ノエル】<br/>「もー、めんどくさいなぁ。早く終わらせてよ」<br>
+　じゃあぽんっと少年の姿になって現れましょう。立ち会います。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「サワタリせんせ……！」<br>
+　立ち合いするする笑
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「どこだろうね？　うふふ。夢かもしれないね」
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「楽しそうじゃあないですか」
+<br>　ニコニコあらわれるぜ！本棚の陰からとか！
+</div>
+<div class="text gm">【GM】<br/>では、代表が夢、ノエル、コーディ、イツキを立会人として戦闘を開始します。
 </div>
 <img src="img/fire_vs1.png" />
 <br>
-<div class="subtitle">����P���E���h
+<div class="subtitle">●第１ラウンド
 </div>
-<div class="text gm">�yGM�z<br/>���f�̔����ƂȂ�܂��B������͔C�ӂ̖��f���P�`���[�W�ǂ����B
+<div class="text gm">【GM】<br/>魔素の発生となります。夢くんは任意の魔素を１つチャージどうぞ。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�s���t���擾���āy�R�m�����z�փ`���[�W�B
+<div class="text ayumu">【海鳴 夢】<br/>《夢》を取得して【騎士召喚】へチャージ。
 </div>
-<div class="text gm">�yGM�z<br/>�ł́A��U�̏����X�e�b�v�ƂȂ�܂��B
+<div class="text gm">【GM】<br/>では、先攻の召喚ステップとなります。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�y�ً}�����z���܂��B
+<div class="text ayumu">【海鳴 夢】<br/>【緊急召喚】します。
 </div>
-<div class="dice"> �����_�����Z����\(1,9) �� �u���v�ᗒ��
+<div class="dice"> ランダム特技決定表(1,9) → 「星」≪嵐≫
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���Ȃ�s���сt�ő�p���܂��傤�B�ڕW�l�V����
+<div class="text ayumu">【海鳴 夢】<br/>嵐なら《叫び》で代用しましょう。目標値７かな
 </div>
-<div class="dice"> (2D6>=7) �� 11[5,6] �� 11 �� ����
+<div class="dice"> (2D6>=7) → 11[5,6] → 11 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�ł́s���̐���t����������܂��B
-<br/>�����X�e�b�v���I�����܂����H
+<div class="text gm">【GM】<br/>では《嵐の精霊》が召喚されます。
+<br/>召喚ステップを終了しますか？
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�I�����܂��B
+<div class="text ayumu">【海鳴 夢】<br/>終了します。
 </div>
-<div class="text gm">�yGM�z<br/>�ł͑����Č�U�̏����X�e�b�v�B
+<div class="text gm">【GM】<br/>では続けて後攻の召喚ステップ。
 </div>
-<div class="text gm">�y�f�́q���r�z<br/>�y�R�m�����z���s���܂��B�g�p���Z�́s���R�t�B�ڕW�l�T�B
-</div><div class="dice"> (2D6>=5) �� 8[3,5] �� 8 �� ����
+<div class="text gm">【断章〈共鳴〉】<br/>【騎士召喚】を行います。使用特技は《偶然》。目標値５。
+</div><div class="dice"> (2D6>=5) → 8[3,5] → 8 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�s���R�̋R�m�t����������܂��B�����Đ�U�̍U���X�e�b�v�ƂȂ�܂��B
-<br/>�������̎g�p���Ȃ���Ζ�����͍U���_�C�X���S�v���b�g���Ă��������B�f�͂̓����_���ŐU��܂��B
+<div class="text gm">【GM】<br/>《偶然の騎士》が召喚されます。続けて先攻の攻撃ステップとなります。
+<br/>呪文等の使用がなければ夢くんは攻撃ダイスを４つプロットしてください。断章はランダムで振ります。
 </div>
-<div class="dice">�y�v���b�g���ʁz<br/>
-���̍U���_�C�X�F6,6,6,6�@<br>
-�f�́q���r�̖h��_�C�X�F 3,4,5,6
+<div class="dice">【プロット結果】<br/>
+夢の攻撃ダイス：6,6,6,6　<br>
+断章〈共鳴〉の防御ダイス： 3,4,5,6
 </div>
-<div class="text gm">�yGM�z<br/>�U����~�܂��ĂR�_�ʂ�܂��B
-<br/>�������̎g�p���Ȃ���Ό�U���̍U���X�e�b�v�Ɉڂ�܂������v�ł����H
+<div class="text gm">【GM】<br/>６が一つ止まって３点通ります。
+<br/>呪文等の使用がなければ後攻側の攻撃ステップに移りますが大丈夫ですか？
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�����ł�
+<div class="text ayumu">【海鳴 夢】<br/>おｋです
 </div>
-<div class="text gm">�yGM�z<br/>�ł́A��U�̍U���X�e�b�v�ł��B������͂R�A����l�͂P�_�C�X���v���b�g���Ă��������B
+<div class="text gm">【GM】<br/>では、後攻の攻撃ステップです。夢くんは３つ、立会人は１つダイスをプロットしてください。
 </div>
-<div class="dice">�y�v���b�g���ʁz<br/>
-�f�́q���r�̍U���_�C�X�F4,5,6�@<br>
-���̖h��_�C�X�F 6,6,6<br>
-����l�̖h��_�C�X�F �m�G���F1�^�R�[�f�B�F3�^�C�c�L�F2
+<div class="dice">【プロット結果】<br/>
+断章〈共鳴〉の攻撃ダイス：4,5,6　<br>
+夢の防御ダイス： 6,6,6<br>
+立会人の防御ダイス： ノエル：1／コーディ：3／イツキ：2
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>����łS�C�T�u���b�N���܂��B
+<div class="text ayumu">【海鳴 夢】<br/>精霊で４，５ブロックします。
 </div>
-<div class="text gm">�yGM�z<br/>�R�m�̃u�[�X�g���g�p���܂��B
+<div class="text gm">【GM】<br/>騎士のブーストを使用します。
 </div>
-<div class="dice"> (1D6) �� 6
+<div class="dice"> (1D6) → 6
 </div>
-<div class="text gm">�yGM�z<br/>�u�[�X�g�͎~�܂�܂����B4�A5���ʂ�܂��ˁB����Ńu���b�N�͂��܂����H
+<div class="text gm">【GM】<br/>ブーストは止まりました。4、5が通りますね。精霊でブロックはしますか？
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>����A�u���b�N���܂��B
+<div class="text ayumu">【海鳴 夢】<br/>うん、ブロックします。
 </div>
-<div class="text gm">�yGM�z<br/>�ł͋R�m�̒ǉ��_���[�W�����݂���̂Œǉ��_�����A�ʏ�U�����̂Q�_���u���b�N���āA���삪�����܂��B<br>
-�����Ďc��̂P�_��������l�܂߂đS���ɂ����܂��ˁB
+<div class="text gm">【GM】<br/>では騎士の追加ダメージが存在するので追加ダメ分、通常攻撃分の２点をブロックして、精霊が消えます。<br>
+そして残りの１点分が立会人含めて全員にいきますね。
 </div>
-<div class="text gm">�yGM�z<br/>�]�������f�̓`���[�W���ł��܂���B�e���錾���˂������܂�<br>
-�]�T������΃C�j�V�A�e�B�u�\�����˂������܂�
+<div class="text gm">【GM】<br/>余った魔素はチャージができますよ。各自宣言おねがいします<br>
+余裕があればイニシアティブ表もおねがいします
 </div>
-<div class="text noel">�y�m�G���z<br/>�u���[�A�������肵�Ă�I�v�@�ƌ������������~�߂��Ȃ������񂾂��߂��B<br>
-�u���v�̖��f���y�ϊ��z�Ƀ`���[�W���܂��B
+<div class="text noel">【ノエル】<br/>「もー、しっかりしてよ！」　と言いつつこっちも止められなかったんだごめんよ。<br>
+「星」の魔素を【変換】にチャージします。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�́v�̖��f���y�R�m�����z�Ƀ`���[�W���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>「力」の魔素を【騎士召喚】にチャージします。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�Q�͎~�߂����犨�ق��āv<br>
-�@�Ăւ؂낵�ās�Łt���y���Łz�Ƀ`���[�W
+<div class="text ayumu">【海鳴 夢】<br/>「２個は止めたから勘弁して」<br>
+　てへぺろして《闇》を【入滅】にチャージ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�b�v�̖��f���y�ψفz�Ƀ`���[�W���܂��I
+<div class="text ituki">【焔木 イツキ】<br/>「獣」の魔素を【変異】にチャージします！
 </div>
-<div class="text gm">�yGM�z<br/>�ł͑�Q���E���h�ɂ���܂�
-</div>
-<br>
-<div class="subtitle">����Q���E���h
-</div>
-<div class="text gm">�yGM�z<br/>���f�̔����ł��B���N�͔C�ӂ̖��f���`���[�W���Ă��������B
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�s���t���y�R�m�����z�Ƀ`���[�W�B
-</div>
-<div class="text gm">�yGM�z<br/>�����Đ�U�̏����X�e�b�v�ƂȂ�܂��B�@
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�y�R�m�����z���܂��B�s���t�ŖڕW�T
-</div>
-<div class="dice"> (2D6>=5) �� 8[3,5] �� 8 �� ����
-</div>
-<div class="text gm">�yGM�z<br/>�ł́s���̋R�m�t����������܂��B
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�����ŁB�i�C�gvs�i�C�g�Ȃ�Ă�������������Ȃ��v
-</div>
-<div class="text gm">�yGM�z<br/>�������̎g�p���Ȃ���Ό�U�̏����X�e�b�v�c�͂Ƃ΂��Đ�U�̍U���X�e�b�v�Ɉڂ�܂��B
-</div>
-<div class="dice">�y�v���b�g���ʁz<br/>
-���̍U���_�C�X�F1,1,1,1�@<br>
-�f�́q���r�̖h��_�C�X�F 2,2,3,6
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�R�m�̒ǉ��_���[�W�����肢���܂�
-<br/>�����ċR�m�̍U���u�[�X�g�g���܂��B
-</div>
-<div class="text gm">�yGM�z<br/>����A�퓬�I���ɂȂ�܂��B ���u�[�X�g�v��񂩂���
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�A�b�n�C
+<div class="text gm">【GM】<br/>では第２ラウンドにうつります
 </div>
 <br>
-<div class="subtitle">���퓬�I��
+<div class="subtitle">●第２ラウンド
 </div>
-<div class="text gm">�yGM�z<br/>�f�́q���r�͔j��A������̎�̂Ђ�̏�Ɉꖇ�̃y�[�W�ƂȂ��ĉ������܂��B�@<br>
-�v���C�Y�̎擾���\�ł��B
+<div class="text gm">【GM】<br/>魔素の発生です。夢君は任意の魔素をチャージしてください。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�Ƃ肠�����ꖇ�B�����ꂳ�܁B���񂹁[�����Ă�H�v�@���
+<div class="text ayumu">【海鳴 夢】<br/>《夢》を【騎士召喚】にチャージ。
 </div>
-<div class="text gm">�yGM�z<br/>�y�R�m�����i���R�j�z�����Z:�s���R�t���擾�ł��܂��B<br>
-�V�[���ɏo�Ă�ʎq�Ȃ�v���C�Y�󂯓n�����\�Ȃ̂ŒN�������Ă������ł���
+<div class="text gm">【GM】<br/>続けて先攻の召喚ステップとなります。　
 </div>
-<div class="text npc_kazuto">�y��n �a�l�z<br/>�u���c�A����c�l�͉����c�H�v�@<br>
-���Ⴀ�f�͂������Ă����Ă͂��Ƃ��Ă����܂��傤�ዾ�B
+<div class="text ayumu">【海鳴 夢】<br/>【騎士召喚】します。《幻》で目標５
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���Ⴀ�R�m�����i���R�j�𒸂��܂��B
+<div class="dice"> (2D6>=5) → 8[3,5] → 8 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�ł͎����čs���Ă��������B
+<div class="text gm">【GM】<br/>では《幻の騎士》が召喚されます。
 </div>
-<div class="text noel">�y�m�G���z<br/>�L�̎p�ɖ߂��Ė��N�̓��̏�Ŋۂ��Ȃ��Ă悤�B
+<div class="text ayumu">【海鳴 夢】<br/>「おいで。ナイトvsナイトなんてかっこいいじゃない」
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c���񂹁c�c�v�@���ɖ߂����悤�Ȃ̂łق��Ƃ��Ă��܂��B
+<div class="text gm">【GM】<br/>呪文等の使用がなければ後攻の召喚ステップ…はとばして先攻の攻撃ステップに移ります。
 </div>
-<div class="text npc_kazuto">�y��n �a�l�z<br/>�u���̂��͌N�̒킭�񂩂��H�@�R�[�f�B�B�@���{�̎q�ł͂Ȃ����������v<br>
-�@�Ƃ悭�킩��Ȃ����Ǐ󋵂𐮗����悤�Ƃ��Ă���炵���ł��B
+<div class="dice">【プロット結果】<br/>
+夢の攻撃ダイス：1,1,1,1　<br>
+断章〈共鳴〉の防御ダイス： 2,2,3,6
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u����[���v�����B�R�[�f�B���񂠂Ƃ�낵���˂��v<br>
-�@�ρ[�ƃm�G�������������܂܏������Ⴈ����
+<div class="text ayumu">【海鳴 夢】<br/>騎士の追加ダメージもお願いします
+<br/>そして騎士の攻撃ブースト使います。
 </div>
-<div class="text npc_kazuto">�y��n �a�l�z<br/>�u���A�������H�I�v�@<br>
-���ĂȂ�ȏ΁@���R�l��l�g�������c
+<div class="text gm">【GM】<br/>うん、戦闘終了になります。 ※ブースト要らんかった
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�����ƁA�l������ƕςł��ˁA����ł́v<br>
-�{�I�̉A�ɓ����ď������Ⴆ�I�@��l������ƂȂ񂩕ς����̂ˁI
+<div class="text ayumu">【海鳴 夢】<br/>アッハイ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�i���ł������񂶂�Ȃ��H�j�@��������
+<br>
+<div class="subtitle">●戦闘終了
 </div>
-<div class="text noel">�y�m�G���z<br/>�i�����c��������ċA��j�@�ӂ���
+<div class="text gm">【GM】<br/>断章〈共鳴〉は破れ、夢くんの手のひらの上に一枚のページとなって回収されます。　<br>
+プライズの取得が可能です。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c�H�@��A�f�X���H�@���ł�������f�V���[�I�@���񂹁A�������x�݂܂���I�v<br>
-�@���Ⴀ����΂�����܂��傤��
+<div class="text ayumu">【海鳴 夢】<br/>「とりあえず一枚。おつかれさま。せんせー生きてる？」　つんつん
 </div>
-<div class="text npc_kazuto">�y��n �a�l�z<br/>�u���A�����c�H�@�������A���������̂��c�ȁH�v�@�Ƃł͊ۂߍ��܂�Ă����܂��傤�B
+<div class="text gm">【GM】<br/>【騎士召喚（偶然）】か特技:《偶然》が取得できます。<br>
+シーンに出てる面子ならプライズ受け渡しが可能なので誰が持ってもいいですよ
 </div>
-<div class="text npc_kazuto">�y��n �a�l�z<br/>
-�u�����A�������B���ƂŎg����������}���قɎ����čs���Ă���Ƃ���Ȃ񂾂��ǁA��`���Ă�����Ă����������H<br>
-�@�Y�ꂽ�q���������Ă�����Əd���񂾁v�@�݂����Ȋ����œ���ɖ߂�܂��傤�B
+<div class="text npc_kazuto">【沢渡 和人】<br/>「う…、あれ…僕は何を…？」　<br>
+じゃあ断章が抜けていってはっとしておきましょう眼鏡。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�n�C�I�@�͎d���̓h���g�R�C���[�I�v
+<div class="text ayumu">【海鳴 夢】<br/>じゃあ騎士召喚（偶然）を頂きます。
 </div>
-<div class="text npc_kazuto">�y��n �a�l�z<br/>�u�R�[�f�B�͗��������Ȃ��v�@�Ɣ������炢���肢���悤�B
+<div class="text gm">【GM】<br/>はい、では持って行ってください。
+</div>
+<div class="text noel">【ノエル】<br/>猫の姿に戻って夢君の頭の上で丸くなってよう。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「……せんせ……」　元に戻ったようなのでほっとしています。
+</div>
+<div class="text npc_kazuto">【沢渡 和人】<br/>「このこは君の弟くんかい？　コーディ。　日本の子ではなさそうだし」<br>
+　とよくわからないけど状況を整理しようとしているらしいです。
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「あらー大丈夫そう。コーディくんあとよろしくねえ」<br>
+　ぱーとノエルくん乗っけたまま消えちゃおっと
+</div>
+<div class="text npc_kazuto">【沢渡 和人】<br/>「き、消えた？！」　<br>
+ってなるな笑　自由人二人組かそこ…
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「おっと、僕がいると変ですね、それでは」<br>
+本棚の陰に入って消えちゃえ！　大人がいるとなんか変だものね！
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>（夢でも見たんじゃない？）　くすくす
+</div>
+<div class="text noel">【ノエル】<br/>（早く残りも持って帰ろ）　ふわわわ
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「……？　弟、デスか？　夢でも見たんデショー！　せんせ、ゆっくり休みましょ！」<br>
+　じゃあしらばっくれましょう笑
+</div>
+<div class="text npc_kazuto">【沢渡 和人】<br/>「あ、ああ…？　そうか、夢だったのか…な？」　とでは丸め込まれておきましょう。
+</div>
+<div class="text npc_kazuto">【沢渡 和人】<br/>
+「ああ、そうだ。授業で使った辞書を図書館に持って行っているところなんだけど、手伝ってもらってもいいかい？<br>
+　忘れた子が多くってちょっと重いんだ」　みたいな感じで日常に戻りましょう。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「ハイ！　力仕事はドントコイヤー！」
+</div>
+<div class="text npc_kazuto">【沢渡 和人】<br/>「コーディは頼もしいなあ」　と半分くらいお願いしよう。
 </div>
 <br><br>
-<div class="subtitle" id="main1_3">����P�T�C�N����R�V�[���@�m�G��
+<div class="subtitle" id="main1_3">◆第１サイクル第３シーン　ノエル
 </div>
-<div class="text gm">�yGM�z<br/>�h���}�V�[�����퓬�V�[������I�����Ă��������B
+<div class="text gm">【GM】<br/>ドラマシーンか戦闘シーンかを選択してください。
 </div>
-<div class="text noel">�y�m�G���z<br/>�h���}�V�[����]�ŁB�V�[���\�U���Ă���������H
+<div class="text noel">【ノエル】<br/>ドラマシーン希望で。シーン表振っていいかしら？
 </div>
-<div class="text gm">�yGM�z<br/>�ǂ����B
+<div class="text gm">【GM】<br/>どうぞ。
 </div>
-<div class="dice"> �V�[���\(7) �� ���͂Łq�f�́r�������N���������@�Ж��������B�u�́v�Ꭹ�R��̔�����s�����ƁB<br>
-��������ƁA�D���Ȗ��f�����������B���s����Ɓu�^���ϓ]�\�v���g�p����B
+<div class="dice"> シーン表(7) → 周囲で〈断章〉が引き起こした魔法災厄が発生する。「力」≪自由≫の判定を行うこと。<br>
+成功すると、好きな魔素が一個発生する。失敗すると「運命変転表」を使用する。
 </div>
-<div class="text gm">�yGM�z<br/>�킠���A�K�悢���ł��ˁi�@�ǂ����܂���
+<div class="text gm">【GM】<br/>わあお、幸先いいですね（　どうしますか
 </div>
-<div class="text noel">�y�m�G���z<br/>�ǂ����܂����������ˁ[��B<br>
-�s��t�����p�ŖڕW7�B����Ȃӂ��������R�͋򂢎U�炩���Ă��B
+<div class="text noel">【ノエル】<br/>どうしますかも何もねーよ。<br>
+《牙》から代用で目標7。そんなふざけた自由は喰い散らかしてやる。
 </div>
-<div class="dice"> 2d6>=7 �s��t:<br>
-(2D6>=7) �� 5[1,4] �� 5 �� ���s
+<div class="dice"> 2d6>=7 《牙》:<br>
+(2D6>=7) → 5[1,4] → 5 → 失敗
 </div>
-<div class="text gm">�yGM�z<br/>���s�ł��ˁB�u�^���ϓ]�\�v��U��܂����H
+<div class="text gm">【GM】<br/>失敗ですね。「運命変転表」を振りますか？
 </div>
-<div class="text noel">�y�m�G���z<br/>�U��O�ɁA������Ƃ����Ԃɏ��������߂����ł��ˁB
+<div class="text noel">【ノエル】<br/>振る前に、ちょっとお仲間に助けを求めたいですね。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A���Ⴀ�Ă񂶂���Ă��������B
+<div class="text gm">【GM】<br/>はい、じゃあ呼んじゃってください。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�ɂ�񂱁[�I�@���񂹂̌�n���{�N�ɉ����t����̂Ђǂ��f�X�[�I�v<br>
-�@�Ɗ��荞�݂܂��傤�B
+<div class="text cody">【コーディ・コルトハード】<br/>「にゃんこー！　せんせの後始末ボクに押し付けるのひどいデスー！」<br>
+　と割り込みましょう。
 </div>
-<div class="text noel">�y�m�G���z<br/>���@�Ж�̗\�����@�m�������ǎ����ł͂ǂ��ɂ��Ȃ�񂩂������Ȃ̂ŁA
-<br>�R���΂��Ȃ��珕���Ă��炨���i�ɂ�񂱃L�b�N�j
+<div class="text noel">【ノエル】<br/>魔法災厄の予感を察知したけど自分ではどうにもならんかった所なので、
+<br>蹴り飛ばしながら助けてもらおう（にゃんこキック）
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�ɂ�񂱃L�b�N���肪�Ƃ��������܂��I�@�y�K�^�z�g���܂��I
+<div class="text cody">【コーディ・コルトハード】<br/>にゃんこキックありがとうございます！　【幸運】使います！
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�ł͐U�蒼���ɂȂ�܂��B
+<div class="text gm">【GM】<br/>はい、では振り直しになります。
 </div>
-<div class="text noel">�y�m�G���z<br/>�����炱�����肪�Ƃ��������܂��I�@���������U��܂��I�@<br>
-��������ȏ㎸�s�������Ȃ����A�u���̓��Z�v�s�^���t�ő�p���ĖڕW6�ŁB
+<div class="text noel">【ノエル】<br/>こちらこそありがとうございます！　もっかい振ります！　<br>
+もうこれ以上失敗したくないし、「魂の特技」《運命》で代用して目標6で。
 </div>
-<div class="dice">2d6>=6 �s�^���t:<br>
- (2D6>=6) �� 7[1,6] �� 7 �� ����
+<div class="dice">2d6>=6 《運命》:<br>
+ (2D6>=6) → 7[1,6] → 7 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB���͂����炵�Ă��������ˁB
+<div class="text gm">【GM】<br/>成功ですね。魔力も減らしてくださいね。
 </div>
-<div class="text noel">�y�m�G���z<br/>�͂��ȁB���Ⴀ�R�[�f�B�N���R�������q�ɁA���R�Ȗ��@�Ж�́s�^���t�I�Șc�݂ł������ĐH���ׂ��܂����B
+<div class="text noel">【ノエル】<br/>はいな。じゃあコーディ君を蹴った拍子に、自由な魔法災厄の《運命》的な歪みでも見つけて食い潰しました。
 </div>
-<div class="text gm">�yGM�z<br/>�D���Ȗ��f���P�o�܂���B���ɂ��܂����H
+<div class="text gm">【GM】<br/>好きな魔素が１つ出ますよ。何にしますか？
 </div>
-<div class="text noel">�y�m�G���z<br/>���f�͂��Ⴀ�u�́v�̖��f���y�񕜁z��1�_����Ă����܂��傤�B
+<div class="text noel">【ノエル】<br/>魔素はじゃあ「歌」の魔素を【回復】に1点入れておきましょう。
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�ł͉��߂āB�@�ǂ����܂����H
+<div class="text gm">【GM】<br/>わかりました。では改めて。　どうしますか？
 </div>
-<div class="text noel">�y�m�G���z<br/>�ۂ���Ə��N�̎p�ɖ߂��āA�@�u�����A���������Ƃł��邳���Ȃ��B�c�ł��A�������ŏ��������A�̂��ȁv
+<div class="text noel">【ノエル】<br/>ぽんっと少年の姿に戻って、　「もう、小さいことでうるさいなあ。…でも、おかげで助かった、のかな」
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�R�[�f�B�B�P�[�R�A�������B�m���Ă��ł���H�@���̎q�A�ǂ��ɂ��邩�Ȃ��v�@<br>
-���ĕ����Ȃ���d�q�����̒����Ɍ������������ȁB
+<div class="text noel">【ノエル】<br/>「コーディ。ケーコ、だっけ。知ってるんでしょ？　あの子、どこにいるかなあ」　<br>
+って聞きながら慧子ちゃんの調査に向かいたいかな。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�H�H�H�v�@���������o���Ȃ��̂Ŏ���X���܂����A�@<br>
-�u�c�c���Ⴀ�A���łĂ����f�X�H�v�@�Ƃ��킻�킵�����B
+<div class="text cody">【コーディ・コルトハード】<br/>「？？？」　助けた自覚がないので首を傾げますが、　<br>
+「……じゃあ、撫でていいデス？」　とそわそわしたい。
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�c���Ƃłˁv�@������Ƃނ�����Č����A������������ā@<br>
-�u�ق�A�����āI�@���т��ѕ����I�v�@���Ăǂ����������̂ɘA��܂킵�܂��B
+<div class="text noel">【ノエル】<br/>「…あとでね」　ちょっとむすくれて言いつつ、手を引っ張って　<br>
+「ほら、教えて！　きびきび歩く！」　ってどこか分からんのに連れまわします。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�킩��܂����A���N�\�N�f�X��I�v�@���������ɘA��񂳂�܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>「わかりました、ヤクソクデスよ！」　嬉しそうに連れ回されます。
 </div>
-<div class="text noel">�y�m�G���z<br/>��������񂵂A�d�q�����̋���Ƃ��s�������ȁB�ǂ��ɂ��܂�����GM�B
+<div class="text noel">【ノエル】<br/>引っ張り回しつつ、慧子ちゃんの居るとこ行きたいな。どこにいますかねGM。
 </div>
-<div class="text gm">�yGM�z<br/>�܂��}���ψ�����}���قɂ����炢�����ȁB�@��y�����鏈���Ă����Ă�����������
+<div class="text gm">【GM】<br/>まあ図書委員会だし図書館にいたらいいかな。　先輩見える処っていっても屋内だしな
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�}���قŌd�q��������������A�������ɂ�񂱂̎p�ɂȂ��<br>
-�R�[�f�B�N�̘r�Ɏ��܂��Ă��킻��Ɨl�q���f�����B���łĂ������Łi
+<div class="text noel">【ノエル】<br/>じゃあ図書館で慧子ちゃんを見つけたら、もう一回にゃんこの姿になりつつ<br>
+コーディ君の腕に収まってそわそわと様子を伺おう。撫でてもいいで（
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�킟���B���A����d�q�����̗l�q���M���ȂłȂł��ӂ��ӂ��悤�B
+<div class="text cody">【コーディ・コルトハード】<br/>わぁい。物陰から慧子ちゃんの様子を窺いつつなでなでもふもふしよう。
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�Ȃ�}���قł͌d�q�����Ȃ����q��҂��Ȃ���J�E���^�[�Ŗ{��ǂ�ł܂���B
+<div class="text npc_keiko">【久住 慧子】<br/>なら図書館では慧子が少ない来客を待ちながらカウンターで本を読んでますよ。
 </div>
-<div class="text noel">�y�m�G���z<br/>�i�c����ȕ��Ɋ������Y�񂾂肷��q�́A�����������₷������Ȃ��j�@���Ďv���A�l�q���f���B
+<div class="text noel">【ノエル】<br/>（…あんな風に願ったり悩んだりする子は、悪い虫がつきやすいもんなあ）　って思いつつ、様子を伺いつつ。
 </div>
-<div class="text noel">�y�m�G���z<br/>��l�ƈ�C�����l�ւƑ����L���A�́s���t�ɁA�����������̂�����ł��Ȃ��������������ł��ˁB
+<div class="text noel">【ノエル】<br/>一人と一匹から一人へと続く廊下、の《道》に、何か悪いものが潜んでいないか調査したいですね。
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�����ł��傤�B�@����ǂ���
+<div class="text gm">【GM】<br/>うむ、いいでしょう。　判定どうぞ
 </div>
-<div class="text noel">�y�m�G���z<br/>2d6>=5 ��������:
-</div><div class="dice"> (2D6>=5) �� 4[1,3] �� 4 �� ���s
+<div class="text noel">【ノエル】<br/>2d6>=5 調査判定:
+</div><div class="dice"> (2D6>=5) → 4[1,3] → 4 → 失敗
 </div>
-<div class="text noel">�y�m�G���z<br/>���[�B�萔�I�Ɂu�����v�͂������Ȃ��ł��B�F�ɂ͂��߂񂾂��ǂ��̂܂܎��s�ŁB
+<div class="text noel">【ノエル】<br/>あー。手数的に「無理」はしたくないです。皆にはごめんだけどそのまま失敗で。
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�ł̓R�[�f�B�N�ƋY���V�[���Ƃ��Ă����܂��傤�B
+<div class="text gm">【GM】<br/>うむ、ではコーディ君と戯れるシーンとしておきましょう。
 </div>
-<div class="text noel">�y�m�G���z<br/>�����Ƃ��ӂ��ӕ��ł��ďW���ł��Ȃ������񂾁i�j
-<br/>�u�c�R�[�f�B�v
+<div class="text noel">【ノエル】<br/>きっともふもふ撫でられて集中できなかったんだ（）
+<br/>「…コーディ」
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�H�v�@���ӂ���
+<div class="text cody">【コーディ・コルトハード】<br/>「？」　もふもふ
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�{�N�A���̎q�̂��Ƃ悭������Ȃ��B����Ɍ��Ă݂āv�@<br>
-���ĐU���Ă������Ǖʂɂ���ł������ł��B
+<div class="text noel">【ノエル】<br/>「ボク、あの子のことよく分からない。代わりに見てみて」　<br>
+って振っておくけど別にやらんでもいいです。
 </div>
-<div class="text noel">�y�m�G���z<br/>����GM�A�y�ϊ��z�g�������ł��B
-<br/>�u���v�̖��f1�g�p�B�s���t����ڕW5�B
+<div class="text noel">【ノエル】<br/>あとGM、【変換】使いたいです。
+<br/>「星」の魔素1つ使用。《道》から目標5。
 </div>
-<div class="text gm">�yGM�z<br/>�ǂ����B
+<div class="text gm">【GM】<br/>どうぞ。
 </div>
-<div class="dice">2d6>=5 �y�ϊ��z:<br>
- (2D6>=5) �� 10[4,6] �� 10 �� ����
+<div class="dice">2d6>=5 【変換】:<br>
+ (2D6>=5) → 10[4,6] → 10 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB���̖��f�ɕϊ����܂����H
+<div class="text gm">【GM】<br/>成功ですね。何の魔素に変換しますか？
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�A�����́y���́z��6�_���A���f�ɕϊ����܂��B
+<div class="text noel">【ノエル】<br/>じゃあ、自分の【魔力】を6点分、魔素に変換します。
 </div>
-<div class="text gm">�yGM�z<br/>��C�Ɏ��ɂ����ł��ˁB�@�ϊ����e�ƃ`���[�W���e�ǂ���
+<div class="text gm">【GM】<br/>一気に死にかけですね。　変換内容とチャージ内容どうぞ
 </div>
-<div class="text noel">�y�m�G���z<br/>2�_�������́y�񕜁z�ɁA2�_���C�c�L����Ɂy�����z�ł�����������K���ɏo�Ă��Ă��������B<br>
-���ƃR�[�f�B�N�́y�Փ��z��2�_�����܂��B
+<div class="text noel">【ノエル】<br/>2点を自分の【回復】に、2点をイツキさんに【魅了】であげたいから適当に出てきてください。<br>
+あとコーディ君の【衝動】に2点あげます。
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�C�c�L����̓V�[���o��ǂ���
+<div class="text gm">【GM】<br/>わかりました。イツキさんはシーン登場どうぞ
 </div>
-<div class="text noel">�y�m�G���z<br/>�K�����ӂ�ӂ肵�Ė��f���W�܂�����A�u�͂��v�@���Ď���������R�[�f�B�N�ɂ����B
+<div class="text noel">【ノエル】<br/>尻尾をふりふりして魔素が集まったら、「はい」　って自分を抱くコーディ君にあげつつ。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u���肪�ƁI�v�@�m�G���N�̊{�𕏂ły�Փ��z��2�_�`���[�W���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>「ありがと！」　ノエル君の顎を撫でつつ【衝動】に2点チャージします。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���A���Ⴀ���傤�ǐ}���ق����A���f�̋C�z�����āA�{�I����łĂ��܂���B
+<div class="text ituki">【焔木 イツキ】<br/>あ、じゃあちょうど図書館だし、魔素の気配感じて、本棚からでてきますわ。
 </div>
-<div class="text noel">�y�m�G���z<br/>�C�c�L���񂪏o�Ă�����A�@�u���Ⴀ���Z����ɂ�������v�@���ĐK�����ӂ�ӂ�B
+<div class="text noel">【ノエル】<br/>イツキさんが出てきたら、　「じゃあお兄さんにもあげる」　って尻尾をふりふり。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u����H���肪�Ƃ��L����v�ȂłȂł��A�x�����ފ����ŁB������2�_�`���[�W!
+<div class="text ituki">【焔木 イツキ】<br/>「おや？ありがとう猫さん」なでなでしつつ、栞を挟む感じで。魅了に2点チャージ!
 </div>
-<div class="text gm">�yGM�z<br/>���ꂼ��`���[�W�������܂����B�C�j�V�A�e�B�u�\�ύX���Ă܂���B
+<div class="text gm">【GM】<br/>それぞれチャージ了解しました。イニシアティブ表変更してますよ。
 </div>
-<div class="text noel">�y�m�G���z<br/>�m�F���܂������肪�Ƃ��������܂��B<br>
-���傤���Ȃ��̂ŕ��ł��Ă��V�[���I���ł����ł���B
+<div class="text noel">【ノエル】<br/>確認しましたありがとうございます。<br>
+しょうがないので撫でられてやりつつシーン終了でいいですよ。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�ł̓V�[�����I�����܂��B�@�����ĒN���s���܂����H
+<div class="text gm">【GM】<br/>はい、ではシーンを終了します。　続けて誰が行いますか？
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�́[���I�d�q�����̒������܁[��!
+<div class="text ituki">【焔木 イツキ】<br/>はーい！慧子ちゃんの調査しまーす!
 </div>
 <br><br>
-<div class="subtitle" id="main1_4">����P�T�C�N����S�V�[���@���؃C�c�L
+<div class="subtitle" id="main1_4">◆第１サイクル第４シーン　焔木イツキ
 </div>
-<div class="text gm">�yGM�z<br/>�ł̓C�c�L����̃V�[���ł��B<br>
-�����ł���΃h���}�V�[���ƂȂ�܂��̂ŃV�[���\��U���Ă��������B
+<div class="text gm">【GM】<br/>ではイツキさんのシーンです。<br>
+調査であればドラマシーンとなりますのでシーン表を振ってください。
 </div>
-<div class="dice"> �V�[���\(5) �� �������������A�_��������Ă����B<br>
-�����A�������������B�ǂ����A��J���������B
+<div class="dice"> シーン表(5) → 強く風が吹き、雲が流されていく。<br>
+遠く、雷鳴が聞こえた。どうやら、一雨きそうだ。
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�ł͂��̂܂܃V�[�������Ă�Ȃ炻�̂܂ܑ��̊O�œV�C�����ꂾ������ł��傤
+<div class="text gm">【GM】<br/>うむ、ではそのままシーン続いてるならそのまま窓の外で天気が崩れだしたんでしょう
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u���C�͌����Ȃ�ł���ˁv
+<div class="text ituki">【焔木 イツキ】<br/>「湿気は嫌いなんですよね」
 </div>
-<div class="text gm">�yGM�z<br/>�d�q�ւ̒����ł����ˁB�ޏ��͑��ς�炸�{��فX�Ɠǂ�ł��܂���B
+<div class="text gm">【GM】<br/>慧子への調査でしたね。彼女は相変わらず本を黙々と読んでいますよ。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���Ⴀ�A�ޏ��Ɂu���C�v������łȂ��������Ƃ��ł�����
+<div class="text ituki">【焔木 イツキ】<br/>じゃあ、彼女に「狂気」が潜んでないか調査とかですかね
 </div>
-<div class="text gm">�yGM�z<br/>�ӂށA����ł邩�ǂ��ł��傤�ˁB�@�ł͔���ǂ����B
+<div class="text gm">【GM】<br/>ふむ、潜んでるかどうでしょうね。　では判定どうぞ。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>2d6>=5 ��������:
-</div><div class="dice"> (2D6>=5) �� 5[1,4] �� 5 �� ����
+<div class="text ituki">【焔木 イツキ】<br/>2d6>=5 調査判定:
+</div><div class="dice"> (2D6>=5) → 5[1,4] → 5 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�@�ł͌d�q�̔閧����������܂��B
+<div class="text gm">【GM】<br/>成功ですね。　では慧子の秘密が明かされます。
 </div>
-<div class="event">���閧:�v�Z�d�q<br>
-�v�Z�d�q�́E�A�엲�̂��Ƃ��D���ł���B<br>
-���̑z���̐[���́A���@�g���ł��犴�����󂯂�قǂ��B<br>
-���́y�閧�z�����J�����҂́A�d�q�ɑ΂���y�^���z��1�_�㏸����B
+<div class="event">●秘密:久住慧子<br>
+久住慧子は・植野隆のことが好きである。<br>
+その想いの深さは、魔法使いですら感銘を受けるほどだ。<br>
+この【秘密】を公開した者は、慧子に対する【運命】が1点上昇する。
 </div>
-<div class="text gm">�yGM�z<br/>�Ƃ����킯�ŃC�c�L����͌d�q�ւ̉^�����P�_�l�����܂��B�����͔C�ӂł����ł���
+<div class="text gm">【GM】<br/>というわけでイツキさんは慧子への運命を１点獲得します。属性は任意でいいですよ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���[���ƁA�[�����S�����C�ƕ\����̂Ȃ��Ƃ�����܂����A�ƂĂ������[�����݂Ƃ��ĔF�����܂�!�@<br>
-�����͋����ŁI
+<div class="text ituki">【焔木 イツキ】<br/>えーっと、深い恋心が狂気と表裏一体なこともありますし、とても興味深い存在として認識します!　<br>
+属性は興味で！
 </div>
-<div class="text noel">�y�m�G���z<br/>��ƁA�C�c�L���񂪂����Ȃ�V�[���ɏo�Ă������ł��ˁB<br>
-�ǂ��Ȃ́H�ǂ��Ȃ́H���Ċ����łӂ�ӂ�@��炵�ăC�c�L����̓��ɏ�肽���ł��i
+<div class="text noel">【ノエル】<br/>んと、イツキさんがいいならシーンに出てきたいですね。<br>
+どうなの？どうなの？って感じでふんふん鼻を鳴らしてイツキさんの頭に乗りたいです（
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�ł͋����Ƃ��Ċl�����Ă����Ă��������ˁB�@
+<div class="text gm">【GM】<br/>はい、では興味として獲得しておいてくださいね。　
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u���₟�A�Ȃ񂾂�������Ă������Ȃ銴���̃j���Q���ł��˂��B�v�j�R�j�R
+<div class="text ituki">【焔木 イツキ】<br/>「いやぁ、なんだか見守っていたくなる感じのニンゲンですねぇ。」ニコニコ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�ŁA���[���ƁA���̃V�[�����ɖ����g���銴���ł����H
+<div class="text ituki">【焔木 イツキ】<br/>で、えーっと、このシーン中に魅了使える感じですか？
 </div>
-<div class="text gm">�yGM�z<br/>�g���܂���B�@�Ώۂ����߂Ă��疂�f����Ĕ��胍�[���ǂ���
+<div class="text gm">【GM】<br/>使えますよ。　対象を決めてから魔素消費して判定ロールどうぞ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�m�G������𖣗����Ă��܂��I�@���Ńe�N�Ń��������ɂ��Ă�����̂ł��I<br>
-�̂Q������܂��I�����C���Ŕ��肵�܂��I
+<div class="text ituki">【焔木 イツキ】<br/>ノエルくんを魅了してやります！　撫でテクでメロメロにしてあげるのです！<br>
+歌２を消費します！＜狂気＞で判定します！
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A����ǂ���
+<div class="text gm">【GM】<br/>はい、判定どうぞ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�ڕW�͂U�ł����܂��I
+<div class="text ituki">【焔木 イツキ】<br/>目標は６でいきます！
 </div>
-<div class="dice">2d6>=6 �y�����z:<br>
- (2D6>=6) �� 6[1,5] �� 6 �� ����
+<div class="dice">2d6>=6 【魅了】:<br>
+ (2D6>=6) → 6[1,5] → 6 → 成功
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���A���ԂȂ������I�I
+<div class="text ituki">【焔木 イツキ】<br/>あ、あぶないいい！！
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��B���������炬�肬�肾�˃C�c�L����B�@
+<div class="text gm">【GM】<br/>成功です。さっきからぎりぎりだねイツキさん。　
 </div>
-<div class="text noel">�y�m�G���z<br/>�����Ȃ炢�����B�߂�߂�ɂ���悤�B<br>
-���������ǂ��̕��ŕ��c�����c�Ȃ񂾂��ꂫ���������c�i�ӂɂ�j
+<div class="text noel">【ノエル】<br/>成功ならいいんや。めろめろにされよう。<br>
+悔しいけどこの撫で方…くっ…なんだこれきもちいい…（ふにゃ）
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�ق�ق�L����A���Ȃ������d������΂��Ă��������ȁB���ׂ̈ɂ����肢���܂���v<br>
-�{�̉������傱����
+<div class="text ituki">【焔木 イツキ】<br/>「ほらほら猫さん、あなたもお仕事がんばってくださいな。私の為にもお願いしますよ」<br>
+顎の下こしょこしょ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����ƁA������Ƃ��������Ƃ��Y���Ă���B
+<div class="text ituki">【焔木 イツキ】<br/>きっと、ちょっといい匂いとか漂ってくる。
 </div>
-<div class="text gm">�yGM�z<br/>�m�G������̔��肪�ȍ~�{�P����܂��B�悩������
+<div class="text gm">【GM】<br/>ノエルくんの判定が以降＋１されます。よかったね
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�ɂ�񂱁[�A�ǂ��s����������f�X���[�H�v�@�Ƃ��낤�낵�č����������ł��B
+<div class="text cody">【コーディ・コルトハード】<br/>「にゃんこー、どこ行っちゃったデスかー？」　とうろうろして合流したいです。
 </div>
-<div class="text noel">�y�m�G���z<br/>�u���[�B�����[�c�ɂ�[�v�@�����������̂ł��̂܂܁y�񕜁z���Ă��������ł��B<br>
-�ł��񕜂���͎̂����ƃR�[�f�B�N�������ł��B
+<div class="text noel">【ノエル】<br/>「うー。ううー…にゃー」　きもちいいのでそのまま【回復】してあげたいです。<br>
+でも回復するのは自分とコーディ君がいいです。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A����ǂ���
+<div class="text gm">【GM】<br/>はい、判定どうぞ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�G�̏�ł��낲�낵�Ă܂��B�v
+<div class="text ituki">【焔木 イツキ】<br/>「膝の上でごろごろしてます。」
 </div>
-<div class="text noel">�y�m�G���z<br/>�s�����t���画��A�y�����z�ɂ��␳�ŖڕW�l4�B
+<div class="text noel">【ノエル】<br/>《旋律》から判定、【魅了】による補正で目標値4。
 </div>
-<div class="dice">2d6>=4 �y�񕜁z:<br>
-(2D6>=4) �� 9[3,6] �� 9 �� ����
+<div class="dice">2d6>=4 【回復】:<br>
+(2D6>=4) → 9[3,6] → 9 → 成功
 </div>
-<div class="text noel">�y�m�G���z<br/>���A���������f�B�S���g�p����̂ŁA3�_�~3��9�_���񕜂ŁB
+<div class="text noel">【ノエル】<br/>あ、そうだ魔素。全部使用するので、3点×3＝9点分回復で。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c�c�c�v�@�߂�߂�ɂ���Ă�m�G���N�����ā@<br>
-�u�c�c���ꂪ�c�c�l�g�����c�c�v�@�Ƃ�����ƃV���b�N�󂯂Ă��悤�B
+<div class="text cody">【コーディ・コルトハード】<br/>「…………」　めろめろにされてるノエル君を見て　<br>
+「……これが……ネトラレ……」　とちょっとショック受けていよう。
 </div>
-<div class="text gm">�yGM�z<br/>�]�T�ł��ˁB�@�g�p���f���Ɖ񕜑Ώۂ������ĉ�����
+<div class="text gm">【GM】<br/>余裕ですね。　使用魔素数と回復対象を教えて下さい
 </div>
-<div class="text noel">�y�m�G���z<br/>������+8�A�R�[�f�B�N��+1�ŁB<br>
-�ʂɐQ����Ă˂���I�ƐK���ł؂��񂵂񕜂��Ă��܂��B
+<div class="text noel">【ノエル】<br/>自分に+8、コーディ君に+1で。<br>
+別に寝取られてねえよ！と尻尾でぺしんしつつ回復してやります。
 </div>
-<div class="text gm">�yGM�z<br/>�ӂ���Ƃ���������S�񕜂ł��ˁB
+<div class="text gm">【GM】<br/>ふたりともきっかり全回復ですね。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>2�l�����������΂��Ȃ��猩�Ă銴���ŁB���₩���E�E�E
+<div class="text ituki">【焔木 イツキ】<br/>2人をくすくす笑いながら見てる感じで。穏やかだ・・・
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�킠���I
+<div class="text cody">【コーディ・コルトハード】<br/>わあい！
 </div>
-<div class="text gm">�yGM�z<br/>����Ȋ����ŃV�[�����I���Ă������ȁB<br>
-�܂������ƂR�l�ɋC�t�����d�q�����΂܂������ɒ��߂Ă��肷��񂾂낤
+<div class="text gm">【GM】<br/>そんな感じでシーンを終えていいかな。<br>
+まあきっと３人に気付いた慧子が微笑ましそうに眺めてたりするんだろう
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>��l���������Ă邯�ǂ����̂��ȁE�E�E�E�G�G�d�q�����G�G�G
+<div class="text ituki">【焔木 イツキ】<br/>大人が混じってるけどいいのかな・・・・；；慧子ちゃん；；；
 </div>
 <br>
 <br>
-<div class="subtitle" id="main1_5">����P�T�C�N����T�V�[���@�R�[�f�B�E�R���g�n�[�h
+<div class="subtitle" id="main1_5">◆第１サイクル第５シーン　コーディ・コルトハード
 </div>
-<div class="text gm">�yGM�z<br/>�����Ăł���ʓ]�����Ă��ǂ���ł������ł���B�@�h���}�V�[���Ɛ퓬�V�[���ǂ���ɂ��܂����H
+<div class="text gm">【GM】<br/>続けてでも場面転換してもどちらでもいいですよ。　ドラマシーンと戦闘シーンどちらにしますか？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�h���}�V�[���ŁB���N�𒲍��������̂ŁA���N�����鏊�ɍs���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>ドラマシーンで。香君を調査したいので、香君がいる所に行きます。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B�@���ی�Ȃ畔��������
-<br/>�o�X�P�b�g���̖ʁX���������ł���B�Ƃ������R�[�f�B�N����������Ȃ������H
+<div class="text gm">【GM】<br/>はい。　放課後なら部活中かな
+<br/>バスケット部の面々が部活中ですよ。というかコーディ君も部員じゃなかった？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���A�͂������ł��B�����̓T�{���Ă��̂��ȁB
+<div class="text cody">【コーディ・コルトハード】<br/>あ、はい部員です。今日はサボってたのかな。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�J�I���[�I�v�@�Ƃ͂����T�{��ɕ����ڂ�������z�ł��Ȃ������ł����A���ʂɍ��N�Ăт܂��傤���B
+<div class="text cody">【コーディ・コルトハード】<br/>「カオルー！」　とはいえサボりに負い目を感じる奴でもなさそうですし、普通に香君呼びましょうか。
 </div>
-<div class="text gm">�yGM�z<br/>���̖ʁX���w�Z�ł��ꂱ�ꂵ�Ă܂�������ˁA�x�����炢����Ȃ����ȗ����Ȃ�
+<div class="text gm">【GM】<br/>他の面々が学校であれこれしてましたからね、遅刻くらいじゃないかな来たなら
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�����A�R�[�f�B����Ȃ����B�@�����͒x�������ȁH�v�@�{�[���𓊂������~�߂Đ��̕��֐U������܂���B
+<div class="text npc_kaoru">【広瀬 香】<br/>「ああ、コーディじゃないか。　今日は遅かったな？」　ボールを投げる手を止めて声の方へ振り向きますよ。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u���̂ˁA�J�I���B�����Ƃ��A�悩������܂��J�I���ƃP�[�R�ƃ{�N�ł������ׂ�[�ˁv�@�Ƃ�����Ƃ��݂������ɂ��A�s���t�ō��N�̉B�����̓����������������ł��܂����H
+<div class="text cody">【コーディ・コルトハード】<br/>「あのね、カオル。明日とか、よかったらまたカオルとケーコとボクでお昼たべよーね」　とちょっとさみしそうにしつつ、《風》で香君の隠し事の匂いをかぎ取ったりできますか？
 </div>
-<div class="text gm">�yGM�z<br/>�ӂނӂށA�Ȃ�قǁB�ʔ����g�����ł��ˁB�@�@�����������Ȋ炵�Ă邵�����񂶂�Ȃ����ȁB�@����ǂ���
+<div class="text gm">【GM】<br/>ふむふむ、なるほど。面白い使い方ですね。　鼻が利きそうな顔してるしいいんじゃないかな。　判定どうぞ
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�@�����������Ȋ� #�Ƃ�
+<div class="text cody">【コーディ・コルトハード】<br/>鼻が利きそうな顔 #とは
 </div>
-<div class="dice">2d6>=5 �s���t<br>
- (2D6>=5) �� 5[1,4] �� 5 �� ����
+<div class="dice">2d6>=5 《風》<br>
+ (2D6>=5) → 5[1,4] → 5 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�@�ł͔閧��񎦂��܂��B
+<div class="text gm">【GM】<br/>成功ですね。　では秘密を提示します。
 </div>
-<div class="event">���閧:�L����<br>
-�L�����́A�A�엲�̂��Ƃ��D���ł���B<br>
-�������A�v�Z�d�q���A��̂��Ƃ��D���Ȃ��ƂɋC�Â��Ă��܂������߁A<br>
-���̋C�����������ł����ɋꂵ�݁A���̌�������Ēf�́q���r�ɜ߈˂��ꂽ�B<br>
+<div class="event">●秘密:広瀬香<br>
+広瀬香は、植野隆のことが好きである。<br>
+しかし、久住慧子も植野のことを好きなことに気づいてしまったため、<br>
+その気持ちを告白できずに苦しみ、その隙をつかれて断章〈炎〉に憑依された。<br>
 ---<br>
-�f�́q���r<br>
-�����߈ː[�x:1<br>
-�U:4 �h:2 ����:6 / ���@:�y�Ԏ�z / ���Z:�s���сt
+断章〈炎〉<br>
+初期憑依深度:1<br>
+攻:4 防:2 魔力:6 / 魔法:【返呪】 / 特技:《叫び》
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�i�c�c���ۂɌ���̂͏��߂ăf�X�ˁc�c�j�@������ƋC�܂����B
+<div class="text cody">【コーディ・コルトハード】<br/>（……実際に見るのは初めてデスね……）　ちょっと気まずい。
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�c���O�͂Ƃ������A�d�q�ƁA���v�@���Ċ��܂点�Ă�킯�ł��ˁB
+<div class="text npc_kaoru">【広瀬 香】<br/>「…お前はともかく、慧子と、か」　って顔を曇らせてるわけですね。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c�_���A�f�X���H�v�@�Ƃ肠�����C�t���Ȃ��ӂ肵�Ă��悤�B
+<div class="text cody">【コーディ・コルトハード】<br/>「……ダメ、デスか？」　とりあえず気付かないふりしていよう。
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�c�C����������A�ȁv�@���炢�̊����ł��B
+<div class="text npc_kaoru">【広瀬 香】<br/>「…気が向いたら、な」　くらいの感じです。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�C�������̂�҂��Ă�f�X��I�v�@�ƕԂ��āA�x��΂��Ȃ��畔�������̂��ȁc�c�H
+<div class="text cody">【コーディ・コルトハード】<br/>「気が向くのを待ってるデスよ！」　と返して、遅ればせながら部活したのかな……？
 </div>
-<div class="text gm">�yGM�z<br/>�Ȃ��A�����͌d�q�ɑ��k���ł��Ȃ����A���炢�̊��o�Ɏv���Ă܂�GM�@<br>
-�V�[���I���ł����ł����H
+<div class="text gm">【GM】<br/>なお、告白は慧子に相談もできないし、くらいの感覚に思ってますGM　<br>
+シーン終了でいいですか？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�I���ŁB
+<div class="text cody">【コーディ・コルトハード】<br/>終了で。
 </div>
-<div class="text gm">�yGM�z<br/>�܂������ő̓������Ăނ���撣���ċI���ς����񂶂�Ȃ����Ȃӂ���Ƃ��@<br>
-���ɐ�y�����邵�i
-</div>
-<br><br>
-<div class="subtitle" id="main1_6">����P�T�C�N����U�V�[���@�}�X�^�[�V�[��
-</div>
-<div class="text gm">�yGM�z<br/>�ł͂����������Ă�̂ŁA���w���ł������B�@�o��L�����͍��ł��B
-</div>
-<div class="event">�ނ́A����ȕ\��Ŗ�̊X��f�r���Ă��܂��B
-<br/>�ނ�����Ȃ��ƁA���̐�ɂ���ꌬ�̉Ƃɉ΂��t���A�R���オ��܂��B
-</div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�́A�͂́c�͂͂͂��I�@�݂�ȁA�݂�ȔR���Ă��܂��Ηǂ��񂾂��I�I�I�v
-</div>
-<div class="event">�ނ͊y�������ɏ΂��܂��B�@�������A�Ƃ̒��̔ߖ𕷂��Ȃ���A�R���オ�鉊�𒭂߂Ȃ���A���΂炭�΂�����<br>
-�c�ӂƓ��ɐ��C�̐F���߂�܂��B
-</div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�͂́c����Ȃ��ƁA���Ă��c��y�̐S�͎�ɓ���Ȃ��c�Ȃ̂ɁA���́c�ǂ����āv�@
-</div>
-<div class="event">�ނ͓����������Ă������܂�܂��B�@���l�ƒf�́q���r�Ƃ̈ӎv���������Ă���̂ł��傤�B
-</div>
-<div class="text gm">�yGM�z<br/>�ꕔ�̎q���������Ă���悤�A���̜߈ː[�x���P�㏸���܂����B�@<br>
-����Ȋ����ŃV�[���I���ƂȂ�܂��B
+<div class="text gm">【GM】<br/>まあ部活で体動かしてむしろ頑張って紀分変えたんじゃないかなふたりとも　<br>
+横に先輩もいるし（
 </div>
 <br><br>
-<div class="subtitle" id="main2_1">����Q�T�C�N����P�V�[���@�}�X�^�[�V�[��
+<div class="subtitle" id="main1_6">◆第１サイクル第６シーン　マスターシーン
 </div>
-<div class="text gm">�yGM�z<br/>PC�����̑O�ɂƂ���l�����p��\���܂��B�@�o��PC�͑S���ƂȂ�܂��B
+<div class="text gm">【GM】<br/>ではもう判明してるので、名指しでいいか。　登場キャラは香です。
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�C�c�L����̓��̏�Ō��L���Ă܂��B
+<div class="event">彼は、虚ろな表情で夜の街を彷徨っています。
+<br/>彼が手を翳すと、その先にある一軒の家に火が付き、燃え上がります。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���Ⴀ�̂�т肵�Ă܂��B
+<div class="text npc_kaoru">【広瀬 香】<br/>「は、はは…はははっ！　みんな、みんな燃えてしまえば良いんだっ！！！」
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�m�G���N�ȂłȂł��Ă܂��i�e�N�j�V�����k
+<div class="event">彼は楽しそうに笑います。　しかし、家の中の悲鳴を聞きながら、燃え上がる炎を眺めながら、しばらく笑った後<br>
+…ふと瞳に正気の色が戻ります。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�ȂłȂł���Ă�l�����Ă��ʂʂ��Ă܂�
+<div class="text npc_kaoru">【広瀬 香】<br/>「はは…こんなこと、しても…先輩の心は手に入らない…なのに、俺は…どうして」　
 </div>
-<div class="text noel">�y�m�G���z<br/>�ӂɂ�[�B�i�K���ς���j
+<div class="event">彼は頭を押さえてうずくまります。　当人と断章〈炎〉との意思が葛藤しているのでしょう。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�ȂłȂł��Ăق�����ł����H�v�R�[�f�B�N�ɁB
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�i�c���f���L���ח����Ă�B�C�c�L����̃e�N�������˂��j
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�ɂ�񂱃i�f�i�f��������f�X�I�@�C�c�L�݂����ȃe�N�j�b�N�ŁI�v�@�Q�ĂĔے肵�܂��B
-</div>
-<div class="text gm">�y�H�H�H�z<br/>�u���ɋ�����ҁA�R���オ�鉊�c�f���炵�����������ڂ��Ƃ����̂ɁA�N�����ƌ�������c�v�@�Ƃ��̐l���͎p��\���܂��B
-</div>
-<div class="text noel">�y�m�G���z<br/>���ł��ĂĂ��₵�����ǂ����������̂ɂӂɂ�ӂɂႵ�A�Ȃ񂩏o�Ă�������ЖڊJ���܂��B
-</div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u����������͖̂������ƁA�����͎v��񂩂ˁH�@�c�܂��A���o���̂���������悤�ł��邪�v
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�{�̉��Ǝ��̗����E�E�E�v�Ƃ����������Ƃ��ŁA�x�����܂����I
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���́A���񂽂��B���ς�炸���������炵����ˁv
-</div>
-<div class="text noel">�y�m�G���z<br/>�u����Ȃ������v�@���ĕ�������悤�ɂڂ����ƓƂ茾�B
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c�c�c�H�@�R�X�v���H�v
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�R�[�f�B����̍D���ȁw���ɂ߁x�Ƃ��ɂ���������ˁ[�B�ˁA���̗p�H�v
-</div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u�c���̃Z���X���킩���Ƃ́A�S�������ĕ����������y���c�܂��ǂ��B�����͐��z���ɗ����̂��v
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�͂��E�E�E�m���Ă�悤�Ȓm��Ȃ��悤�ȁv
-</div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u���������A���̉����y����ł������Ƃ����̂ɁA�����Ȑ^�������閂�@�g���ǂ�����B<br>
-�������A����ȏ㖳���Ȑ^��������Ȃ�A�䂪�y�̃R���N�V�����ɂȂ��Ă����������v
-</div>
-<div class="dice"> (1D4) �� 3
-</div>
-<div class="text gm">�yGM�z<br/>�ӂށA�ł̓C�c�L����͌��_���m�ɑ΂��^�����P�_�l�����܂��B�����͔C�ӂł��B
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���[���ƁA���Ⴀ�h�G���ȁH
-</div>
-<div class="text gm">�yGM�z<br/>�͂��A�ł͏h�G�Ƃ��Ď擾���Ă��������B�@���̃V�[���͈ȏ�ƂȂ�܂��B�@
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u��@�T����ɂ����Ћ��ɂ���������܂킳���Ȃ�Č��ł��˂��`�v���Ċ����Ȃ̂���
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���z���A�ˁ[�B�킯�킩��Ȃ��Ă������낢�l�v
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�e���P�[�e�L�Ȃ�邢����Ċ����f�X�ˁ[�v
-</div>
-<div class="event">�����_���m�i�l���j�@<a href="img/npc_inukami.png" rel="lightbox">���摜</a><br>
-�h���q������`�ҁr�̏��Ћ��B<br>
-�Z���V�z��R�₷���@�̉��̔������Ɏ䂩��Ă���A������y����ł���B<br>
-���̉����y���ނ��߁A������͋֏��q�����闠�؂�̉��r�������̃R���N�V�����ɂ��悤�Ɗ��ł���B
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�L����A�����Ă��������˂��v�ȂłȂŖ�������
-</div>
-<div class="text noel">�y�m�G���z<br/>�u�{�N�́A����Ȏ�̈������c�ɂ͋����Ȃ����v�@�Ձ[���Ƃ��K���͂ւɂ��@<br>
-�u�c�����g�[���̏��ɋA�肽�����v
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�u����ς�ז�������Ă��Ƃ���ˁ[�B�Ԃ��ɂ��������Ȃ��v
-<br/>�́[�����l
+<div class="text gm">【GM】<br/>一部の子が理解しているよう、香の憑依深度が１上昇しました。　<br>
+そんな感じでシーン終了となります。
 </div>
 <br><br>
-<div class="subtitle" id="main2_2">����Q�T�C�N����Q�V�[���@�R�[�f�B�E�R���g�n�[�h
+<div class="subtitle" id="main2_1">◆第２サイクル第１シーン　マスターシーン
 </div>
-<div class="text noel">�y�m�G���z<br/>�q�f�́r�Ɛ킢�ɍs���̂��ȁ[�Ǝv�����x�̓R�[�f�B�N�̓��ɏ���Ă��ł�B<br>
-�K���ς��ς����Ă����炠�������f���o�b�N���Ă���i�j
+<div class="text gm">【GM】<br/>PCたちの前にとある人物が姿を表します。　登場PCは全員となります。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�m�G���N�Ɂy�Փ��z�Ƀ`���[�W���Ă����f��1�_�o�b�N���܂��B
+<div class="text noel">【ノエル】<br/>じゃあイツキさんの頭の上で欠伸してます。
 </div>
-<div class="text noel">�y�m�G���z<br/>�o�b�N���ꂽ�̂��u�S�v�Ƃ��āy�x���z�ɓ���܂��ˁB
+<div class="text ayumu">【海鳴 夢】<br/>じゃあのんびりしてます。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���̑̈�ق��ȁc�c�Ƃ肠�����Ă��Ă�����܂��傤�B�@<br>
-�i�J�I���c�c���邩�ȁc�c�H�j
+<div class="text ituki">【焔木 イツキ】<br/>ノエル君なでなでしてます（テクニシャンヌ
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�Ȃ񂩌����ڂ���Ȃ̂ő̈�ى��̒j�q�X�ߎ����炢�ł������ȁB�@<br>
-�����ւ����悤�Ƃ��Ă邭�炢����Ȃ��ł��傤��
+<div class="text cody">【コーディ・コルトハード】<br/>なでなでされてる様を見てぐぬぬしてます
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�s���Ȃ炱�ꂠ����v�@���Ăӂ���Əo�Ă��ăR�[�f�B����ɋR�m�����i���R�j��n���܂��B
+<div class="text noel">【ノエル】<br/>ふにゃー。（尻尾ぱたん）
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�A���K�g�v�@�n����܂����I�@<br>
-�����ւ����悤�Ƃ��Ă��锼���̍��N�������ł����B
+<div class="text ituki">【焔木 イツキ】<br/>「なでなでしてほしいんですか？」コーディ君に。
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�����A�����͊Ԃɍ������Ԃɗ����񂾂ȁB�@���͂悤�A�R�[�f�B�v�@<br>
-�ƃV���c���߂��낤�Ǝ��������������̍����C�Â��܂��傤��
+<div class="text ayumu">【海鳴 夢】<br/>（ツンデレ猫が陥落してる。イツキさんのテクすごいねえ）
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u���͂悤�c�c�q���r�T���H�v
+<div class="text cody">【コーディ・コルトハード】<br/>「にゃんこナデナデしたいんデス！　イツキみたいなテクニックで！」　慌てて否定します。
 </div>
-<div class="text gm">�yGM�z<br/>�q�f�́r�̖����Ă΂�A���̓������҂���Ǝ~�܂�܂��B
+<div class="text gm">【？？？】<br/>「愛に狂う若者、燃え上がる炎…素晴らしく美しい演目だというのに、君たちと言ったら…」　とその人物は姿を表します。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�\�b�R�[�ł�����B���ׂ̒T���ҁq�P�C�I�X�V�[�J�[�r�A�f�́q���r�ɃC�N�T��\�����ށI�@�I�V�e�}�C���I�v
+<div class="text noel">【ノエル】<br/>撫でられててくやしいけどきもちいいのにふにゃふにゃしつつ、なんか出てきたから片目開きます。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�ꉞ�A����ˁB�\�b�R�[�\�b�R�[�v�@������[
+<div class="text npc_inukami">【犬神博士】<br/>「横槍を入れるのは無粋だと、そうは思わんかね？　…まあ、見覚えのある顔もいるようであるが」
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�c���O�����Ȃ񂩂��Ăт���˂����Ă̂��c�v�@�[�x�Q�ɂȂ��Ă܂��̂ł����Ԑi�s�͂��Ă�킯�ł���
+<div class="text ituki">【焔木 イツキ】<br/>「顎の下と耳の裏が・・・」といいかけたとこで、警戒しますぜ！
 </div>
-<div class="text noel">�y�m�G���z<br/>�R�[�f�B�N�̓�����҂��Ɣ�э~��Ă����Ɖ��ƁA���N�̎p�Ō��ɗ����܂��B�@<br>
-�u�c�����A�I��点�Ȃ�B�R�[�f�B�v�@������܂��ˁB
+<div class="text ayumu">【海鳴 夢】<br/>「あは、あんたか。相変わらずきざったらしいよね」
 </div>
-<div class="text gm">�y�f�́q���r�z<br/>�u�Ă�ł����Ȃ玄������ɂȂ��B�@�ӂӂӁA�S���R�₵�s�����Ă�����I�I�v
+<div class="text noel">【ノエル】<br/>「悪趣味なかっこ」　って聞こえるようにぼそっと独り言。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�΂͏����܂��傤�v�����ƌ���܂���I
+<div class="text cody">【コーディ・コルトハード】<br/>「…………？　コスプレ？」
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「コーディくんの好きな『あにめ』とかにいそうだよねー。ね、何の用？」
+</div>
+<div class="text npc_inukami">【犬神博士】<br/>「…このセンスがわからんとは、全くもって腹立たしい輩だ…まあ良い。今日は宣戦布告に来たのだ」
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「はぁ・・・知ってるような知らないような」
+</div>
+<div class="text npc_inukami">【犬神博士】<br/>「もう少し、この炎を楽しんでいたいというのに、無粋な真似をする魔法使いどもだよ。<br>
+もしも、これ以上無粋な真似をするなら、我が輩のコレクションになっていただくぞ」
+</div>
+<div class="dice"> (1D4) → 3
+</div>
+<div class="text gm">【GM】<br/>ふむ、ではイツキさんは犬神博士に対し運命を１点獲得します。属性は任意です。
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>えーっと、じゃあ宿敵かな？
+</div>
+<div class="text gm">【GM】<br/>はい、では宿敵として取得してください。　このシーンは以上となります。　
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「大法典さんにも書籍卿にも引っ張りまわされるなんて嫌ですねぇ～」って感じなのかな
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「宣戦布告、ねー。わけわかんなくておもしろい人」
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「テンケーテキなわるいやつって感じデスねー」
+</div>
+<div class="event">○犬神博士（人物）　<a href="img/npc_inukami.png" rel="lightbox">→画像</a><br>
+派閥〈混血主義者〉の書籍卿。<br>
+六分儀布を燃やす魔法の炎の美しさに惹かれており、それを楽しんでいる。<br>
+この炎を楽しむため、いずれは禁書〈共鳴する裏切りの炎〉を自分のコレクションにしようと企んでいる。
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「猫さん、助けてくださいねぇ」なでなで魅了魅了
+</div>
+<div class="text noel">【ノエル】<br/>「ボクは、あんな趣味の悪いヤツには興味ないし」　ぷーいとしつつ尻尾はへにゃり　<br>
+「…早くトーリの所に帰りたいし」
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「やっぱり邪魔するってことだよねー。つぶしにいきたいなあ」
+<br/>はーい自粛
+</div>
+<br><br>
+<div class="subtitle" id="main2_2">◆第２サイクル第２シーン　コーディ・コルトハード
+</div>
+<div class="text noel">【ノエル】<br/>〈断章〉と戦いに行くのかなーと思いつつ今度はコーディ君の頭に乗ってやるでよ。<br>
+尻尾ぱたぱたしてっからあげた魔素をバックしてくれ（）
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>ノエル君に【衝動】にチャージしてた魔素を1点バックします。
+</div>
+<div class="text noel">【ノエル】<br/>バックされたのを「全」として【支援】に入れますね。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>朝の体育館かな……とりあえずてこてこ入りましょう。　<br>
+（カオル……いるかな……？）
+</div>
+<div class="text gm">【GM】<br/>うむ、なんか見た目あれなので体育館横の男子更衣室くらいでいいかな。　<br>
+お着替えしようとしてるくらいじゃないでしょうか
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「行くならこれあげる」　ってふらっと出てきてコーディくんに騎士召喚（偶然）を渡します。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「アリガト」　渡されました！　<br>
+お着替えしようとしている半裸の香君がいるんですか。
+</div>
+<div class="text npc_kaoru">【広瀬 香】<br/>「ああ、今日は間に合う時間に来たんだな。　おはよう、コーディ」　<br>
+とシャツをめくろうと手をかけたあたりの香が気づきましょうか
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「おはよう……〈炎〉サン？」
+</div>
+<div class="text gm">【GM】<br/>〈断章〉の名を呼ばれ、香の動きがぴたりと止まります。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「ソッコーでいくよ。混沌の探究者〈ケイオスシーカー〉、断章〈炎〉にイクサを申し込む！　オシテマイル！」
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「一応、いるね。ソッコーソッコー」　立ち会うー
+</div>
+<div class="text npc_kaoru">【広瀬 香】<br/>「…お前も俺なんかお呼びじゃねえってのか…」　深度２になってますのでだいぶ進行はしてるわけですが
+</div>
+<div class="text noel">【ノエル】<br/>コーディ君の頭からぴょんと飛び降りてくるりと回ると、少年の姿で後ろに立ちます。　<br>
+「…早く、終わらせなよ。コーディ」　立ち会いますね。
+</div>
+<div class="text gm">【断章〈炎〉】<br/>「呼んでくれるなら私が相手になるわ。　ふふふ、全員燃やし尽くしてあげる！！」
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「火は消しましょう」すっと現れますよ！
 </div>
 <img src="img/fire_vs2.png" />
 <br>
-<div class="subtitle">����P���E���h
+<div class="subtitle">●第１ラウンド
 </div>
-<div class="text gm">�yGM�z<br/>���f�̔����ł��B�@�C�ӂ̖��f���`���[�W�ǂ����B
+<div class="text gm">【GM】<br/>魔素の発生です。　任意の魔素をチャージどうぞ。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�̖͂��f���y�R�m����/���z�Ƀ`���[�W���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>力の魔素を【騎士召喚/風】にチャージします。
 </div>
-<div class="text gm">�yGM�z<br/>�����Đ�U�̏����X�e�b�v�B�@
+<div class="text gm">【GM】<br/>続けて先攻の召喚ステップ。　
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�y�R�m����/���z���܂��B�ڕW�l5�B
+<div class="text cody">【コーディ・コルトハード】<br/>【騎士召喚/風】します。目標値5。
 </div>
-<div class="dice"> 2d6>=5 �y�R�m����/���z<br>
-(2D6>=5) �� 7[1,6] �� 7 �� ����
+<div class="dice"> 2d6>=5 【騎士召喚/風】<br>
+(2D6>=5) → 7[1,6] → 7 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>���̋R�m����������܂��B�@�����Ď����͎g�p���܂����H
+<div class="text gm">【GM】<br/>風の騎士が召喚されます。　続けて呪文は使用しますか？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�͂��B�y�Փ��z�g�p���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>はい。【衝動】使用します。
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�A�������Ły�x���z�B����Ƀv���X1�_�̕␳�B
+<div class="text noel">【ノエル】<br/>じゃあ、こっちで【支援】。判定にプラス1点の補正。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�ł͔���ǂ���
+<div class="text gm">【GM】<br/>はい、では判定どうぞ
 </div>
-<div class="dice">2d6>=(5-1) �y�Փ��z<br>
- (2D6>=4) �� 2[1,1] �� 2 �� �t�@���u�� �� ���̖��f2������
+<div class="dice">2d6>=(5-1) 【衝動】<br>
+ (2D6>=4) → 2[1,1] → 2 → ファンブル → 星の魔素2が発生
 </div>
-<div class="text gm">�yGM�z<br/>�����ƁA�K�^����H
+<div class="text gm">【GM】<br/>ええと、幸運する？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�y�K�^�z�����ł����H
+<div class="text cody">【コーディ・コルトハード】<br/>【幸運】いいですか？
 </div>
-<div class="text gm">�yGM�z<br/>�ǂ����B�@���̏ꍇ�U�蒼���Ȃ̂Ŗ��f�͂Ȃ��Ȃ邯�ǂ�������
+<div class="text gm">【GM】<br/>どうぞ。　この場合振り直しなので魔素はなくなるけどいいかな
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���̖��f���Ȃ��Ȃ���Ď��ł���ˁB���Ⴀ�������ȁH
+<div class="text cody">【コーディ・コルトハード】<br/>星の魔素がなくなるって事ですよね。じゃあいいかな？
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��B�ł͉��߂� �y�Փ��z�̔�����ǂ���
+<div class="text gm">【GM】<br/>了解です。では改めて 【衝動】の判定をどうぞ
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>2d6>=(5-1) �y�Փ��z
-</div><div class="dice"> (2D6>=4) �� 4[2,2] �� 4 �� ���� �� �b�̖��f2������
+<div class="text cody">【コーディ・コルトハード】<br/>2d6>=(5-1) 【衝動】
+</div><div class="dice"> (2D6>=4) → 4[2,2] → 4 → 成功 → 獣の魔素2が発生
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>����
+<div class="text cody">【コーディ・コルトハード】<br/>おっ
 </div>
-<div class="text gm">�yGM�z<br/>�x�����������ł��B�@�����ďb�̖��f�`���[�W�ǂ���
+<div class="text gm">【GM】<br/>支援おいしいです。　そして獣の魔素チャージどうぞ
 </div>
-<div class="event">���{���́A����Ƀv���X1�̕␳�̂��߁A2d6+1>=5���������B<br>
-���̂��߁A�t�@���u���͔������Ȃ���Ԃł������c���A���̏�ŋC�Â����l�͋��Ȃ������B<br>
-���ʂƂ��čK�^�Ő������Ė��f���o�Ă���̂ŗǂ����Ă��Ƃɂ��Ă������B�@�c���݂܂���ł����B</div>
-<div class="text noel">�y�m�G���z<br/>�u���[�I�@�l�̉������ʂɂ��ăb�A�C�������I�v�@���Ăɂ�[�ƈꊅ�����񂾂Ǝv���܂��B���Ԃ�B
+<div class="event">※本来は、判定にプラス1の補正のため、2d6+1>=5が正しい。<br>
+そのため、ファンブルは発生しない状態であった…が、この場で気づいた人は居なかった。<br>
+結果として幸運で成功して魔素も出ているので良いってことにしておこう。　…すみませんでした。</div>
+<div class="text noel">【ノエル】<br/>「もー！　人の応援無駄にしてッ、気合入れろ！」　ってにゃーと一喝したんだと思います。たぶん。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�ł́y�Փ��z��2�_�`���[�W���Ă����܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>では【衝動】に2点チャージしておきます。
 </div>
-<div class="text gm">�yGM�z<br/>�q���̋R�m�r�̒ǉ��_���[�W���P�����܂��B�@�����ă`���[�W�����ł��B
+<div class="text gm">【GM】<br/>〈風の騎士〉の追加ダメージが１増えます。　そしてチャージ了解です。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�C�������ă}�X���ā[�I�I�v
+<div class="text cody">【コーディ・コルトハード】<br/>「気合入ってマスってー！！」
 </div>
-<div class="text gm">�yGM�z<br/>�����X�e�b�v���I���ƂȂ�A��U�̏����X�e�b�v���X���[����̂Ő�U�̍U���X�e�b�v�ł��B�@<br>
-�_�C�X���v���b�g���Ă��������B
+<div class="text gm">【GM】<br/>召喚ステップが終了となり、後攻の召喚ステップもスルーするので先攻の攻撃ステップです。　<br>
+ダイスをプロットしてください。
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�R�[�f�B�̍U���_�C�X�F3,3,3<br>
-�f�́q���r�̖h��_�C�X�F3,3,5
+<div class="dice">【ダイスプロット結果】<br/>
+コーディの攻撃ダイス：3,3,3<br>
+断章〈炎〉の防御ダイス：3,3,5
 </div>
-<div class="text gm">�yGM�z<br/>3���P�ʂ�܂��B�R�m�̒ǉ��_���[�W�Q������R�B�u�[�X�g���܂����H
+<div class="text gm">【GM】<br/>3が１つ通ります。騎士の追加ダメージ２が入り３。ブーストしますか？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�[�X�g���܂��I
+<div class="text cody">【コーディ・コルトハード】<br/>ブーストします！
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B�T�ȊO�Ȃ�ʂ�܂�
+<div class="text gm">【GM】<br/>はい。５以外なら通ります
 </div>
-<div class="dice"> 1d6 �u�[�X�g�F<br>
-(1D6) �� 4
+<div class="dice"> 1d6 ブースト：<br>
+(1D6) → 4
 </div>
-<div class="text gm">�yGM�z<br/>�ʂ�܂����ˁA�ł͒f�͂ɂS�_�̃_���[�W�B
+<div class="text gm">【GM】<br/>通りましたね、では断章に４点のダメージ。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�J�I���c�c�����̃J�I���ɁA���ǂ��Ă�c�c�I�v
+<div class="text cody">【コーディ・コルトハード】<br/>「カオル……いつものカオルに、もどってよ……！」
 </div>
-<div class="text gm">�y�f�́q���r�z<br/>�u����Ȑ�����͂��Ȃ����I�v�@�Ƃ������Ă��ł��傤������
+<div class="text gm">【断章〈炎〉】<br/>「そんな声じゃ届かないわよ！」　とか喚いてるんでしょうきっと
 </div>
-<div class="text gm">�yGM�z<br/>�����Č�U�̍U���X�e�b�v�ł��B<br>
-�R�[�f�B�N�͂R�A����l�͂P�T�C�R�����v���b�g���Ă��������B
+<div class="text gm">【GM】<br/>続けて後攻の攻撃ステップです。<br>
+コーディ君は３つ、立会人は１つサイコロをプロットしてください。
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�f�́q���r�̍U���_�C�X�F1,1,2,3,6<br>
-�R�[�f�B�̖h��_�C�X�F2,3,5<br>
-����l�̖h��_�C�X�@�m�G���F1�^���F5�^�C�c�L�F4
+<div class="dice">【ダイスプロット結果】<br/>
+断章〈炎〉の攻撃ダイス：1,1,2,3,6<br>
+コーディの防御ダイス：2,3,5<br>
+立会人の防御ダイス　ノエル：1／夢：5／イツキ：4
 </div>
-<div class="text gm">�yGM�z<br/>�P�C�U���ʂ�܂��B�Q�_�_���[�W�ł��B���̂܂܎󂯂܂����H
+<div class="text gm">【GM】<br/>１，６が通ります。２点ダメージです。そのまま受けますか？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���̂܂܎󂯂܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>そのまま受けます。
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�ł̓R�[�f�B�N�͂Q�A����l�͂P�̖��͂����炵�Ă��������B<br>
-�R�[�f�B�N�A���N�͖��A�C�c�L����͉̖̂��f���`���[�W�ł��܂��B�錾���Ă��������B
+<div class="text gm">【GM】<br/>わかりました。ではコーディ君は２、立会人は１の魔力を減らしてください。<br>
+コーディ君、夢君は夢、イツキさんは歌の魔素がチャージできます。宣言してください。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���̖��f���y���e�z�Ƀ`���[�W���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>夢の魔素を【幻影】にチャージします。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�����y�R�m�����z�Ƀ`���[�W���܂��B
+<div class="text ayumu">【海鳴 夢】<br/>夢を【騎士召喚】にチャージします。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�̂��y�񕜁z�Ƀ`���[�W���܂�
+<div class="text ituki">【焔木 イツキ】<br/>歌を【報復】にチャージします
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�������͍U���̈ꕔ��e���A�@�u�����ȁI�@���킸�@���I�v�@���ăR�[�f�B�N���ꊅ���Ă悤�B<br>
-����΂��āB
-</div>
-<br>
-<div class="subtitle">����Q���E���h
-</div>
-<div class="text gm">�yGM�z<br/>�Q���E���h�ځA���f�̊l���ł��B�C�ӂ̑����ɖ��f���`���[�W���Ă��������B
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�͂��y�R�m����/���z�Ƀ`���[�W���܂��B<br>
-</div>
-<div class="text gm">�yGM�z<br/>�ł͐�U�̏����X�e�b�v
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���ɂł��鎖���Ȃ��̂ŏ����X�e�b�v�͉������܂���B
-</div>
-<div class="text gm">�yGM�z<br/>�ً}�����͂��ł��g���܂���H
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���A�������B���Ⴀ�ً}�������܂��B
-</div>
-<div class="dice"> �����_�����Z����\(5,8) �� �u���v�ጶ��
-</div>
-<div class="text gm">�yGM�z<br/>�Ƃ��ƂƂԂ��̂߂����Č����Ă�ȁB����ǂ���
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�����Ă�B��������B�ڕW�l5�ł����܁[��
-</div>
-<div class="dice">2d6>=5 �y�ً}�����z<br>
- (2D6>=5) �� 6[1,5] �� 6 �� ����
-</div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�@�ł́q���̐���r����������܂��B
-<br>�����Ď������̎g�p�͂���܂����H
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>����܂���B
-</div>
-<div class="text gm">�yGM�z<br/>�Ǝv�������Ȃ����Ă����������Ă��ȁB<br>
-�ł͌�U�͏����X�e�b�v�ł��邱�ƂȂ��̂Ő�U�̍U���X�e�b�v�ł��B�v���b�g�ǂ���
-</div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�R�[�f�B�̍U���_�C�X�F1,1,1<br>
-�f�́q���r�̖h��_�C�X�F1,1,5
-</div>
-<div class="text gm">�yGM�z<br/>�T���ʂ��ċR�m�̒ǉ��_���Q�ł��ˁB�\����т܂�
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�uGet lost�I�v
-</div>
-<div class="text gm">�y�f�́q���r�z<br/>�u���c�A����҂��̂����Ɂc��邶��Ȃ��́v�@�Ƃ�������<br>
-�����Ƃ���邵���ƃR�[�f�B�N�̎茳�Ƀy�[�W�Ƃ��ĉ�������̂ł��傤�B
-</div>
-<div class="text noel">�y�m�G���z<br/>��̓R�[�f�B�N�̂��d�����Ǝv���̂ŁA�C�c�L����̕��ɍs���Ă������B<br>
-�U���~�߂������J���ɕ��łĂ��炨���B
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�L���񂨔��l�ł��v�ȂłȂ�
+<div class="text noel">【ノエル】<br/>じゃあこっちは攻撃の一部を弾きつつ、　「迷うな！　迷わず叩け！」　ってコーディ君を一喝してよう。<br>
+がんばって。
 </div>
 <br>
-<div class="subtitle">���퓬�I��
+<div class="subtitle">●第２ラウンド
 </div>
-<div class="text gm">�yGM�z<br/>�v���C�Y���l���ł��܂��B�y�Ԏ�z���s���сt�ł��ˁB
+<div class="text gm">【GM】<br/>２ラウンド目、魔素の獲得です。任意の蔵書に魔素をチャージしてください。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�ӂ���Ə����܂��B�Ԏ􎝂��Ă邵
+<div class="text cody">【コーディ・コルトハード】<br/>力を【騎士召喚/風】にチャージします。<br>
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�J�I���c�c�I�v�@�삯����ėl�q���M�����B
-<br/>�v���C�Y�́y�Ԏ�z�𒸂��܂��B
+<div class="text gm">【GM】<br/>では先攻の召喚ステップ
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u���c�����A�c�����������ƁA���Ȑ����A�����Ă����C������v�@<br>
-�������܂��ē����������Ă����ł��傤
+<div class="text cody">【コーディ・コルトハード】<br/>特にできる事もないので召喚ステップは何もしません。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�m�G���N���łȂ���ޏꂩ�ȁB
+<div class="text gm">【GM】<br/>緊急召喚はいつでも使えますよ？
 </div>
-<div class="text noel">�y�m�G���z<br/>�킠���B�Ƃ����̂��B���ĐK���ς���B
+<div class="text cody">【コーディ・コルトハード】<br/>あ、そうか。じゃあ緊急召喚します。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u���͏�������B�����_�C�W���u�B������Ƌx�񂾂猳�C�f�X��v�@<br>
-�ۂ�ۂ�ƍ��N�̌���@���܂�
+<div class="dice"> ランダム特技決定表(5,8) → 「夢」≪幻≫
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�����c���肪�Ƃ��B�c�悭�킩��Ȃ����ǁA���������O�ɋ~��ꂽ�C������v�@<br>
-�݂����Ȋ����ł�����
+<div class="text gm">【GM】<br/>とっととぶちのめせって言ってるな。判定どうぞ
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�ǂ������܂��āB�{�N�͊w�Z�̕��a���e�����鐳�`��Hero�f�X����I�v
+<div class="text cody">【コーディ・コルトハード】<br/>持ってる。やったぜ。目標値5でいきまーす
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�c���O�̂��������A�j���I�^�N�ȂƂ���A������Ƃǂ����Ǝv���Ă��񂾂��c�c�������ȁB�@�J�b�R�����ȁv�@<br>
-��������Ə΂��Ă����܂��傤�B
+<div class="dice">2d6>=5 【緊急召喚】<br>
+ (2D6>=5) → 6[1,5] → 6 → 成功
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u���A���Ⴀ���̋@��Ƀq�[���[���m�Ƃ��������f�X�H�v�@<br>
-������Ȃ��z�����A�΂������炿����ƈ��S���܂��傤�B
+<div class="text gm">【GM】<br/>成功ですね。　では〈幻の精霊〉が召喚されます。
+<br>続けて呪文等の使用はありますか？
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�c���x���܂�ɍs�������ɃI�X�X���̂ł��ς��Ă����v�@<br>
-�ɂ��Ə΂��̂��ȁB�@���q�ɏ��₪���Ċ�����
+<div class="text cody">【コーディ・コルトハード】<br/>ありません。
 </div>
-<div class="text gm">�yGM�z<br/>�ł͂���Ȋ����ŃV�[������܂��傤�B�@�Ƃ肠�����j�̗F��͕�������
+<div class="text gm">【GM】<br/>と思ったがないってさっき言ってたな。<br>
+では後攻は召喚ステップできることないので先攻の攻撃ステップです。プロットどうぞ
+</div>
+<div class="dice">【ダイスプロット結果】<br/>
+コーディの攻撃ダイス：1,1,1<br>
+断章〈炎〉の防御ダイス：1,1,5
+</div>
+<div class="text gm">【GM】<br/>５が通って騎士の追加ダメ２ですね。十分飛びます
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「Get lost！」
+</div>
+<div class="text gm">【断章〈炎〉】<br/>「く…、きんぴかのくせに…やるじゃないの」　とか言いつつ<br>
+きっとしゅるしゅるとコーディ君の手元にページとして回収されるのでしょう。
+</div>
+<div class="text noel">【ノエル】<br/>後はコーディ君のお仕事だと思うので、イツキさんの方に行っておこう。<br>
+攻撃止めたしご褒美に撫でてもらおう。
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「猫さんお疲れ様です」なでなで
+</div>
+<br>
+<div class="subtitle">●戦闘終了
+</div>
+<div class="text gm">【GM】<br/>プライズを獲得できます。【返呪】か《叫び》ですね。
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>ふらっと消えます。返呪持ってるし
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「カオル……！」　駆け寄って様子を窺おう。
+<br/>プライズは【返呪】を頂きます。
+</div>
+<div class="text npc_kaoru">【広瀬 香】<br/>「う…頭が、…何だかずっと、妙な声を、聞いていた気がする」　<br>
+うずくまって頭を押さえているんでしょう
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>ノエル君撫でながら退場かな。
+</div>
+<div class="text noel">【ノエル】<br/>わあい。というのを隠して尻尾ぱたん。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「声は消えたよ。もうダイジョブ。ちょっと休んだら元気デスよ」　<br>
+ぽんぽんと香君の肩を叩きます
+</div>
+<div class="text npc_kaoru">【広瀬 香】<br/>「ああ…ありがとう。…よくわからないけど、何だかお前に救われた気がする」　<br>
+みたいな感じですかね
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「どういたまして。ボクは学校の平和を影から護る正義のHeroデスから！」
+</div>
+<div class="text npc_kaoru">【広瀬 香】<br/>「…お前のそういうアニメオタクなところ、ちょっとどうかと思ってたんだが……そうだな。　カッコいいな」　<br>
+くしゃっと笑っておきましょう。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「あ、じゃあこの機会にヒーローモノとかいかがデス？」　<br>
+抜かりなく布教しつつ、笑ったからちょっと安心しましょう。
+</div>
+<div class="text npc_kaoru">【広瀬 香】<br/>「…今度泊まりに行った時にオススメのでも観せてくれよ」　<br>
+にっと笑うのかな。　調子に乗りやがって感ある
+</div>
+<div class="text gm">【GM】<br/>ではそんな感じでシーンを閉じましょう。　とりあえず男の友情は復活した
 </div>
 <br><br>
-<div class="subtitle" id="main2_3">����Q�T�C�N����R�V�[���@�}�X�^�[�V�[��
+<div class="subtitle" id="main2_3">◆第２サイクル第３シーン　マスターシーン
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u���Ă��āA���z���͍s���܂�������ȁB�@<br>
-�錾�ʂ�A�䂪�y�̃R���N�V�����ɉ�����Ă��炢�܂��傤���v
+<div class="text npc_inukami">【犬神博士】<br/>「さてさて、宣戦布告は行いましたからな。　<br>
+宣言通り、我が輩のコレクションに加わってもらいましょうか」
 </div>
-<div class="text gm">�yGM�z<br/>����Ȋ����ŃC�c�L����̌��Ɍ��_���m������܂���B�@
+<div class="text gm">【GM】<br/>そんな感じでイツキさんの元に犬神博士が現れますよ。　
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ����������ĕ��ł��Ă��܂܂ɂ��Ă����ł��H<br>
-����Ȃ�r�̒��łӁ[���ƈЊd���܂���ŁB�K���Ԃ���Ƃ����B
+<div class="text noel">【ノエル】<br/>じゃあ抱っこされて撫でられてたままにしていいです？<br>
+それなら腕の中でふーっと威嚇しますんで。尻尾ぶわっとさせつつ。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u���₟�A�������́E�E�E�c�O�ł�����ǁA���^�V�͂��Ȃ��̃R���N�V�����ɓ���C�͂���܂���v�ɂ�����
+<div class="text ituki">【焔木 イツキ】<br/>「おやぁ、さっきの・・・残念ですけれど、ワタシはあなたのコレクションに入る気はありません」にっこり
 </div>
-<div class="text gm">�yGM�z<br/>����̓m�G������݂̂ł������ȁH
+<div class="text gm">【GM】<br/>立会はノエルくんのみでいいかな？
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>��ł������������������B�@<br>
-�u���[�߁A�ނɂ̓{�N���G�{������񑩂��Ă�́v�@�������
+<div class="text ayumu">【海鳴 夢】<br/>一個でもあった方がいいか。　<br>
+「だーめ、彼にはボクが絵本あげる約束してるの」　立ち会うよ
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u�O�T�Ȃ�A�q��@�T�r�i�A�\�R�j�͋����ł��傤�ɁB��y�̂Ƃ���Ȃ�����Ƃ܂Ƃ��ȑҋ���������܂��񂼁H�v
+<div class="text npc_inukami">【犬神博士】<br/>「外典なら、〈大法典〉（アソコ）は窮屈でしょうに。我輩のところならもっとまともな待遇かもしれませんぞ？」
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�ł���͈��������v�@�ڂ�����
+<div class="text noel">【ノエル】<br/>「でも趣味は悪いじゃん」　ぼそっと
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u���������A���������T�ł��傤�B���̐����������Ȃ���ł���v
+<div class="text ituki">【焔木 イツキ】<br/>「いえいえ、そちらも大概でしょう。今の生活も悪くないんですよ」
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�����������ˁv�@�ڂ���
+<div class="text ayumu">【海鳴 夢】<br/>「趣味悪物件だよね」　ぼそっ
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u���₨��A�q�i�v�Ȃ錶�r�B�܂����Ă���y�̎ז������ɂ������B�@<br>
-�����c�{���ɂ͋������Ȃ��̂łˁA���܂Ȃ����v
+<div class="text npc_inukami">【犬神博士】<br/>「おやおや、〈永久なる幻〉。またしても我輩の邪魔をしにきたか。　<br>
+ああ…畜生には興味がないのでね、すまないが」
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�ǂ������B�{�N��������������A�����͋C�������ˁv�@�ׁ[���ƔL�ׂ�o����
+<div class="text noel">【ノエル】<br/>「良かった。ボクも興味無いから、そこは気が合うね」　べーっと猫べろ出しつつ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���ӂӁB�L�~�͎�������ǖʔ�������ז��������Ȃ�́v
+<div class="text ayumu">【海鳴 夢】<br/>「うふふ。キミは趣味悪いけど面白いから邪魔したくなるの」
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u���́w�����荇������i�A�}���K���j�x�A�����������𒸑Ղ���Ƃ��悤�v�@<br>
-���������Ď􌗂�W�J���܂��B
+<div class="text npc_inukami">【犬神博士】<br/>「この『交じり合う水銀（アマルガム）』、旧き魔導書を頂戴するとしよう」　<br>
+そう言って呪圏を展開します。
 </div>
-<div class="text noel">�y�m�G���z<br/>�r����o�Ă͏��N�̎p�ɂȂ��āA�@<br>
-�u�������������āA�C�c�L�v�@���Č����̂��ȁB������܂���B
+<div class="text noel">【ノエル】<br/>腕から出ては少年の姿になって、　<br>
+「早くやっちゃって、イツキ」　って言うのかな。立ち会いますよ。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u������܂���A���肪�Ƃ��v�ƏΊ�Ō����B
+<div class="text ituki">【焔木 イツキ】<br/>「助かりますよ、ありがとう」と笑顔で言いつつ。
 </div>
 <img src="img/fire_vs3.png" />
 <br>
-<div class="subtitle">����P���E���h
+<div class="subtitle">●第１ラウンド
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�w���E���T�x�����󂯂��܂���v�ƁA<br>
-�퓬���[�[�[!��[�[�I
+<div class="text ituki">【焔木 イツキ】<br/>「『死界教典』がお受けしますよ」と、<br>
+戦闘だーーー!わーー！
 </div>
-<div class="text gm">�yGM�z<br/>���f�̔����ł��B�C�ӂ̖��f���`���[�W�ǂ����B�@���Ћ��͕s�v�Ȃ̂ł��܂���B
+<div class="text gm">【GM】<br/>魔素の発生です。任意の魔素をチャージどうぞ。　書籍卿は不要なのでしません。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����ƁA�̂�񕜂Ƀ`���[�W���܂��I
+<div class="text ituki">【焔木 イツキ】<br/>えっと、歌を報復にチャージします！
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B�ł͐�U�̏����X�e�b�v�ł��B
+<div class="text gm">【GM】<br/>はい。では先攻の召喚ステップです。
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�y���쏢���z���g�p�B�g�p�Z�\�́s�ԁt�B�ڕW�l�T
+<div class="text npc_inukami">【犬神博士】<br/>【精霊召喚】を使用。使用技能は《花》。目標値５
 </div>
-<div class="dice">2d6>=5 �y���쏢���z:
-<br> (2D6>=5) �� 10[4,6] �� 10 �� ����
+<div class="dice">2d6>=5 【精霊召喚】:
+<br> (2D6>=5) → 10[4,6] → 10 → 成功
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�����āy�����z���g�p�B�g�p�Z�\�́s���Ӂt�B�ڕW�l�T
+<div class="text npc_inukami">【犬神博士】<br/>続けて【感染】を使用。使用技能は《悪意》。目標値５
 </div>
-<div class="dice"> 2d6>=5 �y�����z:<br>
-(2D6>=5) �� 6[2,4] �� 6 �� ����
+<div class="dice"> 2d6>=5 【感染】:<br>
+(2D6>=5) → 6[2,4] → 6 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�s���Ӂt�Œ�R���肪�ł��܂��B
-<br/>�y��R�z�̑������ʂŔ��肪�{�P����܂��B2d6+1�Ƃ��ĐU���Ă��������B�ǂ���
+<div class="text gm">【GM】<br/>《悪意》で抵抗判定ができます。
+<br/>【抵抗】の装備効果で判定が＋１されます。2d6+1として振ってください。どうぞ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����ƁA���c�݁��Ŕ���A�ڕW8�ł��I
+<div class="text ituki">【焔木 イツキ】<br/>えっと、＜歪み＞で判定、目標8です！
 </div>
-<div class="dice">2d6+1 ��R :<br>
- (2D6+1) �� 10[4,6]+1 �� 11
+<div class="dice">2d6+1 抵抗 :<br>
+ (2D6+1) → 10[4,6]+1 → 11
 </div>
-<div class="text gm">�yGM�z<br/>�����������o�ڂ��c�ł͈��ӂ̓C�c�L����ɂ͓͂������U���܂��B
+<div class="text gm">【GM】<br/>すごいいい出目を…では悪意はイツキさんには届かず霧散します。
 </div>
-<div class="text gm">�yGM�z<br/>�����Č�U���̏����X�e�b�v�ł��B
+<div class="text gm">【GM】<br/>続けて後攻側の召喚ステップです。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�ً}�������܂��I
+<div class="text ituki">【焔木 イツキ】<br/>緊急召喚します！
 </div>
-<div class="dice"> �����_�����Z����\(6,4) �� �u�Łv�ᗠ�؂��
+<div class="dice"> ランダム特技決定表(6,4) → 「闇」≪裏切り≫
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�܂��c�݂Ŕ���A�ڕW�W�ł��I
+<div class="text ituki">【焔木 イツキ】<br/>また歪みで判定、目標８です！
 </div>
-<div class="dice">2d6>=8 �y�ً}�����z:<br>
- (2D6>=8) �� 10[4,6] �� 10 �� ����
+<div class="dice">2d6>=8 【緊急召喚】:<br>
+ (2D6>=8) → 10[4,6] → 10 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�{���ɏo�ڂ����ȁB�@�ł́s���؂�t�̐��삪��������܂��B
+<div class="text gm">【GM】<br/>本当に出目いいな。　では《裏切り》の精霊が召喚されます。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�悵�悵�A����Ă��������˂��v���삿���L�!!
+<div class="text ituki">【焔木 イツキ】<br/>「よしよし、守ってくださいねぇ」精霊ちゃん有難う!!
 </div>
-<div class="text gm">�yGM�z<br/>�����Ď������g�p���܂����H
+<div class="text gm">【GM】<br/>続けて呪文等使用しますか？
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����ƁA�����ł��ˁA�����͈ꔭ�ψق��I
+<div class="text ituki">【焔木 イツキ】<br/>えっと、そうですね、ここは一発変異を！
 </div>
-<div class="text gm">�yGM�z<br/>���Z��錾���A����ǂ���
+<div class="text gm">【GM】<br/>特技を宣言し、判定どうぞ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�y�ψفz�������ׁ��Ŕ��肵�܂��I�ڕW�T�ł��I
+<div class="text ituki">【焔木 イツキ】<br/>【変異】を＜混沌＞で判定します！目標５です！
 </div>
-<div class="dice"> 2d6>=5 �y�ψفz:<br>
-(2D6>=5) �� 8[3,5] �� 8 �� ����
+<div class="dice"> 2d6>=5 【変異】:<br>
+(2D6>=5) → 8[3,5] → 8 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>��R���肵�܂��B�s�ԁt�ő�p���ĖڕW�l�W
+<div class="text gm">【GM】<br/>抵抗判定します。《花》で代用して目標値８
 </div>
-<div class="dice">2d6>=8 ��R����:<br>
- (2D6>=8) �� 10[5,5] �� 10 �� ���� �� ���̖��f2������
+<div class="dice">2d6>=8 抵抗判定:<br>
+ (2D6>=8) → 10[5,5] → 10 → 成功 → 夢の魔素2が発生
 </div>
-<div class="text gm">�yGM�z<br/>�ł͑����āA��U���̍U���X�e�b�v�ł��ˁB
+<div class="text gm">【GM】<br/>では続けて、先攻側の攻撃ステップですね。
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-���_���m�̍U���_�C�X�F1,1,1,1<br>
-�C�c�L�̖h��_�C�X�F1,5,6<br>
-����l�̖h��_�C�X�@�m�G���F1�^���F3
+<div class="dice">【ダイスプロット結果】<br/>
+犬神博士の攻撃ダイス：1,1,1,1<br>
+イツキの防御ダイス：1,5,6<br>
+立会人の防御ダイス　ノエル：1／夢：3
 </div>
-<div class="text gm">�yGM�z<br/>�P���Q�ʂ�܂��ˁB����Ńu���b�N���܂����H
+<div class="text gm">【GM】<br/>１が２つ通りますね。精霊でブロックしますか？
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����!�󂯂܂�!
+<div class="text ituki">【焔木 イツキ】<br/>精霊で!受けます!
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B���삪�Q�_�~�ߏ��ł��܂��B�@�_���[�W�͒ʂ�܂���B
+<div class="text gm">【GM】<br/>わかりました。精霊が２点止め消滅します。　ダメージは通りません。
 </div>
-<div class="text noel">�y�m�G���z<br/>���̍U�����~�߂A�@�u�������͑��v������B��������v�@���Đ������Ƃ��܂���B<br>
-�y�x���z�܂łł��񂭂Ă��܂ʁB
+<div class="text noel">【ノエル】<br/>他の攻撃を止めつつ、　「こっちは大丈夫だから。しっかり」　って声かけときましょ。<br>
+【支援】までできんくてすまぬ。
 </div>
-<div class="text gm">�yGM�z<br/>�C�c�L����͖��A�ł̖��f�A������̖͗͂��f���`���[�W�ǂ���
+<div class="text gm">【GM】<br/>イツキさんは夢、闇の魔素、夢くんは力の魔素をチャージどうぞ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�`���[�W����܂���
+<div class="text ayumu">【海鳴 夢】<br/>チャージありません
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���̖��f�͂ǂ��ɂ��ł��Ȃ����ǁA�ł̖��f���R�m�����Ƀ`���[�W���܂�!
+<div class="text ituki">【焔木 イツキ】<br/>夢の魔素はどうにもできないけど、闇の魔素を騎士召喚にチャージします!
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�ł͑����Č�U�̍U���X�e�b�v�ł��B�@�C�c�L����̓_�C�X�v���b�g���ǂ����B
+<div class="text gm">【GM】<br/>わかりました。では続けて後攻の攻撃ステップです。　イツキさんはダイスプロットをどうぞ。
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�C�c�L�̍U���_�C�X�F2,2,2<br>
-���_���m�̖h��_�C�X�F4,2,3
+<div class="dice">【ダイスプロット結果】<br/>
+イツキの攻撃ダイス：2,2,2<br>
+犬神博士の防御ダイス：4,2,3
 </div>
-<div class="text gm">�yGM�z<br/>�Q���u���b�N�B�c��Q�_�ł��ˁB
+<div class="text gm">【GM】<br/>２がブロック。残り２点ですね。
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>����Ńu���b�N���܂��B�Ԃ̐��삪�����܂��ˁB
+<div class="text npc_inukami">【犬神博士】<br/>精霊でブロックします。花の精霊が消えますね。
 </div>
 <br>
-<div class="subtitle">����P���E���h
+<div class="subtitle">●第１ラウンド
 </div>
-<div class="text gm">�yGM�z<br/>��Q���E���h�ł��B���f�̃`���[�W���ǂ���
+<div class="text gm">【GM】<br/>第２ラウンドです。魔素のチャージをどうぞ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�ł̖��f�����������܂��āA�y�R�m�����z�Ƀ`���[�W���܂��I
+<div class="text ituki">【焔木 イツキ】<br/>闇の魔素をいただきまして、【騎士召喚】にチャージします！
 </div>
-<div class="text gm">�yGM�z<br/>�ł͐�U�̏����X�e�b�v�B
+<div class="text gm">【GM】<br/>では先攻の召喚ステップ。
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�y�R�m�����z���g���܂��B�g�p���Z�́s�ԁt�B�ڕW�l�͂T
+<div class="text npc_inukami">【犬神博士】<br/>【騎士召喚】を使います。使用特技は《花》。目標値は５
 </div>
-<div class="dice">2d6>=5 �y�R�m�����z:<br>
- (2D6>=5) �� 8[3,5] �� 8 �� ����
+<div class="dice">2d6>=5 【騎士召喚】:<br>
+ (2D6>=5) → 8[3,5] → 8 → 成功
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�����āy�����z���g�p�B�s���Ӂt����ڕW�l�T
+<div class="text npc_inukami">【犬神博士】<br/>続けて【感染】を使用。《悪意》から目標値５
 </div>
-<div class="dice">2d6>=5 �y�����z:<br>
-(2D6>=5) �� 8[3,5] �� 8 �� ����
+<div class="dice">2d6>=5 【感染】:<br>
+(2D6>=5) → 8[3,5] → 8 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�s���Ӂt�Œ�R������ǂ���
+<div class="text gm">【GM】<br/>《悪意》で抵抗判定をどうぞ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���c�݁��ŁI���肵�܂�!�ڕW8�ł�!!!
+<div class="text ituki">【焔木 イツキ】<br/>＜歪み＞で！判定します!目標8です!!!
 </div>
-<div class="text gm">�yGM�z<br/>�y��R�z�K�p�ł��܂��B�ǂ���
+<div class="text gm">【GM】<br/>【抵抗】適用できます。どうぞ
 </div>
-<div class="dice">2d6+1 ��R :<br>
- (2D6+1) �� 4[2,2]+1 �� 5
+<div class="dice">2d6+1 抵抗 :<br>
+ (2D6+1) → 4[2,2]+1 → 5
 </div>
-<div class="text gm">�yGM�z<br/>���s�ł��ˁB�ł́u�]�сv�̕ϒ����C�c�L�����P���܂��B
-<br>�b�̖��f�Q�̓`���[�W���Ă����ł���
+<div class="text gm">【GM】<br/>失敗ですね。では「綻び」の変調がイツキをを襲います。
+<br>獣の魔素２はチャージしていいですよ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���f2��ψقɃ`���[�W���܂��I
+<div class="text ituki">【焔木 イツキ】<br/>魔素2を変異にチャージします！
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B�ł͌�U�̏����X�e�b�v�ł��B
+<div class="text gm">【GM】<br/>はい。では後攻の召喚ステップです。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�R�m�������܂��I���c�݁��Ŕ���A�ڕW5�ł��I
+<div class="text ituki">【焔木 イツキ】<br/>騎士召喚します！＜歪み＞で判定、目標5です！
 </div>
-<div class="dice">2d6>=5 �y�R�m�����z:<br>
-(2D6>=5) �� 8[4,4] �� 8 �� ���� �� �̖̂��f2������
+<div class="dice">2d6>=5 【騎士召喚】:<br>
+(2D6>=5) → 8[4,4] → 8 → 成功 → 歌の魔素2が発生
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>������I
+<div class="text ituki">【焔木 イツキ】<br/>やった！
 </div>
-<div class="text gm">�yGM�z<br/>�̖̂��f�Q���o�܂����ˁB�`���[�W�ǂ����B�@�c�݂̋R�m����������܂��B
+<div class="text gm">【GM】<br/>歌の魔素２も出ましたね。チャージどうぞ。　歪みの騎士が召喚されます。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����ɂQ�`���[�W���܂��I�I
+<div class="text ituki">【焔木 イツキ】<br/>魅了に２チャージします！！
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�����Ď����͎g���܂����H
+<div class="text gm">【GM】<br/>わかりました。続けて呪文は使いますか？
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����ƁA�ψق������ׁ��ł�����x!
+<div class="text ituki">【焔木 イツキ】<br/>えっと、変異を＜混沌＞でもう一度!
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B����ǂ���
+<div class="text gm">【GM】<br/>わかりました。判定どうぞ
 </div>
-<div class="dice">2d6>=5 �y�ψفz:
-<br> (2D6>=5) �� 6[1,5] �� 6 �� ����
+<div class="dice">2d6>=5 【変異】:
+<br> (2D6>=5) → 6[1,5] → 6 → 成功
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>��R���肵�܂��B�s�ԁt�ő�p���ĖڕW�l�W
+<div class="text npc_inukami">【犬神博士】<br/>抵抗判定します。《花》で代用して目標値８
 </div>
-<div class="dice"> 2d6>=8 ��R����:<br>
-(2D6>=8) �� 5[1,4] �� 5 �� ���s
+<div class="dice"> 2d6>=8 抵抗判定:<br>
+(2D6>=8) → 5[1,4] → 5 → 失敗
 </div>
-<div class="text gm">�yGM�z<br/>�ʂ�܂��ˁBWT�ŕϒ��ǂ���
+<div class="text gm">【GM】<br/>通りますね。WTで変調どうぞ
 </div>
-<div class="dice"> �ϒ��\(3) �� �w����x�y�U���́z��1�_��������B
+<div class="dice"> 変調表(3) → 『虚弱』【攻撃力】が1点減少する。
 </div>
-<div class="text gm">�yGM�z<br/>���̃^�C�~���O�ł��c�@�ł͍U���͂��R�ɂȂ�܂��B
-<br/>�ł͑����Đ�U�̍U���X�e�b�v�B�C�c�L����͂R�A����l�͂P�_�C�X���v���b�g���Ă��������B
+<div class="text gm">【GM】<br/>このタイミングでか…　では攻撃力が３になります。
+<br/>では続けて先攻の攻撃ステップ。イツキさんは３、立会人は１つダイスをプロットしてください。
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-���_���m�̍U���_�C�X�F2,2,2<br>
-�C�c�L�̖h��_�C�X�F1,6,6<br>
-����l�̖h��_�C�X�@�m�G���F1�^���F6
+<div class="dice">【ダイスプロット結果】<br/>
+犬神博士の攻撃ダイス：2,2,2<br>
+イツキの防御ダイス：1,6,6<br>
+立会人の防御ダイス　ノエル：1／夢：6
 </div>
-<div class="text gm">�yGM�z<br/>�S�ʂ����܂��B�@�R�_�ɋR�m�̒ǉ��_���[�W�P�B
+<div class="text gm">【GM】<br/>全通しします。　３点に騎士の追加ダメージ１。
 </div>
-<div class="dice">1d6 �u�[�X�g:<br>
-(1D6) �� 5
+<div class="dice">1d6 ブースト:<br>
+(1D6) → 5
 </div>
-<div class="text gm">�yGM�z<br/>�ʂ�܂��ˁB�T�_���ʂ�܂��B�ǂ����܂����H
+<div class="text gm">【GM】<br/>通りますね。５点が通ります。どうしますか？
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����ƁA���́A�_����Ăł����ł�����
+<div class="text ituki">【焔木 イツキ】<br/>えっと、あの、契約ってできるんですかね
 </div>
-<div class="text gm">�yGM�z<br/>�ӂށA�ł��܂���B
+<div class="text gm">【GM】<br/>ふむ、できますよ。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�T����ƌ_�񂵂܂�!
+<div class="text ituki">【焔木 イツキ】<br/>探くんと契約します!
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�ł͉Ð_�T�Ƃ̉^���l���P�㏸���A���̉^���_�S�̕���h��_�C�X��U�葫�����Ƃ��ł��܂��B
+<div class="text gm">【GM】<br/>うむ、では嘉神探との運命値が１上昇し、その運命点４の分を防御ダイスを振り足すことができます。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�͂�!���肢���܂�!
+<div class="text ituki">【焔木 イツキ】<br/>はい!お願いします!
 </div>
-<div class="dice"> �肢�\(2) �� �����̑�؂Ȑl�⓲��̐l�ɉ�킹�ė~�����B
+<div class="dice"> 願い表(2) → 自分の大切な人や憧れの人に会わせて欲しい。
 </div>
-<div class="text gm">�yGM�z<br/>�ӂށA�T�N�Ȃ�`���̓��������Ɏ��������l���ۂ��ЂƂ��ȁB������x���̐l�ɉ�����I�݂����Ȋ����ł��ˁB
-<br/>�ł́u�T�𓲂�̐l���ƍĉ����v���u�`���v�ɉ����Ă��������B<br>
-���߂Ēǉ��Ŗh��v���b�g�S�ǂ����B4B6����
+<div class="text gm">【GM】<br/>ふむ、探君なら冒険の憧れを抱くに至った旅人っぽいひとかな。もう一度あの人に会いたい！みたいな感じですね。
+<br/>では「探を憧れの人物と再会させる」を「義務」に加えてください。<br>
+改めて追加で防御プロット４つどうぞ。4B6かな
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�T����̂��肢�Ȃ�A�d���Ȃ��ł��̂ŁA����΂�܂��v����΂邼���I�I
-<br/>�_�C�X�ӂ�܁[�����I
+<div class="text ituki">【焔木 イツキ】<br/>「探くんのお願いなら、仕方ないですので、がんばります」がんばるぞお！！
+<br/>ダイスふりまーっす！
 </div>
-<div class="dice"> (4B6) �� 1,1,4,4
+<div class="dice"> (4B6) → 1,1,4,4
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�ʂ��������I
+<div class="text ituki">【焔木 イツキ】<br/>ぬぐううう！
 </div>
-<div class="text gm">�yGM�z<br/>�u���肢�{������I�@���A������x���̐l�ɉ�����񂾁I�@���E����щ���Ă�{������Ȃ猩�����邩������Ȃ��ł���H�v�@<br>
-�݂����Ȋ肢�̗͂͂�����Ǝォ�����݂�����
+<div class="text gm">【GM】<br/>「お願い本屋さん！　俺、もう一度あの人に会いたいんだ！　世界中飛び回ってる本屋さんなら見つけられるかもしれないでしょ？」　<br>
+みたいな願いの力はちょっと弱かったみたいだ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����s�������c
+<div class="text ituki">【焔木 イツキ】<br/>万策尽きたか…
 </div>
-<div class="text gm">�yGM�z<br/>�R�m�̃u���b�N���g�p���܂����H�@���̏ꍇ�S�_�̃_���[�W�ƂȂ�܂��B
+<div class="text gm">【GM】<br/>騎士のブロックを使用しますか？　その場合４点のダメージとなります。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�R�m����u���b�N���܁[�����I
+<div class="text ituki">【焔木 イツキ】<br/>騎士さんブロックしまーっす！
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�ł͋R�m���u���b�N�ŏ����S�_�_���[�W�ƂȂ�܂��B����l���P�����炵�Ă��������B
+<div class="text gm">【GM】<br/>わかりました。では騎士がブロックで消え４点ダメージとなります。立会人も１ずつ減らしてください。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���A�ł̖��f���R�m�Ƀ`���[�W���܂��I
+<div class="text ituki">【焔木 イツキ】<br/>あ、闇の魔素を騎士にチャージします！
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�ł��y���Łz�Ƀ`���[�W���܂�
+<div class="text ayumu">【海鳴 夢】<br/>闇を【入滅】にチャージします
 </div>
-<div class="text noel">�y�m�G���z<br/>�u���v���y�ϊ��z�ɁB
+<div class="text noel">【ノエル】<br/>「星」を【変換】に。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�e���C�j�V�A�e�B�u�\�ɓ��͂��˂������܂��B
-�z<br/>�ł͑����Č�U�̍U���B�C�c�L����̓_�C�X���v���b�g���Ă��������B
+<div class="text gm">【GM】<br/>はい、各自イニシアティブ表に入力おねがいします。
+】<br/>では続けて後攻の攻撃。イツキさんはダイスをプロットしてください。
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�C�c�L�̍U���_�C�X�F4,4,6<br>
-���_���m�̖h��_�C�X�F2,4,6
+<div class="dice">【ダイスプロット結果】<br/>
+イツキの攻撃ダイス：4,4,6<br>
+犬神博士の防御ダイス：2,4,6
 </div>
-<div class="text gm">�yGM�z<br/>�S�C�U���~�܂�܂��ˁB�@
+<div class="text gm">【GM】<br/>４，６が止まりますね。　
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�P�_�_���[�W�󂯂܂������̂܂ܒʂ��܂��B
+<div class="text npc_inukami">【犬神博士】<br/>１点ダメージ受けますがそのまま通します。
 </div>
-<div class="text gm">�yGM�z<br/>�X�e�b�v���I�����Ă����ł����H�@���~�Q������ꍇ�͎��^�[���݂̂ł�
+<div class="text gm">【GM】<br/>ステップを終了していいですか？　※降参をする場合は自ターンのみです
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����[�I���������Ǎ~�Q�ł��I���ʂ��͂܂��I
+<div class="text ituki">【焔木 イツキ】<br/>うぐー！悔しいけど降参です！死ぬよりはまし！
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B�������܂����B�@�ł͐퓬�I���Ƃ��܂��傤�B�@
+<div class="text gm">【GM】<br/>はい。了解しました。　では戦闘終了としましょう。　
 </div>
-<div class="text gm">�yGM�z<br/>�ł́A�܂��C�c�L����͉^���ϓ]�\��U��܂��傤���B
+<div class="text gm">【GM】<br/>では、まずイツキさんは運命変転表を振りましょうか。
 </div>
-<div class="dice"> �^���ϓ]�\(2) �� �w�ʗ��x���̃L�����N�^�[�ɂƂ��đ�؂Ȑl�\�\�e�F����l�A�e��Z��Ȃǂ������B
+<div class="dice"> 運命変転表(2) → 『別離』そのキャラクターにとって大切な人――親友や恋人、親や兄弟などを失う。
 </div>
-<div class="text gm">�yGM�z<br/>�Ώۂ����߂܂��傤���B1d4�ł������ȁB�P:�T�A�Q:���A�R:�d�q�A�S:���_��
+<div class="text gm">【GM】<br/>対象を決めましょうか。1d4でいいかな。１:探、２:香、３:慧子、４:犬神で
 </div>
-<div class="dice"> (1D4) �� 2
+<div class="dice"> (1D4) → 2
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>������E�E�E�A�삵�񂾂��ȁE�E�E
+<div class="text ituki">【焔木 イツキ】<br/>あちゃ・・・植野しんだかな・・・
 </div>
-<div class="text gm">�yGM�z<br/>�ł͍��ɉ^���ϓ]���������܂��B�@<br>
-�c�������ɑ��̃A���J�[�ɔ�Q�͋y�ڂ��Ȃ��̂ŉƑ�����
+<div class="text gm">【GM】<br/>では香に運命変転が発生します。　<br>
+…さすがに他のアンカーに被害は及ぼせないので家族かな
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����E�E�E�V�i���I�A���J�[���񂲂߂�Ȃ���
+<div class="text ituki">【焔木 イツキ】<br/>あぁ・・・シナリオアンカーさんごめんなさい
 </div>
-<div class="dice">1d3 �P:�e�^�Q:�Z��^�R:�e��(1D3) �� 3
+<div class="dice">1d3 １:親／２:兄弟／３:親族(1D3) → 3
 </div>
-<div class="text gm">�yGM�z<br/>�悩�����ˁA��Ԃ�邢�Ƃ���ł����B�@<br>
-�܂��ꏏ�ɏZ��łȂ��e�ʂ��炢��������ł��傤
+<div class="text gm">【GM】<br/>よかったね、一番ゆるいところでした。　<br>
+まあ一緒に住んでない親戚くらいだったんでしょう
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����߂���Ζ����邩�ȁE�E���܂񍁂���I�I
+<div class="text ituki">【焔木 イツキ】<br/>時が過ぎれば癒えるかな・・すまん香くん！！
 </div>
-<div class="text gm">�yGM�z<br/>�͂Ă��āA�ł͂ł�
+<div class="text gm">【GM】<br/>はてさて、ではでは
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u�ł́A�錾�ʂ��y�̃R���N�V�����ɉ�����Ă��炤���ƂƂ��悤�v�@
+<div class="text npc_inukami">【犬神博士】<br/>「では、宣言通り我輩のコレクションに加わってもらうこととしよう」　
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����ƐF�X�{���{���ɂȂ��ĕG���Ē��̑��ł��I
+<div class="text ituki">【焔木 イツキ】<br/>きっと色々ボロボロになって膝ついて虫の息です！
 </div>
-<div class="text gm">�yGM�z<br/>���_���m������Ȃ��ƃC�c�L�̐g�̂��{�ւƕω����A���̂܂܂��̂܂܂����ۂ�Ǝ��܂�܂��B
-<br/>�R���N�V�����ɂ����ƁA�R���N�V�������ꂽ���@�g���������Ă��鑠�������Ћ����g�p���邱�Ƃ��ł���悤�ɂȂ�܂��B
+<div class="text gm">【GM】<br/>犬神博士が手を翳すとイツキの身体が本へと変化し、そのままそのまますっぽりと収まります。
+<br/>コレクションにされると、コレクションされた魔法使いが持っている蔵書を書籍卿が使用することができるようになります。
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�\�\�b�A�v�@���L�΂����Ƃ��邯�ǁA�ǂ����悤���Ȃ��̂�������̂ŋ򂢂�����͂��Ȃ��ł��ˁB<br>
-�C�c�L�c
+<div class="text noel">【ノエル】<br/>「――ッ、」　手を伸ばそうとするけど、どうしようもないのが分かるので喰いかかりはしないですね。<br>
+イツキ…
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�i�܂������ˁj�@���[��
-�u�c�c��ł܂�����ˁv�@�ӂ���Ə����܂�
+<div class="text ayumu">【海鳴 夢】<br/>（まずったね）　うーむ
+「……後でまた来るね」　ふらっと消えます
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�C�c�L�c�v�@����ڂڂ�Ǝ��ƐK���𐂂�܂��B�@<br>
-�u���߂�ˁv
+<div class="text noel">【ノエル】<br/>「イツキ…」　しょぼぼんと耳と尻尾を垂れます。　<br>
+「ごめんね」
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u���������ȒP�ɂ͕Ԃ��₹�񂼁A�ӂ����ӂ����ӂ��v�@�݂����Ȋ����ŏ΂������c���ď����Ă����̂���
+<div class="text npc_inukami">【犬神博士】<br/>「そうそう簡単には返しやせんぞ、ふぉっふぉっふぉ」　みたいな感じで笑い声を残して消えていくのかな
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u������^���ł��傤���c���߂ĕ\���ɏ������Ȃ��悤�ɒ��J�Ɉ����Ăق����ł��˂��v���Ďv���Ă܂��I
+<div class="text ituki">【焔木 イツキ】<br/>「これも運命でしょうか…せめて表紙に傷がつかないように丁寧に扱ってほしいですねぇ」って思ってます！
 </div>
-<div class="text gm">�yGM�z<br/>�R���N�V�������Ă��炢�����炻��Ȃ�ɒ��d�ɂ͈����񂶂�Ȃ����ȁI
+<div class="text gm">【GM】<br/>コレクションってくらいだからそれなりに丁重には扱うんじゃないかな！
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���������Ă���������
+<div class="text ituki">【焔木 イツキ】<br/>毎日磨いてくださいね
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�c�҂��Ăāv�@�����A���͑ގU���邵���Ȃ��ł��ˁB<br>
-�ܐ��ō��L�̎p�ɂȂ��āA���A�̕��ɑ����Ă����܂��B
+<div class="text noel">【ノエル】<br/>「…待ってて」　言いつつ、今は退散するしかないですね。<br>
+涙声で黒猫の姿になって、物陰の方に走っていきます。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���˓����ɂ����ĂȂ��ł��������ˁB���x�Ǘ������肢���܂���
+<div class="text ituki">【焔木 イツキ】<br/>直射日光にも当てないでくださいね。湿度管理もお願いしますよ
 </div>
-<div class="text gm">�yGM�z<br/>���ς������΂������̂��ҋ������ƌ�������O���̒ʂ�ɂ��܂���
+<div class="text gm">【GM】<br/>小煩く言えばこっちのが待遇いいと言った手前その通りにしますよ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>������I
-<br/>�����ă|�e�g�`�b�v�X��G������ŐU��Ȃ��ł��������ˁB
+<div class="text ituki">【焔木 イツキ】<br/>やった！
+<br/>決してポテトチップスを触った手で振れないでくださいね。
 </div>
-<div class="text gm">�yGM�z<br/>���������|�e�`�H���̂����̂�������A�Ǝv���V�[���I�����܂��傤�B
+<div class="text gm">【GM】<br/>そもそもポテチ食うのかこのじいさん、と思いつつシーン終了しましょう。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�́[���I
+<div class="text ituki">【焔木 イツキ】<br/>はーい！
 </div>
 <br><br>
-<div class="subtitle" id="main2_4">����Q�T�C�N����S�V�[���@�m�G��
+<div class="subtitle" id="main2_4">◆第２サイクル第４シーン　ノエル
 </div>
-<div class="text noel">�y�m�G���z<br/>�C�c�L����D��ꂿ����Ă����ڂ肵�Ȃ���w�Z�ɖ߂��ė�����A���y�Əo���킵���I�ȃV�[���������ł��B<br>
-�Ƃ����킯�Ńh���}�V�[����]�ŁB
+<div class="text noel">【ノエル】<br/>イツキさん奪われちゃってしょんぼりしながら学校に戻って来たら植野先輩と出くわした的なシーンがいいです。<br>
+というわけでドラマシーン希望で。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�ł̓V�[���\�ӂ��Ă�������
+<div class="text gm">【GM】<br/>はい、ではシーン表ふってください
 </div>
-<div class="dice"> �V�[���\(12) �� �����̗\���B���̂܂܂��ƋN���邩������Ȃ��o�����̌��������B
+<div class="dice"> シーン表(12) → 未来の予感。このままだと起きるかもしれない出来事の幻が現れる。
 </div>
-<div class="text gm">�yGM�z<br/>��u�X�y�V�������Ǝv�������V�[���\�ł��B���f���o�܂���i�@���ނ��ށA�ǂ�Ȍ�����������
+<div class="text gm">【GM】<br/>一瞬スペシャルかと思ったがシーン表です。魔素も出ません（　うむうむ、どんな幻がいいかな
 </div>
-<div class="text noel">�y�m�G���z<br/>���[��A���Ⴀ�d�q����񂪐A���y�Ƃ��b�������Ă����������Ă�悤�Ȏp�����Ō��悤����
+<div class="text noel">【ノエル】<br/>うーん、じゃあ慧子ちゃんが植野先輩とお話したくてうずうずしてるような姿を幻で見ようかな
 </div>
-<div class="text gm">�yGM�z<br/>��������Ȃ����B�@�͂��A�����ł���
+<div class="text gm">【GM】<br/>いつもじゃないか。　はい、いいですよ
 </div>
-<div class="text noel">�y�m�G���z<br/>�����A���N��R�[�f�B�N�����邩����ĕ�����`���ɗ��Ă��킻�킵�Ă�悤�ȁB����������m�G�����A���y���悤������B
+<div class="text noel">【ノエル】<br/>こう、香君やコーディ君もいるからって部活を覗きに来てそわそわしてるような。そうしたらノエルも植野先輩がよう分かる。
 </div>
-<div class="text gm">�yGM�z<br/>�ƂĂ����������󂪂ӂ�������܂����ˁI�@
+<div class="text gm">【GM】<br/>とてもいい言い訳がふたりもいましたね！　
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���A�����Ɓc��y���邩�ȁB�@�����Ȃ��A�����Ȃ��c���͍��ɉ�ɗ����񂾂���v�@<br>
-�݂����Ȃ��킻��`���Ă銴���ł���
+<div class="text npc_keiko">【久住 慧子】<br/>「え、ええと…先輩いるかな。　いけない、いけない…私は香に会いに来たんだから」　<br>
+みたいなそわそわ覗いてる感じですね
 </div>
-<div class="text noel">�y�m�G���z<br/>�i������A����Ȃɘb�������Ȃ��ɍs���΂����̂ɂȂ��j�@�Ǝv���Ȃ��璭�߂Ă�ƁB
-���̌d�q�����̙ꂫ���A��y�ɓ͂���������肹�񂩂Ȃ��Ǝv���Ȃ���A�����s�����t�Ƃ��Đ�y�̖{�S�����Ă݂悤���ȁB
+<div class="text noel">【ノエル】<br/>（だから、そんなに話したいなら会いに行けばいいのになあ）　と思いながら眺めてると。
+その慧子ちゃんの呟きが、先輩に届いちゃったりせんかなあと思いながら、声を《旋律》として先輩の本心を見てみようかな。
 </div>
-<div class="text gm">�yGM�z<br/>����������˃m�G������B�@����ǂ���
+<div class="text gm">【GM】<br/>いいこだよねノエルくん。　判定どうぞ
 </div>
-<div class="dice"> 2d6+1>=5 �s�����t:<br>
-(2D6+1>=5) �� 9[3,6]+1 �� 10 �� ����
+<div class="dice"> 2d6+1>=5 《旋律》:<br>
+(2D6+1>=5) → 9[3,6]+1 → 10 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�����o�ڂ��B�@�ł�
+<div class="text gm">【GM】<br/>いい出目だ。　では
 </div>
-<div class="event">���閧:�A�엲<br>
-�A�엲�́A�v�Z�d�q�̂��Ƃ��D���ł���B<br>
-���́y�閧�z�����炩�ɂȂ�ƁA���̃V�[���̎��ɁA�\�m���V�[������������B<br>
-�\�m���V�[���̓��e�́A�f�́q���r�ɜ߈˂��ꂽ�l�����A�v�Z�d�q�̉Ƃ�R�₻���Ƃ���̂��B<br>
-���̕��΂����s�����ƁA�^���ϓ]�\��U��A���̌��ʂ��v�Z�d�q�ɓK�p�����B
+<div class="event">●秘密:植野隆<br>
+植野隆は、久住慧子のことが好きである。<br>
+この【秘密】が明らかになると、このシーンの次に、予知夢シーンが発生する。<br>
+予知夢シーンの内容は、断章〈炎〉に憑依された人物が、久住慧子の家を燃やそうとするのだ。<br>
+この放火が実行されると、運命変転表を振り、その結果が久住慧子に適用される。
 </div>
-<div class="text gm">�yGM�z<br/>���Ԏ���ł̓g���b�v�ł����������Y���́q�f�́r������ς݂̂��ߔ������܂����
+<div class="text gm">【GM】<br/>順番次第ではトラップでしたがもう該当の〈断章〉が回収済みのため発生しませんよ
 </div>
-<div class="text noel">�y�m�G���z<br/>�悩�������B�܂�A�\�m���V�[�����̐����Ȃ���ł����ˁB<br>
-�i�Ȃ��񂾁A����ς肨�b���Ă݂�Ηǂ������񂾁j�@�������ɕ@�����ӂ��
+<div class="text noel">【ノエル】<br/>よかったぁ。つまり、予知夢シーン自体生じないんですかね。<br>
+（なぁんだ、やっぱりお話してみれば良かったんだ）　満足げに鼻をくふんと
 </div>
-<div class="text gm">�yGM�z<br/>�����������Ƃł���B�@�����Ė����C�ȃm�G���N���킢��
+<div class="text gm">【GM】<br/>そういうことですよ。　そして満足気なノエル君かわいい
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�A���[�Ɓc�������̌���Ԃ�����A�����ƐQ�Ă��̂��ȁB<br>
-�N���āA�����̐A���y�̏��ɍs�����肵�Ă������H
+<div class="text noel">【ノエル】<br/>じゃあ、えーと…今未来の幻状態だから、きっと寝てたのかな。<br>
+起きて、現実の植野先輩の所に行ったりしてもいい？
 </div>
-<div class="text gm">�yGM�z<br/>�s���Ă������ł���
+<div class="text gm">【GM】<br/>行ってもいいですよ
 </div>
-<div class="text noel">�y�m�G���z<br/>�킠���B�������炱���A�A���y�ɂ���������o�������ł��B<br>
-���ɏ���ĂɂႠ�ɂႠ�����́B
+<div class="text noel">【ノエル】<br/>わあい。そしたらこう、植野先輩にちょっかい出したいです。<br>
+頭に乗ってにゃあにゃあ言うの。
 </div>
-<div class="text npc_takasi">�y�A�� ���z<br/>�u��H�@�Ȃ񂾁H�@���O���������Ȃ��v�@<br>
-�݂����Ȋ����ŏ���Ȃ��畏�ł悤�Ƃ���̂���
+<div class="text npc_takasi">【植野 隆】<br/>「ん？　なんだ？　お前懐っこいなあ」　<br>
+みたいな感じで乗られながら撫でようとするのかな
 </div>
-<div class="text noel">�y�m�G���z<br/>���ł��悤�Ƃ����Ƃ���ŁA�Ђ���Ƙr�����蔲���ďo����A<br>
-���̂܂܂����Ɩ��Ɍ����ʂ�̏ꏊ�ɂ���d�q�����Ƃ��ɋ삯�Ă�����ł���B<br>
-���܁u�����Ă߂��c���݂���v���Ċ����ŐU��Ԃ�Ȃ���B
+<div class="text noel">【ノエル】<br/>撫でられようとしたところで、ひゅっと腕をすり抜けて出たら、<br>
+そのままきっと夢に見た通りの場所にいる慧子ちゃんとこに駆けていくんですよ。<br>
+時折「おいてめえツラ貸せよ」って感じで振り返りながら。
 </div>
-<div class="text npc_takasi">�y�A�� ���z<br/>�u�������ɉ�������̂��H�v�@�ƒǂ��������ł���
+<div class="text npc_takasi">【植野 隆】<br/>「そっちに何かあるのか？」　と追いかけるんですね
 </div>
-<div class="text noel">�y�m�G���z<br/>�d�q����񂪂�����A�ɂ�[�A���Čd�q�����Ă�ŁA�҂�[��Ƃ��̘r�ɔ�э���ł��܂��B<br>
-�󂯎~�߂�i���ߌ`�j
+<div class="text noel">【ノエル】<br/>慧子ちゃんがいたら、にゃー、って慧子ちゃん呼んで、ぴょーんとその腕に飛び込んでやります。<br>
+受け止めろ（命令形）
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>����u��A��c�v�@��y�������Ⴄ�ɂ��Ȃ���A�ǂ����悤���ĂȂ��āA<br>
-���⎄�͍��ɗp���I���Ă��킠�킵�Ă�d�q������
+<div class="text npc_keiko">【久住 慧子】<br/>一方「わ、わ…」　先輩が来ちゃうにげなきゃ、どうしようってなって、<br>
+いや私は香に用が！ってあわあわしてる慧子ちゃんな
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>��э��܂ꂽ�炽�Ԃ�󂯎~�߂܂��B�@<br>
-�N�b�V���������邵�i
+<div class="text npc_keiko">【久住 慧子】<br/>飛び込まれたらたぶん受け止めます。　<br>
+クッションもあるし（
 </div>
-<div class="text noel">�y�m�G���z<br/>�����i�΍R�S�j�@�Ǝv�����󂯎~�߂�ꂽ��A���y�U��Ԃ��Ă܂��ɂ�[�A���ČĂт܂��B
+<div class="text noel">【ノエル】<br/>くっ（対抗心）　と思いつつも受け止められたら植野先輩振り返ってまたにゃー、って呼びます。
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���A����ς��̔L����񂾂�����ł����c�H�v�@���Ă��남������Ă���
+<div class="text npc_keiko">【久住 慧子】<br/>「せ、せんぱいの猫ちゃんだったんですか…？」　っておろおろ抱えている
 </div>
-<div class="text noel">�y�m�G���z<br/>�����킢���ċC�����Ōd�q�������y���K���ł؂���ƒ@���ƁA�r�����э~��܂��B<br>
-��͍D���ɂȂ����ƁA��l���痣��Ă����܂��ˁB
+<div class="text noel">【ノエル】<br/>ちがわいって気持ちで慧子ちゃんを軽く尻尾でぺしんと叩くと、腕から飛び降ります。<br>
+後は好きになさいと、二人から離れていきますね。
 </div>
-<div class="text npc_takasi">�y�A�� ���z<br/>�u����A�n�߂Č������c�����������ɋ����炵���āB�@���ɗp���H�@�v�Z�v�@<br>
-�������̂͒m���Ă��ł��傤
+<div class="text npc_takasi">【植野 隆】<br/>「いや、始めて見たが…何だか此処に居たらしくて。　香に用か？　久住」　<br>
+仲いいのは知ってるんでしょう
 </div>
-<div class="text gm">�yGM�z<br/>�܂��A�ǂ�Ȋ����ɂȂ邩�͂���ł����A�m�G������̋C�z��ɂ��<br>
-�D���Ȏғ��m�ɂ��Z���Ȃ�������₩�Ȏ��Ԃ������̂ł��傤
+<div class="text gm">【GM】<br/>まあ、どんな感じになるかはあれですが、ノエルくんの気配りにより<br>
+好きな者同士による短いながらも穏やかな時間が流れるのでしょう
 </div>
-<div class="text noel">�y�m�G���z<br/>�Ⴂ�l�ɔC���i��1�΁j��́y�ϊ��z���肢���܂��B
+<div class="text noel">【ノエル】<br/>若い人に任せつつ（※1歳）後は【変換】お願いします。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A����ǂ���
-<br/>�������ʂ�2d6+1����
+<div class="text gm">【GM】<br/>はい、判定どうぞ
+<br/>魅了効果で2d6+1かな
 </div>
-<div class="dice"> 2d6+1>=5 �y�ϊ��z:<br>
-(2D6+1>=5) �� 4[1,3]+1 �� 5 �� ����
+<div class="dice"> 2d6+1>=5 【変換】:<br>
+(2D6+1>=5) → 4[1,3]+1 → 5 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>���������Ă悩�����ł��ˁ@�����ł��B�@�g�p���f���ƕϊ����f�������ĉ�����
+<div class="text gm">【GM】<br/>魅了あってよかったですね　成功です。　使用魔素数と変換魔素を教えて下さい
 </div>
-<div class="text noel">�y�m�G���z<br/>�����ƁA���Ⴀ�y���́z6�_���𖂑f�ɂ��܂��B<br>
-3�_���y�񕜁z�ɁB1�_���y�ϊ��z�A1�_���y�x���z�ɓ���āA���Ƃ͖��N�Ăт܂��B
+<div class="text noel">【ノエル】<br/>えっと、じゃあ【魔力】6点分を魔素にします。<br>
+3点を【回復】に。1点を【変換】、1点を【支援】に入れて、あとは夢君呼びます。
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�A�����v�@���Čy���ĂԂ̂ŏo�Ă��Ă����Ă��������B
+<div class="text noel">【ノエル】<br/>「アユム」　って軽く呼ぶので出てきてあげてください。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u��[�B����A�Ȃ��ɁH�@�Z�C�V�����H�v�@�ӂ���Əo�Ă��܂�
+<div class="text ayumu">【海鳴 夢】<br/>「んー。あれ、なぁに？　セイシュン？」　ふらっと出てきます
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�{�N�͗ǂ��m��Ȃ��B����A������v�@�y�Ԏ�z���������ȁA1�_�ǂ����B
+<div class="text noel">【ノエル】<br/>「ボクは良く知らない。これ、あげる」　【返呪】がいいかな、1点どうぞ。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���[�B���肪�Ƃˁv�@�Ԏ�ɂ��������܂�
+<div class="text ayumu">【海鳴 夢】<br/>「おー。ありがとね」　返呪にいただきます
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ɓy�񕜁z�����肢���܂��B
+<div class="text noel">【ノエル】<br/>あと【回復】もお願いします。
 </div>
-<div class="text gm">�yGM�z<br/>����ǂ���
+<div class="text gm">【GM】<br/>判定どうぞ
 </div>
-<div class="dice"> 2d6+1>=5 �y�񕜁z:<br>
-(2D6+1>=5) �� 7[3,4]+1 �� 8 �� ����
+<div class="dice"> 2d6+1>=5 【回復】:<br>
+(2D6+1>=5) → 7[3,4]+1 → 8 → 成功
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�A���f3�_�~3=9�_�񕜁B�m�G����7�_�A���N��2�_�ŁB
+<div class="text noel">【ノエル】<br/>じゃあ、魔素3点×3=9点回復。ノエルに7点、夢君に2点で。
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��B
+<div class="text gm">【GM】<br/>了解です。
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�C�c�L�̂��ƁA���肢�ˁv
-<br/>���Č��������͖����Ȃ̂ŁA���N�̕ԓ��ŃV�[���I���ł����ł������B
+<div class="text noel">【ノエル】<br/>「イツキのこと、お願いね」
+<br/>って言ったら後は満足なので、夢君の返答でシーン終了でいいですたい。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�܂��ȂłȂł��ꂽ�����H�v�@�ɂ����
+<div class="text ayumu">【海鳴 夢】<br/>「またなでなでされたいし？」　にやっと
 </div>
-<div class="text noel">�y�m�G���z<br/>���A���N�ɂ́@�u��������v�@���Ă�������Ԃ��܂��B<br>
-�u�܂��C�c�L�ɕ��ł����Ă����Ȃ����Ⴂ���Ȃ�����A�A���������Ԃ��āv�@���Ă��������ŁB<br>
-��͂܂��ς��ςƋ삯�Ă����܂��ˁB
+<div class="text noel">【ノエル】<br/>あ、夢君には　「そうだよ」　ってあっさり返します。<br>
+「またイツキに撫でさせてあげなくちゃいけないから、アユムが取り返して」　っていう感じで。<br>
+後はまたぱっぱと駆けていきますね。
 </div>
-<div class="text gm">�yGM�z<br/>�ł͂���Ȃ���ȂŃV�[�����I�����܂��傤�B
+<div class="text gm">【GM】<br/>ではそんなこんなでシーンを終了しましょう。
 </div>
 <br><br>
-<div class="subtitle" id="main2_5">����Q�T�C�N����T�V�[���@�C�@��
+<div class="subtitle" id="main2_5">◆第２サイクル第５シーン　海鳴　夢
 </div>
-<div class="text gm">�yGM�z<br/>�h���}�V�[�����퓬�V�[�����������ĉ�����
+<div class="text gm">【GM】<br/>ドラマシーンか戦闘シーンかを教えて下さい
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�h���}�V�[���ł��肢���܂��B���_���m�𒲍��������ł��B
+<div class="text ayumu">【海鳴 夢】<br/>ドラマシーンでお願いします。犬神博士を調査したいです。
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�V�[���\��U��܂��傤
+<div class="text gm">【GM】<br/>わかりました。シーン表を振りましょう
 </div>
-<div class="dice"> �V�[���\(7) �� ���͂Łq�f�́r�������N���������@�Ж��������B<br>
-�u�Łv�ᗠ�؂��̔�����s�����ƁB<br>
-��������ƁA�D���Ȗ��f�����������B���s����Ɓu�^���ϓ]�\�v���g�p����B
+<div class="dice"> シーン表(7) → 周囲で〈断章〉が引き起こした魔法災厄が発生する。<br>
+「闇」≪裏切り≫の判定を行うこと。<br>
+成功すると、好きな魔素が一個発生する。失敗すると「運命変転表」を使用する。
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�Ж���ǂ��ɂ��ł��邩����ǂ���
+<div class="text gm">【GM】<br/>うむ、災厄をどうにかできるか判定どうぞ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�s��t�ő�p���܂��B�ڕW�͂V�B���[�Ƃǂ��������ɂ��c�c
+<div class="text ayumu">【海鳴 夢】<br/>《謎》で代用します。目標は７。えーとどういう風にか……
 </div>
-<div class="text noel">�y�m�G���z<br/>�������Ŏg���������ǂ��������B�����K�v�Ȃ�y�x���z�����܂���B�s�v�Ȃ�Ƃ��Ƃ��܂��B
+<div class="text noel">【ノエル】<br/>こっちで使った方が良さそうか。もし必要なら【支援】いきますよ。不要ならとっときます。
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�c���Ă�̂��s���؂�t�ł�����ˁB�@�A���J�[�ɉ������悤�Ǝ���o���Ă����Ƃ�����
+<div class="text gm">【GM】<br/>うむ、残ってるのが《裏切り》ですからね。　アンカーに何かしようと手を出してきたとかかな
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�����؂聄�ɂȂ��Ȃ����������āA���҂�F�������ɂ��������c�c�Ƃ��B
+<div class="text ayumu">【海鳴 夢】<br/>＜裏切り＞になぞなぞ吹っかけて、愚者を認識させにくくした……とか。
 </div>
-<div class="text gm">�yGM�z<br/>��[�c�d�����I�Ȓf�͂�肩���_�ɓ�����������̂����c�c���A���[��c�@<br>
-���܂��ł���ɂ��Ă����܂����炢���Ȃ��� ����ǂ���
+<div class="text gm">【GM】<br/>んー…‥物理的な断章よりか精神に働きかけるものだし……う、うーん…　<br>
+おまけでありにしておきますくらいだなこれ 判定どうぞ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�����ł��������Ǝv�����B���܂����肪�Ƃ������܂��B
+<div class="text ayumu">【海鳴 夢】<br/>自分でも厳しいと思った。おまけありがとございます。
 </div>
-<div class="dice"> (2D6>=7) �� 6[2,4] �� 6 �� ���s
+<div class="dice"> (2D6>=7) → 6[2,4] → 6 → 失敗
 </div>
-<div class="text gm">�yGM�z<br/>�K�^���g�p�Ȃ��Ȃ�^���ϓ]�\�ł��ˁB
+<div class="text gm">【GM】<br/>幸運等使用ないなら運命変転表ですね。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�����đf���ɕϓ]�\��U��܂��B
+<div class="text ayumu">【海鳴 夢】<br/>あえて素直に変転表を振ります。
 </div>
-<div class="dice"> �^���ϓ]�\(1) �� �w���܁x���̃L�����N�^�[�́A�����ɂƂ��đ�؂�����������߂�B
+<div class="dice"> 運命変転表(1) → 『挫折』そのキャラクターは、自分にとって大切だった夢を諦める。
 </div>
-<div class="text gm">�yGM�z<br/>�ł͒N�ɋN���������Ă݂܂��傤�B�@1d3�łP:��\���A�Q:���_���m�A�R:��n�ł�
+<div class="text gm">【GM】<br/>では誰に起きたか見てみましょう。　1d3で１:大十字、２:犬神博士、３:沢渡です
 </div>
-<div class="dice">1d3 �N�� :
-<br> (1D3) �� 1
+<div class="dice">1d3 誰だ :
+<br> (1D3) → 1
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���܂�ȑ�\������
+<div class="text ayumu">【海鳴 夢】<br/>すまんな大十字くん
 </div>
-<div class="text gm">�yGM�z<br/>�ł͏����A���J�[�ł��钆�R�j�q�̑�\���N�ɍ��܂̉^���ϓ]���~�肩����܂��B
-<br/>�܂��܂�������]�������ς��l�܂�����҂ł����A������������č����Ă��܂����̂ł��傤�B�@<br>
-�厖�ȗF�́s���؂�t�ɂł��������̂�������܂���B
+<div class="text gm">【GM】<br/>では初期アンカーである中３男子の大十字君に挫折の運命変転が降りかかります。
+<br/>まだまだ夢も希望もいっぱい詰まった若者ですが、何か困難があって挫けてしまったのでしょう。　<br>
+大事な友の《裏切り》にでもあったのかもしれません。
 </div>
-<div class="text gm">�yGM�z<br/>�ł͉��߂āA��������s���܂��傤���B�@���_���m�ɂł����ˁB
+<div class="text gm">【GM】<br/>では改めて、調査判定行いましょうか。　犬神博士にでしたね。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�i�c�c���߂�ˁj�@������Ƃ����l�q���āA�ӂ���Ə����܂��B�����ꉽ���Ńt�H���[����B
+<div class="text ayumu">【海鳴 夢】<br/>（……ごめんね）　ちょっとだけ様子見て、ふらっと消えます。いずれ何かでフォローする。
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁA�������Ă����Ă��������B�����ɂ���Ȃ��Ă����@�g���Ȃ�ł��邳
+<div class="text gm">【GM】<br/>そうですね、何かしてあげてください。すぐにじゃなくても魔法使いならできるさ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�ł́A���_���m�̂Ƃ���ɕ��ʂɍs�����B�ӂ����
+<div class="text ayumu">【海鳴 夢】<br/>では、犬神博士のところに普通に行こう。ふらっと
 </div>
-<div class="text gm">�yGM�z<br/>�A�W�g�ł��m���Ă�̂��ȁH�@���Ⴀ�C�c�L����ƋY��Ă����܂���
+<div class="text gm">【GM】<br/>アジトでも知られてるのかな？　じゃあイツキさんと戯れておきますね
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>��ܛƂ߂Ă܂����H
+<div class="text ituki">【焔木 イツキ】<br/>手袋嵌めてますか？
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u�����ƒ����̑������������̂��c�v�@�Ƃ��ԂԂ����������񂾌������ƕ����Ă�I�ȁB�@<br>
-�Ƃ߂Ă܂���A�C�R���̒ʂ�
+<div class="text npc_inukami">【犬神博士】<br/>「随分と注文の多い魔導書だのう…」　とかぶつぶつ言いつつ何だかんだ言うこと聞いてる的な。　<br>
+嵌めてますよアイコンの通り
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u��̖������Ƃ����ނ�ł��B��̕\�����B�v
+<div class="text ituki">【焔木 イツキ】<br/>「手の油がつくといたむんです。皮の表紙が。」
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�Ȃ��ɁA�U�����Ă������̐K�ɕ~����Ă�݂����v�@<br>
-�������߂Ă邯�ǃA�W�g�c�c���@�g��������ǂ��Ƃł��ł��邫����
+<div class="text ayumu">【海鳴 夢】<br/>「なぁに、誘拐してきた娘の尻に敷かれてるみたい」　<br>
+肩すくめてるけどアジト……魔法使いだからどうとでもできるきっと
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���_���m������̋֏����擾�ł����A�Ƃ����s���t�������āA�ǂ��������Ƃ����悤�Ƃ��Ă���̂��������ł��B<br>
-�̂Łs���t�ŁB
+<div class="text ayumu">【海鳴 夢】<br/>犬神博士が今回の禁書を取得できた、という《幻》を見せて、どういうことをしようとしているのか見たいです。<br>
+ので《幻》で。
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u�������܂����Ă�Ƃ����̂Ɂc�@���������w�i�v�Ȃ錶�x�����`��������Ƃ͂��������܂��񂼁H�v�@<br>
-�Ƃ������Ă����ł�������ǂ����[
+<div class="text npc_inukami">【犬神博士】<br/>「だから手袋をしてるというのに…　そういう『永久なる幻』こそ覗き見が趣味とはいただけませんぞ？」　<br>
+とか言われてそうですが判定どうぞー
 </div>
-<div class="dice"> (2D6>=5) �� 8[4,4] �� 8 �� ���� �� �̖̂��f2������
+<div class="dice"> (2D6>=5) → 8[4,4] → 8 → 成功 → 歌の魔素2が発生
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB���f�c�͓���鏈�Ȃ����B�N���V�[���ɏo��Ȃ�c�n���邩��
+<div class="text gm">【GM】<br/>成功ですね。魔素…は入れる処ないか。誰かシーンに出るなら…渡せるかな
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���E�E�E���邯�ǂ��܂��Ă��c
+<div class="text ituki">【焔木 イツキ】<br/>く・・・いるけどつかまってるわ…
 </div>
-<div class="event">���閧:���_���m<br>
-���_���m�́A�v���C�Y�Ƃ��āu�f�́q���؂�r�v�������Ă���B<br>
-�Q�T�C�N���ڏI�����A�f�͂����������Ă���ꍇ�͋��҂ɜ߈˂�����B<br>
-�߈˂�������A�Ώۂɐ퓬�𒧂܂ꂽ�ꍇ�͗���l�ƂȂ�B<br>
+<div class="event">●秘密:犬神博士<br>
+犬神博士は、プライズとして「断章〈裏切り〉」を持っている。<br>
+２サイクル目終了時、断章を持ち続けている場合は愚者に憑依させる。<br>
+憑依させた後、対象に戦闘を挑まれた場合は立会人となる。<br>
 <br>
 ---<br>
-�f�́q���؂�r<br>
-�U:3 �h:3 ����:6 / ���@:�y�x�z�z / ���Z:�s���؂�t
+断章〈裏切り〉<br>
+攻:3 防:3 魔力:6 / 魔法:【支配】 / 特技:《裏切り》
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�A������Ă悯��΁y�񕜁z�Ɓy�x���z�Ɉ�����ꂽ���ł��B<br>
-���N�̓��̏�ɂ��̊Ԃɂ�����Ă��₷�₵�Ă��B�I��
+<div class="text noel">【ノエル】<br/>じゃあ、もらってよければ【回復】と【支援】に一つずつ入れたいです。<br>
+夢君の頭の上にいつの間にか乗ってすやすやしてた。的な
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�{�C�ŉB���Ȃ�����Ƃ�����ƉB����v�@�Ƃ��Ȃ�Ƃ�
-<br/>���f�͂��n�����܂�
+<div class="text ayumu">【海鳴 夢】<br/>「本気で隠れるならもっときちんと隠れるよ」　とかなんとか
+<br/>魔素はお渡しします
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u���܂ɂ�菓��҂Ƃ����̂��ʔ������Ȃ̂���B�@�����Ȕy�ɂ͕�����Ȃ����낤���˂��v
+<div class="text npc_inukami">【犬神博士】<br/>「たまには闖入者というのも面白い物なのだよ。　無粋な輩には分からないだろうがねえ」
 </div>
-<div class="text noel">�y�m�G���z<br/>�ς����Ɩڂ��o�܂��āA�q���V�������ȖڂŌ��āA�@�u�������Ď����̂��ƁH�@�ʔ������ƌ����́v�@���Ăڂ�����
+<div class="text noel">【ノエル】<br/>ぱっちと目を覚まして、ヒロシをうろんな目で見て、　「無粋って自分のこと？　面白いこと言うの」　ってぼそっと
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u��y�͒{���ɂ͋������Ȃ��ƌ����Ɂc�����玟�ւƁv
+<div class="text npc_inukami">【犬神博士】<br/>「我輩は畜生には興味がないと言うに…次から次へと」
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�����Ƃ������Ȃ��ł悫������邢�v
+<div class="text noel">【ノエル】<br/>「興味とか持たないでよきもちわるい」
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���́B�ˑR���ĈӖ��Ȃ�A���҂ɂƂ��Ă̓{�N�������L�~���ꏏ�ł���B
-<br>�Ƃ肠�����C�c�L����͒D���Ԃ�����A��낵���[�v�@�Ђ�Ђ炵�Ăӂ���Ə����܂�
+<div class="text ayumu">【海鳴 夢】<br/>「あは。突然って意味なら、愚者にとってはボクたちもキミも一緒でしょ。
+<br>とりあえずイツキさんは奪い返すから、よろしくー」　ひらひらしてふらっと消えます
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u�c�����炢����ł����΂������̂��v�@<br>
-�Ƃ��s����̂Ȃ��J�b�v�ł������Ăۂ˂�Ƃ��Ă�����
+<div class="text npc_inukami">【犬神博士】<br/>「…茶くらい飲んでいけばいいものを」　<br>
+とか行き場のないカップでも持ってぽつねんとしておこう
 </div>
-<div class="text gm">�yGM�z<br/>�Ƃ����킯�Ŗ��f���ړ��������V�[���I���ő��v�ł����H
+<div class="text gm">【GM】<br/>というわけで魔素も移動したしシーン終了で大丈夫ですか？
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�������݂Ȃ��玄�ɂ�����Ă��ł���? �����������ł��v
+<div class="text ituki">【焔木 イツキ】<br/>「茶を飲みながら私にさわってるんですか? 許しがたいです」
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u�q�l�ɂ͐U�镑�����̂Ȃ̂���B�p���a�m�̚n�݂Ƃ��Ă͂ȁv�@�݂����Ȃ���ŁB�@<br>
-�Ȃ񂾂��̖���
+<div class="text npc_inukami">【犬神博士】<br/>「客人には振る舞うものなのだよ。英国紳士の嗜みとしてはな」　みたいなあれで。　<br>
+なんだこの漫才
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�i�����������Ȃ玟����͂����ƌ����Ă�ˁ[�j�@�Ƃ������茾���c���ă^�[���G���h��
+<div class="text ayumu">【海鳴 夢】<br/>（そうしたいなら次からはちゃんと言ってよねー）　とこっそり言い残してターンエンドだ
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B�ł͖�����̃V�[�����I�����܂��B
-</div>
-<br><br>
-<div class="subtitle" id="main2_6">����Q�T�C�N����U�V�[���@�}�X�^�[�V�[��
-</div>
-<div class="text gm">�yGM�z<br/>�Ƃ����킯�ŉ������邩�͂����o���o���Ȃ킯�ł�������Ă����܂��傤
-</div>
-<div class="event">���_���m�͈���̖{�������A������Ƃ���w�Z�̃J�E���^�[�ւƎ����Ă����܂��B
-</div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���A�O���̂��q�l�ł��ˁB�@�ݏo�ł����H�@�@���͂P�T�ԂɂȂ�܂��̂ł�����̗p���ɂ��L�����c�v
-</div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u������A������؂��͉̂�y�ł͂Ȃ��N�Ȃ̂���v�@�����Ă��̖{���d�q�̕��ւƍ����o���܂�
-</div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���A�c���H�v�@
-</div>
-<div class="event">�d�q����R�Ƃ��Ă���Ɩ{�͒��ɕ����オ��A�ς�ς�ƃy�[�W���ɕ������A���̒���1�y�[�W�������Ɣޏ��̒��ւƓ����Ă����܂�
-</div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���c���A����c�v�@�d�q�͖�ῂ����������̂悤�ӂ���A���̏�ɓ|�ꂱ�݂܂��B
-</div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u���������A���삳��v�@�����ꌾ�c���Č��_���m�͐}���ق𗧂�����܂��B
-</div>
-<div class="text gm">�yGM�z<br/>����Ȋ����ŃV�[���I���ł��B��R�T�C�N���ƂȂ�܂��������]�҂͂�������Ⴂ�܂����H
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�͂��B���m�ɐ퓬�𒧂݂����ł��B
-</div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�ł͖�����̐퓬�V�[���ł���
+<div class="text gm">【GM】<br/>はい。では夢くんのシーンを終了します。
 </div>
 <br><br>
-<div class="subtitle" id="main3_1">����R�T�C�N����P�V�[���@�C�@��
+<div class="subtitle" id="main2_6">◆第２サイクル第６シーン　マスターシーン
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�ӂ���ƍĂє��m�̂Ƃ���ɂ��������ȁB�}�����ɂł�����񂾂낤��
+<div class="text gm">【GM】<br/>というわけで何をするかはもうバレバレなわけですがやっていきましょう
 </div>
-<div class="text gm">�yGM�z<br/>�}���ًA��ł����ˁ@
+<div class="event">犬神博士は一冊の本を持ち、それをとある学校のカウンターへと持っていきます。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���A�܂����A���̃J�b�R�Ŋw�Z�̐}�����s�����́H�@���ʂɁH�v�@����Ƃ�Ƃ�����
+<div class="text npc_keiko">【久住 慧子】<br/>「あ、外部のお客様ですね。　貸出ですか？　機嫌は１週間になりますのでこちらの用紙にご記入を…」
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u���₨��A�����͂悭��܂��ȁB�@�c�O�Ȃ��獡�̓e�B�[�|�b�h�Ǝ����Ă��Ȃ��̂����B�@<br>
-���X���炵�����삳��ɉ�ɂˁv
+<div class="text npc_inukami">【犬神博士】<br/>「いいや、これを借りるのは我輩ではなく君なのだよ」　そしてその本を慧子の方へと差し出します
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���[�c�c����A���e�B�[�|�b�h�����Ă���т����肾���A�Ȃɂ��悭�ʕ񂳂�Ȃ������ˁc�c�H�v�@�ςȊ��S����
+<div class="text npc_keiko">【久住 慧子】<br/>「え、…え？」　
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u���҂̈ӎ�����y��������O�����ƂȂǑ�����Ȃ����Ƃ�c<br>
-���������Ӑ}�I�ɓ��������Ȃ��ƋC�t����Ȃ��悤�ȑ��݂ł��邩��ɂ��āv
+<div class="event">慧子が呆然としていると本は宙に浮き上がり、ぱらぱらとページ毎に分解し、その中の1ページがすっと彼女の中へと入っていきます
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�i�߈˂��ꂽ�q�A���̕ӓ݂��̂��ȁH�j�@����A�܂��A������B<br>
-�q�i�v�Ȃ錶�i�z���E�E�l�o�[�����h�j�r�A�L�~����C�c�L����D���ɂ�����B��낵���[�v
+<div class="text npc_keiko">【久住 慧子】<br/>「う…何、これ…」　慧子は目眩を感じたかのようふらつき、その場に倒れこみます。
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�܂��A���Ă����Ȃ��������Ƃɂ������Ȃ��ˁv�@��������܂���B���N�̓��łӂ���Ƃ���
+<div class="text npc_inukami">【犬神博士】<br/>「いい夢を、お嬢さん」　そう一言残して犬神博士は図書館を立ち去ります。
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u�����c�d�����Ȃ��B�@�w�����荇������i�A�}���K���j�x�A�󂯂ė����܂����v
+<div class="text gm">【GM】<br/>そんな感じでシーン終了です。第３サイクルとなりますが初手希望者はいらっしゃいますか？
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>はい。博士に戦闘を挑みたいです。
+</div>
+<div class="text gm">【GM】<br/>わかりました。では夢くんの戦闘シーンですね
+</div>
+<br><br>
+<div class="subtitle" id="main3_1">◆第３サイクル第１シーン　海鳴　夢
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>ふらっと再び博士のところにいこうかな。図書室にでもいるんだろうか
+</div>
+<div class="text gm">【GM】<br/>図書館帰りですかね　
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「え、まさか、そのカッコで学校の図書室行ったの？　普通に？」　きょとんとするよね
+</div>
+<div class="text npc_inukami">【犬神博士】<br/>「おやおや、今日はよく会いますな。　残念ながら今はティーポッドと持っていないのだが。　<br>
+少々可愛らしいお嬢さんに会いにね」
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「あー……いや、今ティーポッド持ってたらびっくりだし、なによりよく通報されなかったね……？」　変な感心しつつ
+</div>
+<div class="text npc_inukami">【犬神博士】<br/>「愚者の意識を我輩たちから外すことなど造作もないことよ…<br>
+そもそも意図的に働きかけないと気付かれないような存在であるからにして」
+</div>
+<div class="text ayumu">【海鳴 夢】<br/>「（憑依された子、その辺鈍いのかな？）　うん、まあ、いいや。<br>
+〈永久なる幻（ホロウ・ネバーランド）〉、キミからイツキさん奪いにきたよ。よろしくー」
+</div>
+<div class="text noel">【ノエル】<br/>「まあ、見ても見なかったことにしたくなるよね」　立ち会いしますよ。夢君の頭でふわわわとしつつ
+</div>
+<div class="text npc_inukami">【犬神博士】<br/>「やれやれ…仕方がない。　『交じり合う水銀（アマルガム）』、受けて立ちますぞ」
 </div>
 <img src="img/fire_vs4.png" />
 <br>
-<div class="subtitle">����P���E���h
+<div class="subtitle">●第１ラウンド
 </div>
-<div class="text gm">�yGM�z<br/>���f�̔�������ł��B�C�ӂ̖��f���`���[�W���Ă�������
+<div class="text gm">【GM】<br/>魔素の発生からです。任意の魔素をチャージしてください
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���@�g���Ə��Ћ�������Ă�����J���Ȃ��Ȃ�A����������ˁ[�v�@<br>
-�^�̎p������܂��B���f����
+<div class="text ayumu">【海鳴 夢】<br/>「魔法使いと書籍卿が会ってお茶会開かないなら、こっちだよねー」　<br>
+真の姿解放します。魔素放射
 </div>
-<div class="text ayumu_true">�y�C�� ���z<br/>���F�̉���f���C�F���тƂȂ�܂��B�@<a href="img/mono_ayumu_true.png" rel="lightbox">���^�̎p</a>
+<div class="text ayumu_true">【海鳴 夢】<br/>桃色の煙を吐く海色の獏となります。　<a href="img/mono_ayumu_true.png" rel="lightbox">→真の姿</a>
 </div>
-<div class="text gm">�yGM�z<br/>��邫�܂�܂�ł��ˁB�@
+<div class="text gm">【GM】<br/>やるきまんまんですね。　
 </div>
-<div class="text ayumu_true">�y�C�� ���z<br/>�Ƃ����킯�œ�Q�b�g�����Ă��炤��
+<div class="text ayumu_true">【海鳴 夢】<br/>というわけで二つゲットさせてもらうよ
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�`���[�W�ǂ���
+<div class="text gm">【GM】<br/>はい、チャージどうぞ
 </div>
-<div class="text ayumu_true">�y�C�� ���z<br/>�s���t���y�R�m�����z�A�s�b�t���y�Ԏ�z�փ`���[�W
+<div class="text ayumu_true">【海鳴 夢】<br/>《夢》を【騎士召喚】、《獣》を【返呪】へチャージ
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B�ł͑����Đ�U�̏����X�e�b�v�@
+<div class="text gm">【GM】<br/>はい。では続けて先攻の召喚ステップ　
 </div>
-<div class="text ayumu_true">�y�C�� ���z<br/>�s���t�Ły�R�m�����z�B�ڕW�l�T�B
+<div class="text ayumu_true">【海鳴 夢】<br/>《幻》で【騎士召喚】。目標値５。
 </div>
-<div class="dice"> (2D6>=5) �� 4[1,3] �� 4 �� ���s
+<div class="dice"> (2D6>=5) → 4[1,3] → 4 → 失敗
 </div>
-<div class="text ayumu_true">�y�C�� ���z<br/>����
+<div class="text ayumu_true">【海鳴 夢】<br/>ちぇ
 </div>
-<div class="text gm">�yGM�z<br/>���s�ł��ˁB�@�����̎g�p�͍s���܂����H
+<div class="text gm">【GM】<br/>失敗ですね。　呪文の使用は行いますか？
 </div>
-<div class="text ayumu_true">�y�C�� ���z<br/>�s���܂���B
+<div class="text ayumu_true">【海鳴 夢】<br/>行いません。
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�ł͌�U�̏����X�e�b�v
+<div class="text gm">【GM】<br/>わかりました。では後攻の召喚ステップ
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�y�R�m�����z���s���܂��B���Z�́q�ԁr
+<div class="text npc_inukami">【犬神博士】<br/>【騎士召喚】を行います。特技は〈花〉
 </div>
-<div class="dice">2d6>=5 �y�R�m�����z:
-<br> (2D6>=5) �� 9[4,5] �� 9 �� ����
+<div class="dice">2d6>=5 【騎士召喚】:
+<br> (2D6>=5) → 9[4,5] → 9 → 成功
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�����āy�����z���܂��傤���ˁB�@�g�p���Z�́s���Ӂt
+<div class="text npc_inukami">【犬神博士】<br/>続けて【感染】しましょうかね。　使用特技は《悪意》
 </div>
-<div class="dice"> 2d6>=5 �y�����z:<br>
-(2D6>=5) �� 8[2,6] �� 8 �� ����
+<div class="dice"> 2d6>=5 【感染】:<br>
+(2D6>=5) → 8[2,6] → 8 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��B�s���Ӂt�Œ�R����ǂ���
+<div class="text gm">【GM】<br/>成功です。《悪意》で抵抗判定どうぞ
 </div>
-<div class="text ayumu_true">�y�C�� ���z<br/>�s���t�����p�ŖڕW�V
+<div class="text ayumu_true">【海鳴 夢】<br/>《死》から代用で目標７
 </div>
-<div class="text ayumu_true">�y�C�� ���z<br/>2d6>=7 :
-</div><div class="dice"> (2D6>=7) �� 5[2,3] �� 5 �� ���s
+<div class="text ayumu_true">【海鳴 夢】<br/>2d6>=7 :
+</div><div class="dice"> (2D6>=7) → 5[2,3] → 5 → 失敗
 </div>
-<div class="text gm">�yGM�z<br/>���s�ł��ˁA�ł́q�]�сr�̕ϒ����󂯂܂��B
-<br/>�����Đ�U�̍U���X�e�b�v�ł��B�@�_�C�X���v���b�g���Ă�������
+<div class="text gm">【GM】<br/>失敗ですね、では〈綻び〉の変調を受けます。
+<br/>続けて先攻の攻撃ステップです。　ダイスをプロットしてください
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-���̍U���_�C�X�F5,5,5,5<br>
-���_���m�̖h��_�C�X�F4,6,6
+<div class="dice">【ダイスプロット結果】<br/>
+夢の攻撃ダイス：5,5,5,5<br>
+犬神博士の防御ダイス：4,6,6
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�S���ʂ�܂��ˁB�S�_���̂܂܎󂯂܂��傤
-<br/>�ł͌�U�̍U���X�e�b�v�B�_�C�X���v���b�g���Ă�������
+<div class="text gm">【GM】<br/>うむ、全部通りますね。４点そのまま受けましょう
+<br/>では後攻の攻撃ステップ。ダイスをプロットしてください
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-���_���m�̍U���_�C�X�F3,3,3<br>
-���̖h��_�C�X�F2,3,4
-����l�i�m�G���j�̖h��_�C�X�F3
+<div class="dice">【ダイスプロット結果】<br/>
+犬神博士の攻撃ダイス：3,3,3<br>
+夢の防御ダイス：2,3,4
+立会人（ノエル）の防御ダイス：3
 </div>
-<div class="text gm">�yGM�z<br/>�Q�_�~�܂�܂��ˁB<br>
-�ł͋R�m�́y�ǉ��_���[�W�z������܂��āy�u�[�X�g�z�����܂��傤�B
+<div class="text gm">【GM】<br/>２点止まりますね。<br>
+では騎士の【追加ダメージ】が入りまして【ブースト】もしましょう。
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>1d6 �u�[�X�g:
-</div><div class="dice"> (1D6) �� 4
+<div class="text npc_inukami">【犬神博士】<br/>1d6 ブースト:
+</div><div class="dice"> (1D6) → 4
 </div>
-<div class="text gm">�yGM�z<br/>�~�܂�܂��ˁB�ł͂Q�_�̃_���[�W�ƂȂ�܂��̂�<br>
-������͂Q�_�B�m�G���N�͂P�_���͂����������Ă�������
+<div class="text gm">【GM】<br/>止まりますね。では２点のダメージとなりますので<br>
+夢くんは２点。ノエル君は１点魔力を減少させてください
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�c���{�N�͂܂��A���v������I�v�@�Ă������m�G���h��߂�����~�߂Ă�ȁB<br>
-���X������
+<div class="text noel">【ノエル】<br/>「…っボクはまだ、大丈夫だから！」　ていうかノエル防御めっちゃ止めてるな。<br>
+今更だけど
 </div>
-<div class="text gm">�yGM�z<br/>������͏b���`���[�W�ł��܂��̂Ő錾�ǂ���
+<div class="text gm">【GM】<br/>夢くんは獣をチャージできますので宣言どうぞ
 </div>
-<div class="text ayumu_true">�y�C�� ���z<br/>�s�b�t���y�Ԏ�z�փ`���[�W���܂��B
+<div class="text ayumu_true">【海鳴 夢】<br/>《獣》を【返呪】へチャージします。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B�ł͂P���E���h�ڏI���ƂȂ�܂��B<br>
-�]�т̌��ʂ��������܂��̂Ŗ��͂��P���炵�Ă�������
-</div>
-<br>
-<div class="subtitle">����Q���E���h
-</div>
-<div class="text gm">�yGM�z<br/>�Q���E���h�ځA���f�̃`���[�W���ǂ���
-</div>
-<div class="text ayumu_true">�y�C�� ���z<br/>�s���t���Q�b�g���āy�R�m�����z�փ`���[�W���܂�
-</div>
-<div class="text gm">�yGM�z<br/>�͂��B�����Đ�U�̏����X�e�b�v�ł��B�@�ǂ���
-</div>
-<div class="text ayumu_true">�y�C�� ���z<br/>�s���t�Ły�R�m�����z�B�ڕW�l�T�B
-</div>
-<div class="dice"> (2D6>=5) �� 10[4,6] �� 10 �� ����
-</div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�ł͌��̋R�m���o�����܂�
-<br/>�ǉ��Ŏ����͎g���܂����H
-</div>
-<div class="text ayumu_true">�y�C�� ���z<br/>�u��C�ɂ��������ˁB��낵���v�@�m�G������̎x������łɂ��肢�������ł�
-</div>
-<div class="text noel">�y�m�G���z<br/>�u�������B���ĂĂˁv�@�y�x���z�Ŕ����+1�B
-</div>
-<div class="text gm">�yGM�z<br/>���ށA2d6�{�P�A�ڕW�l�T�łǂ���
-</div>
-<div class="text ayumu_true">�y�C�� ���z<br/>�s���t�Ły���Łz�B�ڕW�l�T�B�␳+1
-</div>
-<div class="dice"> (2D6+1>=5) �� 7[2,5]+1 �� 8 �� ����
-</div>
-<div class="text npc_inukami">�y���_���m�z<br/>��R������s���܂��B���Y-2�A�C�c�L����̒�R+1��-1�̕␳�B���ӂ���ڕW�l�V
-</div>
-<div class="dice"> (2D6-1>=7) �� 4[1,3]-1 �� 3 �� ���s
-</div>
-<div class="text gm">�yGM�z<br/>��������ď��_�������Ă�B�R�_�_���[�W��炢�܂��̂Ł@����A�Ƃ񂾂�i�قق���
+<div class="text gm">【GM】<br/>はい。では１ラウンド目終了となります。<br>
+綻びの効果が発動しますので魔力を１減らしてください
 </div>
 <br>
-<div class="subtitle">���퓬�I��
+<div class="subtitle">●第２ラウンド
 </div>
-<div class="text gm">�yGM�z<br/>�Ƃ����킯�Ńv���C�Y�Ƃ��ăC�c�L��������߂��܂���
+<div class="text gm">【GM】<br/>２ラウンド目、魔素のチャージをどうぞ
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�C�c�L���v�@���Ⴀ�L�̎p�łς������Ƌ삯��낤
+<div class="text ayumu_true">【海鳴 夢】<br/>《夢》を二つゲットして【騎士召喚】へチャージします
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�Z���Ԃł������ǋM������_���������݂����ł��ˁA����ł�?�v<br>
-�ɂ�����Ί�Ńo�C�o�[�C
+<div class="text gm">【GM】<br/>はい。続けて先攻の召喚ステップです。　どうぞ
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�C�c�L�c�c�I�v�@
-<br>�����ō���������������Ă����A�Ƃ肠��������Ȃ��肽��
+<div class="text ayumu_true">【海鳴 夢】<br/>《幻》で【騎士召喚】。目標値５。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�m�G���N�𖣗����ɍs����
+<div class="dice"> (2D6>=5) → 10[4,6] → 10 → 成功
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���[�ށ@��������������܂������c�c�ق�Ƃ��߂�
+<div class="text gm">【GM】<br/>成功ですね。では幻の騎士が出現します
+<br/>追加で呪文は使いますか？
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u���ʂʁc���̉�y���{�����ɒx������Ƃ́B�@��͂肨��͉䂪�h�G�Ƃ��Ăӂ��킵���j�̂悤���ȁw�i�v�Ȃ錶�x�@���̎؂�͂܂�����Ԃ����Ă����������I�v�@�Ƃ������Ă����ł����g�h���������܂���H��
+<div class="text ayumu_true">【海鳴 夢】<br/>「一気にいきたいね。よろしく」　ノエルくんの支援を入滅にお願いしたいです
 </div>
-<div class="text noel">�y�m�G���z<br/>�w��Ê��݂��Ă���B�S�z��������
+<div class="text noel">【ノエル】<br/>「おっけ。当ててね」　【支援】で判定に+1。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�ӊO�ɒ��J�Ɉ����Ă����������̂ő��v�ł���v�j�R�j�R
+<div class="text gm">【GM】<br/>うむ、2d6＋１、目標値５でどうぞ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�؂���Ă������A����������Ȃ炻��͂���œK���ɌĂ�ł�A�{�N�ɂ����v�@��Ђ�Ђ�@�ʂɎE���C�͂Ȃ��ł�
+<div class="text ayumu_true">【海鳴 夢】<br/>《死》で【入滅】。目標値５。補正+1
 </div>
-<div class="text npc_inukami">�y���_���m�z<br/>�u���ɗ���Ƃ��͎��O�ɘA�����炢��z���̂��ȁI�v�@�Ƃ��Ղ�Ղ肵���Ⴀ�����܂���
+<div class="dice"> (2D6+1>=5) → 7[2,5]+1 → 8 → 成功
 </div>
-<div class="text noel">�y�m�G���z<br/>�u��[���{���ȉ��v�@�ׁ[���Ƃ���
+<div class="text npc_inukami">【犬神博士】<br/>抵抗判定を行います。書刑-2、イツキさんの抵抗+1で-1の補正。悪意から目標値７
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�I�g�g�C�L���K���[�I�v
+<div class="dice"> (2D6-1>=7) → 4[1,3]-1 → 3 → 失敗
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u���悤�Ȃ�E�E�E���[���ƁA�E�E�E�q�Q�̕��v
+<div class="text gm">【GM】<br/>負けろって女神が言ってる。３点ダメージ喰らいますので　うん、とんだよ（ほほえみ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�܂��˂��v
+<br>
+<div class="subtitle">●戦闘終了
 </div>
-<div class="text gm">�yGM�z<br/>�ł͂���Ȋ����ŃV�[�����I���c�ł����̂��ȁH�@���@�֌W��������܂��H
-<br/>�Ȃ������Ȃ�I�����܂��傤�B�@���͒N�̃V�[���ɂȂ邩�ȁH
+<div class="text gm">【GM】<br/>というわけでプライズとしてイツキさんを取り戻せますよ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���܂��I�͂�Ď��R�H�ɂȂ������I
+<div class="text noel">【ノエル】<br/>「イツキっ」　じゃあ猫の姿でぱたたっと駆け寄ろう
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB���R�̐g�ɂȂ����̂ŃV�[�������R�ł��B�������
+<div class="text ituki">【焔木 イツキ】<br/>「短い間でしたけど貴方じゃダメだったみたいですね、それでは?」<br>
+にっこり笑顔でバイバーイ
 </div>
-<br><br>
-<div class="subtitle" id="main3_2">����R�T�C�N����Q�V�[���@���؃C�c�L
+<div class="text cody">【コーディ・コルトハード】<br/>「イツキ……！」　
+<br>ここで合流したか見守ってたか、とりあえず寄れるなら寄りたい
 </div>
-<div class="text gm">�yGM�z<br/>�h���}�V�[���Ɛ퓬�V�[���ǂ���ɂ��܂����H
+<div class="text ituki">【焔木 イツキ】<br/>ノエル君を魅了しに行こう
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>������ˁI�h���}�V�[���ŕϒ����������ł��I
+<div class="text ayumu">【海鳴 夢】<br/>うーむ　すっごくやっちまった感……ほんとごめん
 </div>
-<div class="text gm">�yGM�z<br/>�V�[���\�ǂ����B�@ST�ł�
+<div class="text npc_inukami">【犬神博士】<br/>「ぐぬぬ…この我輩が畜生共に遅れを取るとは。　やはりお主は我が宿敵としてふさわしい男のようだな『永久なる幻』　この借りはまた後日返させていただくぞ！」　とか喚いてそうですがトドメもさせますよ？笑
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>ST
-</div><div class="dice"> �V�[���\(5) �� �������������A�_��������Ă����B�����A�������������B�ǂ����A��J���������B
+<div class="text noel">【ノエル】<br/>指先甘噛みしてやんよ。心配したんやで
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�܂��J!!
+<div class="text ituki">【焔木 イツキ】<br/>「意外に丁寧に扱っていただいたので大丈夫ですよ」ニコニコ
 </div>
-<div class="text gm">�yGM�z<br/>����ς���������Ȃ�}���ق̊O�ō~���Ă�̂��ȁc�@�V�[����������Ȃ��Ă������ł�����
+<div class="text ayumu">【海鳴 夢】<br/>「借りっていうか、お茶会したいならそれはそれで適当に呼んでよ、ボク暇だし」　手ひらひら　別に殺す気はないです
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�{�����������Ȃ񂩗��������̂Ő}���قł����ł���I
+<div class="text npc_inukami">【犬神博士】<br/>「次に来るときは事前に連絡くらい寄越すのだな！」　とかぷりぷりしつつじゃあ消えますね
 </div>
-<div class="text gm">�yGM�z<br/>���R�������@�킩��܂����B�ϒ��̉񕜂Ȃ璲������ł��ˁB�@�C�ӂ̓��Z����ǂ���
+<div class="text noel">【ノエル】<br/>「やーい畜生以下」　べーっとしつつ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����ƁA�������ȁE�E�E<br>
-�]�т��o�ČÂ��{���܂����݂����Ȃ̂ŁA��������߂��悤�Ɍ��̏�Ԃ�!���Ă��ƂŁ������Ŕ��肵�܂��I
+<div class="text cody">【コーディ・コルトハード】<br/>「オトトイキヤガレー！」
 </div>
-<div class="text gm">�yGM�z<br/>�����A�����ł��ˁB�@�ł͔���ǂ���
+<div class="text ituki">【焔木 イツキ】<br/>「さようなら・・・えーっと、・・・ヒゲの方」
 </div>
-<div class="dice"> 2d6>=5 ������ :<br>
-(2D6>=5) �� 6[1,5] �� 6 �� ����
+<div class="text ayumu">【海鳴 夢】<br/>「またねぇ」
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�@�ł͒]�т�����܂����B
+<div class="text gm">【GM】<br/>ではそんな感じでシーンを終了…でいいのかな？　魔法関係処理あります？
+<br/>なさそうなら終了しましょう。　次は誰のシーンになるかな？
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�ӂށA���������ł��ˁv����
+<div class="text ituki">【焔木 イツキ】<br/>やります！はれて自由？になったし！
 </div>
-<div class="text gm">�yGM�z<br/>���ށA���ɂ�肽�����Ƃ͂���܂����H
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�}���قł�����ꂵ�Ă�̂ŃR�[�f�B��������Ă��Ă��ꂽ�疣���������ȁI
-</div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�A�������ȃC�c�L���񌩂ā@�u�������傤�ԁH�v�@���Đ������ӂ���ƌ��L���Ă܂��B<br>
-�l�܂ꂽ�{�̏�ɂł��ۂ��Ȃ��Ă�B
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�C�c�L�[�c�c�P�K��������ԁH�@�ɂ��Ȃ��f�X�H�v�@�Ƌ��鋰��}���ٓ���܂��ˁB
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�{�̏�Ńc���o�����Ⴞ�߂ł���v�Ђ傢�Ǝ����グ�ĕG�ɏ�����ĕ��ł�B
-</div>
-<div class="text noel">�y�m�G���z<br/>�u�o���ĂȂ�����v�@�܂���l�������ł��Ă��i
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u���͂��܂蒲�q�ɂ悭�Ȃ���ł��A�����炠�Ȃ��̎���؂肽���ł��ˁv�j�R�b�Ɩ������邺�I�I
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�͂�?
-</div>
-<div class="text gm">�yGM�z<br/>���ށA���Ⴀ�y�x���z�g���āy�����z�ł������ȁB2d6+1�ŖڕW�l�U�ł���
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>2d6>=5 �y�����z:
-</div><div class="dice"> (2D6>=5) �� 9[3,6] �� 9 �� ����
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>������[�[�I
-</div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�ł̓R�[�f�B�͍��㔻��Ɂ{�P�ƂȂ�܂�
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c�c�c�b�I�H�v�@���΂܂�ăh�L�b�Ƃ��悤�B
-</div>
-<div class="text noel">�y�m�G���z<br/>�K���ӂ�ӂ�B
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�cYou drive me crazy�c�c�H�H�H�v
-</div>
-<div class="text gm">�yGM�z<br/>�ł͂���Ȃ���Ȃŏ��N�̐S�ɐV�����������萶�������A�V�[�����I�����܂��傤��
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�������A���������E�E�E�p��킩��˂��I
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�O�O
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�������A�ςȋC�����Ƃ��A�C�������Ƃ��I����Ȃ������C������
-<br/>�ł�������I�V�[���I���܂�!�����o������!
+<div class="text gm">【GM】<br/>そうですね。自由の身になったのでシーンも自由です。やったね
 </div>
 <br><br>
-<div class="subtitle" id="main3_3">����R�T�C�N����R�V�[���@�R�[�f�B�E�R���g�n�[�h
+<div class="subtitle" id="main3_2">◆第３サイクル第２シーン　焔木イツキ
 </div>
-<div class="text gm">�yGM�z<br/>���āA�h���}�V�[�����퓬�V�[�����I�������˂������܂�
+<div class="text gm">【GM】<br/>ドラマシーンと戦闘シーンどちらにしますか？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�d�q�����ɜ߂����q���؂�r�Ɍ��ܔ���ɍs���܂�
+<div class="text ituki">【焔木 イツキ】<br/>やったね！ドラマシーンで変調直したいです！
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ������@���Ă�Ȃ�R�[�f�B�N�̓��ɂ��܂��B<br>
-�����Ɛ}���ُo�鎞�ɔ�я�������B
+<div class="text gm">【GM】<br/>シーン表どうぞ。　STです
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�ł͐}���قō��|�����d�q�̂Ƃ���ւǂ���
+<div class="text ituki">【焔木 イツキ】<br/>ST
+</div><div class="dice"> シーン表(5) → 強く風が吹き、雲が流されていく。遠く、雷鳴が聞こえた。どうやら、一雨きそうだ。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c�P�[�R�I�@��������ԁI�H�v�@���|���Ă�Ȃ�삯����ċN�����ɍs���܂��傤�B
+<div class="text ituki">【焔木 イツキ】<br/>また雨!!
 </div>
-<div class="text gm">�yGM�z<br/>���Ԍo���Ă����������Ȃ�ی����ɉ^�΂�Ă��狳���ŋA��x�x���炢���ȁH�H
+<div class="text gm">【GM】<br/>やっぱり引き続きなら図書館の外で降ってるのかな…　シーン続きじゃなくてもいいですけど
 </div>
-<div class="text noel">�y�m�G���z<br/>�삯���Ƃ���Ŕ�э~��āA�������͂Ӂ[���ƌx�����Ă����܂��B<br>
-���|���Ă����Ƃɂ��悤���I�@�ی����ŁI
+<div class="text ituki">【焔木 イツキ】<br/>本が多い方がなんか落ち着くので図書館でいいですよ！
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u��c������c�R�[�f�B�H�v�@�ł͖ڂ��o�܂��܂��傤��
+<div class="text gm">【GM】<br/>理由ｗｗｗ　わかりました。変調の回復なら調律判定ですね。　任意の特技からどうぞ
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�悩�����c�c�v�@������ƈ��S���A�@<br>
-�u�S�����i�T�C�A���ꂩ�炿����Ƃ����������������f�X�v
+<div class="text ituki">【焔木 イツキ】<br/>えっと、そうだな・・・<br>
+綻びが出て古い本がまた傷みそうなので、＜時＞を戻すように元の状態へ!ってことで＜時＞で判定します！
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c�q���؂�r�T���ɗp��������̂Łv
+<div class="text gm">【GM】<br/>ああ、いいですね。　では判定どうぞ
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���͈�́c�����́A�ی������ȁc�@�����ƁA���ɐQ�Ă���l�����邩������Ȃ����炠�܂葛�������̂́c���H�v�@<br>
-�Ă΂�Ăς����肵���܂܌ł܂�A�����ƕ\�������̂ł��傤
+<div class="dice"> 2d6>=5 ＜時＞ :<br>
+(2D6>=5) → 6[1,5] → 6 → 成功
 </div>
-<div class="text noel">�y�m�G���z<br/>�u���̈���B�Ђ������Ă���΂悩�����v�@<br>
-�d�q�����ɂ���Ȑ^�������̂������������̂ł������ƌ����A�ӎ����ς�����悤�Ȃ班�N�̎p�ɂȂ�܂��ˁB������܂��B
+<div class="text gm">【GM】<br/>成功ですね。　では綻びが治りました。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u���ׂ̒T���ҁq�P�C�I�X�V�[�J�[�r�A�I�V�e�}�C���v�@���ܔ��邺
+<div class="text ituki">【焔木 イツキ】<br/>「ふむ、いい感じですね」満足
 </div>
-<div class="text gm">�y�f�́q���؂�r�z<br/>�u�悤����Ƃ��̕ςȎ�������[����̎肩�痣��Đg�̂���ɓ��ꂽ���[�̂ɂȂ��c<br>
-�����Ȃ�q��@�T�r�̓z����c�c�C�Ă˂��ȁc�f�́q���؂�r�A����ɂȂ邺�v�@�Ƃ����Ⴀ����Ȋ�����
+<div class="text gm">【GM】<br/>うむ、他にやりたいことはありますか？
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>図書館でお手入れしてるのでコーディくん入ってきてくれたら魅了したいな！
+</div>
+<div class="text noel">【ノエル】<br/>じゃあ、満足げなイツキさん見て　「だいじょうぶ？」　って声かけつつふわわわと欠伸してます。<br>
+詰まれた本の上にでも丸くなってる。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「イツキー……ケガだいじょぶ？　痛くないデス？」　と恐る恐る図書館入りますね。
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「本の上でツメ出しちゃだめですよ」ひょいと持ち上げて膝に乗っけて撫でる。
+</div>
+<div class="text noel">【ノエル】<br/>「出してないもん」　まあ大人しく撫でられてやる（
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>「実はあまり調子によくないんです、だからあなたの手を借りたいですね」ニコッと魅了するぜ！！
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>はい?
+</div>
+<div class="text gm">【GM】<br/>うむ、じゃあ【支援】使って【魅了】でいいかな。2d6+1で目標値６ですね
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>2d6>=5 【魅了】:
+</div><div class="dice"> (2D6>=5) → 9[3,6] → 9 → 成功
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>やったーー！
+</div>
+<div class="text gm">【GM】<br/>成功ですね。ではコーディは今後判定に＋１となります
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「…………ッ！？」　微笑まれてドキッとしよう。
+</div>
+<div class="text noel">【ノエル】<br/>尻尾ふりふり。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「……You drive me crazy……？？？」
+</div>
+<div class="text gm">【GM】<br/>ではそんなこんなで少年の心に新しい何かを芽生えさせつつ、シーンを終了しましょうか
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>くっそ、答えたい・・・英語わかんねぇ！
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>＾＾
+</div>
+<div class="text ituki">【焔木 イツキ】<br/>たしか、変な気持ちとか、気が狂うとか！そんなだった気がする
+<br/>でもいいや！シーン終わります!魅了出来たし!
+</div>
+<br><br>
+<div class="subtitle" id="main3_3">◆第３サイクル第３シーン　コーディ・コルトハード
+</div>
+<div class="text gm">【GM】<br/>さて、ドラマシーンか戦闘シーンか選択をおねがいします
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>慧子ちゃんに憑いた〈裏切り〉に喧嘩売りに行きます
+</div>
+<div class="text noel">【ノエル】<br/>じゃあそれを察してるならコーディ君の頭にいます。<br>
+きっと図書館出る時に飛び乗ったんや。
+</div>
+<div class="text gm">【GM】<br/>はい、では図書館で昏倒した慧子のところへどうぞ
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「……ケーコ！　だいじょぶ！？」　昏倒してるなら駆け寄って起こしに行きましょう。
+</div>
+<div class="text gm">【GM】<br/>時間経ってた方がいいなら保健室に運ばれてから教室で帰り支度くらいかな？？
+</div>
+<div class="text noel">【ノエル】<br/>駆け寄るところで飛び降りて、こっちはふーっと警戒しておきます。<br>
+昏倒してたことにしようぜ！　保健室で！
+</div>
+<div class="text npc_keiko">【久住 慧子】<br/>「ん…ううん…コーディ？」　では目を覚ましましょうか
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「よかった……」　ちょっと安心しつつ、　<br>
+「ゴメンナサイ、これからちょっとだけ騒がしいかもデス」
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「……〈裏切り〉サンに用事があるので」
+</div>
+<div class="text npc_keiko">【久住 慧子】<br/>「私は一体…ここは、保健室かな…　ええと、他に寝ている人がいるかもしれないからあまり騒がしいのは…え？」　<br>
+呼ばれてぱちくりしたまま固まり、すっと表情が消えるのでしょう
+</div>
+<div class="text noel">【ノエル】<br/>「あの悪趣味。ひっかいてくればよかった」　<br>
+慧子ちゃんにこんな真似したのが許しがたいのでうえっと言いつつ、意識が変わったようなら少年の姿になりますね。立ち会います。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「混沌の探究者〈ケイオスシーカー〉、オシテマイル」　喧嘩売るぜ
+</div>
+<div class="text gm">【断章〈裏切り〉】<br/>「ようやっとあの変な趣味したじーさんの手から離れて身体を手に入れたっつーのになあ…<br>
+いきなり〈大法典〉の奴かよ…ツイてねえな…断章〈裏切り〉、相手になるぜ」　とかじゃあそんな感じで
 </div>
 <img src="img/fire_vs5.png" />
 <br>
-<div class="subtitle">���퓬�J�n�@��P���E���h
+<div class="subtitle">●戦闘開始　第１ラウンド
 </div>
-<div class="text gm">�yGM�z<br/>��P���E���h�ځA���f�̎擾���ǂ���
+<div class="text gm">【GM】<br/>第１ラウンド目、魔素の取得をどうぞ
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���f�͉��ł��ǂ����ǁA���Ⴀ���ӂ���y�Ήԁz�Ƀ`���[�W���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>魔素は何でも良いけど、じゃあ夢辺りを【火花】にチャージします。
 </div>
-<div class="text gm">�yGM�z<br/>�܂��S�ł������Ȃ���́B�@�ȍ~�S�̈����ɂȂ邩��B�@�����ł��B
-<br/>�����Đ�U�̏����X�e�b�v�ł��B�ǂ���
+<div class="text gm">【GM】<br/>まあ全でいいかなそれは。　以降全の扱いになるから。　了解です。
+<br/>続けて先攻の召喚ステップです。どうぞ
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�����͂��܂���B
+<div class="text cody">【コーディ・コルトハード】<br/>召喚はしません。
 </div>
-<div class="text gm">�yGM�z<br/>�܂��g�o�����Ă܂�����ˁB�@�������������^�𑀂�����������Ă���<br>
-�����ł��B��U�̏����X�e�b�v���ҋ@�ł���
+<div class="text gm">【GM】<br/>まあ身バレしてますからね。　※召喚した元型を操る呪文を持っている<br>
+了解です。後攻の召喚ステップも待機ですよ
 </div>
-<div class="text gm">�yGM�z<br/>�ł͐�U�̍U���X�e�b�v�B�@�_�C�X�v���b�g���ǂ���
+<div class="text gm">【GM】<br/>では先攻の攻撃ステップ。　ダイスプロットをどうぞ
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�R�[�f�B�̍U���_�C�X�F6,6,6<br>
-�f�́q���؂�r�̖h��_�C�X�F1,2,6
+<div class="dice">【ダイスプロット結果】<br/>
+コーディの攻撃ダイス：6,6,6<br>
+断章〈裏切り〉の防御ダイス：1,2,6
 </div>
-<div class="text gm">�yGM�z<br/>�Q�_�ʂ�܂��ˁB�@�����Ď������g���܂����H
+<div class="text gm">【GM】<br/>２点通りますね。　続けて呪文を使いますか？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�y�Ήԁz�g���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>【火花】使います。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B����ǂ���
+<div class="text gm">【GM】<br/>はい。判定どうぞ
 </div>
-<div class="dice"> 2d6+1>=5 �y�Ήԁz<br>
-(2D6+1>=5) �� 11[5,6]+1 �� 12 �� ����
+<div class="dice"> 2d6+1>=5 【火花】<br>
+(2D6+1>=5) → 11[5,6]+1 → 12 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�Ȃ�Ė��ʂɗǂ������B�@
-</div><div class="text gm">�y�f�́q���؂�r�z<br/>��R���肵�܂��A�X�y�V�����݂̂ł�</div>
-<div class="dice"> 2d6>=12 ��R����:(2D6>=12) �� 6[1,5] �� 6 �� ���s
+<div class="text gm">【GM】<br/>なんて無駄に良い数字。　
+</div><div class="text gm">【断章〈裏切り〉】<br/>抵抗判定します、スペシャルのみです</div>
+<div class="dice"> 2d6>=12 抵抗判定:(2D6>=12) → 6[1,5] → 6 → 失敗
 </div>
-<div class="text gm">�yGM�z<br/>���s�ł��B�P�_�_���[�W��炢�܂�
-<br/>�����Č�U�̍U���X�e�b�v�B�@�v���b�g�ǂ���
+<div class="text gm">【GM】<br/>失敗です。１点ダメージ喰らいます
+<br/>続けて後攻の攻撃ステップ。　プロットどうぞ
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�f�́q���؂�r�̍U���_�C�X�F2,4,6<br>
-�R�[�f�B�̖h��_�C�X�F1,2,5
-����l�i�m�G���j�̖h��_�C�X�F1
+<div class="dice">【ダイスプロット結果】<br/>
+断章〈裏切り〉の攻撃ダイス：2,4,6<br>
+コーディの防御ダイス：1,2,5
+立会人（ノエル）の防御ダイス：1
 </div>
-<div class="text gm">�yGM�z<br/>�Q�̂ݖh�䐬���B�Q�_�ʂ�܂�����<br>���f�̃`���[�W�ǂ���
+<div class="text gm">【GM】<br/>２のみ防御成功。２点通りますかね<br>魔素のチャージどうぞ
 </div>
-<div class="text noel">�y�m�G���z<br/>�u���[�A���߂���v�@��肭�~�߂��Ȃ������ނ����B<br>
-�u���v���u�S�v�Ƃ��āy�x���z�Ƀ`���[�W���܂��B
+<div class="text noel">【ノエル】<br/>「うー、ごめんっ」　上手く止められなかったむぐぐ。<br>
+「星」を「全」として【支援】にチャージします。
 </div>
-<div class="text gm">�yGM�z<br/>���Ɩ����]�蕪�A�ǉ��C�ӂP�`���[�W����
+<div class="text gm">【GM】<br/>星と夢が余り分、追加任意１チャージかな
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u���v���u�S�v�ɂ��āy�Ήԁz�ɁA�u���v���y�R�m/���R�z�Ƀ`���[�W���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>「星」を「全」にして【火花】に、「夢」を【騎士/偶然】にチャージします。
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��B�ł͂Q���E���h�ڂɈڂ�܂��傤�B�@
-</div>
-<br>
-<div class="subtitle">����Q���E���h
-</div>
-<div class="text gm">�yGM�z<br/>�Q���E���h�ڊJ�n���̔C�Ӗ��f�͂ǂ���ɓ���܂����H
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>2���E���h�ڂ̖��f�`���[�W�͗͂Ły�R�m/���z�ɁB
-</div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�@�ł̓R�[�f�B�N�̏����X�e�b�v�B�@�����ł��ΉԂ͂ł��܂���
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u���ɂ��Ȃ��Ă����f�X��A�ɂ�񂱁I�v
-<br/>�����͂��܂���B���Ƃ����Ŗ��͉�����Ă����ł����H
-</div>
-<div class="text noel">�y�m�G���z<br/>�u�ɂ�񂱂���Ȃ��A�m�G�����I�v�@�����������Ă܂��B
-</div>
-<div class="text gm">�yGM�z<br/>�\���܂����B�@�������ˎg���ǂ�����
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�ł͎g���܂��B
-</div>
-<div class="text gm">�yGM�z<br/>�ǂ̂悤�Ȏp�ɂȂ�̂�RP�ƕ`�ʂƂǂ���
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�Ԃ���Ɩт��t�����āA���̏u�Ԃɂ͓�����P��������q�ɕω����܂��B������ƟT���������炢��ῂ����B�@<br>
-�u�\�\Don't give a fuck with me�I�v
-</div>
-<div class="text gm">�y�f�́q���؂�r�z<br/>�u�����͓��{�Ȃ񂾂�����{��Œ����ȁI�@�������Ă�̂��킩��˂���I�v�@�Ƃ������Ɗ����Ă܂��B
-</div>
-<div class="text gm">�yGM�z<br/>�Ƃ����킯�Ŗ��͌��ߒ����܂��傤��
-</div>
-<div class="dice"> (1D6) �� 5
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>����
-</div>
-<div class="text gm">�yGM�z<br/>�ł͍����͂R�{�T�ōő�l�͂W�ƂȂ�A���ݒl���W�܂ŏ㏸���܂��A
-<br/>�����X�e�b�v���I�����܂����H
-</div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u���{��Ƃ����ɏo�Ȃ������f�X�I�I�v
-<br/>���A���łɁy�Ήԁz�����Ƃ��܂��B
-</div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�@����ǂ���
-</div>
-<div class="dice">2d6+1>=5 �y�Ήԁz<br>
- (2D6+1>=5) �� 5[2,3]+1 �� 6 �� ����
-</div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�ł͒�R����
-</div>
-<div class="dice">2d6>=12 ��R����:<br>
- (2D6>=12) �� 7[1,6] �� 7 �� ���s
-</div>
-<div class="text gm">�yGM�z<br/>���s�ł��B�ł͗��҂̏����X�e�b�v���I�����Đ�U�̍U���X�e�b�v�ƂȂ�܂��B�@<br>
-�P�_�H�炤��
-</div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�R�[�f�B�̍U���_�C�X�F6,6,6<br>
-�f�́q���؂�r�̖h��_�C�X�F2,5,6
-</div>
-<div class="text gm">�yGM�z<br/>�Ήԑł��Ă����Ă悩�����ł��ˁB�@�������藎���܂���
+<div class="text gm">【GM】<br/>了解です。では２ラウンド目に移りましょう。　
 </div>
 <br>
-<div class="subtitle">���퓬�I��
+<div class="subtitle">●第２ラウンド
 </div>
-<div class="text gm">�yGM�z<br/>�f�́q���؂�r�̓R�[�f�B�N�̎�ւƎ��܂�A�s�������ȃI�[���𔭂��Ă��܂��B�@<br>
-�v���C�Y���l���ł��܂���B�y�x�z�z���s���؂�t�ɂȂ�܂�
+<div class="text gm">【GM】<br/>２ラウンド目開始時の任意魔素はどちらに入れますか？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�ł́y�x�z�z�����܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>2ラウンド目の魔素チャージは力で【騎士/風】に。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�����Ă�������Ă��������B
+<div class="text gm">【GM】<br/>わかりました。　ではコーディ君の召喚ステップ。　ここでも火花はできますよ
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�����v�@�Ō��饂ɂ��ӂ��Ƃ��Ă��������B<br>
-�����āq�􌗁r�����Ƃɖ߂����炿���ƔL�ɖ߂�܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>「きにしなくていいデスよ、にゃんこ！」
+<br/>召喚はしません。あとここで魔力解放していいですか？
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�d�q�͂ς����肵�Ă�񂶂�Ȃ����ȁB
+<div class="text noel">【ノエル】<br/>「にゃんこじゃない、ノエルっ！」　言いつつ応援してます。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�P�[�R�A�C���ǂł����H�@��邭�Ȃ��H�v
+<div class="text gm">【GM】<br/>構いませんよ。　そうだね使いどきだね
 </div>
-<div class="text noel">�y�m�G���z<br/>�ɂ�[
+<div class="text cody">【コーディ・コルトハード】<br/>では使います。
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���A����B���v�v�@�Ȃ�ƂȂ����Ƃ��������Ă�̂���
+<div class="text gm">【GM】<br/>どのような姿になるのかRPと描写とどうぞ
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�Ȃ�I�b�P�[�I�v�@���S�����悤�ɏ΂������܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>ぶわっと毛が逆だって、次の瞬間には内から輝きを放つ獅子に変化します。ちょっと鬱陶しいくらいに眩しく。　<br>
+「――Don't give a fuck with me！」
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u����H�@�S�z���Ă���Ă��肪�Ƃ��A�R�[�f�B�B�@<br>
-�ł���������ǂ����ĕی����ɂȂ�Ă����̂�����H�v�@��X��
+<div class="text gm">【断章〈裏切り〉】<br/>「ここは日本なんだから日本語で喋れよな！　何言ってんのかわかんねえよ！」　とかきっと喚いてます。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�������c�c�v�@�����Y�݂܂����A�@<br>
-�u�{�N�ɂ��A�킩��܂���I�v�@����΂�����܂��B
+<div class="text gm">【GM】<br/>というわけで魔力決め直しましょうか
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���A���������B�}���قɂˁA������ւ�ł͒������i�D���������������񂪗����̂�I�v�@<br>
-�Ƃ����Ԙb�ł����Ă����܂��傤
+<div class="dice"> (1D6) → 5
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�ɂ�[�v�@����Ȃ��Ƃ͋C�ɂ���Ȃƌ�������Ŏ�ł��r�߂Ă�낤�d���Ȃ���
+<div class="text cody">【コーディ・コルトハード】<br/>おっ
 </div>
-<div class="text gm">�yGM�z<br/>�܂�����Ȃ���ȂŒf�͂��|���ĉ��₩�Ȏ��Ԃ��߂����ł��傤��
+<div class="text gm">【GM】<br/>では根源力３＋５で最大値は８となり、現在値も８まで上昇します、
+<br/>召喚ステップを終了しますか？
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「日本語とっさに出ないだけデス！！」
+<br/>あ、ついでに【火花】撃っときます。
+</div>
+<div class="text gm">【GM】<br/>わかりました。　判定どうぞ
+</div>
+<div class="dice">2d6+1>=5 【火花】<br>
+ (2D6+1>=5) → 5[2,3]+1 → 6 → 成功
+</div>
+<div class="text gm">【GM】<br/>成功ですね。では抵抗判定
+</div>
+<div class="dice">2d6>=12 抵抗判定:<br>
+ (2D6>=12) → 7[1,6] → 7 → 失敗
+</div>
+<div class="text gm">【GM】<br/>失敗です。では両者の召喚ステップが終了して先攻の攻撃ステップとなります。　<br>
+１点食らうね
+</div>
+<div class="dice">【ダイスプロット結果】<br/>
+コーディの攻撃ダイス：6,6,6<br>
+断章〈裏切り〉の防御ダイス：2,5,6
+</div>
+<div class="text gm">【GM】<br/>火花打っておいてよかったですね。　きっちり落ちました
+</div>
+<br>
+<div class="subtitle">●戦闘終了
+</div>
+<div class="text gm">【GM】<br/>断章〈裏切り〉はコーディ君の手へと収まり、不服そうなオーラを発しています。　<br>
+プライズが獲得できますよ。【支配】か《裏切り》になります
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>では【支配】頂きます。
+</div>
+<div class="text gm">【GM】<br/>はい、もってっちゃってください。
+</div>
+<div class="text noel">【ノエル】<br/>「お疲れ」　最後に鬣にもふっとしておきたい。<br>
+そして〈呪圏〉がもとに戻ったらちゃんと猫に戻ります。
+</div>
+<div class="text npc_keiko">【久住 慧子】<br/>慧子はぱちくりしてるんじゃないかな。
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「ケーコ、気分どですか？　わるくない？」
+</div>
+<div class="text noel">【ノエル】<br/>にゃー
+</div>
+<div class="text npc_keiko">【久住 慧子】<br/>「う、うん。大丈夫」　なんとなく胸とか押さえてるのかな
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「ならオッケー！」　安心したように笑いかけます。
+</div>
+<div class="text npc_keiko">【久住 慧子】<br/>「うん？　心配してくれてありがとう、コーディ。　<br>
+でも私ったらどうして保健室になんていたのかしら？」　首傾げ
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「ンンン……」　少し悩みますが、　<br>
+「ボクにも、わかりません！」　しらばっくれます。
+</div>
+<div class="text npc_keiko">【久住 慧子】<br/>「あ、そうそう。図書館にね、ここらへんでは珍しい格好をしたおじいさんが来たのよ！」　<br>
+とか世間話でもしておきましょう
+</div>
+<div class="text noel">【ノエル】<br/>「にゃー」　そんなことは気にするなと言うつもりで手でも舐めてやろう仕方ないな
+</div>
+<div class="text gm">【GM】<br/>まあそんなこんなで断章も倒して穏やかな時間が過ぎるんでしょうか
 </div>
 <br><br>
-<div class="subtitle" id="main3_4">����R�T�C�N����S�V�[���@�m�G��
+<div class="subtitle" id="main3_4">◆第３サイクル第４シーン　ノエル
 </div>
-<div class="text gm">�yGM�z<br/>�h���}�V�[�����퓬�V�[���̑I�����ǂ����B�@���̑����ł������ł���
+<div class="text gm">【GM】<br/>ドラマシーンか戦闘シーンの選択をどうぞ。　今の続きでもいいですよ
 </div>
-<div class="text noel">�y�m�G���z<br/>�h���}�V�[���ŁB�����c��[�A���Ⴀ�A���y�ɂ���B<br>
-�N���������ł��B���Ǝ����������B
+<div class="text noel">【ノエル】<br/>ドラマシーンで。事件…んー、じゃあ植野先輩にしよ。<br>
+起こしたいです。あと呪文もろもろ。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B�ł͂܂��̓V�[���\�U��܂��傤��
+<div class="text gm">【GM】<br/>はい。ではまずはシーン表振りましょうか
 </div>
-<div class="dice"> �V�[���\(4) �� �Â��ȃJ�t�F�̓X���B<br>
-����̍���Ƌ��ɁA�D�������₩�ȕ��͋C�������Ă���B
+<div class="dice"> シーン表(4) → 静かなカフェの店内。<br>
+珈琲の香りと共に、優しく穏やかな雰囲気が満ちている。
 </div>
-<div class="text noel">�y�m�G���z<br/>��y����ȂƂ��s���́H�@��H���Ƃ��H�@�w�H�c�͍��Z���Ă���̂���
+<div class="text noel">【ノエル】<br/>先輩そんなとこ行くの？　定食屋とか？　学食…は高校ってあるのかな
 </div>
-<div class="text gm">�yGM�z<br/>��y�����Ă��������Ƃ��낢����B�}���ψ���������
+<div class="text gm">【GM】<br/>先輩だってそういうところいくよ。図書委員長だもん
 </div>
-<div class="text noel">�y�m�G���z<br/>������������B���Ⴀ�A�d�q�����S�z����您�O���ċC�����Ő�y�T���Ă��������Ƃ���s����B<br>
-�������������画�肢�����ȁB
+<div class="text noel">【ノエル】<br/>それもそうか。じゃあ、慧子ちゃん心配しろよお前って気持ちで先輩探してそういうところ行くよ。<br>
+事件したいから判定いいかな。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�C�ӂ̓��Z�Ŕ���ǂ���
+<div class="text gm">【GM】<br/>はい、任意の特技で判定どうぞ
 </div>
-<div class="text noel">�y�m�G���z<br/>��y��������Ƃ��Ƃ��Ƃ��Ă�Ƃ��Ȃ�s����t�ŁB
+<div class="text noel">【ノエル】<br/>先輩がちょっとうとうとしてるとかなら《眠り》で。
 </div>
-<div class="text gm">�yGM�z<br/>�N����҂��Ă�Œ��ɃR�[�f�B�N�������߂̃��m�x�ł��ǂ����Ƃ������Ǌ���Ȃ������ɂ��Ƃ��Ƃ��Ă��̂��ȁ@�ǂ���
+<div class="text gm">【GM】<br/>誰かを待ってる最中にコーディ君おすすめのラノベでも読もうとしたけど慣れない感じにうとうとしてたのかな　どうぞ
 </div>
-<div class="dice">2d6+1>=5 �s����t:(2D6+1>=5) �� 8[2,6]+1 �� 9 �� ����
+<div class="dice">2d6+1>=5 《眠り》:(2D6+1>=5) → 8[2,6]+1 → 9 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�@
+<div class="text gm">【GM】<br/>成功ですね。　
 </div>
-<div class="dice"> �����\(9) �� ���̂Ђ�߂��A���̍����A���������i�c�c���̐l���ɑ΂���y�^���z��1�_�㏸����B<br>
-�y�^���z�̑����́u�����v�ɂȂ�B
+<div class="dice"> 事件表(9) → 魂のひらめき、愛の告白、怪しい抱擁……その人物に対する【運命】が1点上昇する。<br>
+【運命】の属性は「恋愛」になる。
 </div>
-<div class="text npc_takasi">�y�A�� ���z<br/>�u��H�@���O������ւ�ɏZ��ł�̂��H�v�@���Ėڊo�߂ĂȂłȂł����炢���́H�H
+<div class="text npc_takasi">【植野 隆】<br/>「ん？　お前ここらへんに住んでるのか？」　って目覚めてなでなでしたらいいの？？
 </div>
-<div class="text noel">�y�m�G���z<br/>�ǁA�ǂ�����Ƃ����񂾁B�Ǝv���A���[��ǂ����悤�B<br>
-�̈��n�����玔����Ǝ������͋C����������������Ȃ��B<br>
-���̐l���ǂ��炩�Ƃ����ΐÂ�������B
+<div class="text noel">【ノエル】<br/>ど、どうしろというんだ。と思いつつ、うーんどうしよう。<br>
+体育会系だから飼い主と似た雰囲気を感じたかもしれない。<br>
+あの人もどちらかといえば静かだから。
 </div>
-<div class="text gm">�yGM�z<br/>�Ȃ�قǁA�������ɑ̈��n�̂����ɐÂ��͈�v���B
+<div class="text gm">【GM】<br/>なるほど、たしかに体育会系のくせに静かは一致か。
 </div>
-<div class="text noel">�y�m�G���z<br/>�ȂłȂł���āi�Ȃ񂾂����߁j���Ďv���ĐK���ł؂���Ƃ��悤�Ƃ��āA�����ƕ��ŕ���������Ɏ��Ă��񂾁B����Ȃ��B
+<div class="text noel">【ノエル】<br/>なでなでされて（なんだこいつめ）って思って尻尾でぺしんとしようとして、きっと撫で方が飼い主に似てたんだ。そんなだ。
 </div>
-<div class="text noel">�y�m�G���z<br/>���ނނƎv����l�����Ȃł���B
+<div class="text noel">【ノエル】<br/>ぐむむと思いつつ大人しくなでらりる。
 </div>
-<div class="text gm">�yGM�z<br/>�Ȃł��Ƃ��B�@������������
+<div class="text gm">【GM】<br/>なでらりとけ。　いいこいいこ
 </div>
-<div class="text npc_takasi">�y�A�� ���z<br/>�u�c���̑O�ƈ���đ�l�����̂ȁv�@�܂��{�ǂ݂ȂłȂłȂ�T���߂��낤��
+<div class="text npc_takasi">【植野 隆】<br/>「…この前と違って大人しいのな」　まあ本読みつつなでなでなら控えめだろうし
 </div>
-<div class="text noel">�y�m�G���z<br/>����������������Ă�����ƋC�����悭�Ȃ��Ă���A��������������������Ȃ��Ă��ĂȂ�킯�ł��ˏ�
+<div class="text noel">【ノエル】<br/>いいこいいこされてちょっと気分がよくなってから、ちがうちがうそうじゃなくてってなるわけですね笑
 </div>
-<div class="text noel">�y�m�G���z<br/>�K���Ōy���؂���Ƃ��āA���ꂩ�痣��ĂĂ��Ă������o���ƁB�܂��ی�������Ȃ�w�Z�̕����ȁH�H
+<div class="text noel">【ノエル】<br/>尻尾で軽くぺちんとして、それから離れててこてこ歩き出すと。まだ保健室いるなら学校の方かな？？
 </div>
-<div class="text gm">�yGM�z<br/>��������Ȃ��̂��@�����ɗ����񂾁i�@
+<div class="text gm">【GM】<br/>そうじゃないのか　何しに来たんだ（　
 </div>
-<div class="text npc_takasi">�y�A�� ���z<br/>�u�܂��ȁA�L�v�@���Ď�ł��U���Č�����񂾂낤
+<div class="text npc_takasi">【植野 隆】<br/>「またな、猫」　って手でも振って見送るんだろう
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�A�w��������������Ł@�u�P�[�R�A���C�Ȃ�����v�@���Č����̂��ȁB�@�u�����s���āv
+<div class="text noel">【ノエル】<br/>じゃあ、背中向けたあたりで　「ケーコ、元気ないから」　って言うのかな。　「早く行って」
 </div>
-<div class="text npc_takasi">�y�A�� ���z<br/>�u�c�L�H�v�@���������H�@���Ď�X���Ă邯�ǂȂ�ƂȂ��C�ɂ͂Ȃ邩��������񂾂낤��
+<div class="text npc_takasi">【植野 隆】<br/>「…猫？」　が喋った？　って首傾げてるけどなんとなく気にはなるから向かうんだろうな
 </div>
-<div class="text noel">�y�m�G���z<br/>��y���s�����������ɁA�����ƊF���߂��ł����ł�����ł��̂ɋC�t���˂�΁@<br>
-�Ƃ����킯�ł܂��A�F�����炢��������
+<div class="text noel">【ノエル】<br/>先輩が行っちゃった後に、きっと皆が近くでお茶でも飲んでたのに気付くねん笑　<br>
+というわけでまあ、皆いたらいいじゃん笑
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���Ⴀ�A���̊Ԃɂ��ڂ̑O�ɍ����Ĉꕔ�n�I���Ă܂����B
+<div class="text ituki">【焔木 イツキ】<br/>じゃあ、いつの間にか目の前に座って一部始終見てました。
 </div>
-<div class="text gm">�yGM�z<br/>���Ⴀ�݂�ȗׂ̐Ȃŕ��ʂɋ������Ē��������Ö��ł��H�ׂĂ��炢���ł���
+<div class="text gm">【GM】<br/>じゃあみんな隣の席で普通に居座って注文した甘味でも食べてたらいいですね
 </div>
-<div class="text noel">�y�m�G���z<br/>�i�ł��R�[�f�B�N�͌d�q�����̏��ɂ���Ȃ炻��ł����̂��ȁH�H�j�@�Ƃ�܁y�ϊ��z����B
+<div class="text noel">【ノエル】<br/>（でもコーディ君は慧子ちゃんの所にいるならそれでいいのかな？？）　とりま【変換】から。
 </div>
-<div class="text gm">�yGM�z<br/>����ǂ����[
+<div class="text gm">【GM】<br/>判定どうぞー
 </div>
-<div class="dice"> 2d6+1>=5 �y�ϊ��z:<br>
-(2D6+1>=5) �� 6[3,3]+1 �� 7 �� ���� �� �̖͂��f2������
+<div class="dice"> 2d6+1>=5 【変換】:<br>
+(2D6+1>=5) → 6[3,3]+1 → 7 → 成功 → 力の魔素2が発生
 </div>
-<div class="text noel">�y�m�G���z<br/>�킠�A���f�����ς��B�Ƃ肠�����y���́z��6���܂��B���f6�����B
+<div class="text noel">【ノエル】<br/>わあ、魔素いっぱい。とりあえず【魔力】は6削ります。魔素6つ発生。
 </div>
-<div class="text gm">�yGM�z<br/>���ށA���f���o���̂����킹�ĕ������܂��ˁB�@�ϊ����ƕϊ�����������Ă�������
+<div class="text gm">【GM】<br/>うむ、魔素が出たのも合わせて分けられますね。　変換数と変換先をおしえてください
 </div>
-<div class="text noel">�y�m�G���z<br/>�Ƃ肠�����y�񕜁z��3�_�A����3�_�͊F�ɂ����܂��B<br>
-1�_�̓C�c�L����A2�_�͖��N�ɂ��������ł��B�͂������̂łǂ����B
+<div class="text noel">【ノエル】<br/>とりあえず【回復】に3点、あと3点は皆にあげます。<br>
+1点はイツキさん、2点は夢君にあげるつもりです。力も流すのでどうぞ。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�ł�2�_������āy���Łz�ɁB���̓R�X�g�ԈႦ�Ȃ��B
+<div class="text ayumu">【海鳴 夢】<br/>では2点もらって【入滅】に。次はコスト間違えない。
 </div>
-<div class="text gm">�yGM�z<br/>�͂Q�A�C�c�L����C�ӂP�C������C�ӂQ�Ń`���[�W�ӏ����肢���܂��B
+<div class="text gm">【GM】<br/>力２、イツキさん任意１，夢くん任意２でチャージ箇所お願いします。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�ł́A�̂𖣗��ɓ���܂��I
+<div class="text ituki">【焔木 イツキ】<br/>では、歌を魅了に入れます！
 </div>
-<div class="text gm">�yGM�z<br/>�x���ɓ���邩�R�[�f�B����ɂ�����Ȃ���łȂ����ȗ�
+<div class="text gm">【GM】<br/>支援に入れるかコーディくんにか入らないんでないかな力
 </div>
-<div class="text noel">�y�m�G���z<br/>�x���͂����ł��Ȃ��Ǝv���Ă�̂ŃR�[�f�B�N�ɂ����܂��B�R�m�������ΉԂ��ȁH
+<div class="text noel">【ノエル】<br/>支援はもうできないと思ってるのでコーディ君にあげます。騎士召喚か火花かな？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>��[�A�ł͉ΉԂ�2�_����Ă����܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>んー、では火花に2点入れておきます。
 </div>
-<div class="text gm">�yGM�z<br/>���Ⴀ�d�q�����A��Ď��ׂ͗Ńp�t�F�ł��H�ׂĂ��炢���̂��@�`���[�W�ǂ���
+<div class="text gm">【GM】<br/>じゃあ慧子ちゃん連れて実は隣でパフェでも食べてたらいいのか　チャージどうぞ
 </div>
-<div class="text noel">�y�m�G���z<br/>�͂��ȁB�����āy�񕜁z���肢���܂��B
+<div class="text noel">【ノエル】<br/>はいな。続いて【回復】お願いします。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A����ǂ���
+<div class="text gm">【GM】<br/>はい、判定どうぞ
 </div>
-<div class="dice"> 2d6+1>=5 �y�񕜁z:
-<br>(2D6+1>=5) �� 4[1,3]+1 �� 5 �� ����
+<div class="dice"> 2d6+1>=5 【回復】:
+<br>(2D6+1>=5) → 4[1,3]+1 → 5 → 成功
 </div>
-<div class="text noel">�y�m�G���z<br/>���ԂԂԂԁB���Ⴀ���f4�g���āA���v12�_�̉񕜁B�z���́A
+<div class="text noel">【ノエル】<br/>あぶぶぶぶ。じゃあ魔素4つ使って、合計12点の回復。配分は、
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�ł͎g�p���f�Ɖ񕜑Ώۂ�
+<div class="text gm">【GM】<br/>成功ですね。では使用魔素と回復対象を
 </div>
-<div class="text noel">�y�m�G���z<br/>�m�G��+5�A�C�c�L+5�A��+2�ł��肢���܂��B
+<div class="text noel">【ノエル】<br/>ノエル+5、イツキ+5、夢+2でお願いします。
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B
+<div class="text gm">【GM】<br/>わかりました。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>��[�I���肪�Ƃ��I
+<div class="text ituki">【焔木 イツキ】<br/>わー！ありがとう！
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�ӂ��v�@���ߑ����āA�����ς����������炿����Ɩ���܂��B���₷��B
+<div class="text noel">【ノエル】<br/>「ふう」　ため息ついて、いっぱい動いたからちょっと眠ります。すやすや。
 </div>
-<div class="text gm">�yGM�z<br/>����Ȋ����łł݂͂Ȃ���p�C��{���Ƃ������Ƃ�
+<div class="text gm">【GM】<br/>そんな感じでではみなさん英気を養うということで
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���A�����͂U�Ȃ̂ŁA���f�̈ꕔ���񕜂ɉ񂵂����ł��I
+<div class="text ituki">【焔木 イツキ】<br/>あ、今魔力６なので、魔素の一部を回復に回したいです！
 </div>
-<div class="text gm">�yGM�z<br/>���A�͂��B�D���Ȗ��f�����炵�ĉ񕜂ǂ���
+<div class="text gm">【GM】<br/>あ、はい。好きな魔素を減らして回復どうぞ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�ł̖��f2�_���񕜂ɂ��܂��I
+<div class="text ituki">【焔木 イツキ】<br/>闇の魔素2点を回復にします！
 </div>
-<div class="text noel">�y�m�G���z<br/>����A1�V�[����1�_�܂ł���B
+<div class="text noel">【ノエル】<br/>いや、1シーンで1点までだよ。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���A�����Ȃ񂩁I
-<br/>���炵�܂����I�I�ł́A�ψقɓ��ꂽ�b�̖��f1�_�ɂ��Ă����܂��I
+<div class="text ituki">【焔木 イツキ】<br/>あ、そうなんか！
+<br/>失礼しました！！では、変異に入れた獣の魔素1点にしておきます！
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�����ł��B</div>
+<div class="text gm">【GM】<br/>はい、了解です。</div>
 <br><br>
-<div class="subtitle" id="last">���N���C�}�b�N�X�t�F�C�Y
+<div class="subtitle" id="last">◆クライマックスフェイズ
 </div>
-<div class="text gm">�yGM�z<br/>�ł́A�݂Ȃ��񂪖����q�f�́r���W�ߏI���A�񕜓������I����ƁA�󋵂����v����Ă����̂�<br>
-�e�����j���疂�@�ɂ��ʐM������܂��B�@
+<div class="text gm">【GM】<br/>では、みなさんが無事〈断章〉を集め終わり、回復等をし終えると、状況を見計らっていたのか<br>
+影原女史から魔法による通信が入ります。　
 </div>
-<div class="text gm">�yGM�z<br/>�u�ǂ���疳���ɒf�͂��W�ߏI������悤�ł��ˁB������̏������I�����Ă���܂�����A���ł�����V�����n�߂��܂���v<br>
-��{�I�ɂ͖����񈶂ł����F����ɕ�������A����ȏ󋵂ł��B
+<div class="text gm">【GM】<br/>「どうやら無事に断章が集め終わったようですね。こちらの準備も終了しておりますから、いつでも封印儀式を始められますよ」<br>
+基本的には夢くん宛ですが皆さんに聞こえる、そんな状況です。
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�́[���v�@���Ԏ����ӂ���B
+<div class="text noel">【ノエル】<br/>「はーい」　生返事しつつふわわわ。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u��������B�����������Ȃ��v�@��ˁH��
+<div class="text ayumu">【海鳴 夢】<br/>「了解だよ。こっちも問題ない」　よね？と
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�uOK�v�@�L���b�Ƃ��Ă܂��傤
+<div class="text cody">【コーディ・コルトハード】<br/>「OK」　キリッとしてましょう
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�����ł��Ă��܂���v�ƁA�̂�т肱�����܂��B
+<div class="text ituki">【焔木 イツキ】<br/>「準備できていますよ」と、のんびりこたえます。
 </div>
-<div class="text gm">�yGM�z<br/>�u���ς�炸���C�̂Ȃ������Ȑ��ł��ˁA�wChant de Noel�x�B<br>
-�c�܂��A�C���͒B�����Ă���悤�ł�����ǂ��ł��傤�B�@����ł́A����V�����J�n���܂��B�v
+<div class="text gm">【GM】<br/>「相変わらずやる気のなさそうな声ですね、『Chant de Noel』。<br>
+…まあ、任務は達成しているようですから良いでしょう。　それでは、封印儀式を開始します。」
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�����A�{�N�������w���Ȃ́v�@�ԁ[����K���ς���
+<div class="text noel">【ノエル】<br/>「ちぇ、ボクだけ名指しなの」　ぶーたれつつ尻尾ぱたん
 </div>
-<div class="text gm">�yGM�z<br/>�e��������������ƁA�n�ʂ���q�֏��r�����݂��ނ悤�ɁA�M���B�����������ތ`�ŋ���ȕǂ�����オ���Ă��܂��B
+<div class="text gm">【GM】<br/>影原がそう告げると、地面から〈禁書〉を挟みこむように、貴方達をも巻き込む形で巨大な壁がせり上がってきます。
 </div>
-<div class="text gm">�yGM�z<br/>���ʂ̎��������񂳂ꂽ�ǁA����͋���Ȗ������̃y�[�W�ł��B�@<br>
-����オ�����w�{�x�͂₪�Ă��̎p�����S�ɕ\���A�ς���A�ƒf�͂Ƃ��ǂ��F��������̒��ւƕ����߂܂��B
+<div class="text gm">【GM】<br/>多量の呪文が羅列された壁、それは巨大な魔導書のページです。　<br>
+せり上がった『本』はやがてその姿を完全に表し、ぱたん、と断章ともども皆さんをその中へと閉じ込めます。
 </div>
-<div class="text noel">�y�m�G���z<br/>�u���ς�炸�h�肾�ˁA���Ɓv�@�҂�[��Ɣ�э~����N�̎p�ɂȂ�܂��傤�B
+<div class="text noel">【ノエル】<br/>「相変わらず派手だね、っと」　ぴょーんと飛び降りつつ少年の姿になりましょう。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�uTake it easy�c�cTake it easy�c�c�v�@�[�ċz���ĐS�𗎂��������Ă��܂�
+<div class="text cody">【コーディ・コルトハード】<br/>「Take it easy……Take it easy……」　深呼吸して心を落ち着かせています
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�{�N���g���������ˁB��낵���˂��v�@���f���ӂ���ƌ��
+<div class="text ayumu">【海鳴 夢】<br/>「ボクがトリだったね。よろしくねえ」　煙吐きつつふらっと後退
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u����A���҂��Ă܂���v���ăR�[�f�B�N�ɂ����Ă�i���������j
+<div class="text ituki">【焔木 イツキ】<br/>「活躍、期待してますよ」ってコーディ君にいってる（魅了未了）
 </div>
-<div class="text gm">�yGM�z<br/>�y�Ҏ[�z�̂��߂́A����Ȏ􌗂ƂȂ�܂��B�@��\����サ�Ă����`�ł̐퓬�ƂȂ�܂��B<br>
-��x��\���s�������͍��Ɍq����A�ꏄ����ƍ����O����܂��B
+<div class="text gm">【GM】<br/>【編纂】のための、特殊な呪圏となります。　代表を交代していく形での戦闘となります。<br>
+一度代表を行った方は鎖に繋がれ、一巡すると鎖が外されます。
 </div>
-<div class="text gm">�yGM�z<br/>�F���񂪏W�߂��q�f�́r�͎􌗂̒��S�ň���̖{�ɂȂ��Ă��܂��B<br>
-�������̃y�[�W�͒D��ꑫ��Ă��Ȃ��悤�ł���
+<div class="text gm">【GM】<br/>皆さんが集めた〈断章〉は呪圏の中心で一冊の本になっています。<br>
+いくつかのページは奪われ足りていないようですが
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�n���[�[�[�[�[�[�[�[�b�v�@���҂���Đ[�ċz���䖳������I�I
+<div class="text cody">【コーディ・コルトハード】<br/>「ハワーーーーーーーーッ」　期待されて深呼吸が台無しだよ！！
 </div>
-<div class="text noel">�y�m�G���z<br/>�u���邳���v�@�ށ[�ƌ����@<br>
-�u����Ȃނ��������Ƃ���Ȃ��񂾂���B�������肵�āv�@�ƃG�[���H�𑗂��Ă������B
+<div class="text noel">【ノエル】<br/>「うるさい」　むーと言いつつ　<br>
+「そんなむつかしいことじゃないんだから。しっかりして」　とエール？を送っておこう。
 </div>
-<div class="text gm">�yGM�z<br/>�{����́A�Ύ��ŏĂ��ꂽ�l�̉��l�̐���A�������Ƃ̂Ȃ������z���Ȃǂ��W���̂ƂȂ���忂��Ă���̂ł��傤�B
+<div class="text gm">【GM】<br/>本からは、火事で焼かれた人の怨嗟の声や、叶うことのなかった想いなどが集合体となって蠢いているのでしょう。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�Ⴂ��˂��v
+<div class="text ayumu">【海鳴 夢】<br/>「若いよねえ」
 </div>
-<div class="text gm">�yGM�z<br/>�����Ă��̖{����͊F����ւ̖��m�ȓG�ӂ�瞂��Ă��܂��B�@�����̈ꕔ��D��ꂽ�킯�ł������
+<div class="text gm">【GM】<br/>そしてその本からは皆さんへの明確な敵意が迸っています。　自分の一部を奪われたわけですからね
 </div>
-<div class="text noel">�y�m�G���z<br/>�Ӂ[���ƈЊd���Ă܂���B
+<div class="text noel">【ノエル】<br/>ふーっと威嚇してますよ。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�w�[�W���[�V���A�w�[�W���[�V���c�c�v�@���߂ĐS�𗎂����������ɂ݂��܂�
+<div class="text cody">【コーディ・コルトハード】<br/>「ヘージョーシン、ヘージョーシン……」　改めて心を落ち着かせて睨みつけます
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�E�E�E�v����ނ悤�Ɍ��܂��B
-<br/>���킢����������ǁA�߂܂���ꂿ�Ⴄ��ł���ˁA�I�ȁB
+<div class="text ituki">【焔木 イツキ】<br/>「・・・」憐れむように見ます。
+<br/>かわいそうだけれど、捕まえられちゃうんですよね、的な。
 </div>
-<div class="text gm">�yGM�z<br/>�Ƃ����킯�Ő퓬�J�n�ƂȂ�܂��B�@�e���������ǂ����B�@
+<div class="text gm">【GM】<br/>というわけで戦闘開始となります。　各自名乗りをどうぞ。　
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�q�i�v�Ȃ錶�i�z���E�E�l�o�[�����h�j�r�A�L�~�𖲂ɂ��Ƃ��Ă�����v�@���ӂӂ�
+<div class="text ayumu">【海鳴 夢】<br/>「〈永久なる幻（ホロウ・ネバーランド）〉、キミを夢におとしてあげる」　うふふと
 </div>
-<div class="text noel">�y�m�G���z<br/>�u���傤���Ȃ��Ȃ��A��x��������Ȃ��񂾂���ˁB�\�\�uChant de Noel�v�A�����R�ɂ̓O�[�p��������v
+<div class="text noel">【ノエル】<br/>「しょうがないなあ、一度しか言わないんだからね。――「Chant de Noel」、悪いコにはグーパンだよっ」
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�q���ׂ̒T���ҁr�c�c�����W���W���[�ɁA�I�V�e�}�C���I�@�q�J�G�I���[�I�v�@�L���|�[�Y�т����ƁB
+<div class="text cody">【コーディ・コルトハード】<br/>「〈混沌の探究者〉……いざジンジョーに、オシテマイル！　ヒカエオロー！」　キメポーズびしっと。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u���E���T�i�j�u���w�C���G�f�B�^�j�ł��A��낵�����˂������܂��B�v���������B
+<div class="text ituki">【焔木 イツキ】<br/>「死界教典（ニブルヘイムエディタ）です、よろしくおねがいします。」恭しく一礼。
 </div>
-<div class="text gm">�yGM�z<br/>�ł݂͂Ȃ���̖���肪�I������ӂ�ŁA���l���ЂƂɂ܂Ƃ܂�A�׈��Ȏ����̉��Ƃ��Ċ�O�ɗ����͂�����܂��B
+<div class="text gm">【GM】<br/>ではみなさんの名乗りが終わった辺りで、怨嗟がひとつにまとまり、邪悪な漆黒の炎として眼前に立ちはだかります。
 </div>
 <br>
-<div class="subtitle" id="last_1">���N���C�}�b�N�X�퓬�J�n ��P���E���h
+<div class="subtitle" id="last_1">◆クライマックス戦闘開始 第１ラウンド
 </div>
-<div class="text gm">�yGM�z<br/>�P���E���h�ڂ̑�\�҂͒N�ɂȂ�܂����H
+<div class="text gm">【GM】<br/>１ラウンド目の代表者は誰になりますか？
 </div>
-<div class="text noel">�y�m�G���z<br/>�m�G���ł��肢���܂��B
+<div class="text noel">【ノエル】<br/>ノエルでお願いします。
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�ł͖��f�̊l������ł��B�@�C�ӂ̖��f���`���[�W�ǂ����B
+<div class="text gm">【GM】<br/>わかりました。では魔素の獲得からです。　任意の魔素をチャージどうぞ。
 </div>
-<div class="text noel">�y�m�G���z<br/>���������Γ��ɂ���Ȃ�����������B�Ƃ�����Ŗ��N�ɂ����܂��B
-<br/>�u�{�N��������Ȃ�����A������v�@�K���ł҂����
+<div class="text noel">【ノエル】<br/>そういえば特にいらなかったわもう。という訳で夢君にあげます。
+<br/>「ボクもういらないから、あげる」　尻尾でぴこんと
 </div>
-<div class="text gm">�yGM�z<br/>�����A�􌗓��������炻���������Ƃł��܂��������ˁi�L�����B���@<br>
-�����ł��A������̓`���[�W�錾�ǂ���
+<div class="text gm">【GM】<br/>ああ、呪圏同じだからそういうことできましたっけね（記憶が曖昧　<br>
+了解です、夢くんはチャージ宣言どうぞ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�Ȃ炨���t�ɊÂ����v�@�s���t���y�R�m�����z�Ƀ`���[�W���܂��B
+<div class="text ayumu">【海鳴 夢】<br/>「ならお言葉に甘えるよ」　《夢》を【騎士召喚】にチャージします。
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��B�C�j�V�A�e�B�u�\�͊e���ɂ��C�����܂��ˁB
-<br/>�ł́A��U�̏����X�e�b�v�B�m�G���N�͉����������܂����H
+<div class="text gm">【GM】<br/>了解です。イニシアティブ表は各自にお任せしますね。
+<br/>では、先攻の召喚ステップ。ノエル君は何か召喚しますか？
 </div>
-<div class="text noel">�y�m�G���z<br/>�y�ً}�����z�B�����_���w����Z���肢���܂��B
+<div class="text noel">【ノエル】<br/>【緊急召喚】。ランダム指定特技お願いします。
 </div>
-<div class="dice"> �����_�����Z����\(6,10) �� �u�Łv�ራ�Ӂ�
+<div class="dice"> ランダム特技決定表(6,10) → 「闇」≪悪意≫
 </div>
-<div class="text noel">�y�m�G���z<br/>�����ȁB����Ȃ炢�����A�u���̓��Z�v�s�^���t�g���܂��B<br>
-���쏢���ł���Ȃ炱�����̂������B
+<div class="text noel">【ノエル】<br/>遠いな。それならいっそ、「魂の特技」《運命》使います。<br>
+精霊召喚できるならこっちのがいい。
 </div>
-<div class="text gm">�yGM�z<br/>�ӂށA����-1���ĖڕW�l�U��2d6+1�ł��ˁB�ǂ���
+<div class="text gm">【GM】<br/>ふむ、魔力-1して目標値６で2d6+1ですね。どうぞ
 </div>
-<div class="dice">�y�ً}�����z:<br>
- (2D6+1>=5) �� 4[1,3]+1 �� 5 �� ����
+<div class="dice">【緊急召喚】:<br>
+ (2D6+1>=5) → 4[1,3]+1 → 5 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>����A�ڕW�l�U�ł́H�H
+<div class="text gm">【GM】<br/>あれ、目標値６では？？
 </div>
-<div class="text noel">�y�m�G���z<br/>���B
+<div class="text noel">【ノエル】<br/>あ。
 </div>
-<div class="text gm">�yGM�z<br/>����B�{�P�Ɨ����͂߁[�B
+<div class="text gm">【GM】<br/>うん。＋１と両方はめー。
 </div>
-<div class="text noel">�y�m�G���z<br/>����Ⴛ�����΁@���s�����łǂ����B����ȏ㖂�͍��Ȃ�ς���B
+<div class="text noel">【ノエル】<br/>そりゃそうだ笑　失敗処理でどうぞ。これ以上魔力削るなら変わらん。
 </div>
-<div class="text gm">�yGM�z<br/>���s�Ƃ��܂��ˁB�@�����Ď������g�p���܂����H
+<div class="text gm">【GM】<br/>失敗としますね。　続けて呪文等使用しますか？
 </div>
-<div class="text noel">�y�m�G���z<br/>���܂���B�I���ŁB
+<div class="text noel">【ノエル】<br/>しません。終了で。
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�@��U�͏����X�e�b�v�����܂���̂Ő�U�̍U���X�e�b�v�ł��B�@�_�C�X�v���b�g�ǂ���
+<div class="text gm">【GM】<br/>わかりました。　後攻は召喚ステップ動きませんので先攻の攻撃ステップです。　ダイスプロットどうぞ
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�m�G���̍U���_�C�X�F1,1,1<br>
-�֏��̖h��_�C�X�F2,2,3,3
+<div class="dice">【ダイスプロット結果】<br/>
+ノエルの攻撃ダイス：1,1,1<br>
+禁書の防御ダイス：2,2,3,3
 </div>
-<div class="text noel">�y�m�G���z<br/>��肢�B<br>
-�S�ʂ��ŁA�q�_��r�g���܂��B�Ώۂ͏����A���J�[�̎O�J�򗝁B
+<div class="text noel">【ノエル】<br/>やりい。<br>
+全通しで、〈契約〉使います。対象は初期アンカーの三谷橙理。
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�ł͊肢�\��U��܂��傤��
+<div class="text gm">【GM】<br/>うむ、では願い表を振りましょうか
 </div>
-<div class="dice"> �肢�\(2) �� �����̑�؂Ȑl�⓲��̐l�ɉ�킹�ė~�����B
+<div class="dice"> 願い表(2) → 自分の大切な人や憧れの人に会わせて欲しい。
 </div>
-<div class="text noel">�y�m�G���z<br/>�c����ł����񂶂�Ȃ��ł����i�j
+<div class="text noel">【ノエル】<br/>幼馴染でいいんじゃないですか（）
 </div>
-<div class="text gm">�yGM�z<br/>�A�C�c��Ɉꏏ�ɂ��₵�܂��񂩁c�@�ǂ������̓��̔ӂɂ͊����񂾂낤�킩������I�I�I
+<div class="text gm">【GM】<br/>アイツ常に一緒にいやしませんか…　どうせその日の晩には叶うんだろうわかったよ！！！
 </div>
-<div class="text gm">�yGM�z<br/>�򗝂����Ƃ̉^�����P�㏸���A�S�_�C�X��U�葫���܂���B�ǂ���
+<div class="text gm">【GM】<br/>橙理ちゃんとの運命を１上昇し、４つダイスを振り足せますよ。どうぞ
 </div>
-<div class="dice"> (4B6) �� 1,4,4,6
+<div class="dice"> (4B6) → 1,4,4,6
 </div>
-<div class="text gm">�yGM�z<br/>�����ɑS���ʂ����ȁB���v�V�|�C���g�ł���
-<br/>�����ĉ����s���܂����H
+<div class="text gm">【GM】<br/>見事に全部通ったな。合計７ポイントですね
+<br/>続けて何か行いますか？
 </div>
-<div class="text noel">�y�m�G���z<br/>�S�ʂ��ł��ˁB�@�u�c�c�A�ʂɂ�������Ă邶���v�@�Ƃ�����Ƃނ�����A�@<br>
-�u�g�[���̂��肢������A��Ί��������I�v��͉������܂����B�X�e�b�v�I���ł��B
+<div class="text noel">【ノエル】<br/>全通しですね。　「……、別にいつも会ってるじゃん」　とちょっとむすくれつつ、　<br>
+「トーリのお願いだから、絶対叶えるよっ！」後は何もしませんよ。ステップ終了です。
 </div>
-<div class="text gm">�yGM�z<br/>�ł͌�U�̍U���X�e�b�v�B��\�A����l�̓v���b�g���ǂ���
+<div class="text gm">【GM】<br/>では後攻の攻撃ステップ。代表、立会人はプロットをどうぞ
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�֏��̍U���_�C�X�F2,3,4,5,5<br>
-�m�G���̖h��_�C�X�F1,3,5<br>
-����l�̖h��_�C�X�@���F5�^�R�[�f�B�F5�^�C�c�L�F4
+<div class="dice">【ダイスプロット結果】<br/>
+禁書の攻撃ダイス：2,3,4,5,5<br>
+ノエルの防御ダイス：1,3,5<br>
+立会人の防御ダイス　夢：5／コーディ：5／イツキ：4
 </div>
-<div class="text gm">�yGM�z<br/>���ƗD���������ˏ��_�B�P�|�C���g����������
+<div class="text gm">【GM】<br/>わりと優しかったね女神。１ポイント抜けたかな
 </div>
-<div class="text noel">�y�m�G���z<br/>���A���߂�B1�_�ʂ�ˁc�~�߂��Ȃ�����A�F�̕��ɂ��͂��܂��B
+<div class="text noel">【ノエル】<br/>う、ごめん。1点通るね…止められないから、皆の方にも届きます。
 </div>
-<div class="text noel">�y�m�G���z<br/>����B�Ȃ̂ŊF�̕��Ɋ�g�������͕̂������Ă��܂�����@<br>
-�u�c�����߂�I�v�@����������1�_���炵�܂��B
+<div class="text noel">【ノエル】<br/>うん。なので皆の方に寄波がいくのは分かってしまうから　<br>
+「…っごめん！」　言いつつ自分も1点減らします。
 </div>
-<div class="text gm">�yGM�z<br/>�]�����_�C�X�͖��f�ϊ��ǂ����B�`���[�W�������l�͐錾���Ă�
+<div class="text gm">【GM】<br/>余ったダイスは魔素変換どうぞ。チャージしたい人は宣言してね
 </div>
-<div class="text noel">�y�m�G���z<br/>3�ƁA5�̕Е��̓m�G���̏���ł����ł��B1�͖��ʂ����ǁy�x���z�ɂł��������
+<div class="text noel">【ノエル】<br/>3と、5の片方はノエルの消費でいいです。1は無駄だけど【支援】にでも入れるわ笑
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���[������[�ԁv�@�ł͂������̖h��_�C�X���������܂��B<br>
-�s���t���y�R�m�����z��
+<div class="text ayumu">【海鳴 夢】<br/>「だーいじょーぶ」　ではこっちの防御ダイスいただきます。<br>
+《夢》を【騎士召喚】へ
 </div>
-<div class="text gm">�yGM�z<br/>��\�A����l���ɂP�|�C���g�̖��͂����������Ă��������B<br>
-�܂��A���E���h�I���̂��߁A�]�ь��ʂɂ�薲����̖��͂��P�_�����ƂȂ�܂��B
+<div class="text gm">【GM】<br/>代表、立会人共に１ポイントの魔力を減少させてください。<br>
+また、ラウンド終了のため、綻び効果により夢くんの魔力が１点減少となります。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�����v�@�ق����ł����܂�
+<div class="text ayumu">【海鳴 夢】<br/>「あらら」　ほころんでおきます
 </div>
 <br>
-<div class="subtitle" id="last_2">����Q���E���h
+<div class="subtitle" id="last_2">◆第２ラウンド
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�R�[�f�B�I�v�@���Đ��������āA�����Ɋ������Ă���u���v��ނւƓ����܂��B<br>
-�u�^�̎p�v�g���܂��ˁB
+<div class="text noel">【ノエル】<br/>「コーディ！」　って声をあげて、自分に巻きついている「鎖」を彼へと投げます。<br>
+「真の姿」使いますね。
 </div>
-<div class="text noel">�y�m�G���z<br/>���N�̎p�̂܂܂����ƃo�b�N�]���āA���N�̎p�Ɠ������炢�́u�Ő��̓������傫�ȔL�v�̎p�ɂȂ�܂��傤�B<br>
-���ʂ́u���^�ω��v�A�ȍ~�s�^���t�̋R�m�A�Ƃ��ĊF�̃t�H���[�����܂��B
+<div class="text noel">【ノエル】<br/>少年の姿のままくるんとバック転して、少年の姿と同じくらいの「翡翠の瞳を持つ大きな猫」の姿になりましょう。<br>
+効果は「元型変化」、以降《運命》の騎士、として皆のフォローをします。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�cso cute�c�c�I�v�@�m�G���N�̎p�ɂ�����ƃL�����Ƃ��܂��B���ӂ肽���B
+<div class="text cody">【コーディ・コルトハード】<br/>「……so cute……！」　ノエル君の姿にちょっとキュンとします。もふりたい。
 </div>
-<div class="text noel">�y�m�G���z<br/>�u��������W��������I�v�@����[���ƌ�����
+<div class="text noel">【ノエル】<br/>「いいから集中しろっ！」　しゃーっと言いつつ笑
 </div>
-<div class="text gm">�yGM�z<br/>�ł̓R�[�f�B�N�͖��f���l�����Ă�������
+<div class="text gm">【GM】<br/>ではコーディ君は魔素を獲得してください
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�s���t���y�R�m����/���R�z�Ƀ`���[�W���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>《夢》を【騎士召喚/偶然】にチャージします。
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��B�ł͐�U�̏����X�e�b�v�ł��B�����������܂����H
+<div class="text gm">【GM】<br/>了解です。では先攻の召喚ステップです。何か召喚しますか？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�y�R�m����/���z���������܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>【騎士召喚/風】を召喚します。
 </div>
-<div class="dice"> 2d6+1>=5 �y�R�m����/���z<br>
-(2D6+1>=5) �� 5[1,4]+1 �� 6 �� ����
+<div class="dice"> 2d6+1>=5 【騎士召喚/風】<br>
+(2D6+1>=5) → 5[1,4]+1 → 6 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�ł͕��̋R�m����������܂��B�@�����Ď����͎g���܂����H
+<div class="text gm">【GM】<br/>成功ですね。では風の騎士が召喚されます。　続けて呪文は使いますか？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�y�Փ��z��2�_���A���̋R�m�ƃm�G���N��ΏۂɎg���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>【衝動】を2点分、風の騎士とノエル君を対象に使います。
 </div>
-<div class="text gm">�yGM�z<br/>����ǂ���
+<div class="text gm">【GM】<br/>判定どうぞ
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>
-</div><div class="dice"> 2d6+1>=5 �y�Փ��z<br>
-(2D6+1>=5) �� 6[3,3]+1 �� 7 �� ���� �� �̖͂��f2������
+<div class="text cody">【コーディ・コルトハード】<br/>
+</div><div class="dice"> 2d6+1>=5 【衝動】<br>
+(2D6+1>=5) → 6[3,3]+1 → 7 → 成功 → 力の魔素2が発生
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�@���f�`���[�W���ł��܂��̂łǂ���
+<div class="text gm">【GM】<br/>成功ですね。　魔素チャージもできますのでどうぞ
 </div>
-<div class="text noel">�y�m�G���z<br/>�u��A��������B���肪�ƁI�v�@<br>
-�m�G���Ɓs���t�̋R�m�ł��ꂼ��y�ǉ��_���[�W�z��2�_�ɂȂ�܂��ˁB
+<div class="text noel">【ノエル】<br/>「ん、具合いいっ。ありがと！」　<br>
+ノエルと《風》の騎士でそれぞれ【追加ダメージ】が2点になりますね。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>1�_���s�S�t�Ƃ��āy�Ήԁz�Ƀ`���[�W�A1�_���y�R�m����/���z�Ƀ`���[�W���Ă����܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>1点を《全》として【火花】にチャージ、1点を【騎士召喚/風】にチャージしておきます。
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B�`���[�W�����ł��B
-<br/>��U�̏����X�e�b�v�̓X�L�b�v�ƂȂ�̂ő����Đ�U�̍U���X�e�b�v�ł��B�v���b�g���ǂ����B
+<div class="text gm">【GM】<br/>はい。チャージ了解です。
+<br/>後攻の召喚ステップはスキップとなるので続けて先攻の攻撃ステップです。プロットをどうぞ。
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�R�[�f�B�E�R���g�n�[�h�̍U���_�C�X�F1,1,1<br>
-�֏��̖h��_�C�X�F1,1,1,4
+<div class="dice">【ダイスプロット結果】<br/>
+コーディ・コルトハードの攻撃ダイス：1,1,1<br>
+禁書の防御ダイス：1,1,1,4
 </div>
-<div class="text noel">�y�m�G���z<br/>�y�u�[�X�g�z�m�G���œ���܂���
+<div class="text noel">【ノエル】<br/>【ブースト】ノエルで入れますっ
 </div>
-<div class="text gm">�yGM�z<br/>�ǂ����B�S�ȊO�Ȃ�ʂ�܂�
-</div><div class="dice">1d6 �u�[�X�g:<br>
- (1D6) �� 6
+<div class="text gm">【GM】<br/>どうぞ。４以外なら通ります
+</div><div class="dice">1d6 ブースト:<br>
+ (1D6) → 6
 </div>
-<div class="text gm">�yGM�z<br/>�u�[�X�g�����ʂ�܂����ˁB
+<div class="text gm">【GM】<br/>ブースト分が通りましたね。
 </div>
-<div class="text noel">�y�m�G���z<br/>�������B�y�ǉ��_���[�W�z���R�m��̂�+4�B
+<div class="text noel">【ノエル】<br/>よっしゃ。【追加ダメージ】が騎士二体で+4。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���肪�Ƃ��m�G���N�c�c�b�I
+<div class="text cody">【コーディ・コルトハード】<br/>ありがとうノエル君……ッ！
 </div>
-<div class="text noel">�y�m�G���z<br/>�R�[�f�B�N�A���̋R�m�̕����u�[�X�g�����Ⴂ�ȁB
+<div class="text noel">【ノエル】<br/>コーディ君、風の騎士の方もブーストしちゃいな。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�킠���B���Ⴀ���̋R�m���y�u�[�X�g�z���܂�
+<div class="text cody">【コーディ・コルトハード】<br/>わあい。じゃあ風の騎士も【ブースト】します
 </div>
-<div class="text gm">�yGM�z<br/>�ǂ����B�������ł��ʂ邯�ǂȁI
+<div class="text gm">【GM】<br/>どうぞ。もう何でも通るけどな！
 </div>
-<div class="dice"> (1D6) �� 3
+<div class="dice"> (1D6) → 3
 </div>
-<div class="text gm">�yGM�z<br/>�Ƃ����킯�ō��v�U�_������܂���B
+<div class="text gm">【GM】<br/>というわけで合計６ダメ入りますよ。
 </div>
-<div class="text noel">�y�m�G���z<br/>4�Ȃ�~�߂���ĂΏ΁@<br>
-�킠��������I�@���̋R�m����ƃn�C�^�b�`���Ă�i�K���Łj
+<div class="text noel">【ノエル】<br/>4なら止めるってば笑　<br>
+わあいやった！　風の騎士さんとハイタッチしてよ（尻尾で）
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�A�[�I�@�{�N���{�N���I�v�@�n�C�^�b�`��������܂�
+<div class="text cody">【コーディ・コルトハード】<br/>「アー！　ボクもボクも！」　ハイタッチしたがります
 </div>
-<div class="text gm">�yGM�z<br/>1/6�Ȃ��(�畢�� <br>
-�ł͑����Č�U�̍U���X�e�b�v�ł��B��\�A����l�̓v���b�g�ǂ���
+<div class="text gm">【GM】<br/>1/6なんて(顔覆い <br>
+では続けて後攻の攻撃ステップです。代表、立会人はプロットどうぞ
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�֏��̍U���_�C�X�F2,2,4,4,6<br>
-�R�[�f�B�̖h��_�C�X�F1,2,3<br>
-����l�̖h��_�C�X�@�C�c�L�F6�^���F6
+<div class="dice">【ダイスプロット結果】<br/>
+禁書の攻撃ダイス：2,2,4,4,6<br>
+コーディの防御ダイス：1,2,3<br>
+立会人の防御ダイス　イツキ：6／夢：6
 </div>
-<div class="text gm">�yGM�z<br/>�R�_�ʂ�܂��ˁB�@�R�m�Ńu���b�N���܂����H
+<div class="text gm">【GM】<br/>３点通りますね。　騎士でブロックしますか？
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u���b�N���܂��B
+<div class="text cody">【コーディ・コルトハード】<br/>ブロックします。
 </div>
-<div class="text gm">�yGM�z<br/>�ǂ����B�ł͑�\�͂Q�_�A����l�͂P�_�̃_���[�W���󂯂Ă��������B
-<br/>�]�����h��_�C�X�ɂ��āA���f�̃`���[�W�錾���ǂ���
+<div class="text gm">【GM】<br/>どうぞ。では代表は２点、立会人は１点のダメージを受けてください。
+<br/>余った防御ダイスについて、魔素のチャージ宣言をどうぞ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�s�Łt���y���Łz�փ`���[�W���܂�
+<div class="text ayumu">【海鳴 夢】<br/>《闇》を【入滅】へチャージします
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���[�Ɓc�c�s�́t���y�R�m����/���z�ɋL�O�Ƀ`���[�W���āA�s���t�͕������܂�
+<div class="text cody">【コーディ・コルトハード】<br/>えーと……《力》を【騎士召喚/風】に記念にチャージして、《星》は放流します
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B�@�ł̓��E���h�I���ƂȂ�܂��̂Ō���RP�ǂ���
-<br/>�����āq�]�сr�̌��ʂ��������܂��̂Ŗ�����͖��͂��P���炵�Ă��������B
+<div class="text gm">【GM】<br/>わかりました。　ではラウンド終了となりますので交代のRPどうぞ
+<br/>そして〈綻び〉の効果が発動しますので夢くんは魔力を１減らしてください。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u���̃t�[�h�����̂Ɂv�@�ق���т܂���
+<div class="text ayumu">【海鳴 夢】<br/>「このフード高いのに」　ほころびました
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c�b�I�@���A�C�c�L�I�v�@�����C�c�L����֓����܂��B�@<br>
-�u�{�N����΂�������A��łق߂ĂˁI�v
+<div class="text cody">【コーディ・コルトハード】<br/>「……ッ！　次、イツキ！」　鎖をイツキさんへ投げます。　<br>
+「ボクがんばったから、後でほめてね！」
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�����\���ȓ����ł����A���Ƃł������J�߂Ă����܂��傤�v
+<div class="text ituki">【焔木 イツキ】<br/>「えぇ十分な働きでした、あとでゆっくり褒めてあげましょう」
 </div>
-<div class="text noel">�y�m�G���z<br/>�s���t�̋R�m������������A�C���V���Ɂq�֏��r�Ɍ�������܂��B�@�Ӂ[���B
+<div class="text noel">【ノエル】<br/>《風》の騎士を見送った後、気合新たに〈禁書〉に向き直ります。　ふーっ。
 </div>
 
-<div class="text gm">�yGM�z<br/>�ł̓R�[�f�B�����Ōq����A�C�c�L����\�ƂȂ�܂��B
+<div class="text gm">【GM】<br/>ではコーディが鎖で繋がれ、イツキが代表となります。
 </div>
 <br>
-<div class="subtitle" id="last_3">����R���E���h
+<div class="subtitle" id="last_3">◆第３ラウンド
 </div>
-<div class="text gm">�yGM�z<br/>�C�c�L�͖��f�̃`���[�W��錾�ǂ���
+<div class="text gm">【GM】<br/>イツキは魔素のチャージを宣言どうぞ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�̖̂��f�𖣗��Ƀ`���[�W���܂��I
+<div class="text ituki">【焔木 イツキ】<br/>歌の魔素を魅了にチャージします！
 </div>
-<div class="text gm">�yGM�z<br/>�����Đ�U�̏����X�e�b�v�ƂȂ�܂��B�@�����������܂����H
+<div class="text gm">【GM】<br/>続けて先攻の召喚ステップとなります。　何か召喚しますか？
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�R�m�������܂��I��2����A�c�݂Ŕ���ŖڕW�T�ł��I
+<div class="text ituki">【焔木 イツキ】<br/>騎士召喚します！闇2消費、歪みで判定で目標５です！
 </div>
-<div class="text gm">�yGM�z<br/>����ǂ����B
+<div class="text gm">【GM】<br/>判定どうぞ。
 </div>
-<div class="dice"> 2d6>=5 �y�R�m�����z<br>
-(2D6>=5) �� 6[1,5] �� 6 �� ����
+<div class="dice"> 2d6>=5 【騎士召喚】<br>
+(2D6>=5) → 6[1,5] → 6 → 成功
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�@�ł͘c�݂̋R�m����������܂��B�@
-<br/>�����ĉ����s���܂����H
+<div class="text gm">【GM】<br/>成功ですね。　では歪みの騎士が召喚されます。　
+<br/>続けて何か行いますか？
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���A�����������ł��I�Ώۂ͖�����I
+<div class="text ituki">【焔木 イツキ】<br/>あ、魅了したいです！対象は夢くん！
 </div>
-<div class="text gm">�yGM�z<br/>���Z�Ɩ��f��錾���Ĕ���ǂ����I
+<div class="text gm">【GM】<br/>特技と魔素を宣言して判定どうぞ！
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>��2����A���Z�͋��C�A�ڕW�U�Ŕ��肵�܂��I
+<div class="text ituki">【焔木 イツキ】<br/>歌2消費、特技は狂気、目標６で判定します！
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A2d6>=6�łǂ����I
+<div class="text gm">【GM】<br/>はい、2d6>=6でどうぞ！
 </div>
-<div class="dice">2d6>=6 �y�����z<br>
- (2D6>=6) �� 12[6,6] �� 12 �� �X�y�V����(����1D6�_���ϒ�1��) �� �ł̖��f2������
+<div class="dice">2d6>=6 【魅了】<br>
+ (2D6>=6) → 12[6,6] → 12 → スペシャル(魔力1D6点か変調1つ回復) → 闇の魔素2が発生
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>������I�I�I
+<div class="text ituki">【焔木 イツキ】<br/>やった！！！
 </div>
-<div class="text gm">�yGM�z<br/>�킠�B�@���͉񕜂���H
+<div class="text gm">【GM】<br/>わあ。　魔力回復する？
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�M����I�ށu�]�сv���������Ƃ͂ł��Ȃ��̂��ƂĂ��S�ꂵ���B�h���ł���ˁA�����󂯂܂�������B�����I��点�āA������肨����ł��������B�����v���܂��񂩁H�v��������Ȃ����ȕ\��ŗU���܂��ˁB
+<div class="text ituki">【焔木 イツキ】<br/>「貴方を蝕む「綻び」を治すことはできないのがとても心苦しい。辛いですよね、私も受けましたから。早く終わらせて、ゆっくりお茶会でもしたい。そう思いませんか？」少し頼りなさげな表情で誘いますね。
 </div>
-<div class="text gm">�yGM�z<br/>�߂����ᖣ�������B�@1d6�Ŗ��͉񕜂��܂��傤�B���f���`���[�W�ǂ����B�n���Ă������ł���
+<div class="text gm">【GM】<br/>めっちゃ魅了した。　1d6で魔力回復しましょう。魔素もチャージどうぞ。渡してもいいですよ
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u��[�H�@�������ˁB����I������������肨��������˂��v�@���Ⴀ�܂�������ƏƂ�΂�����̂�
+<div class="text ayumu">【海鳴 夢】<br/>「んー？　そうだね。これ終わったらゆっくりお茶会したいねえ」　じゃあまあちょっと照れ笑いするのか
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�񕜂��܂��I���f�͂��Ⴀ�A�R�m�����ɂ���Ă����܂��I
-</div><div class="dice">1d6 �� :<br>
- (1D6) �� 3
+<div class="text ituki">【焔木 イツキ】<br/>回復します！魔素はじゃあ、騎士召喚にいれておきます！
+</div><div class="dice">1d6 回復 :<br>
+ (1D6) → 3
 </div>
-<div class="text gm">�yGM�z<br/>�ő�l�܂ŉ񕜂������ȁB�@�`���[�W�������ł��B
+<div class="text gm">【GM】<br/>最大値まで回復したかな。　チャージも了解です。
 </div>
-<div class="text gm">�yGM�z<br/>�ł́A��U�͏����X�e�b�v���܂���̂Ő�U�̍U���X�e�b�v�ł��B�v���b�g�ǂ���
+<div class="text gm">【GM】<br/>では、後攻は召喚ステップしませんので先攻の攻撃ステップです。プロットどうぞ
 </div>
-<div class="dice">�y�_�C�X�v���b�g���ʁz<br/>
-�C�c�L�̍U���_�C�X�F4,4,4<br>
-�֏��̖h��_�C�X�F2,4,5,6
+<div class="dice">【ダイスプロット結果】<br/>
+イツキの攻撃ダイス：4,4,4<br>
+禁書の防御ダイス：2,4,5,6
 </div>
-<div class="text noel">�y�m�G���z<br/>����ˌ��B�y�ǉ��_���[�W2�z�A���ꂩ��y�u�[�X�g�z�I
+<div class="text noel">【ノエル】<br/>援護射撃。【追加ダメージ2】、それから【ブースト】！
 </div>
-<div class="text gm">�yGM�z<br/>�P�_�~�߂ĂR�_�ʂ�܂��B�@�����ċR�m�̒ǉ��_���[�W���R�_�c�@�̎��_�ł����܂��ł��ˁB
+<div class="text gm">【GM】<br/>１点止めて３点通ります。　そして騎士の追加ダメージが３点…　の時点でおしまいですね。
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�A�������O�ɂ����������񂾂ˁc�L�ς񂿂��ʂ蔲�����I��
+<div class="text noel">【ノエル】<br/>じゃあ連撃入れる前にやっちゃったんだね…猫ぱんちが通り抜けた的な
 </div>
 <br>
-<div class="subtitle" id="last_4">���퓬�I��
+<div class="subtitle" id="last_4">◆戦闘終了
 </div>
-<div class="text gm">�yGM�z<br/>���@�g���������֏���|�������ƂŁA�����y�Ҏ[�z���������q�����闠�؂�̉��r�͕��󂳂�܂����B
-<br/>�C�t���΂݂Ȃ���͌������ꏊ�ɖ߂��Ă��܂��B
+<div class="text gm">【GM】<br/>魔法使いたちが禁書を倒したことで、無事【編纂】が完了し〈共鳴する裏切りの炎〉は封印されました。
+<br/>気付けばみなさんは元いた場所に戻っています。
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ⴀ�ǂ��ςƁu���^�ω��v�������āA�����̏��������L�ŏ��ɍ~�藧���܂��B
+<div class="text noel">【ノエル】<br/>じゃあどろんぱと「元型変化」を解いて、いつもの小さい黒猫で床に降り立ちます。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�I�c�J���T�}�f�X�[�I�v�@<br>
-�����ɏI����������������ĎO�l�Ƀn�C�^�b�`���d�|���܂��傤�B
+<div class="text cody">【コーディ・コルトハード】<br/>「オツカレサマデスー！」　<br>
+無事に終わった事を実感して三人にハイタッチを仕掛けましょう。
 </div>
-<div class="text noel">�y�m�G���z<br/>�K���ł؂���Ɓi
+<div class="text noel">【ノエル】<br/>尻尾でぺしんと（
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���肪�Ƃ��������܂��I
+<div class="text cody">【コーディ・コルトハード】<br/>ありがとうございます！
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�n�C�^�b�`�������ƁA�R�[�f�B����̓����ł܂��B
+<div class="text ituki">【焔木 イツキ】<br/>ハイタッチしたあと、コーディくんの頭撫でます。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�u�����ꂳ�܂���v�@�Ў�łۂ��
+<div class="text ayumu">【海鳴 夢】<br/>「おつかれさまだよ」　片手でぽんと
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�e�N�j�V�����k�c�c�v�@���ł��Ă͂�͂킵�Ă܂�
+<div class="text cody">【コーディ・コルトハード】<br/>「テクニシャンヌ……」　撫でられてはわはわしてます
 </div>
-<div class="text gm">�yGM�z<br/>�u�݂Ȃ���A�����l�ł����B�@���Ƃ͎��̕��Ŏ��������̕����s���Ă����܂�����A�D���ɂȂ����č\���܂����v�@<br>
-�Ɖe�����琺��������A�ʐM���@���؂��܂��B
+<div class="text gm">【GM】<br/>「みなさん、お疲れ様でした。　あとは私の方で事務処理の方を行っておきますから、好きになさって構いませんよ」　<br>
+と影原から声がかかり、通信魔法が切られます。
 </div>
-<div class="text noel">�y�m�G���z<br/>�u���Ⴀ�{�N���[����B�g�[���̃p�[�J�[�ɐ��肽�����v�@�Ă��Ă�
+<div class="text noel">【ノエル】<br/>「じゃあボクかーえろ。トーリのパーカーに潜りたいし」　てこてこ
 </div>
-<div class="text gm">�yGM�z<br/>�K�x�ɋY�ꂽ�炠�Ƃ͊e���D���ȑ���Ƃ̃G�s���[�O�ɂȂ�܂���B
+<div class="text gm">【GM】<br/>適度に戯れたらあとは各自好きな相手とのエピローグになりますよ。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�uDVD�ƊG�{�͔������炠���邩��B�K���ɑ҂��ĂĂˁ[�v�@�ӂ���Ə�����B<br>
-������C�͂���̂ł��̓�������
+<div class="text ayumu">【海鳴 夢】<br/>「DVDと絵本は買ったらあげるから。適当に待っててねー」　ふらっと消える。<br>
+見つける気はあるのでその内見つかる
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�p���b�Ɨ�����������āA�݂�Ȃ̖��������ċA�銴���ŁB
+<div class="text ituki">【焔木 イツキ】<br/>パンッと両手をたたいて、みんなの魅了解いて帰る感じで。
 </div>
-<div class="text gm">�yGM�z<br/>�ƂĂ��}�C�y�[�X�Ȗʎq�Ȃ̂ł��̂܂܎U��U��ɉ��U�ɂȂ�̂��ȁB<br>
-�ł͂ǂ����邩���܂��Ă�q����G�s���[�O����Ă����܂��傤�B��]������[
+<div class="text gm">【GM】<br/>とてもマイペースな面子なのでそのまま散り散りに解散になるのかな。<br>
+ではどうするか決まってる子からエピローグやっていきましょう。希望ある方ー
 </div>
-<div class="text noel">�y�m�G���z<br/>�񂶂Ⴀ�Ƃ��ƂƂ�����܂���������B���肢���Ă����H
+<div class="text noel">【ノエル】<br/>んじゃあとっととやっちまおうかしら。お願いしていい？
 </div>
-<div class="text gm">�yGM�z<br/>�킩��܂����B
+<div class="text gm">【GM】<br/>わかりました。
 </div>
 <br><br>
-<div class="subtitle" id="epilogue_1">���G�s���[�O�@�`�m�G���̏ꍇ
+<div class="subtitle" id="epilogue_1">◆エピローグ　～ノエルの場合
 </div>
-<div class="text gm">�yGM�z<br/>�ł́A�m�G���N�͘Z���V�s�̒��̕��a�����߂��A����Ŏ�����̐g�����S���ƁA<br>
-��D���Ȏ�����ł���򗝂����̌��ւƖ߂�̂ł��傤�B<br>
-�w�Z���I����ċA���ė��Ă邭�炢���ȁB
+<div class="text gm">【GM】<br/>では、ノエル君は六分儀市の町の平和を取り戻し、これで飼い主の身も安全だと、<br>
+大好きな飼い主である橙理ちゃんの元へと戻るのでしょう。<br>
+学校も終わって帰って来てるくらいかな。
 </div>
-<div class="text noel">�y�m�G���z<br/>�킠��������[�B���Ⴀ����������ɔ�я���Ă͂����ς��C�����ĊÂ��܂��B����΂�������{�N�B
+<div class="text noel">【ノエル】<br/>わあいやったー。じゃあだっこされに飛び乗ってはいっぱい擦り寄って甘えます。がんばったもんボク。
 </div>
-<div class="text gm">�yGM�z<br/>�d������߂�A���낢�ł���򗝂����̕G�ւƔ�я���<br>
-�u�A���^���Č��\�Â���V�����ˁv�Ƃ��������A�₳��������ŕ��������ĂȂłȂł��Ă����̂ł��傤
+<div class="text gm">【GM】<br/>仕事から戻り、くつろいでいる橙理ちゃんの膝へと飛び乗れば<br>
+「アンタって結構甘えん坊さんよね」とか言いつつも、やさしい手つきで抱っこしてなでなでしてくれるのでしょう
 </div>
-<div class="text noel">�y�m�G���z<br/>�킠��������[�I�I�I�i���ځj�@<br>
-�ł������Ďv���o�����悤�ɔ�э~��ẮA������̃Y�{���̐��������������܂��B
+<div class="text noel">【ノエル】<br/>わあいやったー！！！（二回目）　<br>
+でもあって思い出したように飛び降りては、飼い主のズボンの裾をくいくいします。
 </div>
-<div class="text gm">�yGM�z<br/>�u����A���������������̂ł�����́H�v�@<br>
-�Ă����藎�������Ǝv���Ă���������͕G�ɏ悹�Ă����p�[�J�[����Ɏ��A<br>
-�u�͂��͂��A�킩�������v�@�ƃm�G������ɂ��Ă��Ă����ł��傤
+<div class="text gm">【GM】<br/>「あら、何か見せたいものでもあるの？」　<br>
+てっきり落ち着くと思っていた飼い主は膝に乗せていたパーカーを手に取り、<br>
+「はいはい、わかったわよ」　とノエルくんについてきてくれるでしょう
 </div>
-<div class="text noel">�y�m�G���z<br/>�������̔������肩�肵�āA�o���ā[���Ă����ł��ˁB
+<div class="text noel">【ノエル】<br/>お部屋の扉をかりかりして、出してーってするんですね。
 </div>
-<div class="text gm">�yGM�z<br/>�u�O�ɏo�����́H�@�A���^���i�͍D���ɂ��Ă邶��Ȃ��v�@�Ƃ��������J���Ă�����ł��傤
+<div class="text gm">【GM】<br/>「外に出たいの？　アンタ普段は好きにしてるじゃない」　とか言いつつも開けてくれるんでしょう
 </div>
-<div class="text noel">�y�m�G���z<br/>�J�����悪�A�s���t�ŏ���Ɍq�������ʁA�����傪������Ǝv���Ă��c����̉Ƃ̌��ւɌq�����Ă���Ƃ����B
-<br/>�w��H�@���H�ł���H�@�i������������Ƃ������҂񂾂���Ƃ�����ȔF���͖����j
+<div class="text noel">【ノエル】<br/>開けた先が、《道》で勝手に繋いだ結果、飼い主が会いたいと思ってた幼馴染の家の玄関に繋がっているという。
+<br/>背後？　道路ですよ？　（部屋着だからとかすっぴんだからとかそんな認識は無い）
 </div>
-<div class="text gm">�yGM�z<br/>�u�c����H�@�����A�A�C�c��̉Ƃ���Ȃ��́v�@<br>
-����Ƃ�Ƃ��Ď��͌��񂵂��肷�邯�ǁA�܂����@�����񂩂����邭�炢�Ȃ̂���
+<div class="text gm">【GM】<br/>「…あら？　ここ、アイツらの家じゃないの」　<br>
+きょとんとして周囲見回したりするけど、まあ魔法だし首かしげるくらいなのかな
 </div>
-<div class="text noel">�y�m�G���z<br/>�ł��B���Ƃ͂�����񂾂�������āA�u��������Ă߂���o�Ă�����v�Ƃ����C�����łɂ�[�A�ƏZ�l����Ăт܂���B
+<div class="text noel">【ノエル】<br/>です。あとはもう一回だっこされて、「おいこらてめえら出てこいよ」という気持ちでにゃー、と住人らを呼びますよ。
 </div>
-<div class="text noel">�y�m�G���z<br/>���������玩���̎d���͂����܂��Ȃ̂ŁA�p�[�J�[�ɂ������������Ă܂��邭�Ȃ�܂��B�ӂ����B
+<div class="text noel">【ノエル】<br/>そうしたら自分の仕事はおしまいなので、パーカーにもそもそ入ってまあるくなります。ふわわわわ。
 </div>
-<div class="text gm">�yGM�z<br/>�u�܂��A���̒��s�v�c�Ȃ��Ƃ͂������񂠂���̂ˁv�@�Ƃ��������Ƃ��s���Ă�򗝂���񂾂�<br>
-�Ђ傢�ƃm�G���N������グ�āu�ז����ɂ������[�v�ƁA�悭�m�����Z�l��̏Z�މƂɏオ�荞�ނ̂ł��傤�B
+<div class="text gm">【GM】<br/>「まあ、世の中不思議なことはたくさんあるものね」　とか幻夢境とか行ってる橙理ちゃんだし<br>
+ひょいとノエル君を抱き上げて「邪魔しにきたわよー」と、よく知った住人らの住む家に上がり込むのでしょう。
 </div>
-<div class="text noel">�y�m�G���z<br/>�ЂƂ肶�߂���Ȃ��̂͂�����Ƃ��₵�����ǂ����̂ł��B��D���Ȏ�����̊肢���������ăm�G���͍K���ł��B
+<div class="text noel">【ノエル】<br/>ひとりじめじゃないのはちょっとくやしいけどいいのです。大好きな飼い主の願いを叶えられてノエルは幸せです。
 </div>
-<div class="text gm">�yGM�z<br/>���ԓI�ɑ䏊����͒q���N�̍�������͂�̓������Y���ĂĒ�͗[���ł��ǂ݂Ȃ��烊�r���O�Ŋ����ł�̂��ȁB<br>
-�܂��ӂ��肪�򗝂������������o�}���āA���̂܂܈ꏏ�ɗ[�тł��H�ׂĂ������Ƃ͑z���ɓ�Ȃ��ł��傤�B�@
+<div class="text gm">【GM】<br/>時間的に台所からは智流君の作ったごはんの匂いが漂ってて弟は夕刊でも読みながらリビングで寛いでるのかな。<br>
+まあふたりが橙理ちゃんを温かく出迎えて、そのまま一緒に夕飯でも食べていくことは想像に難くないでしょう。　
 </div>
-<div class="text noel">�y�m�G���z<br/>���Ƃ͎����Ɋւ�邱�ƂɂȂ����d�q�����̊肢���������炢���˂��Ă�����Ƃ��炢�v���Ă����Ă����܂��B�����Ɗ�����B
+<div class="text noel">【ノエル】<br/>あとは事件に関わることになった慧子ちゃんの願いも叶ったらいいねってちょっとくらい思ってあげておきます。きっと叶うよ。
 </div>
-<div class="text noel">�y�m�G���z<br/>����Ńm�G���̃G�s���[�O�Ƃ��Ă͖������ȁB���t���������肪�Ƃ�GM�B
+<div class="text noel">【ノエル】<br/>それでノエルのエピローグとしては満足かな。お付き合いありがとうGM。
 </div>
-<div class="text gm">�yGM�z<br/>���ƌd�q�������C�ɂ��Ă���Ă��肪�Ƃ��m�G������B�@�ł͂���Ȋ����ŁY�܂��傤�B
+<div class="text gm">【GM】<br/>わりと慧子ちゃんも気にしてくれてありがとうノエルくん。　ではそんな感じで〆ましょう。
 </div>
-<div class="text noel">�y�m�G���z<br/>�́[�����肪�Ƃ��������܂����I
+<div class="text noel">【ノエル】<br/>はーいありがとうございました！
 </div>
-<div class="text gm">�yGM�z<br/>�����Ă�肽�������邩�ȁH
+<div class="text gm">【GM】<br/>続けてやりたい方いるかな？
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�ł͂�������I���̂Ŏ���������
+<div class="text ayumu">【海鳴 夢】<br/>ではあっさり終わるので次いいかな
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A������ł��ˁB
-</div>
-<br>
-<div class="subtitle" id="epilogue_2">���G�s���[�O�@�`�C�� ���̏ꍇ�@
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>�قꂽ�t�[�h�̗�Ɍ��_���m�̃A�W�g�Ɍ��̋R�m��u���Ă����܂��B�ۂ��B
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>���������\������̉ƍs����B
-</div>
-<div class="text gm">�yGM�z<br/>���A�����̌����点�΁@���A�͂��B�@�啶���N�ɂ��Ă�RP���肢���Ă����̂���
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>��������������Ȃ̂ŁA��\�������RP�͖����Ă����ł��B
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>��\������͍��܂Ŏu�]�Z���߂��Ƃ����ۂ���ˁB�Ȃ̂Łs���t�Ŏu�]�Z�Ɏ󂩂閲�ł������Ă��������ȂƁB
-</div>
-<div class="text ayumu_true">�y�C�� ���z<br/>���������łɎהO���H�����܂��܂��B��������
-</div>
-<div class="text gm">�yGM�z<br/>�ӂނӂށA���܂ł������̂ˁB�����Ȓ��R�j�q�ɂ͂炢�ł����̂ˁB�@�Ȃ�قǁA�т����̂ȁB�@�����Ƃ������܂�
-</div>
-<div class="text gm">�yGM�z<br/>�Ȃ�ƂȂ������������������Ă��炢�Ȃ��炱�̂��킢���������͂��͂��ł��ł�����K�������ł��ˏ��N
-</div>
-<div class="text ayumu_true">�y�C�� ���z<br/>�i�܂����C�ɐ��b�Ă��Ă��傤������B�撣���Ăˁj�@<br>
-�͂��͂�������̒�������Ɛ������Ă����B
-</div>
-<div class="text ayumu_true">�y�C�� ���z<br/>����Ȋ����ŋY��܂��B�Ђ���₽���悫���ƁB
-</div>
-<div class="text gm">�yGM�z<br/>���̒��������Ă��炦���痂���͂�������Ɩڊo�߂�ꂻ���ł��ˁB<br>
-�󌱂͂Ƃ������A�܂��ʂ̕����ł���΂낤���Ă������ɂ͂Ȃ��̂�������܂���ˁB
-</div>
-<div class="text ayumu">�y�C�� ���z<br/>���̒��󌱂�������Ȃ����ȁB�ȏ�ł���B���肪�Ƃ������܂����[
-</div>
-<div class="text gm">�yGM�z<br/>�͂��A�����ꂳ�܂ł����[�@�Ȃ���
-</div>
-<div class="text gm">�yGM�z<br/>�ł͗���I�ɑ����ăC�c�L���񂩂�
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�́[���I
+<div class="text gm">【GM】<br/>はい、夢くんですね。
 </div>
 <br>
-<div class="subtitle" id="epilogue_3">���G�s���[�O�@�`���؃C�c�L�̏ꍇ�@
+<div class="subtitle" id="epilogue_2">◆エピローグ　～海鳴 夢の場合　
 </div>
-<div class="text gm">�yGM�z<br/>�ǂ̂悤�ȉ��o������]�ł����H
+<div class="text ayumu">【海鳴 夢】<br/>ほつれたフードの礼に犬神博士のアジトに幻の騎士を置いていきます。ぽい。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�����ƁA�`�����ʂ��������̂ŁA�T����ɉ�������ȁI
+<div class="text ayumu">【海鳴 夢】<br/>そしたら大十字くんの家行くよ。
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�����ł��傤�B�@<br>
-�܂����̂��A����ۂ��̂Ŋw�Z����A���Ď����̕����Ŏ؂肽�{�ł��ǂ�ł�񂶂�Ȃ����ȁB<br>
-�`��杂Ƃ���ՂɊւ��镶���Ƃ��B
+<div class="text gm">【GM】<br/>え、何その嫌がらせ笑　あ、はい。　大文字君についてはRPお願いしていいのかな
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>������
+<div class="text ayumu">【海鳴 夢】<br/>夢を見せる方向なので、大十字くんのRPは無くていいです。
 </div>
-<div class="text gm">�yGM�z<br/>�܂��Ƃ��Ƃ��Â炢�Ȃ�{�Ԃ��ɂƂ��T���ɂƂ��ŃC�c�L����̂���{���s���܂��傤��
-<br/>�u�{�����[��A�����͉����I�X�X���̖{������I�H�@�O��E�߂Ă��ꂽ�̂��������ʔ����Ă����ɓǂݏI�����������񂾁I�v�@<br>
-�݂����Ȋ����łق�ق���Ď����Ă��Ă銴������
+<div class="text ayumu">【海鳴 夢】<br/>大十字くんは挫折で志望校諦めたとかっぽいよね。なので《夢》で志望校に受かる夢でも見せてあげたいなと。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�m�荇�������A�T����̂��b�������Ă邩��A�ĉ�����l�����ꂩ�킩��Ǝv���̂ł��B
+<div class="text ayumu_true">【海鳴 夢】<br/>夢見せついでに邪念も食っちまいます。ｍｇｍｇ
 </div>
-<div class="text gm">�yGM�z<br/>�����ł��ˁB�q���r�������Ă�C�c�L���񂾂��T�N�̋L����`�����邭�炢�͊ȒP�ł��傤
+<div class="text gm">【GM】<br/>ふむふむ、挫折でしたものね。多感な中３男子にはつらいですものね。　なるほど、獏だものな。　いいとおもいます
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�Ȃ̂ŁA�����E�E�E<br>
-������N���̂Ƃ��ɋ�Ԃł����c���܂��āA�h�A�ꖇ�������ɂȂ��ꂽ��Ȃ��Ƃ�������ł����ǁE�E�E
+<div class="text gm">【GM】<br/>なんとなく嬉しいいい夢見せてもらいながらこのかわいい生き物はぐはぐでもできたら幸せそうですね少年
 </div>
-<div class="text gm">�yGM�z<br/>�ӂނӂށB�ł͂����ł��ˁA�{���̉��ɏ�������Ĕ��ʂ�悤�U�����邩�o�����q���邩���Ă�����Ƃ����񂶂�Ȃ��ł��傤��<br>
-RP���Ă����ΑΉ����܂���
+<div class="text ayumu_true">【海鳴 夢】<br/>（また元気に世話焼いてちょうだいよ。頑張ってね）　<br>
+はぐはぐされつつ頭の中ちょっと整理してあげつつ。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u�����A��������Ⴂ�v�ƏΊ�ŏo�}���āA<br>
-�u�����ł��˂��E�E�E�����Ɩʔ����E�E�E���ۂ̑̌��k�Ƃ��A�v���o�Ƃ��E�E�E�����Ă݂����Ȃ��ł����v
+<div class="text ayumu_true">【海鳴 夢】<br/>そんな感じで戯れます。ひんやり冷たいよきっと。
 </div>
-<div class="text gm">�yGM�z<br/>�u���A�{������̂��b�H�@�����������X���I�@�ǂ����̖��тł̒T���Ƃ��H�v�@�Ƃ������������A��čs������ł���
+<div class="text gm">【GM】<br/>頭の中整理してもらえたら翌朝はすっきりと目覚められそうですね。<br>
+受験はともかく、また別の方向でがんばろうってきもちにはなれるのかもしれませんね。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���āA�����āA���Ɉē����āA�h�A���J����ƁA�`���Ƃ̍u����E�E�E�E
+<div class="text ayumu">【海鳴 夢】<br/>世の中受験だけじゃないしな。以上ですよ。ありがとございましたー
 </div>
-<div class="text gm">�yGM�z<br/>�����u����ł���悤�Ȗ`���ƂɂȂ��Ă��@<br>
-�����������I�I�I�I�@���̂Ƃ��̂��Z���񂾁I�I�I�I�@���ĂȂ��Ă�̂��Ȃ�
+<div class="text gm">【GM】<br/>はい、おつかれさまでしたー　なごんだ
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u���������A�`���Ƃ��{�l�ɕ������ق��������ł��傤�v�ƁA����Ȋ�����
+<div class="text gm">【GM】<br/>では流れ的に続けてイツキさんかな
 </div>
-<div class="text gm">�yGM�z<br/>�͂��A�ł͉��������l���ɍĉ�Ă������񂨘b�������Ă��炤�̂��ȁB�@<br>
-�ƂĂ��C�O�ȋC�����邯�ǂ��Ԃ�p�ꂭ�炢�Ȃ���v����@�Г��ؕ�����Ȃ��A����p�ӂ��Ă����Ă��������˃C�c�L����
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�勻�����Ă�T������₳�����ڂŌ�����Ă����܂��B�����ƋA����t���Y��������S�I
-</div>
-<div class="text gm">�yGM�z<br/>����[�A����[�I�@���肪�Ƃ��{��������I�@<br>
-���Ă����Ǝ�Ƃ������ĂԂ�Ԃ�U���Ċ��ӂ̋C������`���܂��@����َq�܂�����Ă�
-</div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u���͉Ƃ̗����ǂ������ȕ��̍u�����ɂȂ��Ă��āv�Ƃ��A�K���ɉR���B�ȏ�ł��I
-</div>
-<div class="text gm">�yGM�z<br/>�͂��A�����ꂳ�܂ł����[�@<br>
-�u�{������̗���َ͈����I�ȉ����Ȃ́I�H�v���ċ��������E�ɂ͕s�v�c�������ς��ł܂�߂��܂�Ă����܂��傤�B
+<div class="text ituki">【焔木 イツキ】<br/>はーい！
 </div>
 <br>
-<div class="subtitle" id="epilogue_4">���G�s���[�O�@�`�R�[�f�B�E�R���g�n�[�h�̏ꍇ�@
+<div class="subtitle" id="epilogue_3">◆エピローグ　～焔木イツキの場合　
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���o��]���Ă����̂��ȁB�d�q�����ƍ��N������ɌĂ�ł�����A�j���ӏ܉���J�������ł��B<br>
-�R�[���Ƃ��W���[�X�Ƃ��|�e�`�Ƃ��L���Ă킢�킢�ƁB
+<div class="text gm">【GM】<br/>どのような演出をご希望ですか？
 </div>
-<div class="text gm">�yGM�z<br/>���ނ��ށA�����ł��傤�B�@�f�͂��������������������˂ėU�����炢���񂶂�Ȃ����ȁI
+<div class="text ituki">【焔木 イツキ】<br/>えっと、義務を果たしたいので、探くんに会いたいかな！
 </div>
-<div class="text gm">�yGM�z<br/>�����ƌd�q�͎���̃N�b�L�[�Ƃ������āA���͂�������A���R�[���Ƃ��������݂�
+<div class="text gm">【GM】<br/>うむ、いいでしょう。　<br>
+まああのこ帰宅部っぽいので学校から帰って自分の部屋で借りた本でも読んでるんじゃないかな。<br>
+冒険譚とか遺跡に関する文献とか。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�R���I�@�R���������̂������߂ł��[�I�@�z�b�g�ȃI�g�i�̃q�[���[���m�I�v�@�Ƃ����������Ă��܂��B<br>
-�v���Ԃ�ɎO�l�������̂��������Ďd���Ȃ��l�q�ł��ˁB
+<div class="text ituki">【焔木 イツキ】<br/>えっと
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�z�b�g�ő�l�́c�H�v�@�ǂ�Ȃ̂��H����DVD�̃p�b�P�[�W�ł����������ƌ��Ă�̂���
+<div class="text gm">【GM】<br/>まあ家だとやりづらいなら本返しにとか探しにとかでイツキさんのいる本屋行きましょうか
+<br/>「本屋さーん、今日は何かオススメの本あるっ！？　前回薦めてくれたのすっげえ面白くてすぐに読み終わっちゃったんだ！」　<br>
+みたいな感じでほらほらって持ってきてる感じかな
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u��[�A���̂��݂��ˁ[�I�v�@�Ƃ������d�q�͎��R�b�v�ɃW���[�X�Ƃ������ł��ł��傤
+<div class="text ituki">【焔木 イツキ】<br/>知り合いだし、探くんのお話も聞いてるから、再会したい人がだれかわかると思うのです。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�I���I�����Ȃ���̃f�X�I�v�@<br>
-�p�b�P�[�W�ɂ͂Ȃ񂩂����Ղ��ۂ��̂Ɠe���ۂ��̂������Ă�񂶂�Ȃ��ł��傤���B
+<div class="text gm">【GM】<br/>そうですね。〈時〉を持ってるイツキさんだし探君の記憶を覗き見るくらいは簡単でしょう
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u���Ɋւ���b�Ȃ̂��c�H�@���{�b�g�H�v�@�Ƃ��������f��Ō��Ă�̂��ȁB�@<br>
-�������ɃA���R�~�`�b�N�ł͂���
+<div class="text ituki">【焔木 イツキ】<br/>なので、こう・・・<br>
+会いたい誰かのとこに空間でも＜歪＞ませて、ドア一枚向こうにつなげれたらなぁとおもうんですけど・・・
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�P�[�R�A�킴�킴�N�b�L�[����Ă��ꂽ�ł����I�@���������f�X�[�I�@�J�I�����ق�[�I�v�@<br>
-�d�q�����̎���N�b�L�[�����N�ɉ����t���܂��傤�B
+<div class="text gm">【GM】<br/>ふむふむ。ではそうですね、本屋の奥に招き入れて扉通るよう誘導するか出口を繋げるかしてあげるといいんじゃないでしょうか<br>
+RPしてくれれば対応しますよ
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���ւցc�`�͂�����Ƃ��тɂȂ�����������ǁA���ꂳ��ɋ�����č�������疡�͑��v���Ǝv����I�v�@
+<div class="text ituki">【焔木 イツキ】<br/>「あぁ、いらっしゃい」と笑顔で出迎えて、<br>
+「そうですねぇ・・・もっと面白い・・・実際の体験談とか、思い出とか・・・聞いてみたくないですか」
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�����t����ꂽ�炿����Ƃ��ʂ��ĂȂ���܂����ނ̂�����Ȃ̂łς���ƒ�����ł��傤
+<div class="text gm">【GM】<br/>「え、本屋さんのお話？　聞きたい何々っ！　どこかの密林での探検とか？」　とかｗｋｔｋしつつ連れて行かれるんですね
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c���������΃J�I���A�ŋ߂�����ƖZ�����݂����f�X�H�@<br>
-�܂��q�}�ɂȂ�����O�l�ł��ѐH�ׂ����f�X�A�q�}�ɂȂ����炢�ł����Ă��������I�v�@<br>
-�������ɗ��S�֘A�͂ڂ����N�b�L�[��������
+<div class="text ituki">【焔木 イツキ】<br/>って、いって、奥に案内して、ドアを開けると、冒険家の講演会が・・・・
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u���A����B�����������Ă��ꂽ��c���ꂵ���ȁH�v�@<br>
-�������Ă�����Ɗ��҂����ڂŌ����肷��̂���
+<div class="text gm">【GM】<br/>ｗｗ講演会できるような冒険家になってた　<br>
+すげえええ！！！！　あのときのお兄さんだ！！！！　ってなってるのかなｗ
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u�c�������񂪎���ŁA���΂炭�͂�����Ƃ������Ă邯�ǁA������������܂��ז����ɍs�����肾�v�@����
+<div class="text ituki">【焔木 イツキ】<br/>「いえいえ、冒険家ご本人に聞いたほうがいいでしょう」と、こんな感じで
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�uYes�I�@�}�b�e�}�X�[�I�v�@�ƌ����A�ڂ��ڂ�DVD���Đ����n�߂邩�ȁB
+<div class="text gm">【GM】<br/>はい、では懐かしい人物に再会してたくさんお話聞かせてもらうのかな。　<br>
+とても海外な気がするけどたぶん英語くらいなら大丈夫だよ　片道切符じゃなく帰りも用意してあげてくださいねイツキさん
 </div>
-<div class="text gm">�yGM�z<br/>�y���ŃX�^�C���b�V���Ȋ����̃I�[�v�j���O�ł��Đ������킯�ł��ˁB�@<br>
-�������ɕ���ŎO�l�Ō��܂��傤
+<div class="text ituki">【焔木 イツキ】<br/>大興奮してる探くんをやさしい目で見守っておきます。ちゃんと帰りも付き添うから安心！
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�u�c�c���ꌩ�Ėʔ���������A�R�X�v�����Ă݂܂���H�@�{�N�A�u���[���[�Y���h���S���L�b�h��肽���ł��I�v�@<br>
-�ƌ����O�l�Ō��܂��傤�I
+<div class="text gm">【GM】<br/>うわー、うわー！　ありがとう本屋さんっ！　<br>
+ってきっと手とか握ってぶんぶん振って感謝の気持ちを伝えます　後日菓子折りもってこ
 </div>
-<div class="text npc_keiko">�y�v�Z �d�q�z<br/>�u�Ȃ񂾂��J�b�R�������O���ˁI�@�ǂ̂��ǂ̂��H�v�@���Ċy�������ɕ����Ă��肷��̂���
+<div class="text ituki">【焔木 イツキ】<br/>「実は家の裏が良くいろんな方の講演会場になっていて」とか、適当に嘘つきつつ。以上です！
 </div>
-<div class="text npc_kaoru">�y�L�� ���z<br/>�u���̎����ɂ͊����񂶂�Ȃ����H�@�c�����Ƃ����͂킩��Ȃ�����ȁv�@�Ƃ����������݂͂��Ȃ���ł��傤
+<div class="text gm">【GM】<br/>はい、おつかれさまでしたー　<br>
+「本屋さんの裏手は異次元的な何かなの！？」って驚きつつも世界には不思議がいっぱいでまるめこまれておきましょう。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�c�c�Ƃ����킯�ŁA�A�j�������͂��߂����ŁY�ł��傤���B
+<br>
+<div class="subtitle" id="epilogue_4">◆エピローグ　～コーディ・コルトハードの場合　
 </div>
-<div class="text gm">�yGM�z<br/>�ł����ˁB�@�����ꂳ�܂ł����@�d�q�����Ə��q��l���ĕ��ׂ΂�������Ȃ�
+<div class="text cody">【コーディ・コルトハード】<br/>演出希望していいのかな。慧子ちゃんと香君を自宅に呼んでお泊りアニメ鑑賞会を開きたいです。<br>
+コーラとかジュースとかポテチとか広げてわいわいと。
+</div>
+<div class="text gm">【GM】<br/>うむうむ、いいでしょう。　断章も消えたし仲直り会も兼ねて誘ったらいいんじゃないかな！
+</div>
+<div class="text gm">【GM】<br/>きっと慧子は手作りのクッキーとか持って、香はこっそりアルコールとか持ち込みつつ
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「コレ！　コレが今日のおすすめですー！　ホットなオトナのヒーローモノ！」　とうきうきしています。<br>
+久しぶりに三人揃ったのが嬉しくて仕方ない様子ですね。
+</div>
+<div class="text npc_kaoru">【広瀬 香】<br/>「ホットで大人の…？」　どんなのだ？ってDVDのパッケージでもしげしげと見てるのかな
+</div>
+<div class="text npc_keiko">【久住 慧子】<br/>「わー、たのしみだねー！」　とか言いつつ慧子は紙コップにジュースとか注いでるんでしょう
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「オリオンをなぞるのデス！」　<br>
+パッケージにはなんかこう虎っぽいのと兎っぽいのがうつってるんじゃないでしょうか。
+</div>
+<div class="text npc_kaoru">【広瀬 香】<br/>「星に関する話なのか…？　ロボット？」　とか言いつつ困惑顔で見てるのかな。　<br>
+たしかにアメコミチックではある
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「ケーコ、わざわざクッキー作ってくれたですか！　おいしいデスー！　カオルもほらー！」　<br>
+慧子ちゃんの手作りクッキーを香君に押し付けましょう。
+</div>
+<div class="text npc_keiko">【久住 慧子】<br/>「えへへ…形はちょっといびつになっちゃったけど、お母さんに教わって作ったから味は大丈夫だと思うよ！」　
+</div>
+<div class="text npc_kaoru">【広瀬 香】<br/>押し付けられたらちょっとぐぬってなりつつもまあ拒むのもあれなのでぱくりと頂くんでしょう
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「……そういえばカオル、最近ちょっと忙しいみたいデス？　<br>
+またヒマになったら三人でご飯食べたいデス、ヒマになったらいつでもきてください！」　<br>
+さすがに恋心関連はぼかしつつクッキーもぐもぐ
+</div>
+<div class="text npc_keiko">【久住 慧子】<br/>「う、うん。私も香が来てくれたら…うれしいな？」　<br>
+同調してちらっと期待した目で見たりするのかな
+</div>
+<div class="text npc_kaoru">【広瀬 香】<br/>「…じいさんが死んで、しばらくはちょっとごたついてるけど、落ち着いたらまた邪魔しに行くつもりだ」　かな
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「Yes！　マッテマスー！」　と言いつつ、ぼちぼちDVDを再生し始めるかな。
+</div>
+<div class="text gm">【GM】<br/>軽快でスタイリッシュな感じのオープニングでも再生されるわけですね。　<br>
+いいこに並んで三人で見ましょう
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>「……これ見て面白かったら、コスプレしてみません？　ボク、ブルーローズかドラゴンキッドやりたいです！」　<br>
+と言いつつ三人で見ましょう！
+</div>
+<div class="text npc_keiko">【久住 慧子】<br/>「なんだかカッコいい名前だね！　どのこどのこ？」　って楽しそうに聞いてたりするのかな
+</div>
+<div class="text npc_kaoru">【広瀬 香】<br/>「この時期には寒いんじゃないか？　…服作りとか俺はわからないからな」　とか言いつつも拒みはしないんでしょう
+</div>
+<div class="text cody">【コーディ・コルトハード】<br/>……というわけで、アニメを見はじめた所で〆でしょうか。
+</div>
+<div class="text gm">【GM】<br/>ですかね。　おつかれさまでした　慧子ちゃんと女子二人着て並べばいいじゃない
 </div>
 <br><br>
-<div class="subtitle" id="epilogue_5">���A�t�^�[
+<div class="subtitle" id="epilogue_5">◆アフター
 </div>
-<div class="text gm">�yGM�z<br/>�Ƃ����킯�ŁA���̓x�͖������ΐ�}�M�J���M�A�u�����闠�؂�̉��v�ɂ��t�����������������肪�Ƃ��������܂����B
-<br/>�I�������Ƃ��ĕ]�������ɍs���Ă����܂��傤�B
+<div class="text gm">【GM】<br/>というわけで、この度は魔道書対戦マギカロギア「共鳴する裏切りの炎」にお付き合いいただきありがとうございました。
+<br/>終了処理として評価を順に行っていきましょう。
 </div>
-<div class="text gm">�yGM�z<br/>��{�����uP233���Q�l�ɏ��ɏ������s���܂��B
+<div class="text gm">【GM】<br/>基本ルルブP233を参考に順に処理を行います。
 </div>
-<div class="text gm">�yGM�z<br/>�܂��͊肢�B�u�`���v�̗��ɋL�ڂ���������ΏۂƂȂ�܂��B���Ȑ\�������肢���܂��B
+<div class="text gm">【GM】<br/>まずは願い。「義務」の欄に記載がある方が対象となります。自己申告をお願いします。
 </div>
-<div class="text noel">�y�m�G���z<br/>�́[���B�򗝂���́u�����̑�؂Ȑl�⓲��̐l�ɉ�킹�ė~�����v�ł��ˁB����������ł��B
+<div class="text noel">【ノエル】<br/>はーい。橙理さんの「自分の大切な人や憧れの人に会わせて欲しい」ですね。叶えたつもりです。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�͂��I�u�T�𓲂�̐l���ƍĉ����v�ł��I
+<div class="text ituki">【焔木 イツキ】<br/>はい！「探を憧れの人物と再会させる」です！
 </div>
-<div class="text gm">�yGM�z<br/>�͂��B�ӂ���Ƃ��������F���ł���B�肢���y�ρz�Ƃ��A����̃Z�b�V�����ɂ�������ѓ_���P�㏸���܂��B
+<div class="text gm">【GM】<br/>はい。ふたりとも叶えた認識ですよ。願いを【済】とし、今回のセッションにおける功績点が１上昇します。
 </div>
-<div class="text noel">�y�m�G���z<br/>��[�����肪�Ƃ��������܂��B�ʂ�ᛂ���Ȃ��ł��B�肢���������Ė����ł��B
+<div class="text noel">【ノエル】<br/>わーいありがとうございます。別に癪じゃないです。願いを叶えられて満足です。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���肢���Ȃ����Ă悩�������[
+<div class="text ituki">【焔木 イツキ】<br/>お願いかなえられてよかったぁー
 </div>
-<div class="text gm">�yGM�z<br/>�������r�͍���Ȃ��̂Œʏ���ѓ_�̕��ւ����܂��傤
+<div class="text gm">【GM】<br/>続けて疵は今回ないので通常功績点の方へいきましょう
 </div>
-<div class="text gm">�yGM�z<br/>�y�����z�f�͂⏑�Ћ��ƂP�΂P�̐퓬���s�����������B�R�[�f�B�N�A�����񂪑ΏۂɂȂ�܂��ˁB���ѓ_�P�_�l���ł��B
+<div class="text gm">【GM】<br/>【勝利】断章や書籍卿と１対１の戦闘を行い勝利した。コーディ君、夢くんが対象になりますね。功績点１点獲得です。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�́[��
+<div class="text cody">【コーディ・コルトハード】<br/>はーい
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>����܂���
+<div class="text ayumu">【海鳴 夢】<br/>いれました
 </div>
-<div class="text gm">�yGM�z<br/>�y�����z�Z�b�V�����ɍŌ�܂ŎQ���������c�����B�C�c�L����������������Ă�̂őΏۂł��B�S���P�_�l���ƂȂ�܂��B
+<div class="text gm">【GM】<br/>【生存】セッションに最後まで参加し生き残った。イツキさんも無事復活してるので対象です。全員１点獲得となります。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>��������[�I
+<div class="text ituki">【焔木 イツキ】<br/>やったぁー！
 </div>
-<div class="text gm">�yGM�z<br/>�y�M���z�o���ɋL�ڂ���Ă���M����B�������B�@�e�������̐M����ǂݏグ�Ă��������B
+<div class="text gm">【GM】<br/>【信条】経歴に記載されている信条を達成した。　各自自分の信条を読み上げてください。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���@�Ж��H���~�߂�
+<div class="text ayumu">【海鳴 夢】<br/>魔法災厄を食い止める
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���@�Ж�Ɋ������܂ꂽ��ʐl�i�����ҁ��j��������
+<div class="text cody">【コーディ・コルトハード】<br/>魔法災厄に巻き込まれた一般人（＜愚者＞）を助ける
 </div>
-<div class="text gm">�yGM�z<br/>�����֏��𕕈󂵁A���@�Ж��H���~�߂܂����B<br>
-��ʐl���^���ϓ]�͊������܂ꂽ�q������̂́A�ŏI�I�ɂ͋~���Ă����Ȃ̂ł����ł��傤�B<br>
-������A�R�[�f�B�N�͂P�_���l�����Ă��������B
+<div class="text gm">【GM】<br/>無事禁書を封印し、魔法災厄を食い止めました。<br>
+一般人も運命変転は巻き込まれた子いるものの、最終的には救われてそうなのでいいでしょう。<br>
+夢くん、コーディ君は１点ずつ獲得してください。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>����������Ƃǂ����낤�Ǝv���Ă��B���肪�Ƃ��������܂�
+<div class="text ayumu">【海鳴 夢】<br/>そこちょっとどうだろうと思ってた。ありがとうございます
 </div>
-<div class="text noel">�y�m�G���z<br/>�u�����̐l�Ɓy�^���z�����ԁB�v�@�A���y�Ɓy�^���z���񂾂̂ŉʂ������Ǝv���Ă܂��B
+<div class="text noel">【ノエル】<br/>「多くの人と【運命】を結ぶ。」　植野先輩と【運命】結んだので果たせたと思ってます。
 </div>
-<div class="text gm">�yGM�z<br/>�m�G���N�͎��玖�����N�����A�V�����^��������ł��܂��ˁB�P�_�ǂ����B
+<div class="text gm">【GM】<br/>ノエル君は自ら事件を起こし、新しい運命を結んでいますね。１点どうぞ。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�u���@�ɂ���ĒN���̊肢�����Ȃ���v�ł��I
+<div class="text ituki">【焔木 イツキ】<br/>「魔法によって誰かの願いをかなえる」です！
 </div>
-<div class="text gm">�yGM�z<br/>�C�c�L����͒T�̊肢�������Ă܂�����ˁB�Y���ƂȂ�ł��傤�B�P�_�ǂ����B
+<div class="text gm">【GM】<br/>イツキさんは探の願いを叶えてますからね。該当となるでしょう。１点どうぞ。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>��������[�I�T���񂠂肪�Ƃ��I
+<div class="text ituki">【焔木 イツキ】<br/>やったぁー！探くんありがとう！
 </div>
-<div class="text gm">�yGM�z<br/>�y���[���v���C�z�v���C���[�����̃L�����̐ݒ�����܂������Ă����B�@<br>
-����͕���Ȃ��ɑS���Y���ł��傤�B�P�_���ǂ����B
+<div class="text gm">【GM】<br/>【ロールプレイ】プライヤーがそのキャラの設定をうまく演じていた。　<br>
+これは文句なしに全員該当でしょう。１点ずつどうぞ。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���������܂���
+<div class="text ayumu">【海鳴 夢】<br/>いただきました
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�킠��
+<div class="text cody">【コーディ・コルトハード】<br/>わあい
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���ѓ_���������ł��v
+<div class="text ituki">【焔木 イツキ】<br/>功績点おいしいです」
 </div>
-<div class="text gm">�yGM�z<br/>�y�Ր��z�e���A����̃Z�b�V�����ōł��Ր��ɐG�ꂽPC���w�����Ă��������B�����͑I���ł��܂���BGM���I�����܂���B�@<br>
-PC�ԍ����v���b�g���ē����I�[�v���ɂ��悤���ȁB�v���b�g�ǂ���
+<div class="text gm">【GM】<br/>【琴線】各自、今回のセッションで最も琴線に触れたPCを指名してください。自分は選択できません。GMも選択しません。　<br>
+PC番号をプロットして同時オープンにしようかな。プロットどうぞ
 </div>
 <div class="dice">
-�R�[�f�B�F3���C�c�L�@���F3���C�c�L<br>
-�C�c�L�F1���R�[�f�B�@�m�G���F1���R�[�f�B
+コーディ：3→イツキ　夢：3→イツキ<br>
+イツキ：1→コーディ　ノエル：1→コーディ
 </div>
-<div class="text gm">�yGM�z<br/>�R�[�f�B���񂪂Q�_�A�C�c�L���񂪂Q�_�ł��ˁB���ꂼ��l���ƂȂ�܂��B���S�ґg�撣�����ˁB
+<div class="text gm">【GM】<br/>コーディくんが２点、イツキさんが２点ですね。それぞれ獲得となります。初心者組頑張ったね。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�q���A�V�N�Ȍo���_���@�I�@���肪�Ƃ��������܂��I
+<div class="text cody">【コーディ・コルトハード】<br/>ヒャア新鮮な経験点だァ！　ありがとうございます！
 </div>
-<div class="text noel">�y�m�G���z<br/>�R�[�f�B�N�A�q�f�́r������߂Ƃ���RP�Ƃ��Ă��f�G�ł����B���肪�Ƃ��������܂��B�܂����ꏏ�������ȁB
+<div class="text noel">【ノエル】<br/>コーディ君、〈断章〉戦を初めとしたRPとっても素敵でした。ありがとうございます。またご一緒したいな。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���A���A������Ă�����!�킟�[���I�킟�[���I
+<div class="text ituki">【焔木 イツキ】<br/>え、え、もらっていいの!わぁーい！わぁーい！
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���Ћ��ɃR���N�V�������ꂽ�̂��s�k����������Ă����̂����邯�ǂ����ɂ��O�T�ۂ���
+<div class="text ayumu">【海鳴 夢】<br/>書籍卿にコレクションされたのが敗北したからっていうのもあるけどいかにも外典ぽくて
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�C�c�L����͖������o�����邯�ǁA�R���N�V�����ɂ���Ď��߂����q���C���|�W�V�����������������Ȃ��āB<br>
-�^�̎p����I�ڂ���鎞���y���݂ɂ��Ă܂��I
+<div class="text cody">【コーディ・コルトハード】<br/>イツキさんは魅了無双もあるけど、コレクションにされて取り戻されるヒロインポジションがすごくいいなって。<br>
+真の姿お披露目される時を楽しみにしてます！
 </div>
-<div class="text gm">�yGM�z<br/>���ꂼ��X�e�L��RP�����肪�Ƃ��������܂����B�@<br>
-�L�����̖��͂�\��������Ă��낢��Ȗ�����������Ȃ��ĉ��߂�GM���׋��ɂȂ�܂����B
+<div class="text gm">【GM】<br/>それぞれステキなRPをありがとうございました。　<br>
+キャラの魅力を表現するっていろいろな魅せ方があるなって改めてGMも勉強になりました。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�R�[�f�B���񂪁A�F�B��l�~�����̂ƁA�Ō�̃G�s���[�O���悩�����̂ŁI
+<div class="text ituki">【焔木 イツキ】<br/>コーディくんが、友達二人救ったのと、最後のエピローグもよかったので！
 </div>
-<div class="text gm">�yGM�z<br/>�y�g���z�V�i���I�ŗ^����ꂽ�G��|�����@���Ћ��A�֏����ɓ|���Ă܂�����ˁA�S���R�_�ǂ����B
+<div class="text gm">【GM】<br/>【使命】シナリオで与えられた敵を倒した　書籍卿、禁書共に倒してますからね、全員３点どうぞ。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�킟�[�[�I���ѓ_�����ς����[�[�I�u�Ђ���́I�I
+<div class="text ituki">【焔木 イツキ】<br/>わぁーー！功績点いっぱいだーー！「ひゃっは！！
 </div>
-<div class="text gm">�yGM�z<br/>�ȏ�ƂȂ�܂��B�e�����l���_�������ĉ������B
+<div class="text gm">【GM】<br/>以上となります。各自総獲得点を教えて下さい。
 </div>
-<div class="text noel">�y�m�G���z<br/>7�_���ȁB���肪�Ƃ��������܂����B
+<div class="text noel">【ノエル】<br/>7点かな。ありがとうございました。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�{�V�Ō��݂X�ł��E
+<div class="text ayumu">【海鳴 夢】<br/>＋７で現在９です・
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>9�_�ł��B
+<div class="text cody">【コーディ・コルトハード】<br/>9点です。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>9�_�ł��I
+<div class="text ituki">【焔木 イツキ】<br/>9点です！
 </div>
-<div class="text gm">�yGM�z<br/>���݂̊K�򂪊F����R�Ȃ̂ŁA�T�_����邱�ƂōU���́A�h��́A�����͂̂����ꂩ���P�㏸���邱�Ƃ��ł��܂���B<br>
-���X�y�b�N���Ă܂��g���Ă����Ă��������ˁB
+<div class="text gm">【GM】<br/>現在の階梯が皆さん３なので、５点消費することで攻撃力、防御力、根源力のいずれかを１上昇することができますよ。<br>
+リスペックしてまた使ってあげてくださいね。
 </div>
-<div class="text gm">�yGM�z<br/>�Ƃ����킯��GM����W�J�͈ȏ�ƂȂ�܂��B�F�l���肪�Ƃ��������܂����B�@<br>
-���Ƃ͎��^��������΂Ƃ��ق������̂���΃V�i���I�Ɏg�������̓n���悭�炢���ȁi�n���Ȃ�X�J�C�v��
+<div class="text gm">【GM】<br/>というわけでGMから展開は以上となります。皆様ありがとうございました。　<br>
+あとは質疑応答あればとかほしいものあればシナリオに使ったもの渡すよくらいかな（渡すならスカイプで
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>��n���񂾂��閧�J���ĂȂ����猩�����ȁB
+<div class="text ayumu">【海鳴 夢】<br/>沢渡さんだけ秘密開いてないから見たいな。
 </div>
-<div class="text noel">�y�m�G���z<br/>�n���Ȃ�X�J�C�v�̂��悳�����ł��ˁB���^�����͑��v�ł��B<br>
-�����E�i�s�����l�ł���GM�B�y���������ł���B
+<div class="text noel">【ノエル】<br/>渡すならスカイプのがよさそうですね。質疑応答は大丈夫です。<br>
+準備・進行お疲れ様でしたGM。楽しかったですよ。
 </div>
-<div class="event">���閧:��n�a�l<br>
-��n�a�l�́A�}���ψ���ɏ������鐶�k��ʂ��āA�f�͂ɜ߈˂��ꂽ�B<br>
-�c��̒f�͂̈�́A�}���ψ���̐��k�ł���B<br>
+<div class="event">●秘密:沢渡和人<br>
+沢渡和人は、図書委員会に所属する生徒を通じて、断章に憑依された。<br>
+残りの断章の一つは、図書委員会の生徒である。<br>
 ---<br>
-�f�́q���r<br>
-�����߈ː[�x:2<br>
-�U:3 �h:3 ����:6 / ���@:�y���R�̋R�m�����z / ���Z:�s���R�t
+断章〈共鳴〉<br>
+初期憑依深度:2<br>
+攻:3 防:3 魔力:6 / 魔法:【偶然の騎士召喚】 / 特技:《偶然》
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���A�[�x�Q�������B�i�������傢�y�����̂��Ƃ�
+<div class="text ayumu">【海鳴 夢】<br/>あ、深度２だった。（もうちょい軽いものだとつい
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>���^�����͑��v���ȁc�c�BGM�����l�ł����I�@�y���������ł��I
+<div class="text cody">【コーディ・コルトハード】<br/>質疑応答は大丈夫かな……。GMお疲れ様でした！　楽しかったです！
 </div>
-<div class="text gm">�yGM�z<br/>�܂��܂��ŏ��ɂԂ��̂߂��ɂ����ʒu�����炱���ł��傤�ˁB
+<div class="text gm">【GM】<br/>まあまず最初にぶちのめしにいく位置だからこそでしょうね。
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>������������傱���傱�����L��������܂��A�ƂĂ�������܂����c�c�I�i�ӂ��Ԃ��j
+<div class="text cody">【コーディ・コルトハード】<br/>陸亜さんもちょこちょこ説明有難うございます、とても助かりました……！（ふかぶか）
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>���ɂ͓��ɂȂ��ł��B���肪�Ƃ��������܂���
+<div class="text ayumu">【海鳴 夢】<br/>他には特にないです。ありがとうございました
 </div>
-<div class="text noel">�y�m�G���z<br/>���������Ƃ�ł��˂����B�����ɗ��Ă��Ȃ牽���`���S�҂���l���y����ł����������Ȃ�K���B�܂���낤�ˁB
+<div class="text noel">【ノエル】<br/>いえいえとんでもねっす。お役に立てたなら何より～初心者お二人が楽しんでくだすったなら幸い。またやろうね。
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>����͖{���ɐF�X�����f�����������܂����B�܂����ꏏ���邱�Ƃ�����Γ���Ă��炦����������ł��B
+<div class="text ayumu">【海鳴 夢】<br/>今回は本当に色々ご迷惑をおかけしました。またご一緒することがあれば入れてもらえたら嬉しいです。
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>�f�l�����l�ł���!������Ɩ��������ĊO�T�����Ă��炢�܂������A�������܂���A�{�ɂ��ꂽ��y���������ł�!
+<div class="text ituki">【焔木 イツキ】<br/>ＧＭお疲れ様でした!ちょっと無理言って外典させてもらいましたが、魅了しまくり、本にされたり楽しかったです!
 </div>
-<div class="text gm">�yGM�z<br/>���ށA�ł͈�U���U�Ƃ��܂��傤���B�@�܂�������������l�I�ɕ����Ē����Ă������ł����B�@<br>
-����̂�S-F�ɂ������������Ă���������΍K���ł��B�@�܂����肸�ɗV��ł���Ă��������B
+<div class="text gm">【GM】<br/>うむ、では一旦解散としましょうか。　まあ何かあったら個人的に聞いて頂いてもいいですし。　<br>
+今回のでS-Fにも興味を持っていただければ幸いです。　また懲りずに遊んでやってください。
 </div>
-<div class="text noel">�y�m�G���z<br/>�́[���B�����l�ł����[�I
+<div class="text noel">【ノエル】<br/>はーい。お疲れ様でしたー！
 </div>
-<div class="text cody">�y�R�[�f�B�E�R���g�n�[�h�z<br/>�����l�ł����[�I
+<div class="text cody">【コーディ・コルトハード】<br/>お疲れ様でしたー！
 </div>
-<div class="text gm">�yGM�z<br/>�Q���Ԃ��肪�Ƃ��������܂����B�@�����l�ł����[�I
+<div class="text gm">【GM】<br/>２日間ありがとうございました。　お疲れ様でしたー！
 </div>
-<div class="text ituki">�y���� �C�c�L�z<br/>���肪�Ƃ��������܂����I
+<div class="text ituki">【焔木 イツキ】<br/>ありがとうございました！
 </div>
-<div class="text ayumu">�y�C�� ���z<br/>�����ꂳ�܂ł����[
+<div class="text ayumu">【海鳴 夢】<br/>おつかれさまでしたー
 </div>
-�������܂����I
+◆おしまいっ！
 </div>
-</body>
+    </div>
+ <!----- /main ----->
+ </body>
 </html>

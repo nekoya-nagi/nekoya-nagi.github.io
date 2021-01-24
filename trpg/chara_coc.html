@@ -1,165 +1,137 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
-<link rel="stylesheet" type="text/css" href="../css/base.css" />
-<link rel="stylesheet" type="text/css" href="../css/log.css" />
-<link rel="stylesheet" type="text/css" href="chara.css" />
-<link rel="stylesheet" type="text/css" href="../resource/lightbox.css" media="screen,tv" />
-<script type="text/javascript" charset="UTF-8" src="../resource/lightbox_plus.js"></script>
-<script>
-	function Fold(id){
-		if(document.getElementById('rgn_summary_'+id).style.display!='none'){
-			document.getElementById('rgn_summary_'+id).style.display='none';
-			document.getElementById('rgn_content_'+id).style.display='block';
-			document.getElementById('rgn_button_'+id).innerHTML='-';
-		}else{
-			document.getElementById('rgn_summary_'+id).style.display='block';
-			document.getElementById('rgn_content_'+id).style.display='none';
-			document.getElementById('rgn_button_'+id).innerHTML='+';
-		}
-	}
-</script>
-<title>Star Anise - ƒLƒƒƒ‰ƒNƒ^[Ð‰î</title>
-</head>
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>Star Anise</title>
+ <meta name="description" content="TRPGã€CardWirthç­‰ã€è¶£å‘³ã«ã¤ã„ã¦ã¾ã¨ã‚ãŸå€‹äººã‚µã‚¤ãƒˆ">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="../css/header.css">
+ <link rel="stylesheet" type="text/css" href="../css/side1.css">
+ <link rel="stylesheet" type="text/css" href="../css/base.css">
+ <link rel="stylesheet" type="text/css" href="../css/chara.css">
+ <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+ </head>
+ <body>
+<div class="wrapper">
+<script src="../header.js"></script>
+<div id="content">
 
-<body>
-<div class="log">
-<div class="title">Ÿ’TõŽÒÐ‰î</div>
-
-<div class="shinobi aoi" id="aoi">
-<div class="chara people">ƒVƒ…ƒKƒŒƒbƒgƒNƒIƒŠƒAi-j</div>
-<ul>
-<li>y”N—îz19ÎiŠJŽnŽžj y«•Êz—</li>
-<li>y”\—Í’lzSTR:12 CON:12 POW:16 DEX:13 APP:13<br>
-@@@@@SIZ:10 INT:17 EDU:13 </li>
-<li>yŒ»Ý’lzSAN 80/80</li>
-<li>y‹Z”\z<br>
-@@[g‘Ì] –Ú¯F85% •·‚«Ž¨F47% <br>
-@@[ŽÐ‰ï«] Œ¾‚¢‚­‚é‚ßF55% S—ŠwF25%<br>
-@@[Šw–â] }‘ŠÙF29% ƒIƒJƒ‹ƒgF45%<br>
-@@[ˆã—Ã] ˆãŠwF65% ¸_•ªÍF81% –òŠwF16%<br>
-@@[‹Zp] »ìi—¿—jF40%<br>
-@@[Œ¾Œê] •ê‘Œêi“úˆÉjF65%<br>
-@@[í“¬] ‹‡F35% “ú–{“F65%
-</li>
+ <!----- main ----->
+ <div id="main">
+ <article>
+ <h5 class="pagetitle">â—†ã‚¯ãƒˆã‚¥ãƒ«ãƒ•ç¥žè©±TRPG æŽ¢ç´¢è€…ç´¹ä»‹</h5>
+ <section>
+ <div class="komoku" id="index">Character List</div>
+<ul class="chara_list">
+    <li><a href="#sugar">ã‚·ãƒ¥ã‚¬ãƒ¬ãƒƒãƒˆï¼ã‚¯ã‚ªãƒªã‚¢</a></li>
+    <li><a href="#saguru">å˜‰ç¥ž æŽ¢</a></li>
+    <li><a href="#takeru">é»’é›² æ­¦æµ</a></li>
+    <li><a href="#alice">æœ‰æ –å· ã¤ãã¿</a></li>
+    <li><a href="#leon">ãƒ¬ã‚ªãƒ³</a></li>
+    <li><a href="#gengo">æœˆè¦‹é‡Œ æºå¾</a></li>
+    <li><a href="#harumi">è—¤å ‚ æ™´æµ·</a></li>
+    <li><a href="#shitara">è¨­æ¥½ æ­£å®—</a></li>
+    <li><a href="#argus">ã‚¢ãƒ¼ã‚¬ã‚¹ãƒ»ã‚¶ãƒ»ã‚¢ãƒ³ãƒ‰ãƒ­ã‚¤ãƒ‰</a></li>
+    <li><a href="#akira">é«˜å³° æ™¶</a></li>
+    <li><a href="#yuma">å˜‰ç¥ž æ‚ çœŸ</a></li>
+    <li><a href="#yamato">æ–Žè—¤ å¤§å’Œ</a></li>
+    <li><a href="#fred">ãƒ•ãƒ¬ãƒ‡ãƒªã‚¯ãƒ»ãƒ†ã‚¤ãƒ©ãƒ¼</a></li>
+    <li><a href="#mamori">ç™½å’² çœŸå®ˆ</a></li>
+    <li><a href="#riku">åœŸå¾¡é–€ ç†çŽ–</a></li>    
+    <li><a href="#kira">ç¯ å‰è‰¯</a></li>
+    <li><a href="#edo">ã‚¨ãƒ‰ãƒ¯ãƒ¼ãƒ‰=ãƒ›ãƒ—ã‚­ãƒ³ã‚º</a></li>
+    <li><a href="#ryuji">è«¸æ˜Ÿ é¾æ²»</a></li>
+    <li><a href="#inui">ä¹¾ æ³°è‡£</a></li>    
 </ul>
-<div class="chara memo">MEMO</div>
-<div class="profile_i">
-ƒCƒ^ƒŠƒAƒ}ƒtƒBƒA‚Ìƒ{ƒX‚Ìˆêl–ºB<br>
-””N‘O—¼e‚ªR‘ˆ‚ÉŠª‚«ž‚Ü‚ê–S‚­‚È‚Á‚½‚½‚ßƒtƒ@ƒ~ƒŠ[‚Ìƒ{ƒX‚ÌÀ‚ðŒp‚¢‚¾B<br>
-“ú–{“U‚è‰ñ‚·—Žq‘å¶BŠî–{ƒcƒ“ƒfƒŒ‹CŽ¿B<br>
-”äŠr“IÎ‚Ì‹ß‚­A—c‚¢ ‚©‚ç‹ß‚µ‚¢ŠÔ•¿‚Å‚ ‚Á‚½ƒuƒ‰ƒCƒAƒ“‹y‚Ñˆ¨‚Æ‚Í’‡‚ª—Ç‚¢B<br>
-ƒuƒ‰ƒCƒAƒ“‚ÉâŽ^•Ð‘z‚¢’†‚¾‚ª‹C•t‚©‚ê‚Ä‚¢‚È‚¢B<br>
-ŠÃ–¡‚Ì‹êŽè‚È”Þ‚ÉAŽ–‚ ‚é‚²‚Æ‚ÉH‚×‚é‚±‚Æ‚ð‹­‚¢‚Ä‚¢‚é‚ªˆ¤ŒÌ‚Å‚ ‚éB<br>
-i2014/8/8’Ç‹Lj<br>
-ƒuƒ‰ƒCƒAƒ“‚Ì“ä‚ÌŽ¸çHŒã‚ÍAƒƒCƒh‚Ìˆ¨‚ð‹Ÿ‚É‘{õ‚ð‘±‚¯‚Ä‚¢‚éB<br>
-ƒnƒƒEƒBƒ“‚ÌŽž‚ÉŠæ’£‚Á‚½—ö‚Ì‚¨‚Ü‚¶‚È‚¢‚ÍŒø‚­‚±‚Æ‚ª‚È‚­I‚í‚Á‚Ä‚µ‚Ü‚Á‚½–Í—lB
+<br />
+    <div class="chara people" id="sugar">ã‚·ãƒ¥ã‚¬ãƒ¬ãƒƒãƒˆï¼ã‚¯ã‚ªãƒªã‚¢ï¼ˆ-ï¼‰<a class="top" href="./chara_coc.html">â–²TOP</a></div>
+    <table><tr><td><img src="./cthlhu/sd/sugar.png"></td><td>
+    <ul>
+    <li>ã€å¹´é½¢ã€‘19æ­³ï¼ˆé–‹å§‹æ™‚ï¼‰ ã€æ€§åˆ¥ã€‘å¥³</li>
+    <li>ã€èƒ½åŠ›å€¤ã€‘STR:12 CON:12 POW:16 DEX:13 APP:13<br>
+    ã€€ã€€ã€€ã€€ã€€SIZ:10 INT:17 EDU:13 </li>
+    <li>ã€ç¾åœ¨å€¤ã€‘SAN 80/80</li>
+    <li>ã€æŠ€èƒ½ã€‘<br>
+    ã€€ã€€[èº«ä½“] ç›®æ˜Ÿï¼š85% èžãè€³ï¼š47% <br>
+    ã€€ã€€[ç¤¾ä¼šæ€§] è¨€ã„ãã‚‹ã‚ï¼š55% å¿ƒç†å­¦ï¼š25%<br>
+    ã€€ã€€[å­¦å•] å›³æ›¸é¤¨ï¼š29% ã‚ªã‚«ãƒ«ãƒˆï¼š45%<br>
+    ã€€ã€€[åŒ»ç™‚] åŒ»å­¦ï¼š65% ç²¾ç¥žåˆ†æžï¼š81% è–¬å­¦ï¼š16%<br>
+    ã€€ã€€[æŠ€è¡“] è£½ä½œï¼ˆæ–™ç†ï¼‰ï¼š40%<br>
+    ã€€ã€€[è¨€èªž] æ¯å›½èªžï¼ˆæ—¥ä¼Šï¼‰ï¼š65%<br>
+    ã€€ã€€[æˆ¦é—˜] å±…åˆï¼š35% æ—¥æœ¬åˆ€ï¼š65%
+    </li>
+    </ul>
+    </td>
+    </tr></table>
+    <div class="chara memo">MEMO</div>
+    <div class="profile_i">
+    ã‚¤ã‚¿ãƒªã‚¢ãƒžãƒ•ã‚£ã‚¢ã®ãƒœã‚¹ã®ä¸€äººå¨˜ã€‚<br>
+    æ•°å¹´å‰ä¸¡è¦ªãŒæŠ—äº‰ã«å·»ãè¾¼ã¾ã‚Œäº¡ããªã£ãŸãŸã‚ãƒ•ã‚¡ãƒŸãƒªãƒ¼ã®ãƒœã‚¹ã®åº§ã‚’ç¶™ã„ã ã€‚<br>
+    æ—¥æœ¬åˆ€æŒ¯ã‚Šå›žã™å¥³å­å¤§ç”Ÿã€‚åŸºæœ¬ãƒ„ãƒ³ãƒ‡ãƒ¬æ°—è³ªã€‚<br>
+    æ¯”è¼ƒçš„æ­³ã®è¿‘ãã€å¹¼ã„é ƒã‹ã‚‰è¿‘ã—ã„é–“æŸ„ã§ã‚ã£ãŸãƒ–ãƒ©ã‚¤ã‚¢ãƒ³åŠã³è‘µã¨ã¯ä»²ãŒè‰¯ã„ã€‚<br>
+    ãƒ–ãƒ©ã‚¤ã‚¢ãƒ³ã«çµ¶è³›ç‰‡æƒ³ã„ä¸­ã ãŒæ°—ä»˜ã‹ã‚Œã¦ã„ãªã„ã€‚<br>
+    ç”˜å‘³ã®è‹¦æ‰‹ãªå½¼ã«ã€äº‹ã‚ã‚‹ã”ã¨ã«é£Ÿã¹ã‚‹ã“ã¨ã‚’å¼·ã„ã¦ã„ã‚‹ãŒæ„›æ•…ã§ã‚ã‚‹ã€‚<br>
+    ï¼ˆ2014/8/8è¿½è¨˜ï¼‰<br>
+    ãƒ–ãƒ©ã‚¤ã‚¢ãƒ³ã®è¬Žã®å¤±è¸ªå¾Œã¯ã€ãƒ¡ã‚¤ãƒ‰ã®è‘µã‚’ä¾›ã«æœç´¢ã‚’ç¶šã‘ã¦ã„ã‚‹ã€‚<br>
+    ãƒãƒ­ã‚¦ã‚£ãƒ³ã®æ™‚ã«é ‘å¼µã£ãŸæ‹ã®ãŠã¾ã˜ãªã„ã¯åŠ¹ãã“ã¨ãŒãªãçµ‚ã‚ã£ã¦ã—ã¾ã£ãŸæ¨¡æ§˜ã€‚
+    </div>
+    <div class="chara img">pict</div>
+    ã€€ã€€<a class="exlink" href="http://nek0yanagi.tumblr.com/tagged/%E3%82%B7%E3%83%A5%E3%82%AC%E3%83%AC%E3%83%83%E3%83%88%EF%BC%9D%E3%82%AF%E3%82%AA%E3%83%AA%E3%82%A2" target="_blank">åˆ¥çª“è¡¨ç¤º</a>
+    <br><br>
+    <hr />
+    <div class="chara people" id="saguru">å˜‰ç¥ž æŽ¢ï¼ˆã‚«ã‚¬ãƒŸ ã‚µã‚°ãƒ«ï¼‰<a class="top" href="./chara_coc.html">â–²TOP</a></div>
+    <table><tr><td><img src="./cthlhu/sd/saguru.png"></td><td>
+    <ul>
+    <li>ã€å¹´é½¢ã€‘24æ­³ï¼ˆé–‹å§‹æ™‚ï¼‰ ã€æ€§åˆ¥ã€‘ç”·</li>
+    <li>ã€èƒ½åŠ›å€¤ã€‘STR:11 CON:10 POW:13â†’11 DEX:14 APP:14<br>
+    ã€€ã€€ã€€ã€€ã€€SIZ:12 INT:13 EDU:15 </li>
+    <li>ã€ç¾åœ¨å€¤ã€‘SAN 65/65</li>
+    <li>ã€æŠ€èƒ½ã€‘<br>
+    ã€€ã€€[èº«ä½“] ç›®æ˜Ÿï¼š79% èžãè€³ï¼š45% æŠ•æ“²ï¼š50% <br>
+    ã€€ã€€[éš å¯†] éµé–‹ã‘ï¼š21% <br>
+    ã€€ã€€[ç¤¾ä¼šæ€§] å€¤åˆ‡ã‚Šï¼š15%<br>
+    ã€€ã€€[å­¦å•] å›³æ›¸é¤¨ï¼š60% åŒ–å­¦ï¼š11% åœ°è³ªå­¦ï¼š11% å¤©æ–‡å­¦ï¼š11% <br>
+    ã€€ã€€ã€€ã€€ã€€ æ­´å²ï¼š60% è€ƒå¤å­¦ï¼š11% ã‚ªã‚«ãƒ«ãƒˆï¼š45%<br>
+    ã€€ã€€[èŠ¸è¡“] èŠ¸è¡“ï¼ˆçµµç”»ï¼‰ï¼š35%<br>
+    ã€€ã€€[åŒ»ç™‚] å¿œæ€¥æ‰‹å½“ï¼š54%<br>
+    ã€€ã€€[æŠ€è¡“] ã‚³ãƒ³ãƒ”ãƒ¥ãƒ¼ã‚¿ï¼š21% é›»æ°—ä¿®ç†ï¼š20%<br>
+    ã€€ã€€[è¨€èªž] æ¯å›½èªžï¼š75% ä»–ã®è¨€èªžï¼ˆè‹±èªžï¼‰ï¼š26% ä»–ã®è¨€èªžï¼ˆã‚®ãƒªã‚·ãƒ£èªžï¼‰ï¼š51%<br>
+    ã€€ã€€[æˆ¦é—˜] ã‚µãƒ–ãƒžã‚·ãƒ³ã‚¬ãƒ³ï¼š55% ãƒŠã‚¤ãƒ•ï¼š32%
+    </li>
+    </ul>
+    </td>
+    </tr></table>
+    <div class="chara memo">MEMO</div>
+    <div class="profile_i">
+    æŽ¢æ±‚å¿ƒæ—ºç››ãªãƒˆãƒ¬ã‚¸ãƒ£ãƒ¼ãƒãƒ³ã‚¿ãƒ¼ã€‚å¥½ããªã‚‚ã®ã¯ãŠå®ãƒ»çœŸå®Ÿãƒ»æ­´å²ã€‚<br>
+    é«˜æ ¡å’æ¥­ã¨åŒæ™‚ã«æ—¥æœ¬ã‚’å‡ºã¦ãƒãƒƒã‚¯ãƒ‘ãƒƒã‚«ãƒ¼çš„ãªã“ã¨ã‚’ã—ã¦ã„ã‚‹é–“ã«ãã®é“ã®äººã¨çŸ¥ã‚Šåˆã„ãã®ã¾ã¾<br>
+    ãƒˆãƒ¬ã‚¸ãƒ£ãƒ¼ãƒãƒ³ã‚¿ãƒ¼ã®é“ã¸ã€‚ä»Šã¯ãƒãƒ³ã‚¿ãƒ¼å”ä¼šçš„ãªæ€ªã—ã’ãªä½•ã‹ã«æ‰€å±žã—ã¦ã„ã‚‹ã‚‰ã—ã„ã€‚<br>
+    å”ä¼šçµŒç”±ã§ä¾é ¼ã‚’å—ã‘ã¦ã¯ä¸–ç•Œä¸­ã®éºè·¡ã‚„ã‚‰æ€ªã—ã’ãªã¨ã“ã‚ã«æ½œã£ã¦ã„ã‚‹ã€‚<br>
+    éºè·¡æŽ¢ç´¢ï¼ˆè¬Žè§£ãï¼‰ã‚’ã—ã¦ã„ã‚‹ã†ã¡ã«ç„¡é§„ã«é›‘å­¦ã‚„æ‰‹å…ˆã®å™¨ç”¨ã•ãŒèº«ã«ç€ã„ãŸã€‚<br>
+    æˆ¦é—˜èƒ½åŠ›ã¯é«˜ããªã„ã®ã§å¤§æŠµã¯ãƒãƒ‡ã‚£ã‚’é›‡ã£ã¦ãŠé¡˜ã„ã—ã¦ã„ã‚‹ã€‚åŒ–ã‘ç‰©ã“ã‚ã„ã§ã™â€¦<br>
+    é ãã‹ã‚‰ãƒžã‚·ãƒ³ã‚¬ãƒ³ä½¿ã£ãŸã‚Šæ‰‹æ¦´å¼¾æŠ•ã’ãŸã‚Šãã‚‰ã„ã¯ã§ãã‚‹ãŒã€å¾—æ„ã§ã‚‚ãªã„ãŸã‚ãƒãƒ‡ã‚£ã«å½“ã¦ã¦ã¯å±ã‚‰ã‚Œã¦ã„ã‚‹ã€‚<br>
+    äººæ‡ã£ã“ã„ãŠèª¿å­è€…ã ãŒã€ã„ã–æŽ¢ç´¢ã¨ãªã‚‹ã¨çœŸé¡”ã§é›†ä¸­åŠ›ã‚’ç™ºæ®ã™ã‚‹å…¸åž‹çš„Båž‹äººé–“ã€‚<br>
+    ç¾åœ¨ã®æ—…ã®é“é€£ã‚Œã¯ç²¾ç¥žç§‘åŒ»ã®ç·’æ–¹æ¨¹å…ˆç”Ÿã€‚ç†æƒ³ã®ãƒ–ãƒ©ãƒƒã‚¯ã‚¸ãƒ£ãƒƒã‚¯ã€‚<br>
+    â†’ãã®å¾Œã€ä½•ã‚„ã‹ã‚“ã‚„ã‚ã£ã¦çµå©šã—ã¦å­ä¾›ã‚‚ã§ãã¾ã—ãŸã€‚<br>
+    </div>
+    <div class="chara img">pict</div>
+    ã€€ã€€<a class="exlink" href="http://nek0yanagi.tumblr.com/tagged/%E3%82%B7%E3%83%A5%E3%82%AC%E3%83%AC%E3%83%83%E3%83%88%EF%BC%9D%E3%82%AF%E3%82%AA%E3%83%AA%E3%82%A2" target="_blank">åˆ¥çª“è¡¨ç¤º</a>
+    <br><br>
+    <hr />
+ </section>
+ </article>
 </div>
-<div class="chara img">pict</div>
-@@<a href="http://nek0yanagi.tumblr.com/tagged/%E3%82%B7%E3%83%A5%E3%82%AC%E3%83%AC%E3%83%83%E3%83%88%EF%BC%9D%E3%82%AF%E3%82%AA%E3%83%AA%E3%82%A2" target="_blank">•Ê‘‹•\Ž¦</a>
-</div>
-<br><br>
-<hr />
+ <!----- /main ----->
 
-<div class="shinobi erika" id="erika">
-<div class="chara people">Žl”V‹{ ƒGƒŠƒJi‚µ‚Ì‚Ý‚â@‚¦‚è‚©j</div>
-<ul>
-<li>y”N—îz8Î y«•Êz—</li>
-<li>y—¬”hzŽ„—§ŒäÖŠw‰€@yŠK‹‰z’†”E </li>
-<li>y•\‚ÌŠçz¬Šw¶@yM”Ozî</li>
-<li>y“Á‹Zzsˆß‘•pts“pts“Ù‘–pts•º—Æpts—p•ºptsŒ©“Gpt</li>
-<li>y”E–@zåH^–Ø˜@^•¶‹È^˜AŒ‚</li>
-</ul>
-<div class="chara memo">MEMO</div>
-<div class="profile_i">
-ŒäÖŠw‰€‚É’Ê‚¤ƒAƒ‹ƒrƒm‚Ì­—B<br>
-‚¢‚Â‚à‚¤‚³‚¬‚Ì‚Ê‚¢‚®‚é‚Ý‚ð•ø‚«‚µ‚ß‚Ä‚¢‚éB<br>
-<br>
-—c­Šú‚©‚ç”E‚Æ‚È‚é‚½‚ßAŒµ‚µ‚­ˆç‚Ä‚ç‚ê‚Ä‚«‚½B<br>
-ŒZ‚ªˆêl‚¨‚èAŒÝ‚¢‚É–À˜f‚É‚È‚ç‚È‚¢‚æ‚¤Œœ–½‚É”C–±‚ð‚±‚È‚»‚¤‚Æ‚·‚éB<br>
-¢ŠE‚Åˆê”Ô‘åØ‚È‚à‚Ì‚ÍAŒZ‚ÌŽHŒŽB<br>
-‚Ê‚¢‚®‚é‚Ý‚Ì–¼‘O‚Íu‚¤‚³‚¬‚³‚ñvBí“¬Žž‚É‚Í‘å‚«‚­‚È‚éB<br>
-</div>
-<div class="chara img">pict</div>
-@@<a href="http://nek0yanagi.tumblr.com/tagged/%E5%9B%9B%E4%B9%8B%E5%AE%AE%E3%82%A8%E3%83%AA%E3%82%AB" target="_blank">•Ê‘‹•\Ž¦</a>
-</div>
-<br><br>
-<hr />
-
-<div class="shinobi inui" id="inui">
-<div class="chara people">Š£ ‘×bi‚¢‚Ê‚¢@‚â‚·‚¨‚Ýj</div>
-<ul>
-<li>y”N—îz19Î y«•Êz’j</li>
-<li>y—¬”hzƒnƒOƒŒƒ‚ƒm@yŠK‹‰z’†”E </li>
-<li>y•\‚ÌŠçz‘åŠw¶@yM”Oz‰ä</li>
-<li>y“Á‹Zzs“êptsö•špts‰BŒ`pts•ªg‚Ìpts“Åpts“µpt</li>
-<li>y”E–@z‰e•ªg^Š™êŒ^’É‘Å^—h‰¹</li>
-<li>y”wŒizŒì•„^‹Œ‰…</li>
-</ul>
-<div class="chara memo">MEMO</div>
-<div class="profile_i">
-•\Œü‚«‚Í‰¸‚â‚©‚Ål“–‚½‚è‚Ì—Ç‚¢‘åŠw¶’jŽqB<br>
-’PˆÊ‚Í‘‚ß‚ÉŽæ‚Á‚½‚Ì‚ÅÅ‹ß‚Í‚í‚è‚ÆŠwZ‚Í‹x‚Ý‚ª‚¿B<br>
-<br>
-eŒZ’í‚Í—d–‚‚ÉŽE‚³‚êA“VŠUŒÇ“Æ‚ÌgB<br>
-‚¾‚ªA—Bˆê–³“ñ‚Ì‘Š–_‚ª‚¢‚é‚½‚ßŽâ‚µ‚­‚Í‚È‚¢B<br>
-“²‚ê‚Ì‘Š–_‚É‘Š‰ž‚µ‚­‚ ‚é‚½‚ßAí‚ÉŽ©•ª‚ð‚‚ß‚é“w—Í‚ð‘±‚¯‚Ä‚¢‚éB<br>
-<br>
-’‹H‚Í‘å’ïAw”ƒ‚Ìƒpƒ“‚Æ‹“û‚¾‚ªA•º—ÆŠÛ‚æ‚è‚Íƒ}ƒV‚¾‚ÆŽv‚Á‚Ä‚¢‚éB
-</div>
-<div class="chara img">pict</div>
-@@<a href="http://nek0yanagi.tumblr.com/tagged/%E4%B9%BE%E6%B3%B0%E8%87%A3" target="_blank">•Ê‘‹•\Ž¦</a>
-</div>
-<br><br>
-<hr />
-
-
-<div class="shinobi pairon" id="pairon">
-<div class="chara people">”’—´iƒpƒCƒƒ“j</div>
-<ul>
-<li>y”N—îz•sÚ y«•Êz’j</li>
-<li>y—¬”hz‰B”E‚ÌŒŒ“@yŠK‹‰z’†”E </li>
-<li>y•\‚ÌŠçz‚È‚µ@yM”Oz‹¥</li>
-<li>y“Á‹Zzsˆß‘•ptsœ–@pts¼ptsŽ€—ìptsŒ¶ptsœßˆËpt</li>
-<li>y”E–@z‹S‰e^‹z¸^„î^”ò°</li>
-<li>y”wŒiz</li>
-</ul>
-<div class="chara memo">MEMO</div>
-<div class="profile_i">
-ŒŒ“m‚É‘®‚·‚é‹zŒŒ‹S‚ÌˆêlBÎ‚Í200‚ð’´‚¦‚½‚ ‚½‚è‚©‚ç”‚¦‚é‚Ì‚ðŽ~‚ß‚½B<br>
-”’”¯BŠç‚Í®‚Á‚Ä‚¢‚é‚ªAˆ«–Ú—§‚¿‚·‚é‚½‚ßA”—ŠQ‚³‚ê‚Ä‚¢‚é‚Æ‚±‚ë‚ð‹zŒŒ‹S‚ÉE‚í‚ê‚Ä‚»‚Ì‚Ü‚ÜáÅ‘®‚É‚³‚ê‚½B<br>
-‹~‚í‚ê‚½‰¶‚©‚ç”C–±‚É‚Í’‰ŽÀ‚Å‚ ‚èA‰Ð°‚ð’Ç‚¤‚¤‚¿‚ÉAŽž‚É‚Í¬‚³‚È“sŽsˆê‚Â‚ðŽ€ŽÒ‚ÌŠX‚É‚µ‚Ä‚µ‚Ü‚¤‚È‚ÇA<br>
-‹C•t‚¯‚Î‘½”‚Ì‹]µŽÒ‚ðo‚µ‚Ä‚¢‚½B<br>
-Š´ŠS‚à‚È‚­Aî•ñ‚Ì‚½‚ß‚É‰–â‚ðs‚Á‚½‚è‚à‚µ‚Î‚µ‚Î‚·‚é‚½‚ßA‘¼—¬”h‚©‚ç‚Ì•]”»‚Í“‚¢‚à‚ÌB
-</div>
-<div class="chara img">pict</div>
-@@<a href="http://nek0yanagi.tumblr.com/tagged/%E7%99%BD%E9%BE%8D" target="_blank">•Ê‘‹•\Ž¦</a>
-</div>
-<br><br>
-<hr />
-
-<!-- <div class="shinobi pairon" id="pairon">
-<div class="chara people">ij</div>
-<ul>
-<li>y”N—îz y«•Êz</li>
-<li>y—¬”hz@yŠK‹‰z’†”E </li>
-<li>y•\‚ÌŠçz@yM”Oz</li>
-<li>y“Á‹Zzstststststst</li>
-<li>y”E–@z</li>
-<li>y”wŒiz</li>
-</ul>
-<div class="chara memo">MEMO</div>
-<div class="profile_i">
-<br>
-</div>
-<div class="chara img">pict</div>
-@@<a href="" target="_blank">•Ê‘‹•\Ž¦</a>
-</div>
-<br><br>
-<hr /> -->
+ <nav class="left">
+    <script src="./trpg.js"></script>
+    <script>clickSystem("coc");</script>
+ </nav>
 
 </div>
-</body>
+<script src="../footer.js"></script>
+</div>
+ </body>
 </html>

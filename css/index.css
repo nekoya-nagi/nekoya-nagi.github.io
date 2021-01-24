@@ -1,8 +1,10 @@
-/* ƒCƒ“ƒfƒbƒNƒXƒy[ƒW—p */
+/* ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ãƒšãƒ¼ã‚¸ç”¨ */
 
 body {
  background-color: #f0f8ff;
  text-align:center;
+ font-size:10px;
+ color: #00008b;
 } 
 
 p {
@@ -18,5 +20,6 @@ div {
  margin-left:auto;
  margin-right:auto;
  margin-top:100px;
+ padding: 50px;
 }
 

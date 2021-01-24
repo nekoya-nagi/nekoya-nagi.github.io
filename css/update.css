@@ -1,0 +1,20 @@
+/* 更新履歴用 */
+
+body {
+    overflow-y: hidden;
+    background-color: #ffffff;
+    text-align:left;
+    font-size:10px;
+    color: #555555;
+   } 
+
+ul.date {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+ul.gaiyo {
+    padding-left: 15px;
+    font-weight: normal;
+    color: #999999;
+}
