@@ -7,7 +7,7 @@ createSystemMenu("Amadeus", "amadeus", "アマデウス");
 createSystemMenu("Other", "other", "");
 
 function createSystemMenu(title, sysid, systag){
-    document.write('<div class="system" onclick="clickSystem(&quot;' + sysid + '&quot;)">' + title + '</div>');
+    document.write('<button type="button" class="system" id="toggle_' + sysid + '" aria-expanded="false" aria-controls="open_' + sysid + '" onclick="clickSystem(&quot;' + sysid + '&quot;)">' + title + '</button>');
     document.write('<div id="open_' + sysid + '" style="display:none;clear:both;">');
     document.write('<ul class="subcontents">');
     if(systag !== ""){
@@ -25,4 +25,5 @@ function clickSystem(sysid){
     let idname = 'open_' + sysid;
     let style = document.getElementById(idname).style; 
     style.display = (style.display=='none')?'block':'none';
+    document.getElementById('toggle_' + sysid).setAttribute('aria-expanded', String(style.display === 'block'));
 }

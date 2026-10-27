@@ -1,0 +1,51 @@
+/* Mobile layout shared by the existing pages. Desktop styling stays in place. */
+button.system {
+  display:block; width:130px; margin:20px 10px 10px; padding:8px;
+  border:0; border-left:5px solid #fdfffe; border-bottom:1px solid #fdfffe;
+  background:transparent; color:#fff9c6; text-align:left;
+  font:inherit; font-family:'Caveat', cursive; cursor:pointer;
+}
+button.system::after { content:' +'; }
+button.system[aria-expanded="true"]::after { content:' −'; }
+button.system:focus-visible, a:focus-visible { outline:3px solid #df9b26; outline-offset:2px; }
+@media (max-width: 800px) {
+  *, *::before, *::after { box-sizing:border-box; }
+  body { margin:0; overflow-wrap:anywhere; }
+  header { position:static; }
+  header > nav { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; padding:8px; gap:4px; }
+  header span.title { flex-basis:100%; padding:0; }
+  header a.nav { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 12px; font-size:18px; }
+  div#content { display:flex; flex-direction:column; height:auto; min-height:75vh; overflow:visible; padding-top:0; }
+  div#content > div#main { order:2; float:none; width:100%; height:auto; margin:0; padding:12px; overflow:visible; min-width:0; }
+  nav.left, nav.left2 { order:1; float:none; width:100%; height:auto; min-height:0; margin:0; padding:8px 12px; text-align:left; }
+  button.system { width:100%; min-height:48px; margin:4px 0; padding:10px 12px; font-size:20px; }
+  ul.subcontents { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px; padding:4px 0 12px; }
+  ul.subcontents li { padding:0; }
+  ul.subcontents a { display:flex; align-items:center; min-height:44px; padding:8px 12px; background:#474784; border-radius:4px; font-size:16px; }
+  footer { position:static; height:auto; min-height:30px; padding:8px; }
+  section { width:auto; max-width:100%; margin:12px 0; padding:10px; }
+  p, hr, div.title, div.subtitle, div.midashi, div.people, div.profile, div.profile_i, div.log { width:auto; max-width:100%; }
+  p { margin:8px 0; font-size:14px; line-height:1.8; }
+  li { font-size:14px; line-height:1.7; }
+  ul { padding-left:20px; }
+  .multi_list, .chara_list { width:auto; column-count:2; padding-left:18px; }
+  .multi_list li, .chara_list li { break-inside:avoid; }
+  .chara_list a { display:inline-block; padding:10px 0; }
+  img { max-width:100%; height:auto; margin-left:0; }
+  iframe { max-width:100%; margin-left:0 !important; }
+  textarea { max-width:100%; }
+  div.text, div.sw, div.shinobi { width:auto; margin:8px 0; padding:210px 0 0; background-position: center top; }
+  div.profile, div.profile_i { padding:8px; font-size:14px; line-height:1.8; }
+  dt { float:none; width:auto; }
+  dd { width:auto; margin-left:16px; }
+  a.top { display:inline-block; padding:10px; font-size:12px; }
+  table { display:block; max-width:100%; overflow-x:auto; margin:12px 0; font-size:14px; }
+  th, td { overflow-wrap:normal; }
+  /* Character illustrations and statistics stack; history tables retain their columns. */
+  article:has(.chara_list) section > table > tbody > tr > td { display:block; }
+  div#MainArea { width:100%; padding:12px 0; }
+  div.dice { width:auto; max-width:100%; }
+}
+@media (max-width: 420px) {
+  .multi_list, .chara_list { column-count:1; }
+}
